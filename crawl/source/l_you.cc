@@ -9,6 +9,7 @@
 #include "branch.h"
 #include "chardump.h"
 #include "coord.h"
+#include "database.h"
 #include "delay.h"
 #include "env.h"
 #include "food.h"
@@ -304,7 +305,7 @@ static int l_you_abil_table(lua_State *ls)
     {
         buf[0] = talents[i].hotkey;
         lua_pushstring(ls, buf);
-        lua_pushstring(ls, ability_name(talents[i].which));
+        lua_pushstring(ls, jtrans(ability_name(talents[i].which)).c_str());
         lua_rawset(ls, -3);
     }
     return 1;

@@ -513,7 +513,7 @@ static string _shop_print_stock(const vector<int>& stock,
 
         const int cols = get_number_of_cols();
 
-        cprintf(jtrans("%s%5d gold").c_str(), chop_string(item_name, cols-14).c_str(), gp_value);
+        cprintf(jtrans("%s%5d gold").c_str(), chop_string(item_name, cols-16).c_str(), gp_value);
 
         si.add_item(item, gp_value);
 

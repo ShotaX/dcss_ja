@@ -434,7 +434,7 @@ static void _adjust_ability(void)
     }
 
     mprf_nocap("%c - %s", static_cast<char>(talents[selected].hotkey),
-               ability_name(talents[selected].which));
+               jtrans(ability_name(talents[selected].which)).c_str());
 
     const int index1 = letter_to_index(talents[selected].hotkey);
 
@@ -463,7 +463,7 @@ static void _adjust_ability(void)
         {
             mprf("%s: %c - %s", jtrans("Swapping with").c_str(),
     			 static_cast<char>(keyin),
-                 ability_name(talents[i].which));
+                 jtrans(ability_name(talents[i].which)).c_str());
             printed_message = true;
             break;
         }
@@ -473,7 +473,7 @@ static void _adjust_ability(void)
     {
         mprf("%s: %c - %s", jtrans("Moving to").c_str(),
 							static_cast<char>(keyin),
-             				ability_name(talents[selected].which));
+             				jtrans(ability_name(talents[selected].which)).c_str());
     }
 
     // Swap references in the letter table.

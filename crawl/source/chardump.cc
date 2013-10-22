@@ -25,6 +25,7 @@
 #include "art-enum.h"
 #include "artefact.h"
 #include "branch.h"
+#include "database.h"
 #include "describe.h"
 #include "dgn-overview.h"
 #include "dungeon.h"
@@ -1200,7 +1201,7 @@ static string _describe_action_subtype(caction_type type, int subtype)
         return spell_title((spell_type)subtype);
     case CACT_INVOKE:
     case CACT_ABIL:
-        return ability_name((ability_type)subtype);
+        return jtrans(ability_name((ability_type)subtype));
     case CACT_EVOKE:
         switch ((evoc_type)subtype)
         {
