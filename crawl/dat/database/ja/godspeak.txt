@@ -9,35 +9,47 @@
 # fall-back in case a keyword can't be found
 Xom general effect
 
-Xom snickers.
+ゾムは嘲笑った
+#Xom snickers.
 
-"How about this?"
+『これはどうだ？』
+#"How about this?"
 
-"Let's try an experiment, hmmm?"
+『実験してみようか？ふーむ？』
+#"Let's try an experiment, hmmm?"
 
 w:1
-"I wonder... What does this button do?"
+『不思議だ……このボタンは一体なんなんだろうな？』
+#"I wonder... What does this button do?"
 %%%%
 ##############################
 # Xom throwing stuff at you.
 ##############################
 Xom general gift
 
-Xom grants you a gift!
+ゾムはあなたに贈物を与えた！
+#Xom grants you a gift!
 
-"Here."
+『こっちだ』
+#"Here."
 
-Xom's generous nature manifests itself.
+ゾムの寛大な性質が発揮された
+#Xom's generous nature manifests itself.
 
-Xom grants you an implement of some kind.
+ゾムはあなたに幾らかの道具を与えた
+#Xom grants you an implement of some kind.
 
-"Take this instrument of something!"
+『この装置を持っていくがいい!』
+#"Take this instrument of something!"
 
-"Take this token of my esteem."
+『私の尊敬の印を受け取るがいい』
+#"Take this token of my esteem."
 
-Xom smiles on you.
+ゾムはあなたに微笑んだ
+#Xom smiles on you.
 
-"Catch!"
+『受け取れ！』
+#"Catch!"
 %%%%
 ####################
 # friendly summons
@@ -530,35 +542,47 @@ end
 # Beogh's messiah has destroyed an idol
 Beogh idol follower
 
-Beogh fumes, "This is no small sin, orc. Repent!"
+ビオは興奮した：『これはちっぽけな罪ではない！オークよ悔い改めよ！』
+#Beogh fumes, "This is no small sin, orc. Repent!"
 
-Beogh whispers, "You will suffer for this misdeed."
+ビオは呟いた：『お前はこの悪行のために苦しむことになるだろう』
+#Beogh whispers, "You will suffer for this misdeed."
 
-Beogh rages, "An eye for an eye..."
+ビオは激怒した：『目には……目を……』
+#Beogh rages, "An eye for an eye..."
 %%%%
 # an unbelieving hill orc has destroyed an idol
 Beogh idol orc
 
-Beogh's voice booms out: "Heretic, die!"
+ビオの声が轟いた:『異端者め！死ぬがいい！』
+#Beogh's voice booms out: "Heretic, die!"
 
-You hear Beogh's thundering voice: "Suffer, infidel!"
+あなたはビオの稲妻のような声を聴いた：『異教徒め！苦しめ！』
+#You hear Beogh's thundering voice: "Suffer, infidel!"
 
-Beogh roars, "Feel my power, apostate!"
+ビオは咆哮した：『我の力を受けるがいい！背教者め！』
+#Beogh roars, "Feel my power, apostate!"
 %%%%
 # a character of another species has destroyed an idol
 Beogh idol other
 
-Beogh is not amused by that idol's destruction.
+ビオはその偶像の破壊を喜んでいない
+#Beogh is not amused by that idol's destruction.
 
-Beogh seems highly displeased.
+ビオはひどく失望したように見えた
+#Beogh seems highly displeased.
 
-Your arrogance infuriates Beogh.
+あなたの傲慢はビオを激怒させた
+#Your arrogance infuriates Beogh.
 
-Beogh utters a curse on your species.
+ビオはあなたの種族に呪いを放った
+#Beogh utters a curse on your species.
 
-Beogh curses everyone not orcish, especially @player_genus_plural@.
+ビオはオーク以外の全ての種族を呪った…特に @player_genus_plural@を!!!
+#Beogh curses everyone not orcish, especially @player_genus_plural@.
 
-Beogh swears eternal hatred towards @player_god@.
+ビオは @player_god@ に向かって永遠の憎悪を誓った
+#Beogh swears eternal hatred towards @player_god@.
 %%%%
 #################################################
 # The Shining One rants on killing a holy being #
@@ -566,50 +590,64 @@ Beogh swears eternal hatred towards @player_god@.
 # an evil worshipper has killed a holy being
 the Shining One holy evil
 
-The Shining One thunders, "Cease your foul attacks on the divine!"
+『輝けるもの』が稲妻のごとく叫んだ：『神聖な者への卑怯な攻撃を停止せよ!』
+#The Shining One thunders, "Cease your foul attacks on the divine!"
 
-The Shining One shouts, "That base death shall not go unavenged!"
+『輝けるもの』が叫んだ：『一度の死は復讐をやめる理由にはならない!』
+#The Shining One shouts, "That base death shall not go unavenged!"
 
-The Shining One shouts, "Your misdeeds are remembered unto the final battle!"
+『輝けるもの』が稲妻のごとく叫んだ：『貴様の悪行は最終戦争で想起されるだろう!』
+#The Shining One shouts, "Your misdeeds are remembered unto the final battle!"
 
-The Shining One whispers, "The forces of light will burn you to a crisp."
+『輝けるもの』が稲妻のごとく叫んだ：『光の力は貴様を粉々に焼き尽くすだろう』
+#The Shining One whispers, "The forces of light will burn you to a crisp."
 %%%%
 # a non-good worshipper or atheist has killed a holy being
 the Shining One holy other
 
-The Shining One says, "As holy lives are taken, so shall yours be."
+『輝けるもの』は言った：『神聖な命が奪われた以上、貴様もそうしなければならない』
+#The Shining One says, "As holy lives are taken, so shall yours be."
 
-The Shining One warns, "Defile yourself no further with such kills."
+『輝けるもの』は忠告した：『そのような殺戮でこれ以上自らを穢すな』
+#The Shining One warns, "Defile yourself no further with such kills."
 
-The Shining One demands, "It is time to choose between the fair and the foul."
+『輝けるもの』は要求した：『公正か不正か、どちらかを選択する時だ』
+#The Shining One demands, "It is time to choose between the fair and the foul."
 
-The Shining One says, "Martyrs are remembered forever."
+『輝けるもの』は言った：『殉教者は永久に記憶される』
+#The Shining One says, "Martyrs are remembered forever."
 
 w:1
-The Shining One says, "An eye for an eye, a tooth for a tooth."
+『輝けるもの』は言った：『目には目を……歯には歯を……』
+#The Shining One says, "An eye for an eye, a tooth for a tooth."
 %%%%
 ##########################################
 # Elyvilon hates you killing her animals #
 ##########################################
 Elyvilon holy
 
-Elyvilon hisses: "You foul beast! How dare you!"
+エリヴィロンは囁いた：『動物を穢すなんて！よくもまあ……』
+#Elyvilon hisses: "You foul beast! How dare you!"
 
-Elyvilon sadly asks: "How did it come to be that such cruelty exists?"
+エリヴィロンは悲しげに尋ねた：『どうしたらそのように残酷になれるのですか？』
+#Elyvilon sadly asks: "How did it come to be that such cruelty exists?"
 
-Elyvilon whispers: "No one should ever harm others. Ever!"
+エリヴィロンは囁いた：『他者を傷つけてはなりません。絶対に！』
+#Elyvilon whispers: "No one should ever harm others. Ever!"
 %%%%
 recite_closure
 
-"Amen!"
+『アーメン!』
+#"Amen!"
 
-"Glory to Zin!"
+#"Glory to Zin!"
 
-"And thus was it written."
 
-"So sayeth Zin."
+#"And thus was it written."
 
-"Purity be upon you all."
+#"So sayeth Zin."
+
+#"Purity be upon you all."
 %%%%
 ##########################
 # Xom's response to prayer
