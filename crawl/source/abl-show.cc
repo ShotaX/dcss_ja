@@ -449,7 +449,7 @@ bool string_matches_ability_name(const string& key)
         if (abil.ability == ABIL_NON_ABILITY)
             continue;
 
-        const string name = lowercase_string(ability_name(abil.ability));
+        const string name = lowercase_string(jtrans(ability_name(abil.ability)));
         if (name.find(key) != string::npos)
             return true;
     }
@@ -470,7 +470,7 @@ string print_abilities()
         {
             if (i)
                 text += ", ";
-            text += ability_name(talents[i].which);
+        	text += jtrans(ability_name(talents[i].which));
         }
     }
 
@@ -1174,7 +1174,7 @@ talent get_talent(ability_type ability, bool check_confused)
 
 const char* ability_name(ability_type ability)
 {
-    return jtrans(get_ability_def(ability).name).c_str();
+    return get_ability_def(ability).name;
 }
 
 vector<const char*> get_ability_names()
@@ -3011,7 +3011,7 @@ string describe_talent(const talent& tal)
 
     ostringstream desc;
     desc << left
-         << chop_string(ability_name(tal.which), 32)
+         << chop_string(jtrans(ability_name(tal.which)), 32)
          << chop_string(make_cost_description(tal.which), 27)
          << chop_string(failure, 10);
     free(failure);
