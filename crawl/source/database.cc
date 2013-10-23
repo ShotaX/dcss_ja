@@ -225,7 +225,7 @@ void TextDB::init()
     if (!_needs_update())
         return;
 //Fixme_ja(Stop_regerate_db)
-    //_regenerate_db();
+    _regenerate_db();
 
     if (!open_db())
     {
@@ -500,6 +500,7 @@ static void _parse_text_db(LineInput &inf, DBM *db)
     string key;
     string value;
 
+    bool first_line = false;
     bool in_entry = false;
     while (!inf.eof())
     {
@@ -526,11 +527,25 @@ static void _parse_text_db(LineInput &inf, DBM *db)
             key = line;
             trim_string(key);
             lowercase(key);
+            first_line = true;
         }
         else //Fixme_ja
         {
-				trim_string_right(line);
-				value += line; //(+ "\n";)
+            trim_string_right(line);
+
+            if (line == "" && first_line)
+                continue;            
+
+            if (first_line)
+            {
+                first_line = false;
+            }
+            else
+            {
+                value += "\n";
+            }
+
+            value += line; //(+ "\n";)
         }
     }
 
