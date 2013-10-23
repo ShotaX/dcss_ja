@@ -47,7 +47,7 @@ _colour_name_
 空色
 #%azure
 
-beige
+ベージュ
 #%beige
 
 黒
@@ -56,16 +56,16 @@ beige
 青
 #%blue
 
-bronze
+ブロンズ
 #%bronze
 
 茶色
 #%brown
 
-charcoal
+墨色
 #%charcoal
 
-chartreuse
+明るい黄緑色
 #%chartreuse
 
 コバルトブルー
@@ -77,7 +77,7 @@ chartreuse
 シアン
 #%cyan
 
-dun
+焦げ茶色
 #%dun
 
 金色
@@ -89,13 +89,13 @@ dun
 灰色
 #%grey
 
-gridelin
+灰青紫
 #%gridelin
 
-indigo
+藍色
 #%indigo
 
-lavender
+ラベンダー
 #%lavender
 
 黄緑
@@ -107,13 +107,13 @@ lavender
 深紅
 #%magenta
 
-marigold
+マリーゴールド
 #%marigold
 
-mauve
+藤色
 #%mauve
 
-ochre
+黄土色
 #%ochre
 
 オレンジ
@@ -128,10 +128,10 @@ ochre
 赤
 #%red
 
-rubric
+朱色
 #%rubric
 
-scarlet
+緋色
 #%scarlet
 
 銀色
@@ -140,7 +140,7 @@ scarlet
 琥珀色
 #%umber
 
-viridian
+青緑色
 #%viridian
 
 白
@@ -159,69 +159,69 @@ glowing_colour_name
 %%%%
 _writing_adj_
 
-angular
+角ばった
 #%angular
 
-blocky
+塊状の
 #%blocky
 
-bold
+大胆な
 #%bold
 
-faded
+色あせた
 #%faded
 
-flowing
+流れるような
 #%flowing
 
-glowing
+輝く
 #%glowing
 
-shifting
+偏移する
 #%shifting
 
-sinuous
+しなやかな
 #%sinuous
 
-spidery
+蜘蛛のような
 #%spidery
 
-writhing
+身もだえするような
 #%writhing
 %%%%
 _writing_noun_
 
-binary code
+バイナリコード
 #%binary code
 
-figures
+統計
 #%figures
 
-glyphs
+グリフ
 #%glyphs
 
-hieroglyphics
+象形
 #%hieroglyphics
 
-print-out
+プリントアウト
 #%print-out
 
-runes
+ルーン
 #%runes
 
-scrawl
+走り書き
 #%scrawl
 
-sigils
+印章
 #%sigils
 
-symbols
+紋章
 #%symbols
 
-text
+テキスト
 #%text
 
-writing
+書き込み
 #%writing
 %%%%
 # Tome of Destruction: "The book opens to a page covered in XXX."
@@ -235,120 +235,120 @@ writing_name
 
 @_writing_adj_@ @_writing_noun_@
 %%%%
-# random uselessness: "You smell XXX."
+# random uselessness: "You smell XXX." //Fixme_ja
 smell_name
 
-baking bread
+焼いたパン
 #%baking bread
 
-burning hair
+髪を燃やしたような
 #%burning hair
 
-coffee
+コーヒー
 #%coffee
 
-fire and brimstone
+火と硫黄
 #%fire and brimstone
 
-pepper
+胡椒
 #%pepper
 
-salt
+塩
 #%salt
 
-something weird
+奇妙な何か
 #%something weird
 
-sulphur
+硫黄
 #%sulphur
 
-tea
+茶
 #%tea
 
-wet wool
+濡れたウール
 #%wet wool
 %%%%
 # This doesn't necessarily have to make sense. For example, a name of a
 # fruit or an insect will work here.
 _roaring_animal_name_
 
-albino dragon
+白子のドラゴン
 #%albino dragon
 
-dragon
+ドラゴン
 #%dragon
 
-eggplant
+象
 #%eggplant
 
-frog
+カエル
 #%frog
 
-human
+人間
 #%human
 
-millipede
+ヤスデ
 #%millipede
 
-pill bug
+錠剤状の虫
 #%pill bug
 
-slug
+ナメクジ
 #%slug
 
-yak
+ヤク
 #%yak
 %%%%
 # random uselessness: "You hear XXX."
 sound_name
 
-a crunching sound
+サクサクという音
 #%a crunching sound
 
-a very strange noise
+非常に奇妙な騒音
 #%a very strange noise
 
-a very strange noise indeed
+本当に非常に奇妙な騒音
 #%a very strange noise indeed
 
-a voice calling someone else's name
+他の誰かの名前を呼ぶ声
 #%a voice calling someone else's name
 
-roaring flames
+炎の轟音
 #%roaring flames
 
-snatches of song
+断片的な音楽
 #%snatches of song
 
-the distant roaring of an enraged @_roaring_animal_name_@
+遠くの@_roaring_animal_name_@の激怒の咆哮
 #%the distant roaring of an enraged @_roaring_animal_name_@
 
-the chiming of a distant gong
+遠くのゴングのなる音
 #%the chiming of a distant gong
 
-the tinkle of an enormous bell
+巨大な鐘がリンリンとなる音
 #%the tinkle of an enormous bell
 %%%%
 # Used both by Summon Horrible Things and Malign Gateway.
 SHT_int_loss
 
-Your mind reels, touched by the horrors through the portal.
+あなたの精神は門を介して操作された
 #%Your mind reels, touched by the horrors through the portal.
 
-You quiver within your mortal coil, caressed by the liquid insanity through the scintillating gateway.
+機知に富んだ門を通して液状の狂気に撫でられ、あなたは此方側で震えた
 #%You quiver within your mortal coil, caressed by the liquid insanity through the scintillating gateway.
 
 # Bal-Sagoth
-The summoning rite seems to take a not insignificant toll on your sanity.
+召喚儀式は無視する事の出来ないほどあなたの正気を蝕ばむように見えた
 #%The summoning rite seems to take a not insignificant toll on your sanity.
 
-You have a brief vision of a great black cyclopean cityscape with towering stygian walls.
+あなたはそびえ立つ暗黒壁を持った偉大な黒き巨石街の簡潔な風景を見てしまった
 #%You have a brief vision of a great black cyclopean cityscape with towering stygian walls.
 
-Your vision is obscured by outlandish glyphs which seem to writhe squamously and alter their shape.
+あなたの視界は身を捩る鱗と形状が変化する形状によって覆い隠された
 #%Your vision is obscured by outlandish glyphs which seem to writhe squamously and alter their shape.
 
-You feel inexorably dogged by some nameless and implacable gloom.
+あなたは無名の執念深い憂鬱によって容赦無く苦悩させられていると感じた
 #%You feel inexorably dogged by some nameless and implacable gloom.
 #-----------
 
@@ -420,19 +420,19 @@ Lucidity slithers from your feeble grasp.
 %%%%
 welcome_spam
 
-Will you prevail where others failed? Will you get the Orb of Zot?
+あなたは他の者の失敗を乗り越えられるだろうか? ゾットのオーブを手にすることはできるだろうか?
 #%Will you prevail where others failed? Will you get the Orb of Zot?
 
-The bosom of this dungeon contains the most powerful artefact, the Orb of Zot.
+この迷宮の最奥地には最も強力なアーティファクト、ゾットのオーブが収められている
 #%The bosom of this dungeon contains the most powerful artefact, the Orb of Zot.
 
-Will you be the one to retrieve the fabulous Orb of Zot from the depths?
+あなたは最深層から素晴らしきゾットのオーブを取り戻す者だろうか？
 #%Will you be the one to retrieve the fabulous Orb of Zot from the depths?
 
-The destiny of this world depends on the Orb of Zot. Go down and get it!
+この世界の運命はゾットのオーブに委ねられている！迷宮を潜り、それを手にするのだ！
 #%The destiny of this world depends on the Orb of Zot. Go down and get it!
 
-They say that the Orb of Zot exists deep within this dungeon, but nobody has ever found it.
+皆はゾットのオーブがこの迷宮の奥に存在しているが、それを手にした者は居ないと言っている
 #%They say that the Orb of Zot exists deep within this dungeon, but nobody has ever found it.
 %%%%
 welcome_spam Zot Defence
@@ -450,144 +450,144 @@ hell_effect
 
 {{
 if you.can_smell() then
-    return "You smell brimstone."
+    return "あなたは硫黄の匂いを嗅いだ"
 else
-    return "Brimstone rains from above."
+    return "上から硫黄の雨が降り注いだ"
 end
 }}
 
-You feel lost and a long, long way from home...
+あなたは迷子になって、帰るには長い長い道のりがあるように感じた
 #%You feel lost and a long, long way from home...
 
-You shiver with fear.
+あなたは恐怖に打ち震えた
 #%You shiver with fear.
 
-You feel a terrible foreboding...
+あなたは恐ろしい死の予感を感じた……
 #%WARN:You feel a terrible foreboding...
 
-Something frightening happens.
+何か恐ろしい何かが起きた
 #%WARN:Something frightening happens.
 
-You sense an ancient evil watching you...
+あなたは古代の悪霊に監視されていることを意識した
 #%WARN:You sense an ancient evil watching you...
 
-You suddenly feel all small and vulnerable.
+あなたは突然、矮小さと脆さを意識した
 #%WARN:You suddenly feel all small and vulnerable.
 
-You sense a hostile presence.
+あなたは敵対的な存在を感じた
 #%WARN:You sense a hostile presence.
 
-"You will not leave this place."
+「お前はここから生きては出られぬ」
 #%TALK:"You will not leave this place."
 
-"Die, mortal!"
+「死ね、定命の者よ！」
 #%TALK:"Die, mortal!"
 
-"We do not forgive those who trespass against us!"
+「我らに背いた者は決して許さぬ！」
 #%TALK:"We do not forgive those who trespass against us!"
 
-"Trespassers are not welcome here!"
+「侵入者はここでは歓迎されぬ！」
 #%TALK:"Trespassers are not welcome here!"
 
-"You do not belong in this place!"
+「お前はここにいていい者ではない！」
 #%TALK:"You do not belong in this place!"
 
-"Leave now, before it is too late!"
+「さっさと失せろ。ぐずぐずするな！」
 #%TALK:"Leave now, before it is too late!"
 
-"We have you now!"
+「お前はもう我らの物だ！」
 #%TALK:"We have you now!"
 
-SOUND:A gut-wrenching scream fills the air!
+SOUND:内臓に響くような絶叫が大気を満たした!
 #%SOUND:A gut-wrenching scream fills the air!
 
-SOUND:You hear words spoken in a strange and terrible language...
+SOUND:あなたは奇怪で恐ろしい言葉を耳にした……
 #%SOUND:You hear words spoken in a strange and terrible language...
 
-SOUND:You hear diabolical laughter!
+SOUND:あなたは悪魔のような笑い声を耳にした！
 #%SOUND:You hear diabolical laughter!
 %%%%
 eating_cheese
 
-Mmm...@_cheese_kind_@.
+ウムム……@_cheese_kind_@.
 #%Mmm...@_cheese_kind_@.
 
 %%%%
 _cheese_kind_
 
-Cheddar
+チェダーチーズ
 #%Cheddar
 
-Edam
+エダムチーズ
 #%Edam
 
-Wensleydale
+レーデールチーズ
 #%Wensleydale
 
-Camembert
+カマンベールチーズ
 #%Camembert
 
-Goat cheese
+山羊のチーズ
 #%Goat cheese
 
-Fruit cheese
+フルーツチーズ
 #%Fruit cheese
 
-Mozzarella
+モッツァレラ
 #%Mozzarella
 
-Sheep cheese
+羊のチーズ
 #%Sheep cheese
 
-Yak cheese
+ヤクのチーズ
 #%Yak cheese
 %%%%
 eating_pizza
 
-@_carni_mmm_@ Ham and pineapple.
+@_carni_mmm_@ ハム&パイナップルピザだ
 #%@_carni_mmm_@ Ham and pineapple.
 
-@_carni_mmm_@ Super Supreme.
+@_carni_mmm_@ 超最高にうまいピザだ！
 #%@_carni_mmm_@ Super Supreme.
 
 # Apparently, in some locales "pepperoni" is a word for sausage rather than
 # a type of bell peppers like in Europe.
-@_carni_mmm_@ Pepperoni.
+@_carni_mmm_@ ペパローニピザだ
 #%@_carni_mmm_@ Pepperoni.
 
 {{
 if you.race() == "Ghoul" then
-    return "Anchovies... pretty bad, even for you."
+    return "アンチョビ…ちょっと物足りない"
 else
-    return "Yeuchh! Anchovies."
+    return "うへ!アンチョビピザだ!"
 end
 }}
 
-@_carni_mmm_@ Chicken.
+@_carni_mmm_@ チキンピザだ
 #%@_carni_mmm_@ Chicken.
 
-Mmm... That's the fabled Pandemonium Pizza!
+むむむ…これは伝説のパンデモニウムピザだ!
 #%Mmm... That's the fabled Pandemonium Pizza!
 
-Mmm... Cheesy.
+むむむ… チーズたっぷりのピザだ
 #%Mmm... Cheesy.
 
-@_herbi_mmm_@ Vegetable.
+@_herbi_mmm_@ 野菜のピザだ
 #%@_herbi_mmm_@ Vegetable.
 
-@_herbi_mmm_@ Peppers.
+@_herbi_mmm_@ 胡椒たっぷりのピザだ
 #%@_herbi_mmm_@ Peppers.
 
-@_herbi_mmm_@ Mushroom.
+@_herbi_mmm_@ マッシュルームピザだ
 #%@_herbi_mmm_@ Mushroom.
 %%%%
 _carni_mmm_
 
 {{
 if you.mutation("herbivorous") > 0 then
-    return "Yeuchh!"
+    return "うへ！"
 else
-    return "Mmm..."
+    return "むむむ…"
 end
 }}
 %%%%
@@ -595,9 +595,9 @@ _herbi_mmm_
 
 {{
 if you.mutation("carnivorous") > 0 then
-    return "Yeuchh!"
+    return "うへ！"
 else
-    return "Mmm..."
+    return "むむむ…"
 end
 }}
 %%%%
