@@ -640,91 +640,124 @@ recite_closure
 『アーメン!』
 #"Amen!"
 
+『ジンに栄光あれ！』
 #"Glory to Zin!"
 
-
+『……と書かれていた』
 #"And thus was it written."
 
+『……とジンはおっしゃられた』
 #"So sayeth Zin."
 
-#"Purity be upon you all."
+『…あなた方全てが純潔になる』
+#"Purity be upon you all."//訳?
 %%%%
 ##########################
 # Xom's response to prayer
 ##########################
 Xom prayer
 
-Xom slaps you with @_trout_species_@ trout!
+ゾムは@_trout_species_@鱒であなたを叩いた!
+#Xom slaps you with @_trout_species_@ trout!
 
-Xom toots happily.
+ゾムは楽しそうに口笛を吹いた
+#Xom toots happily.
 
-Xom says: I'm watching you, my @_xom_child_@ child.
+ゾムは言った：『我はお前を見ている、私の@_xom_child_@息子よ』
+#Xom says: I'm watching you, my @_xom_child_@ child.
 
-You hear crickets chirping.
+あなたはコオロギが囀る音を聞いた
+#You hear crickets chirping.
 
 w:1
-You feel someone pinching you. As you turn, you see no one.
+あなたは誰かがあなたを抓んだと感じた。振り返ると誰もいなかった
+#You feel someone pinching you. As you turn, you see no one.
 
 w:1
-Xom says: Amen!
+ゾムは言った：『エイメン!』
+#Xom says: Amen!
 %%%%
 _trout_species_
 
-a rainbow
+虹
+#a rainbow
 
-a flathead
+平たい頭の
+#a flathead
 
-a cutthroat
+喉の切られた
+#a cutthroat
 
-a bull
+雄
+#a bull
 
-a silver
+銀
+#a silver
 
 w:3
 @_trout_species_rare_@
 %%%%
 _trout_species_rare_
 
-a complex
+複雑な
+#a complex
 
-a polygonal
+多角形の
+#a polygonal
 
-an imaginary
+虚数の
+#an imaginary
 
-an inverse
+逆数の
+#an inverse
 
-an unlikely
+ありそうもない
+#an unlikely
 
-a used
+中古の
+#a used
 
-a second-hand
+二手の
+#a second-hand
 
-a prohibited
+禁じられた
+#a prohibited
 
-a challenging
+やりがいのある
+#a challenging
 
 w:2
-a kilgore
+キルゴアの
+#a kilgore
 %%%%
 _xom_child_
 
-misbegotten
+出来損ないの
+#misbegotten
 
-bastard
+ろくでなし
+#bastard
 
-ugly
+醜い
+#ugly
 
-red-headed step
+撥ねた赤毛の
+#red-headed step
 
-silly
+愚かな
+#silly
 
-worthless
+価値の無い
+#worthless
 
-prodigal
+放蕩な
+#prodigal
 
-insane
+非常識な
+#insane
 
-naughty
+いたづらな
+#naughty
 %%%%
 ######################################
 # Welcome messages on game restoration
@@ -735,15 +768,18 @@ Ashenzari penance
 %%%%
 Ashenzari welcome
 
-Ashenzari says: Partake of my vision. Partake of my curse.
+アシェンザリは言った:『私のヴィジョンを共にしよう。私の呪いを共にしよう』
+#Ashenzari says: Partake of my vision. Partake of my curse.
 %%%%
 Beogh penance
 
-Beogh says: Show any more mercy to foul non-orcs and I'll have you killed.
+ビオは言った：『オーク以外の種族にこれ以上慈悲を示すならば、我は貴様を殺さなければならない』
+#Beogh says: Show any more mercy to foul non-orcs and I'll have you killed.
 %%%%
 Beogh welcome
 
-Beogh says: Drown the unbelievers in a sea of blood!
+ビオは言った：『異教徒を血の海で溺死させるのだ!』
+#Beogh says: Drown the unbelievers in a sea of blood!
 %%%%
 Beogh newgame
 
@@ -751,19 +787,23 @@ Beogh newgame
 %%%%
 Cheibriados penance
 
-Cheibriados says: Don't be so hasty! Slow down!
+ケイブリアドスは言った：『そんなに急いではいけない！ゆっくりするのだ！』
+#Cheibriados says: Don't be so hasty! Slow down!
 %%%%
 Cheibriados welcome
 
-Cheibriados says: Take it easy.
+ケイブリアドスは言った：『ゆっくりしていってね』
+#Cheibriados says: Take it easy.
 %%%%
 Elyvilon penance
 
-Elyvilon says: I plead of you, be more careful when helping others!
+エリヴィロンは言った：『私はあなたを弁護しましょう、他人を助ける時により注意するのです!』
+#Elyvilon says: I plead of you, be more careful when helping others!
 %%%%
 Elyvilon welcome
 
-Elyvilon says: Go forth and aid the weak!
+エリヴィロンは言った：『世界を旅し弱き者を助けよ！』
+#Elyvilon says: Go forth and aid the weak!
 %%%%
 Elyvilon newgame
 
@@ -771,11 +811,13 @@ Elyvilon newgame
 %%%%
 Fedhas penance
 
-Fedhas protests your encroaching upon nature.
+フェダスはあなたが自然の掟に侵入することに抗議した
+#Fedhas protests your encroaching upon nature.
 %%%%
 Fedhas welcome
 
-Fedhas says: Spread life and death.
+フェダスは言った：『生命とその終わりを広げるのだ』
+#Fedhas says: Spread life and death.
 %%%%
 Jiyva penance
 
@@ -783,7 +825,8 @@ Jiyva penance
 %%%%
 Jiyva welcome
 
-Slime for the Slime God!
+スライムの神は微笑んだ
+#Slime for the Slime God!
 %%%%
 Kikubaaqudgha penance
 
@@ -791,7 +834,8 @@ Kikubaaqudgha penance
 %%%%
 Kikubaaqudgha welcome
 
-Kikubaaqudgha says: Spread unending torment and darkness!
+キクバークァグァは言った：『終わりなき苦痛と暗闇を拡散するのだ!』
+#Kikubaaqudgha says: Spread unending torment and darkness!
 %%%%
 Lugonu penance
 
@@ -799,11 +843,13 @@ Lugonu penance
 %%%%
 Lugonu welcome
 
-Lugonu says: Spread carnage and corruption!
+ルゴヌは言った：『大虐殺と崩壊を拡散せよ!』
+#Lugonu says: Spread carnage and corruption!
 %%%%
 Lugonu newgame
 
-Lugonu says: Take this gate or call upon me to unleash you onto the world, my servant!
+ルゴヌは言った：『迷宮に入るために近くの門に入るか、私の力を使うのだ。わが下僕よ！』
+#Lugonu says: Take this gate or call upon me to unleash you onto the world, my servant!
 %%%%
 Makhleb penance
 
@@ -811,7 +857,8 @@ Makhleb penance
 %%%%
 Makhleb welcome
 
-Blood and souls for Makhleb!
+血と魂をマクレブに捧げよ!
+#Blood and souls for Makhleb!
 %%%%
 Nemelex Xobeh penance
 
@@ -819,39 +866,48 @@ Nemelex Xobeh penance
 %%%%
 Nemelex Xobeh welcome
 
-Nemelex Xobeh says: It's all in the cards!
+ネメレクス・ソベーは言った：『カードには全てがある!』
+#Nemelex Xobeh says: It's all in the cards!
 %%%%
 Okawaru penance
 
-Okawaru says: Don't be a dastardly coward this time!
+オカワルは言った：『今度は卑劣な臆病者になってはならんぞ!』
+#Okawaru says: Don't be a dastardly coward this time!
 %%%%
 Okawaru welcome
 
-Okawaru says: Bring me glory in combat!
+オカワルは言った：『戦闘によって私に栄光をもたらすのだ!』
+#Okawaru says: Bring me glory in combat!
 %%%%
 Sif Muna penance
 
-Sif Muna rages: Pay more attention this time!
+シフ＝ムーナは激怒した：『今度はより多くの注意を払いなさい!』
+#Sif Muna rages: Pay more attention this time!
 %%%%
 Sif Muna welcome
 
-Sif Muna whispers: I know many secrets...
+シフ=ムーナは囁いた：『わたしは数多の秘密を知っている……』
+#Sif Muna whispers: I know many secrets...
 %%%%
 the Shining One penance
 
-The Shining One says: Being a martyr may wash away your sin!
+『輝ける者』は言った：『殉教者であることはあなたの罪を洗い流すだろう!』
+#The Shining One says: Being a martyr may wash away your sin!
 %%%%
 the Shining One welcome
 
-The Shining One says: Lead the forces of light to victory!
+『輝ける者』は言った：『光の力を勝利に導くのだ!』
+#The Shining One says: Lead the forces of light to victory!
 %%%%
 Trog penance
 
+トログはつぶやいた：『ああ…再びちっぽけな三文文士になってしまったか……』
 Trog mutters: Ah, it's this puny scribbler again...
 %%%%
 Trog welcome
 
-Trog says: Kill them all!
+トログは言った：『皆殺しだ！』
+#Trog says: Kill them all!
 %%%%
 Trog newgame
 
@@ -863,7 +919,8 @@ Vehumet penance
 %%%%
 Vehumet welcome
 
-Vehumet says: Let it end in hellfire!
+ヴェフメットは言った：『地獄の業火で終結させるのだ!』
+#Vehumet says: Let it end in hellfire!
 %%%%
 Xom bored
 
@@ -875,7 +932,8 @@ Xom yawns.
 %%%%
 Xom newgame
 
-Xom says: A new plaything!
+ゾムは言った：『お前が新しいオモチャだ！』
+#Xom says: A new plaything!
 %%%%
 Xom generic
 
@@ -885,10 +943,12 @@ Xom titters.
 %%%%
 Yredelemnul penance
 
-Yredelemnul says: All are equal in death! Holy martyrdom means nothing!
+イレデレンヌルは言った：『全ては死に等しい!聖なる殉教は何も意味しない!』
+#Yredelemnul says: All are equal in death! Holy martyrdom means nothing!
 %%%%
 Yredelemnul welcome
 
+イレデレンヌルは言った：『黒き松明を運べ!死体の偶像を喚起せよ!』
 Yredelemnul says: Carry the black torch! Rouse the idle dead!
 %%%%
 Yredelemnul newgame
@@ -897,13 +957,16 @@ Yredelemnul newgame
 %%%%
 Zin penance
 
-Zin castigates you for your disobedience of the Law.
+ジンはあなたの戒律違反を非難した
+#Zin castigates you for your disobedience of the Law.
 
-Zin sternly explains the importance of @_important_subject_@
+ジンは@_important_subject_@の重要性を厳しく説いた
+#Zin sternly explains the importance of @_important_subject_@
 %%%%
 Zin welcome
 
-Zin says: Spread the light, my child.
+ジンは言った：『わが信徒よ、光の版図を広めよ』
+#Zin says: Spread the light, my child.
 %%%%
 Zin newgame
 
