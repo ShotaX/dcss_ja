@@ -109,7 +109,7 @@ local function move_towards(dx, dy)
     if move == nil then move = try_move(sign(dx), 0) end
   end
   if move == nil then
-    crawl.mpr("ターゲットの地点まで向かうことが出来ない!")
+    crawl.mpr("Failed to move towards target.")
   else
     crawl.process_keys(move)
   end
@@ -177,7 +177,7 @@ local function is_candidate_for_attack(x,y)
     return false
   end
   if m:is_firewood() then
-  --crawl.mpr("……それは炎上している樹だ")
+  --crawl.mpr("... is firewood.")
     if string.find(m:name(), "ballistomycete") then
       return true
     end
@@ -251,13 +251,13 @@ function attack(allow_movement)
   local x, y, info = get_target(not allow_movement)
   local caught = you.caught()
   if you.confused() then
-    crawl.mpr("あなたは混乱しすぎている")
+    crawl.mpr("You are too confused!")
   elseif caught then
-    crawl.mpr("あなたは捕獲されている!")
+    crawl.mpr("You are " .. caught .. "!")
   elseif hp_is_low() then
-    crawl.mpr("あなたは戦闘を行うには傷つき過ぎている!")
+    crawl.mpr("You are too injured to fight recklessly!")
   elseif info == nil then
-    crawl.mpr("視界内にモンスターが見当たらない！")
+    crawl.mpr("No target in view!")
   elseif info.attack_type == 3 then
     if AUTOFIGHT_FIRE_STOP then
       attack_fire_stop(x,y)
@@ -271,7 +271,7 @@ function attack(allow_movement)
   elseif allow_movement then
     move_towards(x,y)
   else
-    crawl.mpr("敵が射程内に居ない！")
+    crawl.mpr("No target in range!")
   end
 end
 

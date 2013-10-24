@@ -6,6 +6,7 @@
 #include "process_desc.h"
 
 #include "abl-show.h"
+#include "database.h"
 #include "cio.h"
 #include "libutil.h"
 #include "macro.h"

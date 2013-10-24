@@ -407,7 +407,7 @@ tile_font_lbl_file  = ipag.ttf
 #
 # mouse_input      = true
 #wiz_mode         = yes
-# char_set         = ascii
+char_set         = ascii
 # use_fake_player_cursor = false
 #
 # Translation to use (in 0.11, only badly incomplete descriptions; Polish

@@ -1,457 +1,457 @@
 %%%%
 Aizul
 
-かつては伝説の宝物庫を守護するサーペントの衛兵の筆頭であったが、
-彼の寝ている間に泥棒が宝物庫に侵入したことでその地位を失ってしまった。
-彼は今ダンジョンを這い回り、全ての略奪を行うであろう輩へ復讐せんと欲している。
-彼は卓越した魔法の使い手であるが、
-彼と同種のモンスターと同様に近接戦闘は致命的に苦手だ。
+���Ă͓`���̕󕨌ɂ���삷��T�[�y���g�̉q���̕M���ł��������A
+�ނ̐Q�Ă���ԂɓD�_���󕨌ɂɐN���������Ƃł��̒n�ʂ������Ă��܂����B
+�ނ͍��_���W�����𔇂����A�S�Ă̗��D���s���ł��낤�y�֕��Q����Ɨ~���Ă���B
+�ނ͑�z�������@�̎g����ł��邪�A
+�ނƓ���̃����X�^�[�Ɠ��l�ɋߐڐ퓬�͒v���I�ɋ�肾�B
 %%%%
 Antaeus
 
-かつては強大で名の知れたタイタンであったが、自らの尊大さで身を滅ぼした。
-現在の彼は堕落して悪に染まった、
-コキュートスの凍った荒地を治める強大なデーモンである。
-彼の巨大な体躯はあなたが攻撃を当てることが容易であるかのように見えるが、生憎と
-最も強力なあらゆる手段をもってしても傷を負わせることができないと見ることもでき
-る。
+���Ă͋���Ŗ��̒m�ꂽ�^�C�^���ł��������A����̑��傳�Őg��łڂ����B
+���݂̔ނ͑����Ĉ��ɐ��܂����A
+�R�L���[�g�X�̓������r�n�����߂鋭��ȃf�[�����ł���B
+�ނ̋���ȑ̋�͂��Ȃ����U���𓖂Ă邱�Ƃ��e�Ղł��邩�̂悤�Ɍ����邪�A������
+�ł����͂Ȃ������i�������Ă��Ă����𕉂킹�邱�Ƃ��ł��Ȃ��ƌ��邱�Ƃ��ł�
+��B
 %%%%
 Arachne
 
-アラクネはかつて機織りに誰よりも秀でた人間であったが、呪いによって、半身は人、
-半身は蜘蛛という現在の姿に変えられてしまった。彼女は年をとることも無く、
-若く美しい人間の女性であるが、
-ひどく醜い巨大な蜘蛛の脚と腹部を伴った姿をしている。
+�A���N�l�͂��ċ@�D��ɒN�����G�ł��l�Ԃł��������A�􂢂ɂ���āA���g�͐l�A
+���g�͒w偂Ƃ������݂̎p�ɕς����Ă��܂����B�ޏ��͔N���Ƃ邱�Ƃ������A
+�Ⴍ�������l�Ԃ̏����ł��邪�A
+�Ђǂ��X������Ȓw偂̋r�ƕ����𔺂����p�����Ă���B
 
-齢数千にもなる彼女は魔法や数多の計略を身に付けている。
-彼女のペットがあなたを消化し、体液を飲み尽くす間、
-蜘蛛の巣や魔法の罠に掛けられることを覚悟せよ。
+���ɂ��Ȃ�ޏ��͖��@�␔���̌v����g�ɕt���Ă���B
+�ޏ��̃y�b�g�����Ȃ����������A�̉t�����ݐs�����ԁA
+�w偂̑��▂�@��㩂Ɋ|�����邱�Ƃ��o�傹��B
 %%%%
 Asmodeus
 
-炎に取り巻かれた地獄の深層に居を構える偉大なデーモンの一人だ。
+���Ɏ�芪���ꂽ�n���̐[�w�ɋ����\����̑�ȃf�[�����̈�l���B
 %%%%
 Azrael
 
-強力で、好戦的なイフリートだ。(好戦的じゃないイフリートがいるんですか？)
+���͂ŁA�D��I�ȃC�t���[�g���B(�D��I����Ȃ��C�t���[�g�������ł����H)
 %%%%
 Blork the orc
 
-著しく太った醜悪なオークだ。 He seems to have scavenged a pair of
+�������������X���ȃI�[�N���B He seems to have scavenged a pair of
 rainbow-coloured suspenders from somewhere. They're not helping.
 %%%%
 Boris
 
-古代の強力なリッチだ。他の純粋なリッチと同様にボリスも不死の存在であり、
-完全にバラバラになった時でさえ、その乾燥した骸骨の体を再生させる。
+�Ñ�̋��͂ȃ��b�`���B���̏����ȃ��b�`�Ɠ��l�Ƀ{���X���s���̑��݂ł���A
+���S�Ƀo���o���ɂȂ������ł����A���̊��������[���̑̂��Đ�������B
 %%%%
 Cerebov
 
-激怒した凶暴なデーモンだ。セレボブは輝く黄金の鎧を身につけ、
-巨大な捻れた剣を帯びた巨人として現れる。
+���{�������\�ȃf�[�������B�Z���{�u�͋P�������̊Z��g�ɂ��A
+����ȔP�ꂽ����тт����l�Ƃ��Č����B
 %%%%
 Chuck
 
-チャックは岩を愛するストーンジャイアントだ。大きいことはいいことだ
-！長年にわたり、彼は稀少であったり魔法が込められた岩など、
-かなりの愛蔵品を集めている。
+�`���b�N�͊��������X�g�[���W���C�A���g���B�傫�����Ƃ͂������Ƃ�
+�I���N�ɂ킽��A�ނ͋H���ł������薂�@�����߂�ꂽ��ȂǁA
+���Ȃ�̈����i���W�߂Ă���B
 %%%%
 Crazy Yiuf
 
-長い銀のあご髭を蓄え、六尺棒とクロークを身につけた、くたびれた老齢のノールだ。
-彼はまるで神話の登場人物のようだ！ちょっと待った、
-彼のひげは耳から掛けられてないか？
+������̂����E��~���A�Z�ږ_�ƃN���[�N��g�ɂ����A�����тꂽ�V��̃m�[�����B
+�ނ͂܂�Ő_�b�̓o��l���̂悤���I������Ƒ҂����A
+�ނ̂Ђ��͎�����|�����ĂȂ����H
 %%%%
 Dispater
 
-鉄の都ディースの支配者だ。
+�S�̓s�f�B�[�X�̎x�z�҂��B
 %%%%
 Dissolution
 
-スライムの穴ぐらにはかつて栄えた文明があり、
-この者はそこで崇拝された神の預言者であった。
-この都市が現在の住人に侵略されたとき、生き残ったのは彼だけであった。
-何故なら彼だけはスライムの神に忠誠を誓ったからだ。
-彼は巨大な毒のある分泌物の塊になったが、彼はまだその知性を保っている。
-彼は形を保つ者全てへの憎しみに満たされている。
+�X���C���̌�����ɂ͂��ĉh��������������A
+���̎҂͂����Ő��q���ꂽ�_�̗a���҂ł������B
+���̓s�s�����݂̏Z�l�ɐN�����ꂽ�Ƃ��A�����c�����͔̂ނ����ł������B
+���̂Ȃ�ނ����̓X���C���̐_�ɒ����𐾂������炾�B
+�ނ͋���ȓł̂��镪�啨�̉�ɂȂ������A�ނ͂܂����̒m����ۂ��Ă���B
+�ނ͌`��ۂґS�Ăւ̑����݂ɖ�������Ă���B
 %%%%
 Donald
 
 {{
-    local descript = "あなたと同じく、オーブを探す冒険者だ。"
+    local descript = "���Ȃ��Ɠ������A�I�[�u��T���`���҂��B"
 
     if you.race() ~= "Merfolk" and you.race() ~= "Octopode" then
-        descript = descript .. " あなたとは違い、しかし"
+        descript = descript .. " ���Ȃ��Ƃ͈Ⴂ�A������"
     else
-        descript = descript .. "しかし"
+        descript = descript .. "������"
     end
 
-    descript = descript .. "彼はこのことをよく思っていないが、
-まるで鶏のように水を渡ることができる。"
+    descript = descript .. "�ނ͂��̂��Ƃ��悭�v���Ă��Ȃ����A
+�܂�Ō{�̂悤�ɐ���n�邱�Ƃ��ł���B"
 
     return descript
 }}
 %%%%
 Dowan
 
-美しいが自惚れの強いエルフだ。彼は魔法への適性があり、
-その他のことにもそれなりだ。
-彼の能力は双子の妹デュヴェッサの戦闘技術を完全に補完するためのものだ。
+��������������̋����G���t���B�ނ͖��@�ւ̓K��������A
+���̑��̂��Ƃɂ�����Ȃ肾�B
+�ނ̔\�͂͑o�q�̖��f�����F�b�T�̐퓬�Z�p�����S�ɕ⊮���邽�߂̂��̂��B
 %%%%
 Duvessa
 
-特に変わったところのないエルフの戦士だ。
-彼女はあらゆる格闘手段に専門的に通じているが、そのために自信過剰になっている。
-彼女の力は双子の兄ドウェインの魔法の力によって補完される。
+���ɕς�����Ƃ���̂Ȃ��G���t�̐�m���B
+�ޏ��͂�����i����i�ɐ��I�ɒʂ��Ă��邪�A���̂��߂Ɏ��M�ߏ�ɂȂ��Ă���B
+�ޏ��̗͂͑o�q�̌Z�h�E�F�C���̖��@�̗͂ɂ���ĕ⊮�����B
 %%%%
 Edmund
 
-嫉妬深い、シグムンドの弟だ(正確には九人兄弟の末っ子だ
-)。彼はシグムンドのような魔法の力を全く持っていないが、
-それを戦闘と金儲けの技術で補っている。
-彼は不運な冒険者を彼の持つ高価なフレイルと頭の回転を以って殺害することで、
-彼自身の優位性を証明せんと欲している。
+���i�[���A�V�O�����h�̒킾(���m�ɂ͋�l�Z��̖����q��
+)�B�ނ̓V�O�����h�̂悤�Ȗ��@�̗͂�S�������Ă��Ȃ����A
+�����퓬�Ƌ��ׂ��̋Z�p�ŕ���Ă���B
+�ނ͕s�^�Ȗ`���҂�ނ̎������ȃt���C���Ɠ��̉�]���Ȃ��ĎE�Q���邱�ƂŁA
+�ގ��g�̗D�ʐ����ؖ�����Ɨ~���Ă���B
 %%%%
 Ereshkigal
 
-タルタロスの死の地獄を支配する恐るべき大悪魔だ。
+�^���^���X�̎��̒n�����x�z���鋰��ׂ��别�����B
 %%%%
 Erica
 
-美貌の女呪術師だ。
+���e�̏���p�t���B
 %%%%
 Erolcha
 
-とても狡猾なオーガメイジだ。
+�ƂĂ����ςȃI�[�K���C�W���B
 %%%%
 Eustachio
 
-長い口ひげを生やした召喚術師見習いだ。
-彼は名誉に関しておかしな考えを持っている。
+�������Ђ��𐶂₵�������p�t���K�����B
+�ނ͖��_�Ɋւ��Ă������ȍl���������Ă���B
 %%%%
 Frances
 
-かつて強大なパンデモニウムロードと戦って勝利し、
-デーモンの領土と貴族に対する影響力を手に入れた勇敢な戦士だ。
-その戦いで彼女は顔に大きな傷を負ったが、彼女はその傷を恥ではなく、
-むしろ名誉の証だと思っている。
+���ċ���ȃp���f���j�E�����[�h�Ɛ���ď������A
+�f�[�����̗̓y�ƋM���ɑ΂���e���͂���ɓ��ꂽ�E���Ȑ�m���B
+���̐킢�Ŕޏ��͊�ɑ傫�ȏ��𕉂������A�ޏ��͂��̏���p�ł͂Ȃ��A
+�ނ��떼�_�̏؂��Ǝv���Ă���B
 %%%%
 Frederick
 
-金縁のモノクルを身につけた、細身の魔法戦士だ。彼は自分にふさわしく、
-戦うに値する敵を探している。あなたではおそらくお眼鏡に適わないだろう。
+�����̃��m�N����g�ɂ����A�אg�̖��@��m���B�ނ͎����ɂӂ��킵���A
+�키�ɒl����G��T���Ă���B���Ȃ��ł͂����炭���ዾ�ɓK��Ȃ����낤�B
 %%%%
 Fannar
 
-高い地位を示すローブに身を包んだ、冷酷なエルフの魔道士だ。
-彼はダンジョンを静かに歩きながら、不気味なことに自らに囁きかけており、
-彼の通った後には空気の中に氷の結晶がたなびいている。
+�����n�ʂ��������[�u�ɐg���񂾁A�⍓�ȃG���t�̖����m���B
+�ނ̓_���W������Â��ɕ����Ȃ���A�s�C���Ȃ��ƂɎ���ɚ��������Ă���A
+�ނ̒ʂ�����ɂ͋�C�̒��ɕX�̌��������Ȃт��Ă���B
 
-遠い昔、ファンナールはその知性と霜の魔法への早熟な才能のお陰で人の羨む執政官の
-地位につき、エルフの大広間に法を施行する責任者になった。
-誰に尋ねても彼はかつて慈悲深いことで有名で、
-事実エルフたちが死霊術や悪魔術に手を染め始めたときでさえ、
-彼らを堕落や犯罪から遠ざけることにも熱心であった。
+�����́A�t�@���i�[���͂��̒m���Ƒ��̖��@�ւ̑��n�ȍ˔\�̂��A�Ől�̑A�ގ�������
+�n�ʂɂ��A�G���t�̑�L�Ԃɖ@���{�s����ӔC�҂ɂȂ����B
+�N�ɐq�˂Ă��ނ͂��Ď��ߐ[�����ƂŗL���ŁA
+�����G���t����������p�∫���p�Ɏ����ߎn�߂��Ƃ��ł����A
+�ނ�����ƍ߂��牓�����邱�Ƃɂ��M�S�ł������B
 
-幾世紀もの在職期間に、
-ファンナールの正義に忠実な姿勢は偏執的なものに捻じ曲がってしまい、
-暴政へと陥ってしまった。彼と最も親密だった支持者ですら現在では、
-彼の魔力は自滅的なものになり始めたと語っている。
-ファンナールは現在もエルフたちが邪悪へ手を染めることが無いよう務めている。
-自覚したくないのか自覚できないのか、彼自信が邪悪へ堕ちているというのに。
+�����I���̍ݐE���ԂɁA
+�t�@���i�[���̐��`�ɒ����Ȏp���͕Ύ��I�Ȃ��̂ɔP���Ȃ����Ă��܂��A
+�\���ւƊׂ��Ă��܂����B�ނƍł��e���������x���҂ł��猻�݂ł́A
+�ނ̖��͎͂��œI�Ȃ��̂ɂȂ�n�߂��ƌ���Ă���B
+�t�@���i�[���͌��݂��G���t�������׈��֎����߂邱�Ƃ������悤���߂Ă���B
+���o�������Ȃ��̂����o�ł��Ȃ��̂��A�ގ��M���׈��֑��Ă���Ƃ����̂ɁB
 %%%%
 Gastronok
 
-貪欲で驚くほど聡明なナメクジだ。彼は頭にとんがり帽子を斜めに被り、
-出くわしたあらゆるものを食い尽くすことに余念がない。
-彼はその帽子を彼がその知性と魔法の知識を得たのと同じ方法で手に入れた。
-－つまり以前の持ち主であった力ある魔法使いを食べることによって。
+�×~�ŋ����قǑ����ȃi���N�W���B�ނ͓��ɂƂ񂪂�X�q���΂߂ɔ��A
+�o���킵����������̂�H���s�������Ƃɗ]�O���Ȃ��B
+�ނ͂��̖X�q��ނ����̒m���Ɩ��@�̒m���𓾂��̂Ɠ������@�Ŏ�ɓ��ꂽ�B
+�|�܂�ȑO�̎�����ł������͂��閂�@�g����H�ׂ邱�Ƃɂ���āB
 %%%%
 Geryon
 
-巨大で三つの頭を持ち、羽の生えた大悪魔だ。この者は四つの地獄を守護している。
-伝説によれば、彼の銀色の角は地獄の門を開くのに用いられるらしい。
+����ŎO�̓��������A�H�̐������别�����B���̎҂͎l�̒n������삵�Ă���B
+�`���ɂ��΁A�ނ̋�F�̊p�͒n���̖���J���̂ɗp������炵���B
 %%%%
 Gloorx Vloq
 
-深淵の暗闇を身に纏った影のような姿の存在だ。
+�[���̈Èł�g�ɓZ�����e�̂悤�Ȏp�̑��݂��B
 %%%%
 Grinder
 
-かつて地獄の低層で拷問者として雇われていた無能な影のインプだ。
-彼はぶつぶつ文句を言ったり、馬鹿げた発言をする癖がある。
+���Ēn���̒�w�ō���҂Ƃ��Čق��Ă������\�ȉe�̃C���v���B
+�ނ͂ԂԂ������������A�n����������������Ȃ�����B
 %%%%
 Grum
 
-乱暴そうな見た目のノールだ。飼っていた軍犬の毛皮を身に着けている。
+���\�����Ȍ����ڂ̃m�[�����B�����Ă����R���̖є��g�ɒ����Ă���B
 %%%%
 Harold
 
-初老の賞金稼ぎだ。
-最後の仕事を終わらせたら賞金稼ぎを辞めたいと考えているようだ。
-彼はどこかに根を下ろし、家族と静かに暮らしたいと望んでいる。
-－あなたから奪った最後の賞金を使って。
+���V�̏܋��҂����B
+�Ō�̎d�����I��点����܋��҂������߂����ƍl���Ă���悤���B
+�ނ͂ǂ����ɍ������낵�A�Ƒ��ƐÂ��ɕ�炵�����Ɩ]��ł���B
+�|���Ȃ�����D�����Ō�̏܋����g���āB
 %%%%
 Ignacio
 
-定命の者は神の干渉無しには悪魔へと転じることはできないのだが、
-イグナシオはマクレブが彼の仕事への愛を見て、
-彼に微笑みかけたことで斯様なものへと変貌した。彼は今現在、
-彼の人生の楽しみを永遠に続けることを予定している。
+�薽�̎҂͐_�̊������ɂ͈����ւƓ]���邱�Ƃ͂ł��Ȃ��̂����A
+�C�O�i�V�I�̓}�N���u���ނ̎d���ւ̈������āA
+�ނɔ��΂݂��������ƂŎz�l�Ȃ��̂ւƕϖe�����B�ނ͍����݁A
+�ނ̐l���̊y���݂��i���ɑ����邱�Ƃ�\�肵�Ă���B
 
-彼の新しい姿に躯から生えている多くの鋭い刃があるが、
-彼は自分のお気に入りの斧を使い続け、その切れ味をあなたで試したいと望んでいる。
+�ނ̐V�����p�ɋ납�琶���Ă��鑽���̉s���n�����邪�A
+�ނ͎����̂��C�ɓ���̕����g�������A���̐؂ꖡ�����Ȃ��Ŏ��������Ɩ]��ł���B
 %%%%
 Ijyb
 
-小さくて不細工なゴブリンだ。何やら青いぼろを着ている。 He claims dominion over
+�������ĕs�׍H�ȃS�u�������B�������ڂ�𒅂Ă���B He claims dominion over
 this level of the dungeon; the punishment for trespassing is death.
 %%%%
 Ilsuiw
 
-狡猾な水棲の民の水の魔術師だ。彼女はその美貌と魔法の技巧を使い、
-愚かな冒険者たちに破滅をもたらす。
+���ςȐ����̖��̐��̖��p�t���B�ޏ��͂��̔��e�Ɩ��@�̋Z�I���g���A
+�����Ȗ`���҂����ɔj�ł������炷�B
 %%%%
 Jessica
 
-邪悪な魔女実習生だ。彼女は誰にも邪魔されずに暗黒の力の研究に打ち込める、
-静かで人目につかない場所を求めてこのダンジョンへとやってきた。
+�׈��Ȗ������K�����B�ޏ��͒N�ɂ��ז����ꂸ�ɈÍ��̗͂̌����ɑł����߂�A
+�Â��Ől�ڂɂ��Ȃ��ꏊ�����߂Ă��̃_���W�����ւƂ���Ă����B
 %%%%
 Jorgrun
 
-闇ドワーフの魔術師だ。周囲のダンジョンに実にうまく溶け込んでいる。
-彼は戦闘において強力な地の魔術を巧みに用いる。
+�Ńh���[�t�̖��p�t���B���͂̃_���W�����Ɏ��ɂ��܂��n������ł���B
+�ނ͐퓬�ɂ����ċ��͂Ȓn�̖��p���I�݂ɗp����B
 %%%%
 Jory
 
-ジョリーはかつては田舎の百姓であったが、
-気がつけば不死の強力なモンスターへと変身していた。それ以来無数の世紀を通して、
-彼は格闘と魔法の技術に磨きをかけ、多くの貴重品と財産を蓄えた。
+�W�����[�͂��Ă͓c�ɂ̕S���ł��������A
+�C�����Εs���̋��͂ȃ����X�^�[�ւƕϐg���Ă����B����ȗ������̐��I��ʂ��āA
+�ނ͊i���Ɩ��@�̋Z�p�ɖ����������A�����̋M�d�i�ƍ��Y��~�����B
 %%%%
 Joseph
 
-傭兵のようだ。
+�b���̂悤���B
 %%%%
 Josephine
 
-ひどく醜い老婆だ。顔はイボとほくろだらけで、ところどころ毛が生えている。
-ジョセフィーヌの容姿は見た者を欺き、
-か弱い老女であると考えさせるかもしれないが、
-彼女は実に手強い死霊術師なのである。
-黒魔術の行使は肉体へ被害をもたらし老化を早め、
-美しい女性であった彼女を醜い老婆へと変えてしまった。
+�Ђǂ��X���V�k���B��̓C�{�Ƃق��낾�炯�ŁA�Ƃ���ǂ���т������Ă���B
+�W���Z�t�B�[�k�̗e�p�͌����҂��\���A
+���ア�V���ł���ƍl�������邩������Ȃ����A
+�ޏ��͎��Ɏ苭������p�t�Ȃ̂ł���B
+�����p�̍s�g�͓��̂֔�Q�������炵�V���𑁂߁A
+�����������ł������ޏ����X���V�k�ւƕς��Ă��܂����B
 %%%%
 Khufu
 
-神への道の途上にある信じがたいほど強力な王だ。
+�_�ւ̓��̓r��ɂ���M���������قǋ��͂ȉ����B
 %%%%
 Kirke
 
-美貌の女魔術師だ。
+���e�̏����p�t���B
 %%%%
 lorocyproca
 
-背が高く痩せさらばえた人型の存在だ。
-生きているかのようにたなびく長いローブを羽織っている。 It thirsts for magical
+�w��������������΂����l�^�̑��݂��B
+�����Ă��邩�̂悤�ɂ��Ȃт��������[�u���H�D���Ă���B It thirsts for magical
 energies.
 %%%%
 Mnoleg
 
-不可思議に輝く人影だ。パンデモニウムの不気味な大気の中を踊っている。
+�s�v�c�ɋP���l�e���B�p���f���j�E���̕s�C���ȑ�C�̒���x���Ă���B
 %%%%
 Xtahua
 
-古代の強力なドラゴンだ。
+�Ñ�̋��͂ȃh���S�����B
 %%%%
 the Serpent of Hell gehenna
 
-地獄の業火に燃えて赤く輝く、巨大なドラゴンだ。 It seems to be possessed by the
+�n���̋Ɖ΂ɔR���ĐԂ��P���A����ȃh���S�����B It seems to be possessed by the
 very essence of Gehenna and its eternal fire.
 %%%%
 acid blob
 
-致命的な酸を滲ませる、不健康な膿疱のある肉塊だ。
+�v���I�Ȏ_����܂���A�s���N�Ȕ^�v�̂�����򂾁B
 %%%%
 adder
 
-ダンジョンに生息する蛇としては一般的なものだ。 A species of troglodytic reptile
+�_���W�����ɐ�������ւƂ��Ă͈�ʓI�Ȃ��̂��B A species of troglodytic reptile
 commonly found in subterranean spaces.
 %%%%
 agate snail
 
-青磁のような殻を持つ、巨大で不快なカタツムリだ。
-これはひどく驚いたときにはその殻の中に身を隠してしまう。
+���̂悤�Ȋk�����A����ŕs���ȃJ�^�c�������B
+����͂Ђǂ��������Ƃ��ɂ͂��̊k�̒��ɐg���B���Ă��܂��B
 %%%%
 air elemental
 
-大気の精霊界から召換された精霊だ。 It exists in this world as a swirling vortex
+��C�̐���E���珢�����ꂽ���삾�B It exists in this world as a swirling vortex
 of air, often dissipating and reforming.
 %%%%
 alligator
 
-水中に潜み根気よく獲物が近づいてくるのを待つ臆病なワニだ。獲物が近づくと、
-爆発的な速度で動き、強力な顎で噛み砕いてしまう。
+�����ɐ��ݍ��C�悭�l�����߂Â��Ă���̂�҂��a�ȃ��j���B�l�����߂Â��ƁA
+�����I�ȑ��x�œ����A���͂Ȋ{�Ŋ��ݍӂ��Ă��܂��B
 %%%%
 alligator snapping turtle
 
-とびきり大きく危険なワニガメだ。より小さな同種のモンスターと同様に、
-遠くから首を伸ばして噛み付くことができ、
-危機にさらされると甲羅の中に隠れてしまう。
+�Ƃт���傫���댯�ȃ��j�K�����B��菬���ȓ���̃����X�^�[�Ɠ��l�ɁA
+����������L�΂��Ċ��ݕt�����Ƃ��ł��A
+��@�ɂ��炳���ƍb���̒��ɉB��Ă��܂��B
 %%%%
 anaconda
 
-驚くべき敏捷さで地面と水中を移動する非常に大きな蛇だ。
-これは獲物を毒によってではなく、締めつけて殺してしまう。
+�����ׂ��q�����Œn�ʂƐ������ړ�������ɑ傫�Ȏւ��B
+����͊l����łɂ���Ăł͂Ȃ��A���߂��ĎE���Ă��܂��B
 %%%%
 ancient lich
 
-これは途方もなく長い間存在し、
-黒魔術の研究によっておよそ想像もつかないほど強力になったリッチだ。
+����͓r�����Ȃ������ԑ��݂��A
+�����p�̌����ɂ���Ă��悻�z�������Ȃ��قǋ��͂ɂȂ������b�`���B
 %%%%
 angel
 
-輝けるものに仕える天上の戦士だ。これは輝く白い光のオーラを纏い、
-異様なほど美しく、素晴らしい翼を持った姿をしている。
-これは重鎧を着用しているにもかかわらず、宙に浮いている間は重さを感じさせず、
-非常に素早く動いている。
+�P������̂Ɏd����V��̐�m���B����͋P���������̃I�[����Z���A
+�ٗl�Ȃقǔ������A�f���炵�������������p�����Ă���B
+����͏d�Z�𒅗p���Ă���ɂ�������炸�A���ɕ����Ă���Ԃ͏d���������������A
+���ɑf���������Ă���B
 %%%%
 apis
 
-大人しい、エリヴィロンに仕える神聖な牡牛だ。あなたが悪人であれば、
-これは間違いなく襲いかかってくるだろう、注意せよ！
+��l�����A�G�����B�����Ɏd����_���ȉ������B���Ȃ������l�ł���΁A
+����͊ԈႢ�Ȃ��P���������Ă��邾�낤�A���ӂ���I
 %%%%
 balrug
 
-巨大で非常に強力なデーモンだ。炎と影とに包まれている。
+����Ŕ��ɋ��͂ȃf�[�������B���Ɖe�Ƃɕ�܂�Ă���B
 %%%%
 black bear
 
-小型の黒い熊だ。 Like all ursines, the black bear will become enraged if badly
+���^�̍����F���B Like all ursines, the black bear will become enraged if badly
 hurt or frightened.
 %%%%
 bone dragon
 
-忌まわしい巨大なアンデッドだ。 the broken bones of many dragons by powerful
+���܂킵������ȃA���f�b�h���B the broken bones of many dragons by powerful
 necromantic magic. This creature is unique among dragons in that it lacks a
 typical dragon's fearsome breath.
 %%%%
 crimson imp
 
-小さくて醜い下級デーモンだ。 Its fanged maw seems locked in a permanent malign
+�������ďX�������f�[�������B Its fanged maw seems locked in a permanent malign
 grin, and its horns protrude obscenely from its scaly pate.
 %%%%
 curse skull
 
-空中に浮いてゆっくりと回転している、黒焦げの頭蓋骨だ。
-その黒ずんだ表面に刻まれた神秘的な記号が、
-ほとんどあらゆる攻撃に対しての耐性を暗示している。
+�󒆂ɕ����Ă������Ɖ�]���Ă���A���ł��̓��W�����B
+���̍����񂾕\�ʂɍ��܂ꂽ�_��I�ȋL�����A
+�قƂ�ǂ�����U���ɑ΂��Ă̑ϐ����Î����Ă���B
 %%%%
 curse toe
 
-切り離された足の指だ。宙に浮いていて、負のエネルギーの強烈な場を放射している。
+�؂藣���ꂽ���̎w���B���ɕ����Ă��āA���̃G�l���M�[�̋���ȏ����˂��Ă���B
 %%%%
 cyclops
 
-額の中央に一つだけ目を持つ巨人だ。両眼による立体視の欠如にも関らず、 throw
+�z�̒����Ɉ�����ڂ������l���B����ɂ�闧�̎��̌��@�ɂ��ւ炸�A throw
 boulders with fearsome accuracy.
 %%%%
 death yak
 
-普通のダンジョンヤクより大きくて逞しい近縁種だ。その小さな赤い目は、
-生き物の肉への飢えに輝いている。
+���ʂ̃_���W�������N���傫����痂����߉��킾�B���̏����ȐԂ��ڂ́A
+�������̓��ւ̋Q���ɋP���Ă���B
 %%%%
 dragon
 
 A great reptilian beast with powerful claws on its limbs, covered in thick
-green 全身が分厚い緑の鱗に覆われ、一対のコウモリに似た翼を持つ。
-牙の並んだ顎からはかすかな煙がたなびいている。
+green �S�g���������΂̗؂ɕ����A��΂̃R�E�����Ɏ����������B
+��̕��񂾊{����͂������ȉ������Ȃт��Ă���B
 %%%%
 earth elemental
 
-大地の精霊界から召換された精霊だ。
-土と岩の塊に宿ることでこの世界に存在している。
+��n�̐���E���珢�����ꂽ���삾�B
+�y�Ɗ�̉�ɏh�邱�Ƃł��̐��E�ɑ��݂��Ă���B
 %%%%
 efreet
 
-灼熱の炎に包まれた、巨大で筋骨逞しい存在だ。
+�ܔM�̉��ɕ�܂ꂽ�A����ŋ؍�痂������݂��B
 %%%%
 eye of devastation
 
-宙に浮く巨大な眼球だ。 incandescent energy.
+���ɕ�������Ȋዅ���B incandescent energy.
 %%%%
 fire elemental
 
-火の精霊界から召換された精霊だ。
-輝く猛烈な炎の柱に宿ることでこの世界に存在している。
+�΂̐���E���珢�����ꂽ���삾�B
+�P���җ�ȉ��̒��ɏh�邱�Ƃł��̐��E�ɑ��݂��Ă���B
 %%%%
 fire vortex
 
-渦巻く炎の雲だ。
+�Q�������̉_���B
 %%%%
 fungus
 
-塊になった灰色の菌類だ。暗く湿った地下迷宮で活発に生育する。
+��ɂȂ����D�F�̋ۗނ��B�Â��������n�����{�Ŋ����ɐ��炷��B
 %%%%
 megabat
 
-巨大な黒いコウモリだ。
+����ȍ����R�E�������B
 %%%%
 goliath beetle
 
-噛み砕く力の強い下顎を持つ、巨大な黒い甲虫だ。非常に固いキチン質の殻を持つ。
+���ݍӂ��͂̋������{�����A����ȍ����b�����B���Ɍł��L�`�����̊k�����B
 %%%%
 giant gecko
 
-足指の先に吸盤を持ち、壁や天井を上ることができる to walls and ceilings, and
+���w�̐�ɋz�Ղ������A�ǂ�V�����邱�Ƃ��ł��� to walls and ceilings, and
 huge, sharp teeth. It is many times larger than a normal gecko, yet its size
 belies its agility.
 %%%%
 giant orange brain
 
 A huge wrinkled brain, floating just off the floor and glowing with mutagenic
-energies. 時々脈動している。
+energies. ���X�������Ă���B
 %%%%
 glowing shapeshifter
 
-A shapeshifter which has lost control over its 常に変化を続けている。
+A shapeshifter which has lost control over its ��ɕω��𑱂��Ă���B
 %%%%
 green death
 
-膨れあがった体をしたデーモンだ。全身が爛れた腫れ物に覆われ、
-致命的な毒の雲を放っている。
+�c�ꂠ�������̂������f�[�������B�S�g��ࣂꂽ��ꕨ�ɕ����A
+�v���I�ȓł̉_������Ă���B
 %%%%
 griffon
 
-大鷲の頭と鉤爪と翼とを持ち、 lion and the wings, head and talons of a great
+��h�̓�����܂Ɨ��Ƃ������A lion and the wings, head and talons of a great
 eagle.
 %%%%
 guardian mummy
 
-古代の戦士だ。死体に防腐処理を施され、
-呪術によって永遠に死ぬこともなく使役されている。
+�Ñ�̐�m���B���̂ɖh���������{����A
+��p�ɂ���ĉi���Ɏ��ʂ��Ƃ��Ȃ��g������Ă���B
 %%%%
 hellion
 
-唸りをあげる地獄の業火に包まれた、恐ろしいデーモンだ。
+�X���������n���̋Ɖ΂ɕ�܂ꂽ�A���낵���f�[�������B
 %%%%
 hellwing
 
-おぞましい骸骨のデーモンだ。古代の干からびた皮の羽を持つ。
+�����܂����[���̃f�[�������B�Ñ�̊�����т���̉H�����B
 %%%%
 hippogriff
 
-大鷲の頭と鉤爪と翼とを持ち、 horse and the wings, head and talons of a great
+��h�̓�����܂Ɨ��Ƃ������A horse and the wings, head and talons of a great
 eagle.
 %%%%
 hungry ghost
 
-飢えで死んだ何者かのアンデッドだ。 this creature drains sustenance from the
+�Q���Ŏ��񂾉��҂��̃A���f�b�h���B this creature drains sustenance from the
 bodies of its victims, hoping to inflict its own miserable fate on others.
 %%%%
 hydra
 
-A great and nightmarish lacertilian beast. これは複数の頭を持ち、
-更に頭を殖やす能力がある！
+A great and nightmarish lacertilian beast. ����͕����̓��������A
+�X�ɓ���B�₷�\�͂�����I
 
 Hitting it with any cutting weapon bigger than a dagger or a quick blade risks
 lopping a head off, which, considering hydra's unique biology, is not what you
@@ -460,206 +460,206 @@ claws may be enough to rip hydra heads.
 %%%%
 ice beast
 
-恐ろしいモンスターだ。雪と透き通る氷でできた体を持つ。
-その歩みは地面に冷たい水溜りを残していく。
+���낵�������X�^�[���B��Ɠ����ʂ�X�łł����̂����B
+���̕��݂͒n�ʂɗ₽����������c���Ă����B
 %%%%
 ice devil
 
-光り輝く氷に覆われた人間サイズのデーモンだ。
+����P���X�ɕ���ꂽ�l�ԃT�C�Y�̃f�[�������B
 %%%%
 inept item mimic
 
-An apparently abandoned item, actually a small 擬態した姿だ。
+An apparently abandoned item, actually a small �[�Ԃ����p���B
 %%%%
 iron devil
 
-金属の皮膚をした見るもおぞましい人間型の存在だ。 While it lacks magical attacks
+�����̔畆����������������܂����l�Ԍ^�̑��݂��B While it lacks magical attacks
 and is slow of foot, it makes up for these failings with brute strength.
 %%%%
 item mimic
 
-An apparently abandoned item, actually 実は危険な小型の獣の擬態した姿だ。
+An apparently abandoned item, actually ���͊댯�ȏ��^�̏b�̋[�Ԃ����p���B
 %%%%
 jackal
 
-A small canine scavenger. Packs of these creatures この生き物の群れは、
-ダンジョンの中を死肉を貪るために徘徊する。
+A small canine scavenger. Packs of these creatures ���̐������̌Q��́A
+�_���W�����̒����������Â邽�߂ɜp�j����B
 %%%%
 jelly
 
-脈動する酸性の原形質の塊だ。これは何でも消化してしまう。
-そして短時間のうちに増殖していく……。
+��������_���̌��`���̉򂾁B����͉��ł��������Ă��܂��B
+�����ĒZ���Ԃ̂����ɑ��B���Ă����c�c�B
 %%%%
 jellyfish
 
-脈動する透明な肉塊だ。 below the surface of the water to sting its prey with
+�������铧���ȓ��򂾁B below the surface of the water to sting its prey with
 its many tentacles. The tentacles do little harm on their own, but the
 poisonous toxins they inject can cause significant damage to muscle tissue.
 %%%%
 Killer Klown
 
 A comical figure full of life and laughter. It
-あなたに会えてとても嬉しそうにしている……。 cast to its features? Is that red
+���Ȃ��ɉ�ĂƂĂ����������ɂ��Ă���c�c�B cast to its features? Is that red
 face paint or something altogether less pleasant?
 %%%%
 lava worm
 
-溶岩の中を泳ぐ危険な赤いワームだ。
+�n��̒����j���댯�ȐԂ����[�����B
 %%%%
 lemure
 
-かすかに人型をとどめた腐敗した白い肉の塊だ。 It gargles horribly as pus flows
+�������ɐl�^���Ƃǂ߂����s�����������̉򂾁B It gargles horribly as pus flows
 from its orifices.
 %%%%
 lindwurm
 
-力強い一対の前肢を持つ、蛇のような姿の小型ドラゴンだ。 forelimbs. Its thick
+�͋�����΂̑O�������A�ւ̂悤�Ȏp�̏��^�h���S�����B forelimbs. Its thick
 scales give off an eerie green glow.
 %%%%
 manticore
 
-ひどく醜い交雑生物だ。人間の頭と、ライオンの銅と、
-とても大きな蝙蝠の羽とを持つ。 bristles with spikes that can be loosed at
+�Ђǂ��X�����G�������B�l�Ԃ̓��ƁA���C�I���̓��ƁA
+�ƂĂ��傫���啂̉H�Ƃ����B bristles with spikes that can be loosed at
 potential prey.
 %%%%
 metal gargoyle
 
-生命を持ったおぞましい金属の像だ。
+�����������������܂��������̑����B
 %%%%
 minotaur
 
-大きく筋肉質な人間の体に雄牛の頭部を持つモンスターだ。
-隔離された迷宮を棲み処としている。
+�傫���ؓ����Ȑl�Ԃ̑̂ɗY���̓������������X�^�[���B
+�u�����ꂽ���{�𐱂ݏ��Ƃ��Ă���B
 %%%%
 molten gargoyle
 
 A hideous molten stone statue come to life, with fearsome claws and flames
-licking out 鋭い歯の並んだ口からは酸性の毒液を滴らせている。
+licking out �s�����̕��񂾌�����͎_���̓ŉt��H�点�Ă���B
 %%%%
 mummy
 
-防腐処理を施され包帯に覆われた体を持つアンデッドだ。
-古代の魔術によって使役されている。 compelled to walk by an ancient curse. It
+�h���������{�����тɕ���ꂽ�̂����A���f�b�h���B
+�Ñ�̖��p�ɂ���Ďg������Ă���B compelled to walk by an ancient curse. It
 radiates a malign aura to those who intrude on its domain.
 %%%%
 necrophage
 
-最も邪悪で不浄なアンデッド被造物で、腐敗した人間型生物の死体から作成される。 of
+�ł��׈��ŕs��ȃA���f�b�h�푢���ŁA���s�����l�Ԍ^�����̎��̂���쐬�����B of
 humanoid creatures. They exist to spread disease and decay, and gain power from
 the decaying corpses of other beings.
 %%%%
 ogre mage
 
-稀少な血統のオーガで、魔法の使用に長けている。 It usually becomes a chieftain
+�H���Ȍ����̃I�[�K�ŁA���@�̎g�p�ɒ����Ă���B It usually becomes a chieftain
 among its kin.
 %%%%
 orb of fire
 
-原初の炎そのものの球体だ。 impressive pyrotechnics, and of twisting the very
+�����̉����̂��̂̋��̂��B impressive pyrotechnics, and of twisting the very
 flesh of creatures who come into its ken.
 %%%%
 orc
 
-オークは醜い地下の種族であり、豚と人間、そして worst features of humans, pigs
+�I�[�N�͏X���n���̎푰�ł���A�؂Ɛl�ԁA������ worst features of humans, pigs
 and several other unpleasant creatures. They tend to run in packs or mobs, and
 delight in outbursts of insane violence.
 %%%%
 plant
 
-ほとんどの植物はダンジョンの不快な環境では生育しないが、 environment, but some
+�قƂ�ǂ̐A���̓_���W�����̕s���Ȋ��ł͐��炵�Ȃ����A environment, but some
 have managed to adapt and even thrive underground in the absence of the sun.
 %%%%
 polar bear
 
-大きくて非常に力の強い熊だ。 white fur, habituated to cold conditions. Like all
+�傫���Ĕ��ɗ͂̋����F���B white fur, habituated to cold conditions. Like all
 ursines, the polar bear will become enraged if badly hurt or frightened.
 %%%%
 quicksilver dragon
 
-長い体を曲がりくねらせたドラゴンだ。蛇に似た姿をしている。 magical energies arc
+�����̂��Ȃ��肭�˂点���h���S�����B�ւɎ����p�����Ă���B magical energies arc
 from its pointed snout, and it moves with terrifying swiftness.
 %%%%
 reaper
 
-巨大な鎌を手にした、骸骨のような姿の存在だ。
+����Ȋ�����ɂ����A�[���̂悤�Ȏp�̑��݂��B
 %%%%
 red wasp
 
-巨大な赤いススメバチだ。邪悪なかかりのついた毒針を持つ。 Potent paralytic
+����ȐԂ��X�X���o�`���B�׈��Ȃ�����̂����Őj�����B Potent paralytic
 poison drips from its tip.
 %%%%
 redback
 
-膨れ上がった腹部の背に赤い飛沫模様のある、獰猛な黒い蜘蛛だ。
-その下顎からは致命的な毒が滴っている。
+�c��オ���������̔w�ɐԂ��򖗖͗l�̂���A�֖҂ȍ����w偂��B
+���̉��{����͒v���I�ȓł��H���Ă���B
 %%%%
 the royal jelly
 
-とりわけ豪華な、金色をしたゼリー状の存在だ。
+�Ƃ�킯���؂ȁA���F�������[���[��̑��݂��B
 %%%%
 seraph
 
 The Seraphim, or the Burning Ones, are the highest rank of the angelic hosts,
-the mightiest servants 善き Gods. They have six wings and but one face, and are
+the mightiest servants �P�� Gods. They have six wings and but one face, and are
 said to sometimes take the forms of fiery serpents.
 %%%%
 shadow demon
 
-不可思議な悪魔的存在だ。常に自身の複数の影の中に霞んでいる。 It weaves
+�s�v�c�Ȉ����I���݂��B��Ɏ��g�̕����̉e�̒��ɉ���ł���B It weaves
 creatures into existence from the very shadows surrounding it.
 %%%%
 shadow imp
 
-小さくて影のような下級デーモンだ。
+�������ĉe�̂悤�ȉ����f�[�������B
 %%%%
 shapeshifter
 
 A disturbing creature with the power to change its form.
-このモンスターが本来の形態で目撃されることは極めて稀だ。
+���̃����X�^�[���{���̌`�ԂŖڌ�����邱�Ƃ͋ɂ߂ċH���B
 %%%%
 simulacrum
 
-An ice replica of a monster that is animated by 死霊術の力で操られている。
+An ice replica of a monster that is animated by ����p�̗͂ő����Ă���B
 %%%%
 skeletal warrior
 
-重武装した凶悪な、人型生物の骸骨だ。これは邪悪な力によって造られた。
+�d�������������ȁA�l�^�����̊[�����B����͎׈��ȗ͂ɂ���đ���ꂽ�B
 %%%%
 skeleton
 
-死霊術の働きによってアンデッドにされた骸骨だ。
+����p�̓����ɂ���ăA���f�b�h�ɂ��ꂽ�[�����B
 %%%%
 spatial vortex
 
-狂ったように転位していく現実構造の歪みだ。
+�������悤�ɓ]�ʂ��Ă��������\���̘c�݂��B
 %%%%
 spectral thing
 
-おぞましい輝く幽霊だ。
+�����܂����P���H�삾�B
 %%%%
 spiny worm
 
-大きな黒いワームだ。
-たくさんの節がある胴体は刺の生えたキチン質の装甲によって覆われている。
-鋭い歯の並んだ口からは酸性の毒液を滴らせている。
+�傫�ȍ������[�����B
+��������̐߂����铷�͎̂h�̐������L�`�����̑��b�ɂ���ĕ����Ă���B
+�s�����̕��񂾌�����͎_���̓ŉt��H�点�Ă���B
 %%%%
 steam dragon
 
 A relatively small grey dragon, with a resilient-looking scaly hide and steam
-pouring その顎からは蒸気が立ち昇っている。
+pouring ���̊{����͏��C�����������Ă���B
 %%%%
 stone giant
 
-岩のように固い灰色の皮膚を持つ巨大な人型生物だ。 It carries several boulders,
+��̂悤�Ɍł��D�F�̔畆��������Ȑl�^�������B It carries several boulders,
 and is perfectly capable of flinging them a great distance.
 %%%%
 sun demon
 
-地に墜ちた星の光と激怒とに輝く、悪魔的な姿をした存在だ。
+�n�ɒĂ������̌��ƌ��{�ƂɋP���A�����I�Ȏp���������݂��B
 %%%%
 swamp drake
 
-沼の泥に覆われた、ぬめぬめした小さなドラゴンだ。
+���̓D�ɕ���ꂽ�A�ʂ߂ʂ߂��������ȃh���S�����B
 
 {{
     if you.can_smell() then
@@ -669,39 +669,39 @@ swamp drake
 %%%%
 swamp worm
 
-大きなぬるぬるしたワームだ。この不浄な沼の泥の中を泳ぐのに特化している。
+�傫�Ȃʂ�ʂ邵�����[�����B���̕s��ȏ��̓D�̒����j���̂ɓ������Ă���B
 %%%%
 titan
 
 This huge, bolt-hurling, lightning-limned humanoid is unusually large
-巨人族の中にあってさえ著しく巨大で力強い。
+���l���̒��ɂ����Ă�������������ŗ͋����B
 %%%%
 toenail golem
 
-かりそめの生命を与えられた巨大な像だ。爪切りで切った足の爪だけで造られている。
-非常に時間の有り余った誰かが造ったのだろう。
+���肻�߂̐�����^����ꂽ����ȑ����B�ܐ؂�Ő؂������̒܂����ő����Ă���B
+���Ɏ��Ԃ̗L��]�����N�����������̂��낤�B
 %%%%
 two-headed ogre
 
-肥大した体に二つの頭を持つ、巨大なオーガだ。 bloated ogre body. It is capable
+��債���̂ɓ�̓������A����ȃI�[�K���B bloated ogre body. It is capable
 of holding a weapon in each giant hand.
 %%%%
 ufetubus
 
-金切り声でペチャクチャ喋る下級デーモンだ。
+���؂萺�Ńy�`���N�`�����鉺���f�[�������B
 %%%%
 vault guard
 
-重武装重装甲を備えた宝物庫の番人だ。
+�d�����d���b��������󕨌ɂ̔Ԑl���B
 %%%%
 warg
 
 A particularly large and evil-looking wolf, usually
-大抵の場合はオークと一緒にいる。
+���̏ꍇ�̓I�[�N�ƈꏏ�ɂ���B
 %%%%
 wraith
 
-精神体のアンデッドだ。実体のない骸骨の体に黒い霧を纏っている。 surrounding an
+���_�̂̃A���f�b�h���B���̂̂Ȃ��[���̑̂ɍ�������Z���Ă���B surrounding an
 insubstantial skeletal form. Its eyes burn bright with unholy malevolence and
 hunger for life essence, on which it feeds.
 %%%%
@@ -709,25 +709,26 @@ wretched star
 
 A conflux of unearthly light and energy, awash in unnatural colours and strange
 forms no normal being was meant to perceive. Merely being near it fills your
-body with the disorder アビスの.
+body with the disorder �A�r�X��.
 %%%%
 wyvern
 
 A dragon-like creature with a long, sharply pointed tail.
-ワーバーンは本物の竜よりは小型で手強さも劣るが、
-とりもなおさず侮り難い敵である。
+���[�o�[���͖{���̗����͏��^�Ŏ苭������邪�A
+�Ƃ���Ȃ����������G�ł���B
 %%%%
 yak
 
-ダンジョンに生息するヤクとしては普通のものだ。ぼさぼさした毛皮に覆われていて、
-一対の危険な角を持つ。
+�_���W�����ɐ������郄�N�Ƃ��Ă͕��ʂ̂��̂��B�ڂ��ڂ������є�ɕ����Ă��āA
+��΂̊댯�Ȋp�����B
 %%%%
 yellow wasp
 
-巨大なススメバチだ。 chitinous armour. Its deadly venom can render most beings
+����ȃX�X���o�`���B chitinous armour. Its deadly venom can render most beings
 unable to move.
 %%%%
 zombie
 
-死霊術によって甦った死体だ。
+����p�ɂ�����S�������̂��B
 %%%%
+

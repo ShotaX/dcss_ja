@@ -9,17 +9,17 @@
 # fall-back in case a keyword can't be found
 Xom general effect
 
-ѓ]ѓЂ‚Нљ}ЏО‚Б‚Ѕ
+г‚ѕгѓ гЃЇеІз¬‘гЃЈгЃџ
 #Xom snickers.
 
-Ѓw‚±‚к‚Н‚З‚¤‚ѕЃHЃx
+гЂЋгЃ“г‚ЊгЃЇгЃ©гЃ†гЃ пјџгЂЏ
 #"How about this?"
 
-ЃwЋАЊ±‚µ‚Д‚Э‚ж‚¤‚©ЃH‚УЃ[‚ЮЃHЃx
+гЂЋе®џйЁ“гЃ—гЃ¦гЃїг‚€гЃ†гЃ‹пјџгЃµгѓјг‚ЂпјџгЂЏ
 #"Let's try an experiment, hmmm?"
 
 w:1
-Ѓw•sЋv‹c‚ѕЃcЃc‚±‚Мѓ{ѓ^ѓ“‚Н€к‘М‚И‚с‚И‚с‚ѕ‚л‚¤‚ИЃHЃx
+гЂЋдёЌжЂќи­°гЃ вЂ¦вЂ¦гЃ“гЃ®гѓњг‚їгѓігЃЇдёЂдЅ“гЃЄг‚“гЃЄг‚“гЃ г‚ЌгЃ†гЃЄпјџгЂЏ
 #"I wonder... What does this button do?"
 %%%%
 ##############################
@@ -27,28 +27,28 @@ w:1
 ##############################
 Xom general gift
 
-ѓ]ѓЂ‚Н‚ ‚И‚Ѕ‚Й‘Ў•Ё‚р—^‚¦‚ЅЃI
+г‚ѕгѓ гЃЇгЃ‚гЃЄгЃџгЃ«иґ€з‰©г‚’дёЋгЃ€гЃџпјЃ
 #Xom grants you a gift!
 
-Ѓw‚±‚Б‚ї‚ѕЃx
+гЂЋгЃ“гЃЈгЃЎгЃ гЂЏ
 #"Here."
 
-ѓ]ѓЂ‚МЉ°‘е‚Иђ«Ћї‚Є”­Љц‚і‚к‚Ѕ
+г‚ѕгѓ гЃ®еЇ›е¤§гЃЄжЂ§иіЄгЃЊз™єжЏ®гЃ•г‚ЊгЃџ
 #Xom's generous nature manifests itself.
 
-ѓ]ѓЂ‚Н‚ ‚И‚Ѕ‚ЙЉф‚з‚©‚М“№‹п‚р—^‚¦‚Ѕ
+г‚ѕгѓ гЃЇгЃ‚гЃЄгЃџгЃ«е№ѕг‚‰гЃ‹гЃ®йЃ“е…·г‚’дёЋгЃ€гЃџ
 #Xom grants you an implement of some kind.
 
-Ѓw‚±‚М‘•’u‚рЋќ‚Б‚Д‚ў‚­‚Є‚ў‚ў!Ѓx
+гЂЋгЃ“гЃ®иЈ…зЅ®г‚’жЊЃгЃЈгЃ¦гЃ„гЃЏгЃЊгЃ„гЃ„!гЂЏ
 #"Take this instrument of something!"
 
-ЃwЋ„‚М‘ёЊh‚М€у‚рЋу‚ЇЋж‚й‚Є‚ў‚ўЃx
+гЂЋз§ЃгЃ®е°Љж•¬гЃ®еЌ°г‚’еЏ—гЃ‘еЏ–г‚‹гЃЊгЃ„гЃ„гЂЏ
 #"Take this token of my esteem."
 
-ѓ]ѓЂ‚Н‚ ‚И‚Ѕ‚Й”чЏО‚с‚ѕ
+г‚ѕгѓ гЃЇгЃ‚гЃЄгЃџгЃ«еѕ®з¬‘г‚“гЃ 
 #Xom smiles on you.
 
-ЃwЋу‚ЇЋж‚кЃIЃx
+гЂЋеЏ—гЃ‘еЏ–г‚ЊпјЃгЂЏ
 #"Catch!"
 %%%%
 ####################
@@ -542,46 +542,46 @@ end
 # Beogh's messiah has destroyed an idol
 Beogh idol follower
 
-ѓrѓI‚Н‹»•±‚µ‚ЅЃFЃw‚±‚к‚Н‚ї‚Б‚Ы‚Ї‚ИЌЯ‚Е‚Н‚И‚ўЃIѓIЃ[ѓN‚ж‰ч‚ў‰ь‚Я‚жЃIЃx
+гѓ“г‚ЄгЃЇи€€еҐ®гЃ—гЃџпјљгЂЋгЃ“г‚ЊгЃЇгЃЎгЃЈгЃЅгЃ‘гЃЄзЅЄгЃ§гЃЇгЃЄгЃ„пјЃг‚Єгѓјг‚Їг‚€ж‚”гЃ„ж”№г‚Ѓг‚€пјЃгЂЏ
 #Beogh fumes, "This is no small sin, orc. Repent!"
 
-ѓrѓI‚Н™к‚ў‚ЅЃFЃw‚Ё‘O‚Н‚±‚М€«Ќs‚М‚Ѕ‚Я‚Й‹к‚µ‚Ю‚±‚Ж‚Й‚И‚й‚ѕ‚л‚¤Ѓx
+гѓ“г‚ЄгЃЇе‘џгЃ„гЃџпјљгЂЋгЃЉе‰ЌгЃЇгЃ“гЃ®ж‚ЄиЎЊгЃ®гЃџг‚ЃгЃ«и‹¦гЃ—г‚ЂгЃ“гЃЁгЃ«гЃЄг‚‹гЃ г‚ЌгЃ†гЂЏ
 #Beogh whispers, "You will suffer for this misdeed."
 
-ѓrѓI‚НЊѓ“{‚µ‚ЅЃFЃw–Ъ‚Й‚НЃcЃc–Ъ‚рЃcЃcЃx
+гѓ“г‚ЄгЃЇжїЂжЂ’гЃ—гЃџпјљгЂЋз›®гЃ«гЃЇвЂ¦вЂ¦з›®г‚’вЂ¦вЂ¦гЂЏ
 #Beogh rages, "An eye for an eye..."
 %%%%
 # an unbelieving hill orc has destroyed an idol
 Beogh idol orc
 
-ѓrѓI‚Мђє‚ЄЌЊ‚ў‚Ѕ:Ѓw€Щ’[ЋТ‚ЯЃIЋЂ‚К‚Є‚ў‚ўЃIЃx
+гѓ“г‚ЄгЃ®еЈ°гЃЊиЅџгЃ„гЃџ:гЂЋз•°з«ЇиЂ…г‚ЃпјЃж­»гЃ¬гЃЊгЃ„гЃ„пјЃгЂЏ
 #Beogh's voice booms out: "Heretic, die!"
 
-‚ ‚И‚Ѕ‚НѓrѓI‚М€оЌИ‚М‚ж‚¤‚Иђє‚р’®‚ў‚ЅЃFЃw€Щ‹і“k‚ЯЃI‹к‚µ‚ЯЃIЃx
+гЃ‚гЃЄгЃџгЃЇгѓ“г‚ЄгЃ®зЁІе¦»гЃ®г‚€гЃ†гЃЄеЈ°г‚’иЃґгЃ„гЃџпјљгЂЋз•°ж•™еѕ’г‚ЃпјЃи‹¦гЃ—г‚ЃпјЃгЂЏ
 #You hear Beogh's thundering voice: "Suffer, infidel!"
 
-ѓrѓI‚Н™фљK‚µ‚ЅЃFЃw‰д‚М—Н‚рЋу‚Ї‚й‚Є‚ў‚ўЃI”w‹іЋТ‚ЯЃIЃx
+гѓ“г‚ЄгЃЇе’†е“®гЃ—гЃџпјљгЂЋж€‘гЃ®еЉ›г‚’еЏ—гЃ‘г‚‹гЃЊгЃ„гЃ„пјЃиѓЊж•™иЂ…г‚ЃпјЃгЂЏ
 #Beogh roars, "Feel my power, apostate!"
 %%%%
 # a character of another species has destroyed an idol
 Beogh idol other
 
-ѓrѓI‚Н‚»‚М‹ф‘њ‚М”j‰у‚рЉм‚с‚Е‚ў‚И‚ў
+гѓ“г‚ЄгЃЇгЃќгЃ®еЃ¶еѓЏгЃ®з ґеЈЉг‚’е–њг‚“гЃ§гЃ„гЃЄгЃ„
 #Beogh is not amused by that idol's destruction.
 
-ѓrѓI‚Н‚Р‚З‚­Ћё–]‚µ‚Ѕ‚ж‚¤‚ЙЊ©‚¦‚Ѕ
+гѓ“г‚ЄгЃЇгЃІгЃ©гЃЏе¤±жњ›гЃ—гЃџг‚€гЃ†гЃ«и¦‹гЃ€гЃџ
 #Beogh seems highly displeased.
 
-‚ ‚И‚Ѕ‚Мь–ќ‚НѓrѓI‚рЊѓ“{‚і‚№‚Ѕ
+гЃ‚гЃЄгЃџгЃ®е‚Іж…ўгЃЇгѓ“г‚Єг‚’жїЂжЂ’гЃ•гЃ›гЃџ
 #Your arrogance infuriates Beogh.
 
-ѓrѓI‚Н‚ ‚И‚Ѕ‚МЋн‘°‚ЙЋф‚ў‚р•ъ‚Б‚Ѕ
+гѓ“г‚ЄгЃЇгЃ‚гЃЄгЃџгЃ®зЁ®ж—ЏгЃ«е‘ЄгЃ„г‚’ж”ѕгЃЈгЃџ
 #Beogh utters a curse on your species.
 
-ѓrѓI‚НѓIЃ[ѓN€ИЉO‚М‘S‚Д‚МЋн‘°‚рЋф‚Б‚ЅЃc“Б‚Й @player_genus_plural@‚р!!!
+гѓ“г‚ЄгЃЇг‚Єгѓјг‚Їд»Ґе¤–гЃ®е…ЁгЃ¦гЃ®зЁ®ж—Џг‚’е‘ЄгЃЈгЃџвЂ¦з‰№гЃ« @player_genus_plural@г‚’!!!
 #Beogh curses everyone not orcish, especially @player_genus_plural@.
 
-ѓrѓI‚Н @player_god@ ‚ЙЊь‚©‚Б‚Д‰i‰“‚М‘ћ€«‚рђѕ‚Б‚Ѕ
+гѓ“г‚ЄгЃЇ @player_god@ гЃ«еђ‘гЃ‹гЃЈгЃ¦ж°ёйЃ гЃ®ж†Ћж‚Єг‚’иЄ“гЃЈгЃџ
 #Beogh swears eternal hatred towards @player_god@.
 %%%%
 #################################################
@@ -590,35 +590,35 @@ Beogh idol other
 # an evil worshipper has killed a holy being
 the Shining One holy evil
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚Є€оЌИ‚М‚І‚Ж‚­‹©‚с‚ѕЃFЃwђ_ђ№‚ИЋТ‚Ц‚М”Ъ‹Ї‚ИЌUЊ‚‚р’вЋ~‚№‚ж!Ѓx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЊзЁІе¦»гЃ®гЃ”гЃЁгЃЏеЏ«г‚“гЃ пјљгЂЋзҐћиЃ–гЃЄиЂ…гЃёгЃ®еЌ‘жЂЇгЃЄж”»ж’ѓг‚’еЃњж­ўгЃ›г‚€!гЂЏ
 #The Shining One thunders, "Cease your foul attacks on the divine!"
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚Є‹©‚с‚ѕЃFЃw€к“x‚МЋЂ‚Н•њЏQ‚р‚в‚Я‚й—ќ—R‚Й‚Н‚И‚з‚И‚ў!Ѓx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЊеЏ«г‚“гЃ пјљгЂЋдёЂеє¦гЃ®ж­»гЃЇеѕ©и®ђг‚’г‚„г‚Ѓг‚‹зђ†з”±гЃ«гЃЇгЃЄг‚‰гЃЄгЃ„!гЂЏ
 #The Shining One shouts, "That base death shall not go unavenged!"
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚Є€оЌИ‚М‚І‚Ж‚­‹©‚с‚ѕЃFЃw‹M—l‚М€«Ќs‚НЌЕЏIђн‘€‚Е‘z‹N‚і‚к‚й‚ѕ‚л‚¤!Ѓx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЊзЁІе¦»гЃ®гЃ”гЃЁгЃЏеЏ«г‚“гЃ пјљгЂЋиІґж§гЃ®ж‚ЄиЎЊгЃЇжњЂзµ‚ж€¦дє‰гЃ§жѓіиµ·гЃ•г‚Њг‚‹гЃ г‚ЌгЃ†!гЂЏ
 #The Shining One shouts, "Your misdeeds are remembered unto the final battle!"
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚Є€оЌИ‚М‚І‚Ж‚­‹©‚с‚ѕЃFЃwЊх‚М—Н‚Н‹M—l‚р•ІЃX‚ЙЏД‚«ђs‚­‚·‚ѕ‚л‚¤Ѓx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЊзЁІе¦»гЃ®гЃ”гЃЁгЃЏеЏ«г‚“гЃ пјљгЂЋе…‰гЃ®еЉ›гЃЇиІґж§г‚’зІ‰гЂ…гЃ«з„јгЃЌе°ЅгЃЏгЃ™гЃ г‚ЌгЃ†гЂЏ
 #The Shining One whispers, "The forces of light will burn you to a crisp."
 %%%%
 # a non-good worshipper or atheist has killed a holy being
 the Shining One holy other
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚НЊѕ‚Б‚ЅЃFЃwђ_ђ№‚И–Ѕ‚Є’D‚н‚к‚Ѕ€ИЏгЃA‹M—l‚а‚»‚¤‚µ‚И‚Ї‚к‚О‚И‚з‚И‚ўЃx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЇиЁЂгЃЈгЃџпјљгЂЋзҐћиЃ–гЃЄе‘ЅгЃЊеҐЄг‚Џг‚ЊгЃџд»ҐдёЉгЂЃиІґж§г‚‚гЃќгЃ†гЃ—гЃЄгЃ‘г‚ЊгЃ°гЃЄг‚‰гЃЄгЃ„гЂЏ
 #The Shining One says, "As holy lives are taken, so shall yours be."
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚Н’‰Ќђ‚µ‚ЅЃFЃw‚»‚М‚ж‚¤‚ИЋEќC‚Е‚±‚к€ИЏгЋ©‚з‚рвq‚·‚ИЃx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЇеї е‘ЉгЃ—гЃџпјљгЂЋгЃќгЃ®г‚€гЃ†гЃЄж®єж€®гЃ§гЃ“г‚Њд»ҐдёЉи‡Єг‚‰г‚’з©ўгЃ™гЃЄгЂЏ
 #The Shining One warns, "Defile yourself no further with such kills."
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚Н—v‹Ѓ‚µ‚ЅЃFЃwЊцђі‚©•sђі‚©ЃA‚З‚ї‚з‚©‚р‘I‘р‚·‚йЋћ‚ѕЃx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЇи¦Ѓж±‚гЃ—гЃџпјљгЂЋе…¬ж­ЈгЃ‹дёЌж­ЈгЃ‹гЂЃгЃ©гЃЎг‚‰гЃ‹г‚’йЃёжЉћгЃ™г‚‹ж™‚гЃ гЂЏ
 #The Shining One demands, "It is time to choose between the fair and the foul."
 
-Ѓw‹P‚Ї‚й‚а‚МЃx‚НЊѕ‚Б‚ЅЃFЃwЏ}‹іЋТ‚Н‰i‹v‚Й‹L‰Ї‚і‚к‚йЃx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЇиЁЂгЃЈгЃџпјљгЂЋж®‰ж•™иЂ…гЃЇж°ёд№…гЃ«иЁж†¶гЃ•г‚Њг‚‹гЂЏ
 #The Shining One says, "Martyrs are remembered forever."
 
 w:1
-Ѓw‹P‚Ї‚й‚а‚МЃx‚НЊѕ‚Б‚ЅЃFЃw–Ъ‚Й‚Н–Ъ‚рЃcЃcЋ•‚Й‚НЋ•‚рЃcЃcЃx
+гЂЋијќгЃ‘г‚‹г‚‚гЃ®гЂЏгЃЇиЁЂгЃЈгЃџпјљгЂЋз›®гЃ«гЃЇз›®г‚’вЂ¦вЂ¦ж­ЇгЃ«гЃЇж­Їг‚’вЂ¦вЂ¦гЂЏ
 #The Shining One says, "An eye for an eye, a tooth for a tooth."
 %%%%
 ##########################################
@@ -626,72 +626,72 @@ w:1
 ##########################################
 Elyvilon holy
 
-ѓGѓЉѓ”ѓBѓЌѓ“‚Нљ‘‚ў‚ЅЃFЃw“®•Ё‚рвq‚·‚И‚с‚ДЃI‚ж‚­‚а‚Ь‚ ЃcЃcЃx
+г‚ЁгѓЄгѓґг‚Јгѓ­гѓігЃЇе›ЃгЃ„гЃџпјљгЂЋе‹•з‰©г‚’з©ўгЃ™гЃЄг‚“гЃ¦пјЃг‚€гЃЏг‚‚гЃѕгЃ‚вЂ¦вЂ¦гЂЏ
 #Elyvilon hisses: "You foul beast! How dare you!"
 
-ѓGѓЉѓ”ѓBѓЌѓ“‚Н”Я‚µ‚°‚Йђq‚Л‚ЅЃFЃw‚З‚¤‚µ‚Ѕ‚з‚»‚М‚ж‚¤‚ЙЋcЌ“‚Й‚И‚к‚й‚М‚Е‚·‚©ЃHЃx
+г‚ЁгѓЄгѓґг‚Јгѓ­гѓігЃЇж‚ІгЃ—гЃ’гЃ«е°‹гЃ­гЃџпјљгЂЋгЃ©гЃ†гЃ—гЃџг‚‰гЃќгЃ®г‚€гЃ†гЃ«ж®‹й…·гЃ«гЃЄг‚Њг‚‹гЃ®гЃ§гЃ™гЃ‹пјџгЂЏ
 #Elyvilon sadly asks: "How did it come to be that such cruelty exists?"
 
-ѓGѓЉѓ”ѓBѓЌѓ“‚Нљ‘‚ў‚ЅЃFЃw‘јЋТ‚рЏќ‚В‚Ї‚Д‚Н‚И‚и‚Ь‚№‚сЃBђв‘О‚ЙЃIЃx
+г‚ЁгѓЄгѓґг‚Јгѓ­гѓігЃЇе›ЃгЃ„гЃџпјљгЂЋд»–иЂ…г‚’е‚·гЃ¤гЃ‘гЃ¦гЃЇгЃЄг‚ЉгЃѕгЃ›г‚“гЂ‚зµ¶еЇѕгЃ«пјЃгЂЏ
 #Elyvilon whispers: "No one should ever harm others. Ever!"
 %%%%
 recite_closure
 
-ЃwѓAЃ[ѓЃѓ“!Ѓx
+гЂЋг‚ўгѓјгѓЎгѓі!гЂЏ
 #"Amen!"
 
-ЃwѓWѓ“‚Й‰hЊх‚ ‚кЃIЃx
+гЂЋг‚ёгѓігЃ«ж „е…‰гЃ‚г‚ЊпјЃгЂЏ
 #"Glory to Zin!"
 
-ЃwЃcЃc‚ЖЏ‘‚©‚к‚Д‚ў‚ЅЃx
+гЂЋвЂ¦вЂ¦гЃЁж›ёгЃ‹г‚ЊгЃ¦гЃ„гЃџгЂЏ
 #"And thus was it written."
 
-ЃwЃcЃc‚ЖѓWѓ“‚Н‚Ё‚Б‚µ‚б‚з‚к‚ЅЃx
+гЂЋвЂ¦вЂ¦гЃЁг‚ёгѓігЃЇгЃЉгЃЈгЃ—г‚ѓг‚‰г‚ЊгЃџгЂЏ
 #"So sayeth Zin."
 
-ЃwЃc‚ ‚И‚Ѕ•ы‘S‚Д‚ЄЏѓЊ‰‚Й‚И‚йЃx
-#"Purity be upon you all."//–у?
+гЂЋвЂ¦гЃ‚гЃЄгЃџж–№е…ЁгЃ¦гЃЊзґ”жЅ”гЃ«гЃЄг‚‹гЂЏ
+#"Purity be upon you all."//иЁі?
 %%%%
 ##########################
 # Xom's response to prayer
 ##########################
 Xom prayer
 
-ѓ]ѓЂ‚Н@_trout_species_@–ђ‚Е‚ ‚И‚Ѕ‚р’@‚ў‚Ѕ!
+г‚ѕгѓ гЃЇ@_trout_species_@й±’гЃ§гЃ‚гЃЄгЃџг‚’еЏ©гЃ„гЃџ!
 #Xom slaps you with @_trout_species_@ trout!
 
-ѓ]ѓЂ‚НЉy‚µ‚»‚¤‚ЙЊы“J‚рђЃ‚ў‚Ѕ
+г‚ѕгѓ гЃЇжҐЅгЃ—гЃќгЃ†гЃ«еЏЈз¬›г‚’еђ№гЃ„гЃџ
 #Xom toots happily.
 
-ѓ]ѓЂ‚НЊѕ‚Б‚ЅЃFЃw‰д‚Н‚Ё‘O‚рЊ©‚Д‚ў‚йЃAЋ„‚М@_xom_child_@‘§Ћq‚жЃx
+г‚ѕгѓ гЃЇиЁЂгЃЈгЃџпјљгЂЋж€‘гЃЇгЃЉе‰Ќг‚’и¦‹гЃ¦гЃ„г‚‹гЂЃз§ЃгЃ®@_xom_child_@жЃЇе­ђг‚€гЂЏ
 #Xom says: I'm watching you, my @_xom_child_@ child.
 
-‚ ‚И‚Ѕ‚НѓRѓIѓЌѓM‚Єљ“‚й‰№‚р•·‚ў‚Ѕ
+гЃ‚гЃЄгЃџгЃЇг‚іг‚Єгѓ­г‚®гЃЊе›Ђг‚‹йџіг‚’иЃћгЃ„гЃџ
 #You hear crickets chirping.
 
 w:1
-‚ ‚И‚Ѕ‚Н’N‚©‚Є‚ ‚И‚Ѕ‚рќS‚с‚ѕ‚ЖЉґ‚¶‚ЅЃBђU‚и•Ф‚й‚Ж’N‚а‚ў‚И‚©‚Б‚Ѕ
+гЃ‚гЃЄгЃџгЃЇиЄ°гЃ‹гЃЊгЃ‚гЃЄгЃџг‚’жЉ“г‚“гЃ гЃЁж„џгЃгЃџгЂ‚жЊЇг‚Љиї”г‚‹гЃЁиЄ°г‚‚гЃ„гЃЄгЃ‹гЃЈгЃџ
 #You feel someone pinching you. As you turn, you see no one.
 
 w:1
-ѓ]ѓЂ‚НЊѕ‚Б‚ЅЃFЃwѓGѓCѓЃѓ“!Ѓx
+г‚ѕгѓ гЃЇиЁЂгЃЈгЃџпјљгЂЋг‚Ёг‚¤гѓЎгѓі!гЂЏ
 #Xom says: Amen!
 %%%%
 _trout_species_
 
-“ш
+и™№
 #a rainbow
 
-•Ѕ‚Ѕ‚ў“Є‚М
+е№ігЃџгЃ„й ­гЃ®
 #a flathead
 
-ЌA‚МђШ‚з‚к‚Ѕ
+е–‰гЃ®е€‡г‚‰г‚ЊгЃџ
 #a cutthroat
 
-—Y
+й›„
 #a bull
 
-‹в
+йЉЂ
 #a silver
 
 w:3
@@ -699,64 +699,64 @@ w:3
 %%%%
 _trout_species_rare_
 
-•ЎЋG‚И
+и¤‡й›‘гЃЄ
 #a complex
 
-‘ЅЉpЊ`‚М
+е¤љи§’еЅўгЃ®
 #a polygonal
 
-‹•ђ”‚М
+и™љж•°гЃ®
 #an imaginary
 
-‹tђ”‚М
+йЂ†ж•°гЃ®
 #an inverse
 
-‚ ‚и‚»‚¤‚а‚И‚ў
+гЃ‚г‚ЉгЃќгЃ†г‚‚гЃЄгЃ„
 #an unlikely
 
-’†ЊГ‚М
+дё­еЏ¤гЃ®
 #a used
 
-“сЋи‚М
+дєЊж‰‹гЃ®
 #a second-hand
 
-‹Ц‚¶‚з‚к‚Ѕ
+з¦ЃгЃг‚‰г‚ЊгЃџ
 #a prohibited
 
-‚в‚и‚Є‚ў‚М‚ ‚й
+г‚„г‚ЉгЃЊгЃ„гЃ®гЃ‚г‚‹
 #a challenging
 
 w:2
-ѓLѓ‹ѓSѓA‚М
+г‚­гѓ«г‚ґг‚ўгЃ®
 #a kilgore
 %%%%
 _xom_child_
 
-Џo—€‘№‚И‚ў‚М
+е‡єжќҐжђЌгЃЄгЃ„гЃ®
 #misbegotten
 
-‚л‚­‚Е‚И‚µ
+г‚ЌгЃЏгЃ§гЃЄгЃ—
 #bastard
 
-ЏX‚ў
+й†њгЃ„
 #ugly
 
-ќ›‚Л‚ЅђФ–С‚М
+ж’ҐгЃ­гЃџиµ¤жЇ›гЃ®
 #red-headed step
 
-‹р‚©‚И
+ж„љгЃ‹гЃЄ
 #silly
 
-‰ї’l‚М–і‚ў
+дѕЎеЂ¤гЃ®з„ЎгЃ„
 #worthless
 
-•ъ“ ‚И
+ж”ѕи•©гЃЄ
 #prodigal
 
-”сЏнЋЇ‚И
+йќћеёёи­гЃЄ
 #insane
 
-‚ў‚Ѕ‚Г‚з‚И
+гЃ„гЃџгЃҐг‚‰гЃЄ
 #naughty
 %%%%
 ######################################
@@ -768,17 +768,17 @@ Ashenzari penance
 %%%%
 Ashenzari welcome
 
-ѓAѓVѓFѓ“ѓUѓЉ‚НЊѕ‚Б‚Ѕ:ЃwЋ„‚Мѓ”ѓBѓWѓ‡ѓ“‚р‹¤‚Й‚µ‚ж‚¤ЃBЋ„‚МЋф‚ў‚р‹¤‚Й‚µ‚ж‚¤Ѓx
+г‚ўг‚·г‚§гѓіг‚¶гѓЄгЃЇиЁЂгЃЈгЃџ:гЂЋз§ЃгЃ®гѓґг‚Јг‚ёгѓ§гѓіг‚’е…±гЃ«гЃ—г‚€гЃ†гЂ‚з§ЃгЃ®е‘ЄгЃ„г‚’е…±гЃ«гЃ—г‚€гЃ†гЂЏ
 #Ashenzari says: Partake of my vision. Partake of my curse.
 %%%%
 Beogh penance
 
-ѓrѓI‚НЊѕ‚Б‚ЅЃFЃwѓIЃ[ѓN€ИЉO‚МЋн‘°‚Й‚±‚к€ИЏгЋњ”Я‚рЋ¦‚·‚И‚з‚ОЃA‰д‚Н‹M—l‚рЋE‚і‚И‚Ї‚к‚О‚И‚з‚И‚ўЃx
+гѓ“г‚ЄгЃЇиЁЂгЃЈгЃџпјљгЂЋг‚Єгѓјг‚Їд»Ґе¤–гЃ®зЁ®ж—ЏгЃ«гЃ“г‚Њд»ҐдёЉж…€ж‚Іг‚’з¤єгЃ™гЃЄг‚‰гЃ°гЂЃж€‘гЃЇиІґж§г‚’ж®єгЃ•гЃЄгЃ‘г‚ЊгЃ°гЃЄг‚‰гЃЄгЃ„гЂЏ
 #Beogh says: Show any more mercy to foul non-orcs and I'll have you killed.
 %%%%
 Beogh welcome
 
-ѓrѓI‚НЊѕ‚Б‚ЅЃFЃw€Щ‹і“k‚рЊЊ‚МЉC‚Е“MЋЂ‚і‚№‚й‚М‚ѕ!Ѓx
+гѓ“г‚ЄгЃЇиЁЂгЃЈгЃџпјљгЂЋз•°ж•™еѕ’г‚’иЎЂгЃ®жµ·гЃ§жєєж­»гЃ•гЃ›г‚‹гЃ®гЃ !гЂЏ
 #Beogh says: Drown the unbelievers in a sea of blood!
 %%%%
 Beogh newgame
@@ -787,22 +787,22 @@ Beogh newgame
 %%%%
 Cheibriados penance
 
-ѓPѓCѓuѓЉѓAѓhѓX‚НЊѕ‚Б‚ЅЃFЃw‚»‚с‚И‚Й‹}‚ў‚Е‚Н‚ў‚Ї‚И‚ўЃI‚д‚Б‚­‚и‚·‚й‚М‚ѕЃIЃx
+г‚±г‚¤гѓ–гѓЄг‚ўгѓ‰г‚№гЃЇиЁЂгЃЈгЃџпјљгЂЋгЃќг‚“гЃЄгЃ«жЂҐгЃ„гЃ§гЃЇгЃ„гЃ‘гЃЄгЃ„пјЃг‚†гЃЈгЃЏг‚ЉгЃ™г‚‹гЃ®гЃ пјЃгЂЏ
 #Cheibriados says: Don't be so hasty! Slow down!
 %%%%
 Cheibriados welcome
 
-ѓPѓCѓuѓЉѓAѓhѓX‚НЊѕ‚Б‚ЅЃFЃw‚д‚Б‚­‚и‚µ‚Д‚ў‚Б‚Д‚ЛЃx
+г‚±г‚¤гѓ–гѓЄг‚ўгѓ‰г‚№гЃЇиЁЂгЃЈгЃџпјљгЂЋг‚†гЃЈгЃЏг‚ЉгЃ—гЃ¦гЃ„гЃЈгЃ¦гЃ­гЂЏ
 #Cheibriados says: Take it easy.
 %%%%
 Elyvilon penance
 
-ѓGѓЉѓ”ѓBѓЌѓ“‚НЊѕ‚Б‚ЅЃFЃwЋ„‚Н‚ ‚И‚Ѕ‚р•ЩЊм‚µ‚Ь‚µ‚е‚¤ЃA‘јђl‚рЏ•‚Ї‚йЋћ‚Й‚ж‚и’Ќ€У‚·‚й‚М‚Е‚·!Ѓx
+г‚ЁгѓЄгѓґг‚Јгѓ­гѓігЃЇиЁЂгЃЈгЃџпјљгЂЋз§ЃгЃЇгЃ‚гЃЄгЃџг‚’ејЃи­·гЃ—гЃѕгЃ—г‚‡гЃ†гЂЃд»–дєєг‚’еЉ©гЃ‘г‚‹ж™‚гЃ«г‚€г‚ЉжіЁж„ЏгЃ™г‚‹гЃ®гЃ§гЃ™!гЂЏ
 #Elyvilon says: I plead of you, be more careful when helping others!
 %%%%
 Elyvilon welcome
 
-ѓGѓЉѓ”ѓBѓЌѓ“‚НЊѕ‚Б‚ЅЃFЃwђўЉE‚р—·‚µЋг‚«ЋТ‚рЏ•‚Ї‚жЃIЃx
+г‚ЁгѓЄгѓґг‚Јгѓ­гѓігЃЇиЁЂгЃЈгЃџпјљгЂЋдё–з•Њг‚’ж—…гЃ—еј±гЃЌиЂ…г‚’еЉ©гЃ‘г‚€пјЃгЂЏ
 #Elyvilon says: Go forth and aid the weak!
 %%%%
 Elyvilon newgame
@@ -811,12 +811,12 @@ Elyvilon newgame
 %%%%
 Fedhas penance
 
-ѓtѓFѓ_ѓX‚Н‚ ‚И‚Ѕ‚ЄЋ©‘R‚Мќ|‚ЙђN“ь‚·‚й‚±‚Ж‚ЙЌR‹c‚µ‚Ѕ
+гѓ•г‚§гѓЂг‚№гЃЇгЃ‚гЃЄгЃџгЃЊи‡Єз„¶гЃ®жЋџгЃ«дѕµе…ҐгЃ™г‚‹гЃ“гЃЁгЃ«жЉ—и­°гЃ—гЃџ
 #Fedhas protests your encroaching upon nature.
 %%%%
 Fedhas welcome
 
-ѓtѓFѓ_ѓX‚НЊѕ‚Б‚ЅЃFЃwђ¶–Ѕ‚Ж‚»‚МЏI‚н‚и‚рЌL‚°‚й‚М‚ѕЃx
+гѓ•г‚§гѓЂг‚№гЃЇиЁЂгЃЈгЃџпјљгЂЋз”џе‘ЅгЃЁгЃќгЃ®зµ‚г‚Џг‚Љг‚’еєѓгЃ’г‚‹гЃ®гЃ гЂЏ
 #Fedhas says: Spread life and death.
 %%%%
 Jiyva penance
@@ -825,7 +825,7 @@ Jiyva penance
 %%%%
 Jiyva welcome
 
-ѓXѓ‰ѓCѓЂ‚Мђ_‚Н”чЏО‚с‚ѕ
+г‚№гѓ©г‚¤гѓ гЃ®зҐћгЃЇеѕ®з¬‘г‚“гЃ 
 #Slime for the Slime God!
 %%%%
 Kikubaaqudgha penance
@@ -834,7 +834,7 @@ Kikubaaqudgha penance
 %%%%
 Kikubaaqudgha welcome
 
-ѓLѓNѓoЃ[ѓNѓ@ѓOѓ@‚НЊѕ‚Б‚ЅЃFЃwЏI‚н‚и‚И‚«‹к’Й‚Ж€Г€Е‚рЉgЋU‚·‚й‚М‚ѕ!Ѓx
+г‚­г‚Їгѓђгѓјг‚Їг‚Ўг‚°г‚ЎгЃЇиЁЂгЃЈгЃџпјљгЂЋзµ‚г‚Џг‚ЉгЃЄгЃЌи‹¦з—›гЃЁжљ—й—‡г‚’ж‹Ўж•ЈгЃ™г‚‹гЃ®гЃ !гЂЏ
 #Kikubaaqudgha says: Spread unending torment and darkness!
 %%%%
 Lugonu penance
@@ -843,12 +843,12 @@ Lugonu penance
 %%%%
 Lugonu welcome
 
-ѓ‹ѓSѓk‚НЊѕ‚Б‚ЅЃFЃw‘е‹sЋE‚Ж•ц‰у‚рЉgЋU‚№‚ж!Ѓx
+гѓ«г‚ґгѓЊгЃЇиЁЂгЃЈгЃџпјљгЂЋе¤§и™ђж®єгЃЁеґ©еЈЉг‚’ж‹Ўж•ЈгЃ›г‚€!гЂЏ
 #Lugonu says: Spread carnage and corruption!
 %%%%
 Lugonu newgame
 
-ѓ‹ѓSѓk‚НЊѕ‚Б‚ЅЃFЃw–А‹{‚Й“ь‚й‚Ѕ‚Я‚Й‹Я‚­‚М–е‚Й“ь‚й‚©ЃAЋ„‚М—Н‚рЋg‚¤‚М‚ѕЃB‚н‚Є‰є–l‚жЃIЃx
+гѓ«г‚ґгѓЊгЃЇиЁЂгЃЈгЃџпјљгЂЋиї·е®®гЃ«е…Ґг‚‹гЃџг‚ЃгЃ«иї‘гЃЏгЃ®й–ЂгЃ«е…Ґг‚‹гЃ‹гЂЃз§ЃгЃ®еЉ›г‚’дЅїгЃ†гЃ®гЃ гЂ‚г‚ЏгЃЊдё‹еѓ•г‚€пјЃгЂЏ
 #Lugonu says: Take this gate or call upon me to unleash you onto the world, my servant!
 %%%%
 Makhleb penance
@@ -857,7 +857,7 @@ Makhleb penance
 %%%%
 Makhleb welcome
 
-ЊЊ‚ЖЌ°‚рѓ}ѓNѓЊѓu‚Й•щ‚°‚ж!
+иЎЂгЃЁй­‚г‚’гѓћг‚Їгѓ¬гѓ–гЃ«жЌ§гЃ’г‚€!
 #Blood and souls for Makhleb!
 %%%%
 Nemelex Xobeh penance
@@ -866,47 +866,47 @@ Nemelex Xobeh penance
 %%%%
 Nemelex Xobeh welcome
 
-ѓlѓЃѓЊѓNѓXЃEѓ\ѓxЃ[‚НЊѕ‚Б‚ЅЃFЃwѓJЃ[ѓh‚Й‚Н‘S‚Д‚Є‚ ‚й!Ѓx
+гѓЌгѓЎгѓ¬г‚Їг‚№гѓ»г‚Ѕгѓ™гѓјгЃЇиЁЂгЃЈгЃџпјљгЂЋг‚«гѓјгѓ‰гЃ«гЃЇе…ЁгЃ¦гЃЊгЃ‚г‚‹!гЂЏ
 #Nemelex Xobeh says: It's all in the cards!
 %%%%
 Okawaru penance
 
-ѓIѓJѓЏѓ‹‚НЊѕ‚Б‚ЅЃFЃwЌЎ“x‚Н”Ъ—т‚И‰°•aЋТ‚Й‚И‚Б‚Д‚Н‚И‚з‚с‚ј!Ѓx
+г‚Єг‚«гѓЇгѓ«гЃЇиЁЂгЃЈгЃџпјљгЂЋд»Љеє¦гЃЇеЌ‘еЉЈгЃЄи‡†з—…иЂ…гЃ«гЃЄгЃЈгЃ¦гЃЇгЃЄг‚‰г‚“гЃћ!гЂЏ
 #Okawaru says: Don't be a dastardly coward this time!
 %%%%
 Okawaru welcome
 
-ѓIѓJѓЏѓ‹‚НЊѕ‚Б‚ЅЃFЃwђн“¬‚Й‚ж‚Б‚ДЋ„‚Й‰hЊх‚р‚а‚Ѕ‚з‚·‚М‚ѕ!Ѓx
+г‚Єг‚«гѓЇгѓ«гЃЇиЁЂгЃЈгЃџпјљгЂЋж€¦й—гЃ«г‚€гЃЈгЃ¦з§ЃгЃ«ж „е…‰г‚’г‚‚гЃџг‚‰гЃ™гЃ®гЃ !гЂЏ
 #Okawaru says: Bring me glory in combat!
 %%%%
 Sif Muna penance
 
-ѓVѓtЃЃѓЂЃ[ѓi‚НЊѓ“{‚µ‚ЅЃFЃwЌЎ“x‚Н‚ж‚и‘Ѕ‚­‚М’Ќ€У‚р•Ґ‚ў‚И‚і‚ў!Ѓx
+г‚·гѓ•пјќгѓ гѓјгѓЉгЃЇжїЂжЂ’гЃ—гЃџпјљгЂЋд»Љеє¦гЃЇг‚€г‚Ље¤љгЃЏгЃ®жіЁж„Џг‚’ж‰•гЃ„гЃЄгЃ•гЃ„!гЂЏ
 #Sif Muna rages: Pay more attention this time!
 %%%%
 Sif Muna welcome
 
-ѓVѓt=ѓЂЃ[ѓi‚Нљ‘‚ў‚ЅЃFЃw‚н‚Ѕ‚µ‚Нђ”‘Ѕ‚М”й–§‚р’m‚Б‚Д‚ў‚йЃcЃcЃx
+г‚·гѓ•=гѓ гѓјгѓЉгЃЇе›ЃгЃ„гЃџпјљгЂЋг‚ЏгЃџгЃ—гЃЇж•°е¤љгЃ®з§еЇ†г‚’зџҐгЃЈгЃ¦гЃ„г‚‹вЂ¦вЂ¦гЂЏ
 #Sif Muna whispers: I know many secrets...
 %%%%
 the Shining One penance
 
-Ѓw‹P‚Ї‚йЋТЃx‚НЊѕ‚Б‚ЅЃFЃwЏ}‹іЋТ‚Е‚ ‚й‚±‚Ж‚Н‚ ‚И‚Ѕ‚МЌЯ‚рђф‚ў—¬‚·‚ѕ‚л‚¤!Ѓx
+гЂЋијќгЃ‘г‚‹иЂ…гЂЏгЃЇиЁЂгЃЈгЃџпјљгЂЋж®‰ж•™иЂ…гЃ§гЃ‚г‚‹гЃ“гЃЁгЃЇгЃ‚гЃЄгЃџгЃ®зЅЄг‚’жґ—гЃ„жµЃгЃ™гЃ г‚ЌгЃ†!гЂЏ
 #The Shining One says: Being a martyr may wash away your sin!
 %%%%
 the Shining One welcome
 
-Ѓw‹P‚Ї‚йЋТЃx‚НЊѕ‚Б‚ЅЃFЃwЊх‚М—Н‚рЏџ—‚Й“±‚­‚М‚ѕ!Ѓx
+гЂЋијќгЃ‘г‚‹иЂ…гЂЏгЃЇиЁЂгЃЈгЃџпјљгЂЋе…‰гЃ®еЉ›г‚’е‹ќе€©гЃ«е°ЋгЃЏгЃ®гЃ !гЂЏ
 #The Shining One says: Lead the forces of light to victory!
 %%%%
 Trog penance
 
-ѓgѓЌѓO‚Н‚В‚Ф‚в‚ў‚ЅЃFЃw‚ ‚ ЃcЌД‚С‚ї‚Б‚Ы‚Ї‚ИЋO•¶•¶Ћm‚Й‚И‚Б‚Д‚µ‚Ь‚Б‚Ѕ‚©ЃcЃcЃx
+гѓ€гѓ­г‚°гЃЇгЃ¤гЃ¶г‚„гЃ„гЃџпјљгЂЋгЃ‚гЃ‚вЂ¦е†ЌгЃігЃЎгЃЈгЃЅгЃ‘гЃЄдё‰ж–‡ж–‡еЈ«гЃ«гЃЄгЃЈгЃ¦гЃ—гЃѕгЃЈгЃџгЃ‹вЂ¦вЂ¦гЂЏ
 Trog mutters: Ah, it's this puny scribbler again...
 %%%%
 Trog welcome
 
-ѓgѓЌѓO‚НЊѕ‚Б‚ЅЃFЃwЉFЋE‚µ‚ѕЃIЃx
+гѓ€гѓ­г‚°гЃЇиЁЂгЃЈгЃџпјљгЂЋзљ†ж®єгЃ—гЃ пјЃгЂЏ
 #Trog says: Kill them all!
 %%%%
 Trog newgame
@@ -919,7 +919,7 @@ Vehumet penance
 %%%%
 Vehumet welcome
 
-ѓ”ѓFѓtѓЃѓbѓg‚НЊѕ‚Б‚ЅЃFЃw’nЌ–‚М‹Ж‰О‚ЕЏIЊ‹‚і‚№‚й‚М‚ѕ!Ѓx
+гѓґг‚§гѓ•гѓЎгѓѓгѓ€гЃЇиЁЂгЃЈгЃџпјљгЂЋењ°зЌ„гЃ®жҐ­зЃ«гЃ§зµ‚зµђгЃ•гЃ›г‚‹гЃ®гЃ !гЂЏ
 #Vehumet says: Let it end in hellfire!
 %%%%
 Xom bored
@@ -932,7 +932,7 @@ Xom yawns.
 %%%%
 Xom newgame
 
-ѓ]ѓЂ‚НЊѕ‚Б‚ЅЃFЃw‚Ё‘O‚ЄђV‚µ‚ўѓIѓ‚ѓ`ѓѓ‚ѕЃIЃx
+г‚ѕгѓ гЃЇиЁЂгЃЈгЃџпјљгЂЋгЃЉе‰ЌгЃЊж–°гЃ—гЃ„г‚ЄгѓўгѓЃгѓЈгЃ пјЃгЂЏ
 #Xom says: A new plaything!
 %%%%
 Xom generic
@@ -943,12 +943,12 @@ Xom titters.
 %%%%
 Yredelemnul penance
 
-ѓCѓЊѓfѓЊѓ“ѓkѓ‹‚НЊѕ‚Б‚ЅЃFЃw‘S‚Д‚НЋЂ‚Й“™‚µ‚ў!ђ№‚И‚йЏ}‹і‚Н‰Ѕ‚а€У–Ў‚µ‚И‚ў!Ѓx
+г‚¤гѓ¬гѓ‡гѓ¬гѓігѓЊгѓ«гЃЇиЁЂгЃЈгЃџпјљгЂЋе…ЁгЃ¦гЃЇж­»гЃ«з­‰гЃ—гЃ„!иЃ–гЃЄг‚‹ж®‰ж•™гЃЇдЅ•г‚‚ж„Џе‘ігЃ—гЃЄгЃ„!гЂЏ
 #Yredelemnul says: All are equal in death! Holy martyrdom means nothing!
 %%%%
 Yredelemnul welcome
 
-ѓCѓЊѓfѓЊѓ“ѓkѓ‹‚НЊѕ‚Б‚ЅЃFЃwЌ•‚«Џј–ѕ‚р‰^‚Ч!ЋЂ‘М‚М‹ф‘њ‚рЉ«‹N‚№‚ж!Ѓx
+г‚¤гѓ¬гѓ‡гѓ¬гѓігѓЊгѓ«гЃЇиЁЂгЃЈгЃџпјљгЂЋй»’гЃЌжќѕжЋг‚’йЃ‹гЃ№!ж­»дЅ“гЃ®еЃ¶еѓЏг‚’е–љиµ·гЃ›г‚€!гЂЏ
 Yredelemnul says: Carry the black torch! Rouse the idle dead!
 %%%%
 Yredelemnul newgame
@@ -957,15 +957,15 @@ Yredelemnul newgame
 %%%%
 Zin penance
 
-ѓWѓ“‚Н‚ ‚И‚Ѕ‚М‰ъ—Ґ€б”Ѕ‚р”с“п‚µ‚Ѕ
+г‚ёгѓігЃЇгЃ‚гЃЄгЃџгЃ®ж€’еѕ‹йЃ•еЏЌг‚’йќћй›ЈгЃ—гЃџ
 #Zin castigates you for your disobedience of the Law.
 
-ѓWѓ“‚Н@_important_subject_@‚МЏd—vђ«‚рЊµ‚µ‚­ђа‚ў‚Ѕ
+г‚ёгѓігЃЇ@_important_subject_@гЃ®й‡Ќи¦ЃжЂ§г‚’еЋігЃ—гЃЏиЄ¬гЃ„гЃџ
 #Zin sternly explains the importance of @_important_subject_@
 %%%%
 Zin welcome
 
-ѓWѓ“‚НЊѕ‚Б‚ЅЃFЃw‚н‚ЄђM“k‚жЃAЊх‚М”Еђ}‚рЌL‚Я‚жЃx
+г‚ёгѓігЃЇиЁЂгЃЈгЃџпјљгЂЋг‚ЏгЃЊдїЎеѕ’г‚€гЂЃе…‰гЃ®з‰€е›іг‚’еєѓг‚Ѓг‚€гЂЏ
 #Zin says: Spread the light, my child.
 %%%%
 Zin newgame
