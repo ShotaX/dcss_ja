@@ -702,7 +702,7 @@ const string make_cost_description(ability_type ability)
      ret.erase(0, 2);
      return ret;
   }
-//Fixme_ja(M‹Â’lÁ”ï—Ê)
+//Fixme_ja(ä¿¡ä»°å€¤æ¶ˆè²»é‡)
 static string _get_piety_amount_str(int value)
 {
     return (value > 15 ? "extremely large" :
@@ -717,7 +717,7 @@ static const string _detailed_cost_description(ability_type ability)
     ostringstream ret;
     vector<string> values;
     string str;
-//Fixme_ja(”\—Íà–¾‰æ–Ê)
+//Fixme_ja(èƒ½åŠ›èª¬æ˜ç”»é¢)
     bool have_cost = false;
     ret << "This ability costs: ";
 
@@ -756,7 +756,7 @@ static const string _detailed_cost_description(ability_type ability)
              ret << "\nHunger : ";
         ret << hunger_cost_string(abil.food_cost + abil.food_cost / 2);
     }
-//Fixme_ja(_get_piety_amount_str‚Ìæ‚ğ“ú–{Œê‰»‚µ‚È‚¢‚Æ‚¢‚¯‚È‚¢‚©‚à‚µ‚ê‚È‚¢B”\—Íà–¾‰æ–Ê‚Å‚ÌM‹Â’lÁ”ï•\¦)
+//Fixme_ja(_get_piety_amount_strã®å…ˆã‚’æ—¥æœ¬èªåŒ–ã—ãªã„ã¨ã„ã‘ãªã„ã‹ã‚‚ã—ã‚Œãªã„ã€‚èƒ½åŠ›èª¬æ˜ç”»é¢ã§ã®ä¿¡ä»°å€¤æ¶ˆè²»è¡¨ç¤º)
     if (abil.piety_cost)
     {
         have_cost = true;
@@ -767,7 +767,7 @@ static const string _detailed_cost_description(ability_type ability)
 
     if (!have_cost)
         ret << "nothing.";
-//Fixme_ja(‚±‚êˆÈŒãA”\—Íà–¾‰æ–Ê‚Å‚Ì”\—Í‚Ì•â‘«à–¾)
+//Fixme_ja(ã“ã‚Œä»¥å¾Œã€èƒ½åŠ›èª¬æ˜ç”»é¢ã§ã®èƒ½åŠ›ã®è£œè¶³èª¬æ˜)
     if (abil.flags & ABFLAG_BREATH)
         ret << "\nYou must catch your breath between uses of this ability.";
 

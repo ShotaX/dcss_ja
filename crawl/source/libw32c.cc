@@ -88,8 +88,8 @@ static CHAR_INFO *screen = NULL;
 static COORD screensize;
 #define SCREENINDEX(x,y) ((x)+screensize.X*(y))
 static unsigned InputCP, OutputCP;
-static const unsigned PREFERRED_CODEPAGE = 437;
 
+static const unsigned PREFERRED_CODEPAGE = 65001;
 static bool w32_smart_cursor = true;
 
 // we can do straight translation of DOS color to win32 console color.

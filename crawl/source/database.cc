@@ -139,8 +139,9 @@ static TextDB AllDBs[] =
 
     TextDB("jtrans", "database/",
            "jtrans.txt",
+           "jtrans_autofight_lua.txt",
            "jtrans_magicspell.txt",
-           "jamutations.txt",
+           "jtrans_mutations.txt",
            NULL),
 };
 

@@ -18,6 +18,7 @@ module "crawl"
 #include "chardump.h"
 #include "cio.h"
 #include "command.h"
+#include "database.h"
 #include "delay.h"
 #include "directn.h"
 #include "format.h"
@@ -53,6 +54,19 @@ module "crawl"
 /////////////////////////////////////////////////////////////////////
 // User accessible
 //
+
+static int crawl_jtrans(lua_State *ls)
+{
+    if (!crawl_state.io_inited)
+        return 0;
+
+    const char *message = luaL_checkstring(ls, 1);
+    if (!message)
+        return 0;
+
+	lua_pushstring(ls, jtrans(message).c_str());
+    return 1;
+}
 
 /*
 --- Print a message.
@@ -986,6 +1000,7 @@ static int crawl_call_dlua(lua_State *ls)
 
 static const struct luaL_reg crawl_clib[] =
 {
+    { "jtrans",         crawl_jtrans },
     { "mpr",            crawl_mpr },
     { "formatted_mpr",  crawl_formatted_mpr },
     { "dpr",            crawl_dpr },
