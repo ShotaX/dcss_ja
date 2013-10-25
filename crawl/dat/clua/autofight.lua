@@ -251,13 +251,13 @@ function attack(allow_movement)
   local x, y, info = get_target(not allow_movement)
   local caught = you.caught()
   if you.confused() then
-    crawl.mpr("You are too confused!")
+    crawl.mpr(crawl.jtrans("You are too confused!"))
   elseif caught then
-    crawl.mpr("You are " .. caught .. "!")
+    crawl.mpr(crawl.jtrans("You are ") .. caught .. "!")
   elseif hp_is_low() then
-    crawl.mpr("You are too injured to fight recklessly!")
+    crawl.mpr(crawl.jtrans("You are too injured to fight recklessly!"))
   elseif info == nil then
-    crawl.mpr("No target in view!")
+    crawl.mpr(crawl.jtrans("No target in view!"))
   elseif info.attack_type == 3 then
     if AUTOFIGHT_FIRE_STOP then
       attack_fire_stop(x,y)
@@ -285,7 +285,7 @@ end
 
 function toggle_autothrow()
   AUTOFIGHT_THROW = not AUTOFIGHT_THROW
-  crawl.mpr(AUTOFIGHT_THROW and "Enabling autothrow." or "Disabling autothrow.")
+  crawl.mpr(AUTOFIGHT_THROW and craw.jtrans("Enabling autothrow.") or craw.jtrans("Disabling autothrow."))
 end
 
 chk_lua_option.autofight_stop = set_stop_level
