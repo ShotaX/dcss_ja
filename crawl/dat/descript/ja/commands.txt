@@ -1,349 +1,349 @@
 %%%%
 CMD_REST
 
-�񕜂Ə��X�̌���
+回復と少々の検索
 %%%%
 CMD_REST verbose
 
-HP��MP�����S�ɉ񕜂���܂ōő�100�^�[���x�e����B
-�G�ΓI�ȃ����X�^�[�𔭌�����Ƌx�e�͒��~�����B
+HPかMPが完全に回復するまで最大100ターン休憩する。
+敵対的なモンスターを発見すると休憩は中止される。
 %%%%
 CMD_EXPLORE
 
-���݂̊K�w�̎����T��
+現在の階層の自動探索
 %%%%
 CMD_EXPLORE verbose
 
-�����Ō��݂̊K�w�̖����̗̈��T�����A�������W�Ώۂ̃A�C�e�������W����B
-�G�ΓI�ȃ����X�^�[�▢�����̎{�݂𔭌�����ƒT���͒��~�����B
+自動で現在の階層の未踏の領域を探索し、自動収集対象のアイテムを収集する。
+敵対的なモンスターや未発見の施設を発見すると探索は中止される。
 %%%%
 CMD_INTERLEVEL_TRAVEL
 
-���ꂽ�K�w�ւ̈ړ�
+離れた階層への移動
 %%%%
 CMD_INTERLEVEL_TRAVEL verbose
 
-���ꂽ�K�w�Ɏ����ňړ�����B�G�ΓI�ȃ����X�^�[�𔭌�����ƈړ��͒��~�����B
+離れた階層に自動で移動する。敵対的なモンスターを発見すると移動は中止される。
 %%%%
 CMD_USE_ABILITY
 
-�_���������ꂽ�\�́A�������͐����I�Ȕ\�͂��g�p����
+神から授けられた能力、もしくは生得的な能力を使用する
 %%%%
 CMD_PRAY
 
-�_�ɋF��
+神に祈る
 %%%%
 CMD_PRAY verbose
 
-���Ȃ��̐_�����т��D�ޏꍇ�A���̂��A�C�e���������B
-�܂����Ȃ����Ւd�̏�ɗ����Ă���ꍇ�A�Ւd�ɑΉ�����_��M���邱�Ƃ��ł���B
-�������̐_�X�͋F�邱�Ƃł����ʂȌ��͂������炷�B
+あなたの神が生贄を好む場合、死体かアイテムを捧げる。
+またあなたが祭壇の上に立っている場合、祭壇に対応する神を信仰することができる。
+いくつかの神々は祈ることでも特別な効力をもたらす。
 %%%%
 CMD_SEARCH_STASHES
 
-�A�C�e���A�{�݂̌���
+アイテム、施設の検索
 %%%%
 CMD_SEARCH_STASHES verbose
 
-���ɔ��������A�C�e����{�݂��������A���̌セ��̑��݂���ꏊ�܂Ŏ����ړ�����B
+既に発見したアイテムや施設を検索し、その後それの存在する場所まで自動移動する。
 %%%%
 CMD_REPLAY_MESSAGES
 
-�ŋ߂̃��b�Z�[�W�̍ē�
+最近のメッセージの再読
 %%%%
 CMD_RESISTS_SCREEN
 
-�L�����N�^�[�̏���\������
+キャラクターの情報を表示する
 %%%%
 CMD_RESISTS_SCREEN verbose
 
-�L�����N�^�[�̒m���Ă���ϐ��A�\�́A�����̔\�́A���̑���\������B
+キャラクターの知っている耐性、能力、装備の能力、その他を表示する。
 %%%%
 CMD_DISPLAY_OVERMAP
 
-�_���W�����̊T�v�̕\��
+ダンジョンの概要の表示
 %%%%
 CMD_DISPLAY_OVERMAP verbose
 
-���Ȃ���������������̓����A�X�₻�̑��̎{�݂̏ꏊ��\������B
+あなたが発見した分岐の入口、店やその他の施設の場所を表示する。
 %%%%
 CMD_DISPLAY_RELIGION
 
-�M�̏�Ԃ̕\��
+信仰の状態の表示
 %%%%
 CMD_DISPLAY_RELIGION verbose
 
-���Ȃ��̐i�s����_�̍D�������A�s�ׁA���Ȃ��̌��݂̐M�󋵁A
-�_�̔\�͂ɂ��ĕ\������B
+あなたの進行する神の好き嫌い、行為、あなたの現在の信仰状況、
+神の能力について表示する。
 %%%%
 CMD_DISPLAY_MUTATIONS
 
-�ˑR�ψق̕\��
+突然変異の表示
 %%%%
 CMD_DISPLAY_SKILLS
 
-�X�L���̊Ǘ�
+スキルの管理
 %%%%
 CMD_DISPLAY_CHARACTER_STATUS
 
-�L�����N�^�[�̃X�e�[�^�X�̕\��
+キャラクターのステータスの表示
 %%%%
 CMD_DISPLAY_CHARACTER_STATUS verbose
 
-���Ȃ��ɓ����Ă���G���`�����g�Ƃ��̑��̕���\������B
+あなたに働いているエンチャントとその他の物を表示する。
 %%%%
 CMD_DISPLAY_KNOWN_OBJECTS
 
-�����ς݂̃A�C�e���̃��X�g
+発見済みのアイテムのリスト
 %%%%
 CMD_SAVE_GAME_NOW
 
-�Q�[���̕ۑ��ƏI��
+ゲームの保存と終了
 %%%%
 CMD_SAVE_GAME_NOW verbose
 
-�Q�[����ۑ����Q�[�����I�����܂��B
-��x�Q�[�����ĊJ����ƕۑ��t�@�C���͍Ăэ폜����܂��B
+ゲームを保存しゲームを終了します。
+一度ゲームを再開すると保存ファイルは再び削除されます。
 %%%%
 CMD_EDIT_PLAYER_TILE
 
-�v���C���[�^�C���̉���
+プレイヤータイルの改造
 %%%%
 CMD_EDIT_PLAYER_TILE verbose
 
-�v���C���[�h�[���ɕ\������鑕���Ǝ푰�̃^�C�����������܂��B
+プレイヤードールに表示される装備と種族のタイルを改造します。
 %%%%
 CMD_DISPLAY_COMMANDS
 
-�Q�[���̃w���v
+ゲームのヘルプ
 %%%%
 CMD_DISPLAY_COMMANDS verbose
 
-�R�}���h�A�I�v�V�����A���̑��̈ꗗ�\��\������B
+コマンド、オプション、その他の一覧表を表示する。
 %%%%
 CMD_CHARACTER_DUMP
 
-�_���v�̏o��
+ダンプの出力
 %%%%
 CMD_CHARACTER_DUMP verbose
 
-���R���Ԃɏn�ǂ��邽��morgue�f�B���N�g���[���̃t�@�C�� 'playername.txt'
-�ɂ��Ȃ��̃L�����N�^�[�Ɋւ���c��ȗʂ̏����o�͂��܂��B
-����̓��C���X�e�[�^�X�A�����A�����A�X�L���A���ӎ����Ȃǂ��܂܂�܂��B
+自由時間に熟読するためmorgueディレクトリー内のファイル 'playername.txt'
+にあなたのキャラクターに関する膨大な量の情報を出力します。
+これはメインステータス、装備、呪文、スキル、注意事項などが含まれます。
 %%%%
 CMD_AUTOFIGHT
 
-�߂��̓G�����X�^�[�Ƃ̎����퓬
+近くの敵モンスターとの自動戦闘
 %%%%
 CMD_AUTOFIGHT verbose
 
-�ł��߂��G�Ɍ������Ĉړ����A������������ł�����U������
+最も近い敵に向かって移動し、装備した武器でそれを攻撃する
 %%%%
 CMD_AUTOFIGHT_NOMOVE
 
-�אڂ����G�����X�^�[�Ƃ̎����퓬
+隣接した敵モンスターとの自動戦闘
 %%%%
 CMD_AUTOFIGHT_NOMOVE verbose
 
-���Ȃ���������������ŗאڂ����G�����X�^�[�Ǝ����퓬���s���B
+あなたが装備した武器で隣接した敵モンスターと自動戦闘を行う。
 %%%%
 CMD_WAIT
 
-1�^�[���̋x�e
+1ターンの休憩
 %%%%
 CMD_WAIT verbose
 
-1�^�[�����̏�Œ�~���x������B
+1ターンその場で停止し休息する。
 %%%%
 CMD_DISPLAY_INVENTORY
 
-�C���x���g���̕\��
+インベントリの表示
 %%%%
 CMD_DISPLAY_INVENTORY verbose
 
-���Ȃ��̃C���x���g���̓��e��\������B
+あなたのインベントリの内容を表示する。
 %%%%
 CMD_CAST_SPELL
 
-�����̉r��
+呪文の詠唱
 %%%%
 CMD_CAST_SPELL verbose
 
-������������B
+呪文を唱える。
 %%%%
 CMD_BUTCHER
 
-���̂��J��
+死体を捌く
 %%%%
 CMD_BUTCHER verbose
 
-���̂����؂�ɎJ���B
+死体を厚切れに捌く。
 %%%%
 CMD_MEMORISE_SPELL
 
-�����̋L��
+呪文の記憶
 %%%%
 CMD_MEMORISE_SPELL verbose
 
-�^��ł���{�A�������͑����ɂ���{��ǂ݁A�������L���Ɉ����󂯂�B
+運んでいる本、もしくは足元にある本を読み、呪文を記憶に引き受ける。
 %%%%
 CMD_DROP
 
-�A�C�e���𗎂Ƃ�
+アイテムを落とす
 %%%%
 CMD_DROP verbose
 
-���Ȃ��̌��ݎ����Ă����ȏ�̃A�C�e���𗎂Ƃ��B
+あなたの現在持っている一つ以上のアイテムを落とす。
 %%%%
 CMD_DISPLAY_MAP
 
-�}�b�v�̕\��
+マップの表示
 %%%%
 CMD_DISPLAY_MAP verbose
 
-�ȑO�T�������}�b�v���ē�����B
+以前探索したマップを案内する。
 %%%%
 CMD_MAP_GOTO_TARGET
 
-�J�[�\���ʒu�ւ̈ړ�
+カーソル位置への移動
 %%%%
 CMD_MAP_GOTO_TARGET verbose
 
-���݂̃J�[�\���ʒu�܂ňړ����J�n����B
+現在のカーソル位置まで移動を開始する。
 %%%%
 CMD_MAP_ADD_WAYPOINT
 
-���Ԓn�_�̓o�^
+中間地点の登録
 %%%%
 CMD_MAP_ADD_WAYPOINT verbose
 
-���ݒn�_�𒆊Ԓn�_�ɐݒ肷��B
+現在地点を中間地点に設定する。
 %%%%
 CMD_MAP_EXCLUDE_AREA
 
-�T���ֈ�̐ݒ�
+探索禁域の設定
 %%%%
 CMD_MAP_EXCLUDE_AREA verbose
 
-�T���ֈ��ݒ�A�͈͂̕ύX�A�̈�̍폜���s���B
+探索禁域を設定、範囲の変更、領域の削除を行う。
 %%%%
 CMD_MAP_CLEAR_EXCLUDES
 
-�T���ֈ�̍폜
+探索禁域の削除
 %%%%
 CMD_MAP_CLEAR_EXCLUDES verbose
 
-���̊K�w�̑S�Ă̒T���ֈ���폜����B
+この階層の全ての探索禁域を削除する。
 %%%%
 CMD_MAP_NEXT_LEVEL
 
-���w�ɉ���
+下層に下る
 %%%%
 CMD_MAP_NEXT_LEVEL verbose
 
-���̉��w�𒲂ׂ�B
+次の下層を調べる。
 %%%%
 CMD_MAP_PREV_LEVEL
 
-��w�ɏオ��
+上層に上がる
 %%%%
 CMD_MAP_PREV_LEVEL verbose
 
-���̏�w�𒲂ׂ�B
+次の上層を調べる。
 %%%%
 CMD_MAP_GOTO_LEVEL
 
-�K�w�̈ړ�
+階層の移動
 %%%%
 CMD_MAP_GOTO_LEVEL verbose
 
-�����K�w��ʂ��ĕʂ̊K�w�ɍs���B
+分岐や階層を通って別の階層に行く。
 %%%%
 CMD_MAP_FIND_UPSTAIR
 
-�o��K�i�̌���
+登り階段の検索
 %%%%
 CMD_MAP_FIND_UPSTAIR verbose
 
-�o��K�i�Ɉړ�����B
+登り階段に移動する。
 %%%%
 CMD_MAP_FIND_DOWNSTAIR
 
-����K�i�̌���
+下り階段の検索
 %%%%
 CMD_MAP_FIND_DOWNSTAIR verbose
 
-����K�i�Ɉړ�����B
+下り階段に移動する。
 %%%%
 CMD_MAP_FIND_YOU
 
-�������g�̌���
+自分自身の検索
 %%%%
 CMD_MAP_FIND_YOU verbose
 
-�}�b�v�J�[�\�������Ȃ��̌��݂̈ʒu�ɖ߂��B
+マップカーソルをあなたの現在の位置に戻す。
 %%%%
 CMD_MAP_FIND_PORTAL
 
-�X�A�|�[�^���̌���
+店、ポータルの検索
 %%%%
 CMD_MAP_FIND_PORTAL verbose
 
-���݂̊K�w�̓X���|�[�^���Ɉړ�����B
+現在の階層の店かポータルに移動する。
 %%%%
 CMD_MAP_FIND_TRAP
 
-㩂̌���
+罠の検索
 %%%%
 CMD_MAP_FIND_TRAP verbose
 
-���݂̊K�w��㩂Ɉړ�����B
+現在の階層の罠に移動する。
 %%%%
 CMD_MAP_FIND_ALTAR
 
-�Ւd�̌���
+祭壇の検索
 %%%%
 CMD_MAP_FIND_ALTAR verbose
 
-���݂̊K�w�̍Ւd���ړ�����B
+現在の階層の祭壇を移動する。
 %%%%
 CMD_MAP_FIND_EXCLUDED
 
-�T���ֈ�̌���
+探索禁域の検索
 %%%%
 CMD_MAP_FIND_EXCLUDED verbose
 
-���݂̊K�w�̑S�Ă̒T���ֈ���ړ�����B
+現在の階層の全ての探索禁域を移動する。
 %%%%
 CMD_MAP_FIND_WAYPOINT
 
-���Ԓn�_�̌���
+中間地点の検索
 %%%%
 CMD_MAP_FIND_WAYPOINT verbose
 
-���݂̊K�w�̑S�Ă̒��Ԓn�_���ړ�����B
+現在の階層の全ての中間地点を移動する。
 %%%%
 CMD_MAP_FIND_STASH
 
-�B���ꏊ�̌���
+隠し場所の検索
 %%%%
 CMD_MAP_FIND_STASH verbose
 
-���݂̊K�w�̑S�ẲB���ꏊ���ړ�����B
+現在の階層の全ての隠し場所を移動する。
 %%%%
 CMD_ZOOM_IN
 
-�g��
+拡大
 %%%%
 CMD_ZOOM_IN verbose
 
-�_���W�����̈���g�傷��B
+ダンジョン領域を拡大する。
 %%%%
 CMD_ZOOM_OUT
 
-�k��
+縮小
 %%%%
 CMD_ZOOM_OUT verbose
 
-�_���W�����̈���k������B
+ダンジョン領域を縮小する。
 %%%%
