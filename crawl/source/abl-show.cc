@@ -463,7 +463,7 @@ string print_abilities()
     const vector<talent> talents = your_talents(false);
 
     if (talents.empty())
-        text += (jtrans("abl1")); //no special abilities
+        text += (jtrans("no special abilities"));
     else
     {
         for (unsigned int i = 0; i < talents.size(); ++i)
@@ -505,23 +505,23 @@ static string _zd_mons_description_for_ability(const ability_def &abil)
     switch (abil.ability)
     {
     case ABIL_MAKE_PLANT:
-        return "Tendrils and shoots erupt from the earth and gnarl into the form of a plant.";
+        return jtrans("Tendrils and shoots erupt from the earth and gnarl into the form of a plant.");
     case ABIL_MAKE_OKLOB_SAPLING:
-        return "A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.";
+        return jtrans("A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.");
     case ABIL_MAKE_OKLOB_PLANT:
-        return "A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.";
+        return jtrans("A rhizome shoots up through the ground and merges with vitriolic spirits in the atmosphere.");
     case ABIL_MAKE_BURNING_BUSH:
-        return "Blackened shoots writhe from the ground and burst into flame!";
+        return jtrans("Blackened shoots writhe from the ground and burst into flame!");
     case ABIL_MAKE_ICE_STATUE:
-        return "Water vapor collects and crystallises into an icy humanoid shape.";
+        return jtrans("Water vapor collects and crystallises into an icy humanoid shape.");
     case ABIL_MAKE_OCS:
-        return "Quartz juts from the ground and forms a humanoid shape. You smell citrus.";
+        return jtrans("Quartz juts from the ground and forms a humanoid shape. You smell citrus.");
     case ABIL_MAKE_SILVER_STATUE:
-        return "Droplets of mercury fall from the ceiling and turn to silver, congealing into a humanoid shape.";
+        return jtrans("Droplets of mercury fall from the ceiling and turn to silver, congealing into a humanoid shape.");
     case ABIL_MAKE_CURSE_SKULL:
-        return "You sculpt a terrible being from the primitive principle of evil.";
+        return jtrans("You sculpt a terrible being from the primitive principle of evil.");
     case ABIL_MAKE_LIGHTNING_SPIRE:
-        return "You mount a charged rod inside a coil.";
+        return jtrans("You mount a charged rod inside a coil.");
     default:
         return "";
     }
@@ -651,9 +651,9 @@ const string make_cost_description(ability_type ability)
   
      if (abil.hp_cost || ep)
       {
-         ret += make_stringf(", %d %s%s", ep + abil.hp_cost.cost(you.hp_max),you.species == SP_DJINNI ? jtrans("EP").c_str() : jtrans("HP").c_str(),
-             abil.flags & ABFLAG_PERMANENT_HP ? jtrans("Permanent").c_str() : "");
-      }
+         ret += make_stringf(", %d %s%s", ep + abil.hp_cost.cost(you.hp_max),
+             abil.flags & ABFLAG_PERMANENT_HP ? "Permanent " : "",
+             you.species == SP_DJINNI ? "EP" : "HP");      }
   
       if (abil.zp_cost)
          ret += make_stringf(", %d ZP", (int)_zp_cost(abil));
@@ -765,9 +765,8 @@ static const string _detailed_cost_description(ability_type ability)
     }
 
     if (!have_cost)
-        ret << "nothing.";
-//Fixme_ja(これ以後、能力説明画面での能力の補足説明)
-    if (abil.flags & ABFLAG_BREATH)
+        ret << jtrans("nothing.");
+//Fixme_ja(これ以後、能力説明画面での能力の補足説明)    if (abil.flags & ABFLAG_BREATH)
         ret << "\n" + jtrans("You must catch your breath between uses of this ability.");
 
     if (abil.flags & ABFLAG_PAIN)
@@ -1222,21 +1221,21 @@ void no_ability_msg()
     // * Vampires can't turn into bats when full of blood.
     // * Tengu can't start to fly if already flying.
     if (you.species == SP_VAMPIRE && you.experience_level >= 3)
-        mpr(jtrans("abl2")); //("Sorry, you're too full to transform right now.")
+        mpr(jtrans("Sorry, you're too full to transform right now."));
     else if (you.species == SP_TENGU && you.experience_level >= 5
              || player_mutation_level(MUT_BIG_WINGS))
     {
         if (you.flight_mode())
-            mpr(jtrans("abl3")); //("You're already flying!")
+            mpr(jtrans("You're already flying!"));
     }
     else if (silenced(you.pos()) && !you_worship(GOD_NO_GOD))
     {
         // At the very least the player has "Renounce Religion", but
         // cannot use it in silence.
-        mpr(jtrans("abl4"));
+        mpr(jtrans("You cannot call out to %s while silenced."));
     }
     else
-        mpr(jtrans("abl5"));
+        mpr(jtrans("Sorry, you're not good enough to have a special ability."));
 }
 
 bool activate_ability()
@@ -1315,7 +1314,7 @@ bool activate_ability()
             // If we can't, cancel out.
             if (selected < 0)
             {
-                mpr(jtrans("abl7")); //("You can't do that.")
+                mpr(jtrans("You can't do that."));
                 crawl_state.zero_turns_taken();
                 return false;
             }
@@ -1352,7 +1351,7 @@ static bool _check_ability_possible(const ability_def& abil,
         if (tal.is_invocation)
         {
             if (!quiet)
-                mpr(jtrans("abl4"));
+                mpr(jtrans("You cannot call out to %s while silenced."));
             return false;
         }
     }
@@ -1362,7 +1361,7 @@ static bool _check_ability_possible(const ability_def& abil,
     {
         const int expected_hunger = you.hunger - abil.food_cost * 2;
         if (!quiet)
-            dprf("hunger: %d, max. food_cost: %d, expected hunger: %d",
+            dprf(jtrans("hunger: %d, max. food_cost: %d, expected hunger: %d"),
                  you.hunger, abil.food_cost * 2, expected_hunger);
         // Safety margin for natural hunger, mutations etc.
         if (expected_hunger <= 150)
@@ -1384,13 +1383,13 @@ static bool _check_ability_possible(const ability_def& abil,
         if (result == -1)
         {
             if (!quiet)
-                mpr(jtrans("abl8")); //("There's no appreciative audience!")
+                mpr(jtrans("There's no appreciative audience!"));
             return false;
         }
         else if (result == 0)
         {
             if (!quiet)
-                mpr(jtrans("abl9")); //("There's no-one here to preach to!")
+                mpr(jtrans("There's no-one here to preach to!"));
             return false;
         }
         return true;
@@ -1403,7 +1402,7 @@ static bool _check_ability_possible(const ability_def& abil,
         if (env.sanctuary_time)
         {
             if (!quiet)
-                mpr(jtrans("abl10")); //("There's already a sanctuary in place on this level.")
+                mpr(jtrans("There's already a sanctuary in place on this level."));
             return false;
         }
         return true;
@@ -1420,7 +1419,7 @@ static bool _check_ability_possible(const ability_def& abil,
             && !you.duration[DUR_WEAK])
         {
             if (!quiet)
-                mpr(jtrans("abl11")); //("Nothing ails you!")
+                mpr(jtrans("Nothing ails you!"));
             return false;
         }
         return true;
@@ -1432,7 +1431,7 @@ static bool _check_ability_possible(const ability_def& abil,
             && !player_rotted())
         {
             if (!quiet)
-                mpr(jtrans("abl12")); //("You don't need to restore your stats or hit points!")
+                mpr(jtrans("You don't need to restore your stats or hit points!"));
             return false;
         }
         return true;
@@ -1441,7 +1440,7 @@ static bool _check_ability_possible(const ability_def& abil,
         if (!player_in_branch(BRANCH_ABYSS))
         {
             if (!quiet)
-                mpr(jtrans("abl13")); //("You aren't in the Abyss!")
+                mpr(jtrans("You aren't in the Abyss!"));
             return false;
         }
         return true;
@@ -1453,7 +1452,7 @@ static bool _check_ability_possible(const ability_def& abil,
         if (player_in_branch(BRANCH_ABYSS) || brdepth[BRANCH_ABYSS] == -1)
         {
             if (!quiet)
-                mpr(jtrans("abl14")); //("You're already here!")
+                mpr(jtrans("You're already here!"));
             return false;
         }
         return true;
@@ -1470,7 +1469,7 @@ static bool _check_ability_possible(const ability_def& abil,
     case ABIL_ASHENZARI_TRANSFER_KNOWLEDGE:
         if (all_skills_maxed(true))
         {
-            mpr(jtrans("abl15")); //("You have nothing more to learn.")
+            mpr(jtrans("You have nothing more to learn."));
             return false;
         }
         return true;
@@ -1499,7 +1498,7 @@ static bool _check_ability_possible(const ability_def& abil,
         if (you.no_tele(false, false, true))
         {
             if (!quiet)
-                mpr(jtrans("abl16")); //("You cannot teleport right now.")
+                mpr(jtrans("You cannot teleport right now."));
             return false;
         }
         return true;
@@ -1545,7 +1544,7 @@ bool activate_talent(const talent& tal)
              || grd(you.pos()) == DNGN_LAVA && !player_likes_lava())
             && !djinni_floats())
         {
-            mpr(jtrans("abl18")); //("Stopping flight right now would be fatal!");
+            mpr(jtrans("Stopping flight right now would be fatal!"));
             crawl_state.zero_turns_taken();
             return false;
         }
@@ -1553,7 +1552,9 @@ bool activate_talent(const talent& tal)
     else if (tal.which == ABIL_TRAN_BAT)
     {
         if (you.strength() <= 5
-            && !yesno("Turning into a bat will reduce your strength to zero. Continue?", false, 'n'))
+            && !yesno(
+            jtrans("Turning into a bat will reduce your strength to zero. Continue?").c_str(),
+            false, 'n'))
         {
             canned_msg(MSG_OK);
             crawl_state.zero_turns_taken();
@@ -1564,14 +1565,18 @@ bool activate_talent(const talent& tal)
     {
         if (feat_dangerous_for_form(TRAN_NONE, env.grid(you.pos())))
         {
-            mpr(jtrans("abl19")); //("Turning back right now would cause you to %s!",
-                 //env.grid(you.pos()) == DNGN_LAVA ? "burn" : "drown")
+            mpr(make_stringf(
+                      jtrans("Turning back right now would cause you to %s!").c_str(), 
+                             env.grid(you.pos()) == DNGN_LAVA ? jtrans("burn").c_str():
+                                                                jtrans("drown").c_str()));
 
             crawl_state.zero_turns_taken();
             return false;
         }
         if (you.form == TRAN_BAT && you.dex() <= 5
-            && !yesno("Turning back will reduce your dexterity to zero. Continue?", false, 'n'))  //
+            && !yesno(
+                jtrans("Turning back will reduce your dexterity to zero. Continue?").c_str(),
+                false, 'n'))
         {
             canned_msg(MSG_OK);
             crawl_state.zero_turns_taken();
@@ -1589,7 +1594,7 @@ bool activate_talent(const talent& tal)
     if ((tal.which == ABIL_EVOKE_FLIGHT || tal.which == ABIL_TRAN_BAT)
         && you.liquefied_ground())
     {
-        mpr((jtrans("abl21")), MSGCH_WARN);
+        mpr((jtrans("You can't escape from the ground with such puny magic!")), MSGCH_WARN);
         crawl_state.zero_turns_taken();
         return false;
     }
@@ -1661,7 +1666,7 @@ bool activate_talent(const talent& tal)
     // No turning back now... {dlb}
     if (random2avg(100, 3) < tal.fail)
     {
-        mpr(jtrans("abl22")); //("You fail to use your ability.")
+        mpr(jtrans("You fail to use your ability."));
         you.turn_is_over = true;
         return false;
     }
@@ -1732,10 +1737,10 @@ static bool _do_ability(const ability_def& abil)
     case ABIL_MAKE_FUNGUS:
         if (count_allies() > MAX_MONSTERS / 2)
         {
-            mpr(jtrans("abl23")); //("Mushrooms don't grow well in such thickets.")
+            mpr(jtrans("Mushrooms don't grow well in such thickets."));
             return false;
         }
-        args.top_prompt="Center fungus circle where?";
+    	args.top_prompt = jtrans("Center fungus circle where?");
         direction(abild, args);
         if (!abild.isValid)
         {
@@ -1787,7 +1792,7 @@ static bool _do_ability(const ability_def& abil)
     // End ZotDef traps
 
     case ABIL_MAKE_OKLOB_CIRCLE:
-        args.top_prompt = "Center oklob circle where?";
+    	args.top_prompt = jtrans("Center oklob circle where?");
         direction(abild, args);
         if (!abild.isValid)
         {
@@ -1819,14 +1824,14 @@ static bool _do_ability(const ability_def& abil)
         // Early exit: don't clobber important features.
         if (is_critical_feature(grd(you.pos())))
         {
-            mpr(jtrans("abl25")); //("The dungeon trembles momentarily.")
+            mpr(jtrans("The dungeon trembles momentarily."));
             return false;
         }
 
         // Generate a portal to something.
         const map_def *mapidx = random_map_for_tag("zotdef_bazaar", false);
         if (mapidx && dgn_safe_place_map(mapidx, false, true, you.pos()))
-            mpr(jtrans("abl26")); //("A mystic portal forms.")
+            mpr(jtrans("A mystic portal forms."));
         else
         {
             mpr("A buggy portal flickers into view, then vanishes.");
@@ -1839,7 +1844,7 @@ static bool _do_ability(const ability_def& abil)
     case ABIL_MAKE_ALTAR:
         if (!zotdef_create_altar())
         {
-            mpr(jtrans("abl27")); //("The dungeon dims for a moment.")
+            mpr(jtrans("The dungeon dims for a moment."));
             return false;
         }
         break;
@@ -1850,14 +1855,14 @@ static bool _do_ability(const ability_def& abil)
                          you.pos(), you.pet_target,
                          0)))
         {
-            mpr(jtrans("abl28")); //("You create a living grenade.")
+            mpr(jtrans("You create a living grenade."));
         }
         if (create_monster(
                mgen_data(MONS_GIANT_SPORE, BEH_FRIENDLY, &you, 6, 0,
                          you.pos(), you.pet_target,
                          0)))
         {
-            mpr(jtrans("abl28")); //("You create a living grenade.")
+            mpr(jtrans("You create a living grenade."));
         }
         break;
 
@@ -1873,7 +1878,7 @@ static bool _do_ability(const ability_def& abil)
 
     case ABIL_MUMMY_RESTORATION:
     {
-        mpr(jtrans("abl29")); //("You infuse your body with magical energy.")
+        mpr(jtrans("You infuse your body with magical energy."));
         bool did_restore = restore_stat(STAT_ALL, 0, false);
 
         const int oldhpmax = you.hp_max;
@@ -1955,12 +1960,12 @@ static bool _do_ability(const ability_def& abil)
             return false;
         }
 
-        if (stop_attack_prompt(hitfunc, "spit at", _sticky_flame_can_hit))
+        if (stop_attack_prompt(hitfunc, jtrans("spit at"), _sticky_flame_can_hit))
             return false;
 
         zapping(ZAP_BREATHE_STICKY_FLAME, (you.form == TRAN_DRAGON) ?
                 2 * you.experience_level : you.experience_level,
-            beam, false, "You spit a glob of burning liquid.");
+        	beam, false, jtrans("You spit a glob of burning liquid.").c_str());
 
         zin_recite_interrupt();
         you.increase_duration(DUR_BREATH_WEAPON,
@@ -1990,7 +1995,7 @@ static bool _do_ability(const ability_def& abil)
             if (you.form == TRAN_DRAGON)
                 power += 12;
 
-            snprintf(info, INFO_SIZE, "You breathe a blast of fire%c",
+            snprintf(info, INFO_SIZE, jtrans("You breathe a blast of fire%c").c_str(),
                      (power < 15) ? '.':'!');
 
             if (!zapping(ZAP_BREATHE_FIRE, power, beam, true, info))
@@ -2002,7 +2007,7 @@ static bool _do_ability(const ability_def& abil)
                  (you.form == TRAN_DRAGON) ?
                      2 * you.experience_level : you.experience_level,
                  beam, true,
-                         "You exhale a wave of freezing cold."))
+                          jtrans("You exhale a wave of freezing cold.").c_str()))
             {
                 return false;
             }
@@ -2010,14 +2015,14 @@ static bool _do_ability(const ability_def& abil)
 
         case ABIL_BREATHE_POISON:
             if (!zapping(ZAP_BREATHE_POISON, you.experience_level, beam, true,
-                         "You exhale a blast of poison gas."))
+                         jtrans("You exhale a blast of poison gas.").c_str()))
             {
                 return false;
             }
             break;
 
         case ABIL_BREATHE_LIGHTNING:
-            mpr(jtrans("abl30")); // ("You breathe a wild blast of lightning!")
+            mpr(jtrans("You breathe a wild blast of lightning!").c_str());
             disc_of_storms(true);
             break;
 
@@ -2025,7 +2030,7 @@ static bool _do_ability(const ability_def& abil)
             if (!zapping(ZAP_BREATHE_ACID,
                 (you.form == TRAN_DRAGON) ?
                     2 * you.experience_level : you.experience_level,
-                beam, true, "You spit a glob of acid."))
+            	beam, true, jtrans("You spit a glob of acid.").c_str()))
             {
                 return false;
             }
@@ -2036,7 +2041,7 @@ static bool _do_ability(const ability_def& abil)
                 (you.form == TRAN_DRAGON) ?
                     2 * you.experience_level : you.experience_level,
                 beam, true,
-                         "You spit a bolt of dispelling energy."))
+                          jtrans("You spit a bolt of dispelling energy.").c_str()))
             {
                 return false;
             }
@@ -2047,7 +2052,7 @@ static bool _do_ability(const ability_def& abil)
                 (you.form == TRAN_DRAGON) ?
                     2 * you.experience_level : you.experience_level,
                 beam, true,
-                         "You spit a glob of burning liquid."))
+                          jtrans("You spit a glob of burning liquid.").c_str()))
             {
                 return false;
             }
@@ -2058,7 +2063,7 @@ static bool _do_ability(const ability_def& abil)
                 (you.form == TRAN_DRAGON) ?
                     2 * you.experience_level : you.experience_level,
                 beam, true,
-                         "You exhale a blast of scalding steam."))
+                          jtrans("You exhale a blast of scalding steam.").c_str()))
             {
                 return false;
             }
@@ -2069,7 +2074,7 @@ static bool _do_ability(const ability_def& abil)
                 (you.form == TRAN_DRAGON) ?
                     2 * you.experience_level : you.experience_level,
                 beam, true,
-                         "You exhale a blast of noxious fumes."))
+                          jtrans("You exhale a blast of noxious fumes.").c_str()))
             {
                 return false;
             }
@@ -2108,7 +2113,7 @@ static bool _do_ability(const ability_def& abil)
             you.attribute[ATTR_PERM_FLIGHT] = 1;
             float_player();
             if (you.species == SP_TENGU)
-                mpr(jtrans("abl31")); //("You feel very comfortable in the air.")
+                mpr(jtrans("You feel very comfortable in the air."));
         }
         else
             cast_fly(you.experience_level * 4);
@@ -2130,7 +2135,7 @@ static bool _do_ability(const ability_def& abil)
 
     case ABIL_EVOKE_TURN_VISIBLE:
         ASSERT(!you.attribute[ATTR_INVIS_UNCANCELLABLE]);
-        mpr(jtrans("abl32")); //("You feel less transparent.")
+        mpr(jtrans("You feel less transparent."));
         you.duration[DUR_INVIS] = 1;
         break;
 
@@ -2143,14 +2148,14 @@ static bool _do_ability(const ability_def& abil)
             if (standing)
                 float_player();
             else
-                mpr(jtrans("abl33")); //("You feel more buoyant.")
+                mpr(jtrans("You feel more buoyant."));
         }
         else
             fly_player(you.skill(SK_EVOCATIONS, 2) + 30);
         break;
 
     case ABIL_EVOKE_FOG:     // cloak of the Thief
-        mpr(jtrans("abl34")); //("With a swish of your cloak, you release a cloud of fog.")
+        mpr(jtrans("With a swish of your cloak, you release a cloud of fog."));
         big_cloud(random_smoke_type(), &you, you.pos(), 50, 8 + random2(8));
         break;
 
@@ -2190,7 +2195,7 @@ static bool _do_ability(const ability_def& abil)
         }
         else
         {
-            mpr(jtrans("abl35")); //("That recitation seems somehow inappropriate.")
+            mpr(jtrans("That recitation seems somehow inappropriate."));
             return false;
         }
         break;
@@ -2208,7 +2213,7 @@ static bool _do_ability(const ability_def& abil)
 
         if (beam.target == you.pos())
         {
-            mpr(jtrans("abl36")); //(You cannot imprison yourself!)
+            mpr(jtrans("You cannot imprison yourself!"));
             return false;
         }
 
@@ -2216,19 +2221,19 @@ static bool _do_ability(const ability_def& abil)
 
         if (mons == NULL || !you.can_see(mons))
         {
-            mpr(jtrans("abl37")); //("There is no monster there to imprison!")
+            mpr(jtrans("There is no monster there to imprison!"));
             return false;
         }
 
         if (mons_is_firewood(mons) || mons_is_conjured(mons->type))
         {
-            mpr(jtrans("abl38")); //("You cannot imprison that!")
+            mpr(jtrans("You cannot imprison that!"));
             return false;
         }
 
         if (mons->friendly() || mons->good_neutral())
         {
-            mpr(jtrans("abl39")); //("You cannot imprison a law-abiding creature!");
+            mpr(jtrans("You cannot imprison a law-abiding creature!"));
             return false;
         }
 
@@ -2271,7 +2276,7 @@ static bool _do_ability(const ability_def& abil)
     case ABIL_KIKU_TORMENT:
         if (!kiku_take_corpse())
         {
-            mpr(jtrans("abl55"));
+            mpr(jtrans("There are no corpses to sacrifice!"));
             return false;
         }
         simple_god_message(jtrans("torments the living!").c_str());
@@ -2280,7 +2285,7 @@ static bool _do_ability(const ability_def& abil)
 
     case ABIL_YRED_INJURY_MIRROR:
         if (yred_injury_mirror())
-            mpr(jtrans("abl41")); //(Another wave of unholy energy enters you.)
+            mpr(jtrans("Another wave of unholy energy enters you."));
         else
         {
             mprf(jtrans("You offer yourself to %s, and fill with unholy energy.").c_str(),
@@ -2319,7 +2324,7 @@ static bool _do_ability(const ability_def& abil)
     }
 
     case ABIL_SIF_MUNA_CHANNEL_ENERGY:
-        mpr(jtrans("abl42")); //("You channel some magical energy.")
+        mpr(jtrans("You channel some magical energy."));
 
         inc_mp(1 + random2(you.skill_rdiv(SK_INVOCATIONS, 1, 4) + 2));
         break;
@@ -2337,8 +2342,8 @@ static bool _do_ability(const ability_def& abil)
         break;
 
     case ABIL_OKAWARU_FINESSE:
-        if (stasis_blocks_effect(true, true, "%s emits a piercing whistle.",
-                                 20, "%s makes your neck tingle."))
+        if (stasis_blocks_effect(true, true, jtrans("%s emits a piercing whistle.").c_str(),
+             20, jtrans("%s makes your neck tingle.").c_str()))
         {
             return false;
         }
@@ -2446,7 +2451,7 @@ static bool _do_ability(const ability_def& abil)
 
     case ABIL_ELYVILON_LIFESAVING:
         if (you.duration[DUR_LIFESAVING])
-            mpr(jtrans("abl43")); //("You renew your call for help.");
+            mpr(jtrans("You renew your call for help."));
         else
         {
             mprf(jtrans("You beseech %s to protect your life.").c_str(),
@@ -2518,7 +2523,7 @@ static bool _do_ability(const ability_def& abil)
 
         if (beam.target == you.pos())
         {
-            mpr(jtrans("abl50"));
+            mpr(jtrans("You cannot banish yourself!"));
             return false;
         }
 
@@ -2587,7 +2592,7 @@ static bool _do_ability(const ability_def& abil)
         break;
 
     case ABIL_STOP_RECALL:
-        mpr(jtrans("abl45")); //("You stop recalling your allies.")
+        mpr(jtrans("You stop recalling your allies."));
         end_recall();
         break;
 
@@ -2699,9 +2704,9 @@ static bool _do_ability(const ability_def& abil)
 
     case ABIL_ASHENZARI_SCRYING:
         if (you.duration[DUR_SCRYING])
-            mpr(jtrans("abl46")); //("You extend your astral sight.")
+            mpr(jtrans("You extend your astral sight."));
         else
-            mpr(jtrans("abl47")); //("You gain astral sight.")
+            mpr(jtrans("You gain astral sight."));
         you.duration[DUR_SCRYING] = 100 + random2avg(you.piety * 2, 2);
         you.xray_vision = true;
         break;
@@ -2719,9 +2724,9 @@ static bool _do_ability(const ability_def& abil)
         break;
 
     case ABIL_RENOUNCE_RELIGION:
-        if (yesno("Really renounce your faith, foregoing its fabulous benefits?",
+        if (yesno(jtrans("Really renounce your faith, foregoing its fabulous benefits?").c_str(),
                   false, 'n')
-            && yesno("Are you sure you won't change your mind later?",
+            && yesno(jtrans("Are you sure you won't change your mind later?").c_str(),
                      false, 'n'))
         {
             excommunication();
@@ -2743,7 +2748,7 @@ static bool _do_ability(const ability_def& abil)
         return false;
 
     case ABIL_NON_ABILITY:
-        mpr(jtrans("abl48"));
+        mpr(jtrans("Sorry, you can't do that."));
         break;
 
     default:
@@ -2810,27 +2815,27 @@ static void _pay_ability_costs(const ability_def& abil, int zpcost)
     if (abil.flags & ABFLAG_HEX_MISCAST)
     {
         MiscastEffect(&you, NON_MONSTER, SPTYP_HEXES, 10, 90,
-                      "power out of control", NH_DEFAULT);
+                      jtrans("power out of control"), NH_DEFAULT);
     }
     if (abil.flags & ABFLAG_NECRO_MISCAST)
     {
         MiscastEffect(&you, NON_MONSTER, SPTYP_NECROMANCY, 10, 90,
-                      "power out of control");
+                      jtrans("power out of control"));
     }
     if (abil.flags & ABFLAG_NECRO_MISCAST_MINOR)
     {
         MiscastEffect(&you, NON_MONSTER, SPTYP_NECROMANCY, 5, 90,
-                      "power out of control");
+                      jtrans("power out of control"));
     }
     if (abil.flags & ABFLAG_TLOC_MISCAST)
     {
         MiscastEffect(&you, NON_MONSTER, SPTYP_TRANSLOCATION, 10, 90,
-                      "power out of control");
+                      jtrans("power out of control"));
     }
     if (abil.flags & ABFLAG_TMIG_MISCAST)
     {
         MiscastEffect(&you, NON_MONSTER, SPTYP_TRANSMUTATION, 10, 90,
-                      "power out of control");
+                      jtrans("power out of control"));
     }
     if (abil.flags & ABFLAG_LEVEL_DRAIN)
         adjust_level(-1);

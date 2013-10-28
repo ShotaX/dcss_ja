@@ -1011,7 +1011,7 @@ void origin_set_inventory(void (*oset)(item_def &item))
 
 static string _milestone_rune(const item_def &item)
 {
-    return string("found ") + item.name(DESC_A) + "."; //---ƒm[ƒg‚Ö‚Ì‹L“üH----//
+    return string("found ") + item.name(DESC_A) + "."; //---ãƒãƒ¼ãƒˆã¸ã®è¨˜å…¥ï¼Ÿ----//
 }
 
 static void _milestone_check(const item_def &item)
@@ -1019,7 +1019,7 @@ static void _milestone_check(const item_def &item)
     if (item_is_rune(item))
         mark_milestone("rune", _milestone_rune(item));
     else if (item_is_orb(item))
-        mark_milestone("orb", "found the Orb of Zot!");  //---ƒm[ƒg‚Ö‚Ì‹L“üH----//
+        mark_milestone("orb", "found the Orb of Zot!");  //---ãƒãƒ¼ãƒˆã¸ã®è¨˜å…¥ï¼Ÿ----//
 }
 
 static void _check_note_item(item_def &item)
