@@ -129,7 +129,116 @@ Me19
 ################################
 #abl-show.cc
 #######################################
+%%%%
+extremely large
 
+とても多い
+%%%%
+large_abl
+
+多い
+%%%%
+moderate
+
+普通
+%%%%
+small_abl
+
+少々
+%%%%
+, Glow
+
+、発光
+%%%%
+, Food
+
+、満腹度
+%%%%
+, Piety
+
+、信仰値
+%%%%
+, Breath
+
+、息切れ
+%%%%
+, Pain
+
+、苦痛
+%%%%
+, Exhaustion
+
+、疲労
+%%%%
+, Instant
+
+、即時発動
+%%%%
+, Fruit
+
+、フルーツ
+%%%%
+, Fruit or Piety
+
+、フルーツか信仰値
+%%%%
+, Stat drain
+
+、能力値の減少
+%%%%
+Permanent
+
+の恒久的な喪失
+%%%%
+Glow   :
+
+発光   : 
+%%%%
+Hunger :
+
+空腹   : 
+%%%%
+Piety  :
+
+信仰値 : 
+%%%%
+You must catch your breath between uses of this ability.
+
+この能力を使用するとあなたは息切れする
+%%%%
+Using this ability will hurt you.
+
+この能力はあなたを傷つける
+%%%%
+It will drain your piety while it is active.
+
+これは発動するたびに信仰値を消費する
+%%%%
+It cannot be used when exhausted.
+
+これは疲労時に使用できない
+%%%%
+It is instantaneous.
+
+これはターンを消費しない
+%%%%
+You can use it even if confused.
+
+これはあなたが混乱状態でも発動できる
+%%%%
+It will lower your experience level by one when used.
+
+
+%%%%
+It will temporarily drain your strength, intelligence or dexterity when used.
+
+これは使用時にあなたの能力値を一時的に減少させる
+%%%%
+This ability costs:
+
+この能力のコスト  : 
+%%%%
+%%%%
 %%%%
 You feel more confident with your borrowed prowess.
 

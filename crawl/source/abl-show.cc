@@ -645,15 +645,14 @@ const string make_cost_description(ability_type ability)
          }
          else
          {
-             ret += make_stringf(", %d %sMP", abil.mp_cost,
-                 abil.flags & ABFLAG_PERMANENT_MP ? "Permanent " : "");
+             ret += make_stringf(", %d MP%s", abil.mp_cost,
+                 abil.flags & ABFLAG_PERMANENT_MP ? jtrans("Permanent").c_str() : "");
          }
   
      if (abil.hp_cost || ep)
       {
-         ret += make_stringf(", %d %s%s", ep + abil.hp_cost.cost(you.hp_max),
-             abil.flags & ABFLAG_PERMANENT_HP ? "Permanent " : "",
-             you.species == SP_DJINNI ? "EP" : "HP");
+         ret += make_stringf(", %d %s%s", ep + abil.hp_cost.cost(you.hp_max),you.species == SP_DJINNI ? jtrans("EP").c_str() : jtrans("HP").c_str(),
+             abil.flags & ABFLAG_PERMANENT_HP ? jtrans("Permanent").c_str() : "");
       }
   
       if (abil.zp_cost)
@@ -663,52 +662,52 @@ const string make_cost_description(ability_type ability)
           && (you.is_undead != US_SEMI_UNDEAD || you.hunger_state > HS_STARVING))
       {
          if (you.species == SP_DJINNI)
-             ret += ", Glow";
+             ret += jtrans(", Glow");
          else
-             ret += ", Food"; // randomised and exact amount hidden from player
+             ret += jtrans(", Food"); // randomised and exact amount hidden from player
       }
   
      if (abil.piety_cost || abil.flags & ABFLAG_PIETY)
-         ret += ", Piety"; // randomised and exact amount hidden from player
+         ret += jtrans(", Piety"); // randomised and exact amount hidden from player
   
       if (abil.flags & ABFLAG_BREATH)
-         ret += ", Breath";
+         ret += jtrans(", Breath");
   
       if (abil.flags & ABFLAG_PAIN)
-         ret += ", Pain";
+         ret += jtrans(", Pain");
   
       if (abil.flags & ABFLAG_EXHAUSTION)
-         ret += ", Exhaustion";
+         ret += jtrans(", Exhaustion");
   
       if (abil.flags & ABFLAG_INSTANT)
-         ret += ", Instant"; // not really a cost, more of a bonus - bwr
+         ret += jtrans(", Instant"); // not really a cost, more of a bonus - bwr
   
       if (abil.flags & ABFLAG_FRUIT)
-         ret += ", Fruit";
+         ret += jtrans(", Fruit");
   
       if (abil.flags & ABFLAG_VARIABLE_FRUIT)
-         ret += ", Fruit or Piety";
+         ret += jtrans(", Fruit or Piety");
   
       if (abil.flags & ABFLAG_LEVEL_DRAIN)
          ret += ", Level drain";
   
       if (abil.flags & ABFLAG_STAT_DRAIN)
-         ret += ", Stat drain";
+         ret += jtrans(", Stat drain");
   
       // If we haven't output anything so far, then the effect has no cost
      if (ret.empty())
-         return "None";
+         return jtrans("None");
   
      ret.erase(0, 2);
      return ret;
   }
-//Fixme_ja(信仰値消費量)
+
 static string _get_piety_amount_str(int value)
 {
-    return (value > 15 ? "extremely large" :
-            value > 10 ? "large" :
-            value > 5  ? "moderate" :
-                         "small");
+    return (value > 15 ? jtrans("extremely large") :
+            value > 10 ? jtrans("large_abl") :
+            value > 5  ? jtrans("moderate") :
+                         jtrans("small_abl"));
 }
 
 static const string _detailed_cost_description(ability_type ability)
@@ -719,7 +718,7 @@ static const string _detailed_cost_description(ability_type ability)
     string str;
 //Fixme_ja(能力説明画面)
     bool have_cost = false;
-    ret << "This ability costs: ";
+    ret << jtrans("This ability costs:");
 
     if (abil.mp_cost > 0)
     {
@@ -751,16 +750,16 @@ static const string _detailed_cost_description(ability_type ability)
     {
         have_cost = true;
          if (you.species == SP_DJINNI)
-             ret << "\nGlow   : ";
+             ret << "\n" + jtrans("Glow   :");
          else
-             ret << "\nHunger : ";
+             ret << "\n" + jtrans("Hunger :");
         ret << hunger_cost_string(abil.food_cost + abil.food_cost / 2);
     }
 //Fixme_ja(_get_piety_amount_strの先を日本語化しないといけないかもしれない。能力説明画面での信仰値消費表示)
     if (abil.piety_cost)
     {
         have_cost = true;
-        ret << "\nPiety  : ";
+        ret << "\n" + jtrans("Piety  :");
         int avgcost = abil.piety_cost.base + abil.piety_cost.add / 2;
         ret << _get_piety_amount_str(avgcost);
     }
@@ -769,28 +768,28 @@ static const string _detailed_cost_description(ability_type ability)
         ret << "nothing.";
 //Fixme_ja(これ以後、能力説明画面での能力の補足説明)
     if (abil.flags & ABFLAG_BREATH)
-        ret << "\nYou must catch your breath between uses of this ability.";
+        ret << "\n" + jtrans("You must catch your breath between uses of this ability.");
 
     if (abil.flags & ABFLAG_PAIN)
-        ret << "\nUsing this ability will hurt you.";
+        ret << "\n" + jtrans("Using this ability will hurt you.");
 
     if (abil.flags & ABFLAG_PIETY)
-        ret << "\nIt will drain your piety while it is active.";
+        ret << "\n" + jtrans("It will drain your piety while it is active.");
 
     if (abil.flags & ABFLAG_EXHAUSTION)
-        ret << "\nIt cannot be used when exhausted.";
+        ret << "\n" + jtrans("It cannot be used when exhausted.");
 
     if (abil.flags & ABFLAG_INSTANT)
-        ret << "\nIt is instantaneous.";
+        ret << "\n" + jtrans("It is instantaneous.");
 
     if (abil.flags & ABFLAG_CONF_OK)
-        ret << "\nYou can use it even if confused.";
+        ret << "\n" + jtrans("You can use it even if confused.");
 
     if (abil.flags & ABFLAG_LEVEL_DRAIN)
-        ret << "\nIt will lower your experience level by one when used.";
+        ret << "\n" + jtrans("It will lower your experience level by one when used.");
 
     if (abil.flags & ABFLAG_STAT_DRAIN)
-        ret << "\nIt will temporarily drain your strength, intelligence or dexterity when used.";
+        ret << "\n" + jtrans("It will temporarily drain your strength, intelligence or dexterity when used.");
 
     return ret.str();
 }
