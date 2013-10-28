@@ -277,7 +277,7 @@ void attack::calc_elemental_brand_damage(beam_type flavour,
     if (needs_message && special_damage > 0 && verb)
     {
         special_damage_message = make_stringf(
-            jtrans("%sha%sni%s%s").c_str(),
+            jtrans("attack280%s %s %s%s").c_str(),
             atk_name(DESC_THE).c_str(),
 			defender_name().c_str(),
             attacker->conj_verb(verb).c_str(),
