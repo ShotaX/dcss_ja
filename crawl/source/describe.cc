@@ -402,7 +402,7 @@ static string _randart_descrip(const item_def &item)
     artefact_properties_t  proprt;
     artefact_known_props_t known;
     artefact_desc_properties(item, proprt, known);
-//Fixme_ja(‚±‚±ˆê‘Ñ‚ÍƒA[ƒeƒBƒtƒ@ƒNƒg‚Ìà–¾‚ğs‚Á‚Ä‚¢‚é)
+//Fixme_ja(ã“ã“ä¸€å¸¯ã¯ã‚¢ãƒ¼ãƒ†ã‚£ãƒ•ã‚¡ã‚¯ãƒˆã®èª¬æ˜ã‚’è¡Œã£ã¦ã„ã‚‹)
     const property_descriptor propdescs[] = {
         { ARTP_AC, "It affects your AC (%d).", false },
         { ARTP_EVASION, "It affects your evasion (%d).", false},
@@ -455,7 +455,7 @@ static string _randart_descrip(const item_def &item)
             char buf[80];
             snprintf(buf, sizeof buf, "%+d", proprt[propdescs[i].property]);
             sdesc = replace_all(sdesc, "%d", buf);
-//Fixme_ja(ƒA[ƒeƒBƒtƒ@ƒNƒg‚Å‚Ì‘Ï«‚Æã“_‚ª•t‚¢‚½‚Æ‚«‚Ìà–¾)
+//Fixme_ja(ã‚¢ãƒ¼ãƒ†ã‚£ãƒ•ã‚¡ã‚¯ãƒˆã§ã®è€æ€§ã¨å¼±ç‚¹ãŒä»˜ã„ãŸã¨ãã®èª¬æ˜)
             if (propdescs[i].is_graded_resist)
             {
                 int idx = proprt[propdescs[i].property] + 3;
@@ -553,7 +553,7 @@ int str_to_trap(const string &s)
 // describe_demon
 //
 // Describes the random demons you find in Pandemonium.
-// Fixme_ja(ƒpƒ“ƒfƒ‚ƒf[ƒ‚ƒ“‚Ìà–¾‚ğ¶¬)
+// Fixme_ja(ãƒ‘ãƒ³ãƒ‡ãƒ¢ãƒ‡ãƒ¼ãƒ¢ãƒ³ã®èª¬æ˜ã‚’ç”Ÿæˆ)
 //---------------------------------------------------------------
 static string _describe_demon(const string& name, flight_type fly)
 {
@@ -732,7 +732,7 @@ void append_weapon_stats(string &description, const item_def &item)
     _append_value(description, property(item, PWPN_SPEED) * 10, false);
    description += "%";
 }
-//Fixme_ja(•ŠíA–h‹ï‚Ì_‚Ö‚Ì’ïR«‚©H)
+//Fixme_ja(æ­¦å™¨ã€é˜²å…·ã®é…¸ã¸ã®æŠµæŠ—æ€§ã‹ï¼Ÿ)
 static string _corrosion_resistance_string(const item_def &item)
 {
     const int ench = item.base_type == OBJ_WEAPONS ? item.plus2 : item.plus;
@@ -763,7 +763,7 @@ static string _corrosion_resistance_string(const item_def &item)
     else
         return "";
 }
-//Fixme_ja(—¼è‚¿‚©•Ğè‚©)
+//Fixme_ja(ä¸¡æ‰‹æŒã¡ã‹ç‰‡æ‰‹ã‹)
 static string _handedness_string(const item_def &item)
 {
     string description;
@@ -784,7 +784,7 @@ static string _handedness_string(const item_def &item)
 //---------------------------------------------------------------
 //
 // describe_weapon
-//Fixme_ja(‘„‚Ì”­“®A•€‚Ì•¡”UŒ‚A’ZŒ•‚Ì•sˆÓ‘Å‚¿‚Ìà–¾‚È‚Ç)
+//Fixme_ja(æ§ã®ç™ºå‹•ã€æ–§ã®è¤‡æ•°æ”»æ’ƒã€çŸ­å‰£ã®ä¸æ„æ‰“ã¡ã®èª¬æ˜ãªã©)
 //---------------------------------------------------------------
 static string _describe_weapon(const item_def &item, bool verbose)
 {
@@ -829,7 +829,7 @@ static string _describe_weapon(const item_def &item, bool verbose)
             break;
         }
     }
-//Fixme_ja(ƒGƒS•Ší‚Ìà–¾)
+//Fixme_ja(ã‚¨ã‚´æ­¦å™¨ã®èª¬æ˜)
     // special weapon descrip
     if (spec_ench != SPWPN_NORMAL && item_type_known(item))
     {
@@ -980,7 +980,7 @@ static string _describe_weapon(const item_def &item, bool verbose)
             description += "\n";
             description += rand_desc;
         }
-//Fixme_ja(988.‚±‚Ì•Ší‚É‚ÍŠô‚Â‚©‚Ì‰B‚³‚ê‚½“Á«‚ª‚ ‚é‚©‚à‚µ‚ê‚È‚¢B)
+//Fixme_ja(988.ã“ã®æ­¦å™¨ã«ã¯å¹¾ã¤ã‹ã®éš ã•ã‚ŒãŸç‰¹æ€§ãŒã‚ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã€‚)
         // XXX: Can't happen, right?
         if (!item_ident(item, ISFLAG_KNOW_PROPERTIES)
             && item_type_known(item))
@@ -988,7 +988,7 @@ static string _describe_weapon(const item_def &item, bool verbose)
             description += "\nThis weapon may have some hidden properties.";
         }
     }
-//Fixme_ja(•Ší‚ÌƒJƒeƒSƒŠ[)
+//Fixme_ja(æ­¦å™¨ã®ã‚«ãƒ†ã‚´ãƒªãƒ¼)
     const bool launcher = is_range_weapon(item);
     if (verbose)
     {
@@ -1059,7 +1059,7 @@ static string _describe_weapon(const item_def &item, bool verbose)
 //---------------------------------------------------------------
 //
 // describe_ammo
-//Fixme_ja(‰“‹——£•Ší)
+//Fixme_ja(é è·é›¢æ­¦å™¨)
 //---------------------------------------------------------------
 static string _describe_ammo(const item_def &item)
 {
@@ -1457,7 +1457,7 @@ static string _describe_jewellery(const item_def &item, bool verbose)
         // Explicit description of ring power (useful for randarts)
         // Note that for randarts we'll print out the pluses even
         // in the case that its zero, just to avoid confusion. -- bwr
-		// Fixme_ja(Šeí‘•ü•i‚Ìà–¾‚ª“ü‚éBartf‚Ìƒx[ƒX‚Ìà–¾‚Í‚±‚±‚©‚çˆø‚©‚ê‚é)
+		// Fixme_ja(å„ç¨®è£…é£¾å“ã®èª¬æ˜ãŒå…¥ã‚‹ã€‚artfã®ãƒ™ãƒ¼ã‚¹ã®èª¬æ˜ã¯ã“ã“ã‹ã‚‰å¼•ã‹ã‚Œã‚‹)
         if (item.plus != 0
             || item.sub_type == RING_SLAYING && item.plus2 != 0
             || is_artefact(item))
@@ -1595,7 +1595,7 @@ static string _describe_deck(const item_def &item)
         }
         description += "\n";
     }
-//Fixme_ja(ˆø‚¢‚½ƒJ[ƒhAŸ‚ÌƒJ[ƒh)
+//Fixme_ja(å¼•ã„ãŸã‚«ãƒ¼ãƒ‰ã€æ¬¡ã®ã‚«ãƒ¼ãƒ‰)
     const int num_cards = cards_in_deck(item);
     int last_known_card = -1;
     if (top_card_is_known(item))
@@ -1617,7 +1617,7 @@ static string _describe_deck(const item_def &item)
         }
         description += "\n";
     }
-    //Fixme_ja(Mark card?stack5‚ÌƒJ[ƒhH)
+    //Fixme_ja(Mark card?stack5ã®ã‚«ãƒ¼ãƒ‰ï¼Ÿ)
     // Marked cards which we don't know straight off.
     vector<card_type> marked_cards;
     for (int i = last_known_card + 1; i < num_cards; ++i)
@@ -1673,7 +1673,7 @@ static string _describe_deck(const item_def &item)
 
 // Adds a list of all spells contained in a book or rod to its
 // description string.
-// Fixme_ja(ô•¶‚Ìà–¾—“)
+// Fixme_ja(å‘ªæ–‡ã®èª¬æ˜æ¬„)
 void append_spells(string &desc, const item_def &item)
 {
     if (!item.has_spells())
@@ -2828,7 +2828,7 @@ static int _get_spell_description(const spell_type spell,
 #endif
     }
 
-    // Report summon cap //Fixme_ja(¢Š«ãŒÀ)
+    // Report summon cap //Fixme_ja(å¬å–šä¸Šé™)
     if (const int limit = summons_limit(spell))
     {
         description += "You can sustain at most " + number_in_words(limit)
@@ -3106,7 +3106,7 @@ static string _describe_chimera(const monster_info& mi) //Fixme_ja(chimera)
     return description;
 }
 
-static const char* _get_resist_name(mon_resist_flags res_type) //Fixme_ja(ƒ‚ƒ“ƒXƒ^[‚Ì‘Ï«H)
+static const char* _get_resist_name(mon_resist_flags res_type) //Fixme_ja(ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã®è€æ€§ï¼Ÿ)
 {
     switch (res_type)
     {
@@ -3131,7 +3131,7 @@ static const char* _get_resist_name(mon_resist_flags res_type) //Fixme_ja(ƒ‚ƒ“ƒX
     }
 }
 
-static const char* _get_threat_desc(mon_threat_level_type threat) //Fixme_ja(ŠëŒ¯“x)
+static const char* _get_threat_desc(mon_threat_level_type threat) //Fixme_ja(å±é™ºåº¦)
 {
     switch (threat)
     {
