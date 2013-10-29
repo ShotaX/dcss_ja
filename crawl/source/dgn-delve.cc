@@ -82,7 +82,7 @@ static coord_def _rndpull(store_type& store, int top)
     top = min<int>(top, store.size());
     ASSERT(top > 0);
 
-    // TODO: that ³√size thingy?
+    // TODO: that 3√size thingy?
 
     top = store.size() - 1 - random2(top);
     coord_def c = store[top];
