@@ -862,14 +862,14 @@ void bolt::digging_wall_effect()
                 return;
             }
             else if (feat == DNGN_SLIMY_WALL)
-                wall = jtrans("slimeno");
+                wall = jtrans("beam865_slime");
             else if (player_in_branch(BRANCH_PANDEMONIUM))
-                wall = jtrans("weird stuffno");
+                wall = jtrans("beam867_weird stuff");
             else
-                wall = jtrans("rockno");
+                wall = jtrans("rock");
 
             mprf(jtrans("%s %s shatters into small pieces.").c_str(),
-                 agent() && agent()->is_player() ? "" : jtrans("Some").c_str(),
+                 agent() && agent()->is_player() ? jtrans("The").c_str() : jtrans("Some").c_str(),
                  wall.c_str());
         }
         break;
@@ -895,9 +895,9 @@ void bolt::fire_wall_effect()
     // Destroy the wall.
     nuke_wall(pos());
     if (you.see_cell(pos()))
-        emit_message(MSGCH_PLAIN, "The tree burns like a torch!");
+        emit_message(MSGCH_PLAIN, jtrans("The tree burns like a torch!").c_str());
     else if (you.can_smell())
-        emit_message(MSGCH_PLAIN, "You smell burning wood.");
+        emit_message(MSGCH_PLAIN, jtrans("You smell burning wood.").c_str());
     if (whose_kill() == KC_YOU)
         did_god_conduct(DID_KILL_PLANT, 1, effect_known);
     else if (whose_kill() == KC_FRIENDLY && !crawl_state.game_is_arena())
@@ -1643,7 +1643,7 @@ int mons_adjust_flavoured(monster* mons, bolt &pbolt, int hurted,
                 return hurted;
 
             if (original > hurted)
-                simple_monster_message(mons, " resists.");
+                simple_monster_message(mons, jtrans(" resists.").c_str());
 
             if (mons->observable())
                 pbolt.obvious_effect = true;
@@ -1855,7 +1855,7 @@ int mons_adjust_flavoured(monster* mons, bolt &pbolt, int hurted,
             if (hurted < original)
             {
                 if (doFlavouredEffects)
-                    simple_monster_message(mons, " partially resists.");
+                    simple_monster_message(mons, jtrans(" partially resists.").c_str());
             }
             if (!hurted)
             {
@@ -4546,7 +4546,7 @@ void bolt::affect_monster(monster* mon)
             if (mons_near(mon))
                 mprf(jtrans("The %s %s %s.").c_str(), name.c_str(),
                      mon->observable() ? mon->name(DESC_THE).c_str()
-                                       : jtrans("somethingni").c_str(),hit_verb.c_str());
+                                       : jtrans("beam4549_something").c_str(),hit_verb.c_str());
             else if (heard && !noise_msg.empty())
                 mprf(MSGCH_SOUND, "%s", noise_msg.c_str());
         }
@@ -4646,23 +4646,23 @@ void bolt::affect_monster(monster* mon)
             // if it would have hit otherwise...
             if (_test_beam_hit(beam_hit, rand_ev, is_beam, 0, r))
             {
-                string deflects = (defl == 2) ? jtrans("deflects_mon") : jtrans("repels_mon");
-                msg::stream << mon->name(DESC_THE) << jtrans("ha")
-                            << name << jtrans("wo") << deflects
+                string deflects = (defl == 2) ? jtrans("beam_4649_deflects") : jtrans("beam_4649_repels");
+                msg::stream << mon->name(DESC_THE) << jtrans("beam_4650 ")
+                            << name << jtrans("beam_4651 the ") << deflects
                             << '!' << endl;
             }
             else if (mons_class_flag(mon->type, M_PHASE_SHIFT)
                      && _test_beam_hit(beam_hit, rand_ev - random2(8),
                                        is_beam, 0, r))
             {
-                msg::stream << mon->name(DESC_THE) << jtrans("ha")
-                            << jtrans("out as the") << name << jtrans("passes through")
+                msg::stream << mon->name(DESC_THE) << jtrans("beam_4658_ momentarily phases ")
+                            << jtrans("beam_4659_out as the ") << name << jtrans("passes through")
                             << "\n";
             }
             else
             {
-                msg::stream << "" << name << jtrans("ha")
-                            << mon->name(DESC_THE) << jtrans("ni") << jtrans("misses") << endl;
+                msg::stream << jtrans("beam_4664_The ") << name << jtrans("beam_4664 ")
+                            << mon->name(DESC_THE) << jtrans("beam_4665_misses") << endl;
             }
         }
         return;
