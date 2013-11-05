@@ -149,6 +149,7 @@ action_counts
 %%%%
 are
 
+は
 #string verb = par.se? "were" : "are";
 %%%%
  overloaded with stuff.\n
@@ -161,10 +162,12 @@ are
 %%%%
 You were 
 
+あなたは
 #par.text += "You were ";
 %%%%
 You are 
 
+あなたは
 #par.text += "You are ";
 %%%%
 .\n\n
@@ -173,6 +176,7 @@ You are
 %%%%
 are
 
+は
 #string verb = par.se? "were" : "are";
 %%%%
  in spider-form.
@@ -553,10 +557,12 @@ You escaped
 %%%%
 You were 
 
+あなたは
 #par.text += "You were " + prep_branch_level_name();
 %%%%
 You are 
 
+あなたは
 #par.text += "You are " + prep_branch_level_name();
 %%%%
 .
@@ -1085,30 +1091,37 @@ total
 %%%%
 starving
 
+飢餓
 #"starving",
 %%%%
 near starving
 
+飢餓寸前
 #"near starving",
 %%%%
 very hungry
 
+とても空腹
 #"very hungry",
 %%%%
 hungry
 
+空腹
 #"hungry",
 %%%%
 not hungry
 
+空腹で無い
 #"not hungry",
 %%%%
 full
 
+満腹
 #"full",
 %%%%
 very full
 
+とても満腹
 #"very full",
 %%%%
 completely stuffed
@@ -1117,34 +1130,42 @@ completely stuffed
 %%%%
 bloodless
 
+無血
 #"bloodless",
 %%%%
 near bloodless
 
+無血寸前
 #"near bloodless",
 %%%%
 very thirsty
 
+とても渇き
 #"very thirsty",
 %%%%
 thirsty
 
+渇き
 #"thirsty",
 %%%%
 not thirsty
 
+渇いていない
 #"not thirsty",
 %%%%
 full
 
+満腹
 #"full",
 %%%%
 very full
 
+とても満腹
 #"very full",
 %%%%
 almost alive
 
+ほぼ生者
 #"almost alive",
 %%%%
 
