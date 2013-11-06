@@ -955,3 +955,10 @@ string jtrans(const string &key)
     string text = _query_database(JtransDB, key, true, true);
     return text == "" ? key : text;
 }
+
+string jtrans_make_stringf(const string &msg, const string &subject, const string &verb, const string &object)
+{
+    if(Options.lang_name == "ja")
+        return make_stringf(msg.c_str(), subject.c_str(), object.c_str(), verb.c_str());
+    return make_stringf(msg.c_str(), subject.c_str(), verb.c_str(), object.c_str());
+}

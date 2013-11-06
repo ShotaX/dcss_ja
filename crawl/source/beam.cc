@@ -4647,22 +4647,23 @@ void bolt::affect_monster(monster* mon)
             if (_test_beam_hit(beam_hit, rand_ev, is_beam, 0, r))
             {
                 string deflects = (defl == 2) ? jtrans("beam_4649_deflects") : jtrans("beam_4649_repels");
-                msg::stream << mon->name(DESC_THE) << jtrans("beam_4650 ")
-                            << name << jtrans("beam_4651 the ") << deflects
-                            << '!' << endl;
+                string msg = jtrans_make_stringf(jtrans("%s %s the %s!").c_str(),
+                                             mon->name(DESC_THE).c_str(), deflects.c_str(), name.c_str());
+            	msg::stream << msg << endl;
             }
             else if (mons_class_flag(mon->type, M_PHASE_SHIFT)
                      && _test_beam_hit(beam_hit, rand_ev - random2(8),
                                        is_beam, 0, r))
             {
-                msg::stream << mon->name(DESC_THE) << jtrans("beam_4658_ momentarily phases ")
-                            << jtrans("beam_4659_out as the ") << name << jtrans("passes through")
-                            << "\n";
+                string msg = make_stringf(jtrans("%s momentarily phases out as the %s passes through.").c_str(),
+                                             mon->name(DESC_THE).c_str(), name.c_str());
+                msg::stream << msg << endl;
             }
             else
             {
-                msg::stream << jtrans("beam_4664_The ") << name << jtrans("beam_4664 ")
-                            << mon->name(DESC_THE) << jtrans("beam_4665_misses") << endl;
+                string msg = make_stringf(jtrans("The %s misses %s.").c_str(),
+                                             name.c_str(), mon->name(DESC_THE).c_str());
+                msg::stream << msg << endl;
             }
         }
         return;
