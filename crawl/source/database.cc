@@ -158,6 +158,7 @@ static TextDB AllDBs[] =
            "jtrans_command.txt",
            "jtrans_dactions.txt",
            "jtrans_decks.txt",
+           "jtrans_delay.txt",
            "jtrans_autofight_lua.txt",
            "jtrans_magicspell.txt",
            "jtrans_mutations.txt",
