@@ -24497,38 +24497,6 @@ Omniscient
 
 全知全能の賢者
 %%%%
-It greatly speeds your metabolism.
-
-これはあなたの新陳代謝を非常に加速する。
-%%%%
-It speeds your metabolism.
-
-これはあなたの新陳代謝を加速する。
-%%%%
-It greatly slows your metabolism.
-
-これはあなたの新陳代謝を減速する。
-%%%%
-It slows your metabolism.
-
-これはあなたの新陳代謝を減速する。
-%%%%
-It makes you %s%s stealthy.
-
-これはあなたの隠密性を%s%s。
-%%%%
-much
-
-とても
-%%%%
-less_des
-
-減少させる
-%%%%
-more_des
-
-増加させる
-%%%%
 It affects your evasion (%d).
 
 それはあなたのAC(%d)に影響する
