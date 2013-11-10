@@ -463,15 +463,15 @@ static string _randart_descrip(const item_def &item)
                 idx = max(idx, 0);
 
                 const char* prefixes[] = {
-                    "It makes you extremely vulnerable to ",
-                    "It makes you very vulnerable to ",
-                    "It makes you vulnerable to ",
-                    "Buggy descriptor!",
-                    "It protects you from ",
-                    "It greatly protects you from ",
-                    "It renders you almost immune to "
+                    "It makes you extremely vulnerable to %s.",
+                    "It makes you very vulnerable to %s.",
+                    "It makes you vulnerable to %s.",
+                    "Buggy descriptor! %s",
+                    "It protects you from %s.",
+                    "It greatly protects you from %s.",
+                    "It renders you almost immune to %s."
                 };
-                sdesc = prefixes[idx] + sdesc + '.';
+                sdesc = make_stringf(jtrans(prefixes[idx]).c_str(), sdesc.c_str());
             }
 
             description += '\n';
@@ -818,7 +818,8 @@ static string _describe_weapon(const item_def &item, bool verbose)
             {
                 string adj = (item.sub_type == WPN_DAGGER) ? jtrans("extremely")
                                                            : jtrans("particularly");
-                description += "\n\n" + jtrans("It is") + adj + jtrans("good for stabbing unaware enemies.");
+                description += "\n\n" + 
+                               make_stringf(jtrans("It is %s good for stabbing unaware enemies.").c_str(), adj.c_str());
             }
             break;
         default:
@@ -883,9 +884,8 @@ static string _describe_weapon(const item_def &item, bool verbose)
         case SPWPN_VORPAL:
             if (is_range_weapon(item))
             {
-                description += jtrans("Any fired from");
-                description += ammo_name(item);
-                description += jtrans("it inflicts extra damage.");
+                description += make_stringf(jtrans("Any %s fired from it inflicts extra damage.").c_str(),
+                                            ammo_name(item));
             }
             else
             {
@@ -955,13 +955,13 @@ static string _describe_weapon(const item_def &item, bool verbose)
     const bool launcher = is_range_weapon(item);
     if (verbose)
     {
-        description += "\n\n" + jtrans("This weapon falls into the");
+        description += "\n\n";
 
         const skill_type skill =
             is_range_weapon(item)? range_skill(item) : weapon_skill(item);
 
         description +=
-            make_stringf(jtrans("'%s' category.").c_str(),
+            make_stringf(jtrans("This weapon falls into the '%s' category.").c_str(),
                          skill == SK_FIGHTING ? "buggy" : skill_name(skill));
 
         if (!launcher)
@@ -1001,14 +1001,15 @@ static string _describe_weapon(const item_def &item, bool verbose)
         }
         else
         {
-            description += "\n" + jtrans("It can be maximally enchanted to +_wep");
-            _append_value(description, MAX_WPN_ENCHANT, false);
+            description += "\n";
             if (item.sub_type != WPN_BLOWGUN)
             {
-                description += ", +";
-                _append_value(description, MAX_WPN_ENCHANT, false);
+                description += make_stringf(jtrans("It can be maximally enchanted to +%d, +%d").c_str(), MAX_WPN_ENCHANT, MAX_WPN_ENCHANT);
             }
-            description += jtrans(".(max_wep)");
+            else
+            {
+                description += make_stringf(jtrans("It can be maximally enchanted to +%d").c_str() , MAX_WPN_ENCHANT);
+            }
         }
     }
 
@@ -1138,7 +1139,8 @@ static string _describe_ammo(const item_def &item)
             description += jtrans("It will pass through any targets it hits, potentially hitting all targets in its path until it reaches maximum range.");
             break;
         case SPMSL_DISPERSAL:
-            description += jtrans("Any target it hits will blink, with a tendency towards blinking further away from the one who") + threw_or_fired + jtrans("it.");
+            description += make_stringf(jtrans("Any target it hits will blink, with a tendency towards blinking further away from the one who %s it.").c_str(),
+                                        threw_or_fired.c_str());
             always_destroyed = true;
             break;
         case SPMSL_EXPLODING:
@@ -1166,23 +1168,24 @@ static string _describe_ammo(const item_def &item)
         if (can_throw)
         {
             iflags_t race = get_equip_race(item);
-
-            description += jtrans("It is more deadly when thrown by");
-            description += (race == ISFLAG_DWARVEN) ? jtrans("dwarves") :
-                           (race == ISFLAG_ELVEN)   ? jtrans("elves")
-                                                    : jtrans("orcs");
-            description += (can_launch) ? jtrans(", and it") : jtrans(".(more deadly)");
-            description += " ";
+            string race_s = (race == ISFLAG_DWARVEN) ? jtrans("dwarves") :
+                            (race == ISFLAG_ELVEN)   ? jtrans("elves")
+                                                     : jtrans("orcs");
+            if (can_launch)
+            {
+                description += make_stringf(jtrans("It is more deadly when thrown by %s, and ").c_str(), race_s.c_str());
+                description += make_stringf(jtrans("it is more effective in conjunction with %s launchers.").c_str(), 
+                                                   racial_description_string(item));
+            }
+            else
+            {
+                description += make_stringf(jtrans("It is more deadly when thrown by %s.").c_str(), race_s.c_str());
+            }
         }
-
-        if (can_launch)
+        else if (can_launch)
         {
-            if (!can_throw)
-                description += jtrans("It_throw");
-
-            description += jtrans("is more effective in conjunction with");
-            description += racial_description_string(item);
-            description += jtrans("launchers.");
+        	description += make_stringf(jtrans("It is more effective in conjunction with %s launchers.").c_str(), 
+                                   racial_description_string(item));
         }
     }
 
@@ -1345,11 +1348,10 @@ static string _describe_armour(const item_def &item, bool verbose)
             description += ".";
         }
 
-        description += "\n" + jtrans("It fits");
-        description += (race == ISFLAG_DWARVEN) ? jtrans("dwarves") :
-                       (race == ISFLAG_ELVEN)   ? jtrans("elves")
-                                                : jtrans("orcs");
-        description += jtrans("well.");
+        string race_s = (race == ISFLAG_DWARVEN) ? jtrans("dwarves") :
+                        (race == ISFLAG_ELVEN)   ? jtrans("elves")
+                                                 : jtrans("orcs");
+    	description += "\n" + make_stringf(jtrans("It fits %s well.").c_str(), race_s.c_str());
     }
 //Fixme_ja()
     if (!is_artefact(item))
@@ -1361,9 +1363,7 @@ static string _describe_armour(const item_def &item, bool verbose)
         }
         else if (item.plus < max_ench || !item_ident(item, ISFLAG_KNOW_PLUSES))
         {
-            description += "\n" + jtrans("It can be maximally enchanted to +");
-            _append_value(description, max_ench, false);
-            description += jtrans(".(max_armour)");
+            description += "\n" + make_stringf(jtrans("It can be maximally enchanted to +%d.").c_str(), max_ench);
         }
         else
             description += "\n" + jtrans("It cannot be enchanted further.");
@@ -1466,9 +1466,8 @@ static string _describe_jewellery(const item_def &item, bool verbose)
         if (!item_ident(item, ISFLAG_KNOW_PROPERTIES) ||
             !item_ident(item, ISFLAG_KNOW_TYPE))
         {
-            description += "\n" + jtrans("This_des");
-            description += (jewellery_is_amulet(item) ? jtrans("amulet") : jtrans("ring"));
-            description += jtrans("may have hidden properties.");
+            description += "\n" + make_stringf(jtrans("This %s may have hidden properties.").c_str(),
+                                              (jewellery_is_amulet(item) ? jtrans("amulet") : jtrans("ring")).c_str());
         }
     }
 
@@ -1839,8 +1838,7 @@ string get_item_description(const item_def &item, bool verbose,
             if (item.plus < max_charges
                 || !item_ident(item, ISFLAG_KNOW_PLUSES))
             {
-                description << "\n" + jtrans("It can have at most") << max_charges
-                            << jtrans("charges.");
+                description << "\n" + make_stringf(jtrans("It can have at most %d charges").c_str(), max_charges);
             }
             else
                 description << "\n" + jtrans("It is fully charged.");
@@ -1938,10 +1936,8 @@ string get_item_description(const item_def &item, bool verbose,
                 const int num_charges = item.plus2 / ROD_CHARGE_MULT;
                 if (max_charges > num_charges)
                 {
-                    description << "\n" + jtrans("It can currently hold") << num_charges
-                                << jtrans("charges. It can be magically")
-                                << jtrans("recharged to contain up to")
-                                << max_charges << jtrans("charges.");
+                    description << "\n" + make_stringf(jtrans("It can currently hold %d charges. ").c_str(), num_charges)
+                                << make_stringf(jtrans("It can be magically recharged to contain up to %d charges.").c_str(), max_charges);
                 }
                 else
                     description << "\n" + jtrans("Its capacity can be increased no further.");
@@ -1949,20 +1945,16 @@ string get_item_description(const item_def &item, bool verbose,
                 const int recharge_rate = item.special;
                 if (recharge_rate < max_recharge_rate)
                 {
-                    description << "\n" + jtrans("Its current recharge rate is")
-                                << (recharge_rate >= 0 ? "+" : "")
-                                << recharge_rate << jtrans(". It can be magically")
-                                << jtrans("recharged up to +") << max_recharge_rate
-                                << ".";
+                    description << "\n" + make_stringf(jtrans("Its current recharge rate is %s%d. ").c_str(), 
+                                                       (recharge_rate >= 0 ? "+" : ""), recharge_rate)
+                                << make_stringf(jtrans("It can be magically recharged up to +%d.").c_str(), max_recharge_rate);
                 }
                 else
                     description << "\n" + jtrans("Its recharge rate is at maximum.");
             }
             else
             {
-                description << "\n" + jtrans("It can have at most") << max_charges
-                            << jtrans("charges and +") << max_recharge_rate
-                            << jtrans("recharge rate.");
+                description << "\n" + make_stringf(jtrans("It can have at most %d charges and +%d recharge rate.").c_str(), max_charges, max_recharge_rate);
             }
         }
         else if (Options.dump_book_spells)
@@ -2043,14 +2035,19 @@ string get_item_description(const item_def &item, bool verbose,
         {
             if (need_extra_line)
                 description << "\n";
-            description << "\n" + jtrans("It");
-            if (item_known_cursed(item))
-                description << jtrans("has a curse placed upon it, and it");
-
+            description << "\n";
             const int mass = item_mass(item);
-            description << jtrans("weighs around") << (mass / 10)
-                        << "." << (mass % 10)
-                        << " aum. "; // arbitrary unit of mass
+            
+            if (item_known_cursed(item))
+            {
+                description << jtrans("It has a curse placed upon it, and ");
+                description << make_stringf(jtrans("it weighs around %d.%d aum.").c_str(), (mass / 10), (mass % 10));
+                // arbitrary unit of mass
+            }
+            else
+            {
+                description << make_stringf(jtrans("It weighs around %d.%d aum.").c_str(), (mass / 10), (mass % 10));
+            }
 
             if (is_artefact(item))
             {
@@ -2067,15 +2064,10 @@ string get_item_description(const item_def &item, bool verbose,
 //Fixme_ja
     if (conduct_type ct = good_god_hates_item_handling(item))
     {
-        description << "\n\n" << uppercase_first(god_name(you.religion))
-                    << jtrans("opposes the use of such an");
-
-        if (ct == DID_NECROMANCY)
-            description << jtrans("evil");
-        else
-            description << jtrans("unholy");
-
-        description << jtrans("item.");
+        description << "\n\n" 
+                    << make_stringf(jtrans("%s opposes the use of such an %s item.").c_str(), 
+                                    uppercase_first(god_name(you.religion)).c_str(),
+                                    (ct == DID_NECROMANCY ?  jtrans("evil") : jtrans("unholy")).c_str());
     }
     else if (god_hates_item_handling(item))
     {
@@ -2753,8 +2745,8 @@ static int _get_spell_description(const spell_type spell,
     // Report summon cap //Fixme_ja(召喚上限)
     if (const int limit = summons_limit(spell))
     {
-        description += jtrans("You can sustain at most") + number_in_words(limit)
-                       + jtrans("creatures summoned by this spell.");
+        description += make_stringf(jtrans("You can sustain at most %d creatures summoned by this spell.").c_str(), 
+                                    number_in_words(limit).c_str());
     }
 //Fixme_ja
     const bool rod = item && item->base_type == OBJ_RODS;
@@ -3105,11 +3097,10 @@ static string _monster_spells_description(const monster_info& mi) //Fixme_ja
     else if (caster)
         result << jtrans("has mastered the following spells:");
     else if (book != MST_NO_SPELLS)
-        result << jtrans("possesses the following") << jtrans(adj) << jtrans("abilities:");
+        result << make_stringf(jtrans("possesses the following %s abilities:").c_str(), jtrans(adj).c_str());
     else
     {
-        result << jtrans("possesses one of the following sets of") << jtrans(adj)
-               << jtrans("abilities:") + "\n";
+        result << make_stringf(jtrans("possesses one of the following sets of %s abilities:\n").c_str(), jtrans(adj).c_str());
     }
 
     // Loop through books and display spells/abilities for each of them
@@ -3231,11 +3222,11 @@ static string _monster_stat_description(const monster_info& mi)
 
     if (!resist_descriptions.empty())
     {
-        result << uppercase_first(pronoun) << jtrans("ha")
-               << comma_separated_line(resist_descriptions.begin(),
+        result << make_stringf(jtrans("%s is %s.\n").c_str(),
+                  uppercase_first(pronoun).c_str(),
+                  comma_separated_line(resist_descriptions.begin(),
                                        resist_descriptions.end(),
-                                       "; and ", "; ")
-               << ".\n";
+                                       jtrans("; and "), jtrans("; ")).c_str());
     }
 
     if (mons_is_statue(mi.type, true))
@@ -3247,9 +3238,9 @@ static string _monster_stat_description(const monster_info& mi)
     // Is monster susceptible to anything? (On a new line.)
     if (!suscept.empty())
     {
-        result << uppercase_first(pronoun) << jtrans("ha") << comma_separated_line(suscept.begin(), suscept.end())
-    		   << jtrans("is susceptible to")
-               << ".\n";
+        result << make_stringf(jtrans("%s is susceptible to %s.\n").c_str(),
+                  uppercase_first(pronoun).c_str(),
+                  comma_separated_line(suscept.begin(), suscept.end()).c_str());
     }
 
     const int mr = mi.res_magic();
@@ -3306,8 +3297,8 @@ static string _monster_stat_description(const monster_info& mi)
     case FL_NONE:
         break;
     case FL_WINGED:
-        result << uppercase_first(pronoun)<< jtrans("can fly by flapping")
-        	   << jtrans("wings.") + "\n";
+        result << uppercase_first(pronoun)<< jtrans("can fly by flapping wings.")
+        	   << "\n";
         break;
     case FL_LEVITATE:
         result << uppercase_first(pronoun) << jtrans("can fly.") + "\n";

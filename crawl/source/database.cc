@@ -146,7 +146,6 @@ static TextDB AllDBs[] =
            "jtrans_areas.txt",
            "jtrans_arena.txt",
            "jtrans_art_func.txt",
-           "jtrans_artifact_abi.txt",
            "jtrans_attack.txt",
            "jtrans_attitude_change.txt",
            "jtrans_beam.txt",
@@ -158,6 +157,8 @@ static TextDB AllDBs[] =
            "jtrans_command.txt",
            "jtrans_dactions.txt",
            "jtrans_decks.txt",
+           "jtrans_delay.txt",
+           "jtrans_describe.txt",
            "jtrans_autofight_lua.txt",
            "jtrans_magicspell.txt",
            "jtrans_mutations.txt",
@@ -961,4 +962,11 @@ string jtrans_make_stringf(const string &msg, const string &subject, const strin
     if(Options.lang_name == "ja")
         return make_stringf(msg.c_str(), subject.c_str(), object.c_str(), verb.c_str());
     return make_stringf(msg.c_str(), subject.c_str(), verb.c_str(), object.c_str());
+}
+
+string jtrans_make_stringf(const string &msg, const string &verb, const string &object)
+{
+    if(Options.lang_name == "ja")
+        return make_stringf(msg.c_str(), object.c_str(), verb.c_str());
+    return make_stringf(msg.c_str(), verb.c_str(), object.c_str());
 }

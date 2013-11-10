@@ -51,6 +51,7 @@ string getHintString(const string &key);
 
 string jtrans(const string &key);
 string jtrans_make_stringf(const string &msg, const string &subject, const string &verb, const string &object);
+string jtrans_make_stringf(const string &msg, const string &verb, const string &object);
 
 vector<string> getAllFAQKeys(void);
 string getFAQ_Question(const string &key);
