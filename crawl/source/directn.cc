@@ -3427,11 +3427,10 @@ static string _mon_enchantments_string(const monster_info& mi)
 
     if (!enchant_descriptors.empty())
     {
-        return uppercase_first(mi.pronoun(PRONOUN_SUBJECTIVE))
-            + jtrans("ha")
-            + comma_separated_line(enchant_descriptors.begin(),
-                                   enchant_descriptors.end())
-            + "";
+        return make_stringf(jtrans("%s is %s.").c_str(),
+            uppercase_first(mi.pronoun(PRONOUN_SUBJECTIVE)),
+            comma_separated_line(enchant_descriptors.begin(),
+                                   enchant_descriptors.end()));
     }
     else
         return "";
