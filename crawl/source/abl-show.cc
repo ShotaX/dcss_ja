@@ -716,7 +716,7 @@ static const string _detailed_cost_description(ability_type ability)
     ostringstream ret;
     vector<string> values;
     string str;
-//Fixme_ja(能力説明画面)
+
     bool have_cost = false;
     ret << jtrans("This ability costs:");
 
@@ -755,7 +755,7 @@ static const string _detailed_cost_description(ability_type ability)
              ret << "\n" + jtrans("Hunger :");
         ret << hunger_cost_string(abil.food_cost + abil.food_cost / 2);
     }
-//Fixme_ja(_get_piety_amount_strの先を日本語化しないといけないかもしれない。能力説明画面での信仰値消費表示)
+
     if (abil.piety_cost)
     {
         have_cost = true;
@@ -766,7 +766,8 @@ static const string _detailed_cost_description(ability_type ability)
 
     if (!have_cost)
         ret << jtrans("nothing.");
-//Fixme_ja(これ以後、能力説明画面での能力の補足説明)    if (abil.flags & ABFLAG_BREATH)
+
+    if (abil.flags & ABFLAG_BREATH)
         ret << "\n" + jtrans("You must catch your breath between uses of this ability.");
 
     if (abil.flags & ABFLAG_PAIN)
