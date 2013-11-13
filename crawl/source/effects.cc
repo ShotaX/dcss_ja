@@ -2051,20 +2051,21 @@ static void _rot_inventory_food(int time_delta)
             if ((num_corpses_gone + num_corpses_rotted) > 0)
                 strs.push_back(jtrans("corpses"));
 
-            msg += comma_separated_line(strs.begin(), strs.end());
-            msg += jtrans("ha");
+            string item, rot;
+            item = comma_separated_line(strs.begin(), strs.end());
 
             if (num_corpses_rotted == 0)
-                msg += jtrans("completely2");
+                rot = jtrans("completely");
             else if ((num_chunks_gone + num_bones_gone
                       + num_corpses_gone) == 0)
             {
-                msg += jtrans("partially2");
+                rot = jtrans("partially");
             }
             else
-                msg += jtrans("completely or partially");
+                rot = jtrans("completely or partially");
 
-            msg += jtrans("rotted away.");
+            msg += make_stringf(jtrans("%s in your inventory have %s rotted away.").c_str(),
+                                item.c_str(), rot.c_str());
             mprf(MSGCH_ROTTEN_MEAT, "%s", msg.c_str());
         }
         burden_change();
@@ -3212,8 +3213,8 @@ void slime_wall_damage(actor* act, int delay)
         if (!you_worship(GOD_JIYVA) || you.penance[GOD_JIYVA])
         {
             splash_with_acid(strength, NON_MONSTER, false,
-                             (walls > 1) ? "The walls burn you!"
-                                         : "The wall burns you!");
+                             (walls > 1) ? jtrans("The walls burn you!").c_str()
+                                         : jtrans("The wall burns you!").c_str());
         }
     }
     else
@@ -3228,10 +3229,8 @@ void slime_wall_damage(actor* act, int delay)
                                               roll_dice(2, strength));
         if (dam > 0 && you.can_see(mon))
         {
-            mprf("%s%s%s",
-mon->name(DESC_THE).c_str(),
-jtrans("ni").c_str(),
-jtrans("The walls burn").c_str());
+            mprf((walls > 1) ? jtrans("The walls burn %s!").c_str() : jtrans("The wall burns %s!").c_str(),
+                  mon->name(DESC_THE).c_str());
         }
         mon->hurt(NULL, dam, BEAM_ACID);
     }
@@ -3258,7 +3257,7 @@ void recharge_elemental_evokers(int exp)
         if (evoker->plus2 <= 0)
         {
             evoker->plus2 = 0;
-            mprf("Your %s has recharged.", evoker->name(DESC_QUALNAME).c_str());
+            mprf(jtrans("Your %s has recharged.").c_str(), evoker->name(DESC_QUALNAME).c_str());
         }
     }
 }

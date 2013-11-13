@@ -88,9 +88,7 @@ static bool _reaching_weapon_attack(const item_def& wpn)
 {
     if (you.caught())
     {
-        mprf("%s%s.", 
-held_status(),
-jtrans("You cannot attack while").c_str());
+        mprf(jtrans("You cannot attack while %s.").c_str(), held_status());
         return false;
     }
 
@@ -213,10 +211,9 @@ jtrans("You cannot attack while").c_str());
             mpr(jtrans("You reach to attack!"));
         else
         {
-            mprf("%s%s",
+            mprf(jtrans("%s is in the way.").c_str(),
                  mons->observable() ? mons->name(DESC_THE).c_str()
-                                    : jtrans("Something you can't see").c_str(),
-jtrans("is in the way").c_str());
+                                    : jtrans("Something you can't see").c_str());
         }
     }
 
@@ -227,10 +224,8 @@ jtrans("is in the way").c_str());
 
         if (you.confused())
         {
-            mprf("%s%s", 
-jtrans("You swing wildly").c_str(),
-beam.isMe() ?
-                                       jtrans("and almost hit yourself!").c_str() : "");
+            mprf(jtrans("You swing wildly %s").c_str(), beam.isMe() ?
+                       jtrans("and almost hit yourself!").c_str() : ".");
         }
         else
             mpr(jtrans("You attack empty space."));
