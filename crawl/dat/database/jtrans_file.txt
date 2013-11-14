@@ -213,7 +213,7 @@ failed to rename %s -> %s
 %%%%
 The ghost fades into the shadows.
 
-‚»‚Ì–S—ì‚Í‰e‚Ì’†‚ÉÁ‚¦‹‚Á‚½
+ãã®äº¡éœŠã¯å½±ã®ä¸­ã«æ¶ˆãˆå»ã£ãŸ
 #mpr(jtrans("The ghost fades into the shadows."));
 %%%%
 #can_climb
@@ -226,7 +226,7 @@ The ghost fades into the shadows.
 %%%%
 Your summoned allies%s are left behind.
 
-‚ ‚È‚½‚Ì¢Š«‚µ‚½’‡ŠÔ‚Íæ‚èc‚³‚ê‚½
+ã‚ãªãŸã®å¬å–šã—ãŸä»²é–“ã¯å–ã‚Šæ®‹ã•ã‚ŒãŸ
 #mprf(jtrans("Your summoned allies%s are left behind.").c_str(),
 %%%%
 
@@ -235,7 +235,7 @@ Your summoned allies%s are left behind.
 %%%%
 Your mindless thrall%s behind.
 
-‚ ‚È‚½‚Ì¸_‚È‚«“z—ê‚Íæ‚èc‚³‚ê‚½
+ã‚ãªãŸã®ç²¾ç¥ãªãå¥´éš·ã¯å–ã‚Šæ®‹ã•ã‚ŒãŸ
 #mprf(jtrans("Your mindless thrall%s behind.").c_str(),
 %%%%
  
@@ -364,7 +364,7 @@ saved
 %%%%
 Char dump unsuccessful! Sorry about that.
 
-c”O‚È‚ª‚çƒLƒƒƒ‰ƒNƒ^[‚Ìƒ_ƒ“ƒv‚Í¸”s‚µ‚Ü‚µ‚½
+æ®‹å¿µãªãŒã‚‰ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ãƒ€ãƒ³ãƒ—ã¯å¤±æ•—ã—ã¾ã—ãŸ
 #mpr(jtrans("Char dump unsuccessful! Sorry about that."));
 %%%%
 See you soon, %s!
