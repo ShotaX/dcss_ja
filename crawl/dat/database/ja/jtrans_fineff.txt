@@ -1,22 +1,22 @@
 %%%%
 Electricity arcs through the water!
 
-“dŒÊ‚Í…‚ğ‰î‚µ‚Ä“`‚í‚Á‚½I
+é›»å¼§ã¯æ°´ã‚’ä»‹ã—ã¦ä¼ã‚ã£ãŸï¼
 #mpr(jtrans("Electricity arcs through the water!"));
 %%%%
 Your damage is reflected back at you!
 
-‚ ‚È‚½‚Ö‚Ìƒ_ƒ[ƒW‚Í’µ‚Ë•Ô‚³‚ê‚½I
+ã‚ãªãŸã¸ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ã¯è·³ã­è¿”ã•ã‚ŒãŸï¼
 #mpr(jtrans("Your damage is reflected back at you!"));
 %%%%
 mirrors your injury!
 
-‚Í‚ ‚È‚½‚Ö‚Ì‘¹‚ğ’µ‚Ë•Ô‚µ‚½I
+ã¯ã‚ãªãŸã¸ã®æå‚·ã‚’è·³ã­è¿”ã—ãŸï¼
 #simple_god_message(jtrans("mirrors your injury!").c_str());
 %%%%
 suffers a backlash!
 
-‚Í”½”­‚ğ”í‚Á‚½I
+ã¯åç™ºã‚’è¢«ã£ãŸï¼
 #simple_monster_message(monster_by_mid(att), jtrans("suffers a backlash!").c_str());
 %%%%
 Trying to spawn %d jellies.
@@ -25,41 +25,41 @@ Trying to spawn %d jellies.
 %%%%
 %s shudders%s.
 
-%s ‚Í %sgk‚¢‚µ‚½
+%s ã¯ %sèº«éœ‡ã„ã—ãŸ
 #mprf(jtrans("%s shudders%s.").c_str(), monnam.c_str(),
 %%%%
 alarmingly
 
-‘å‚¢‚É
+å¤§ã„ã«
 #spawned >= 5 ? jtrans("alarmingly").c_str() :
 %%%%
 violently
 
-Œƒ‚µ‚­
+æ¿€ã—ã
 #spawned >= 3 ? jtrans("violently").c_str() :
 %%%%
 vigorously
 
-—Í‹­‚­
+åŠ›å¼·ã
 #spawned > 1 ? jtrans("vigorously").c_str() : "");
 %%%%
 %s spits out another jelly.
 
-%s ‚Í‘¼‚ÌƒWƒFƒŠ[‚ğ¶‚İo‚µ‚½
+%s ã¯ä»–ã®ã‚¸ã‚§ãƒªãƒ¼ã‚’ç”Ÿã¿å‡ºã—ãŸ
 #mprf(jtrans("%s spits out another jelly.").c_str(), monnam.c_str());
 %%%%
 %s spits out %s more jellies.
 
-%s ‚Í %s ˆÈã‚ÌƒWƒFƒŠ[‚ğ¶‚İo‚µ‚½
+%s ã¯ %s ä»¥ä¸Šã®ã‚¸ã‚§ãƒªãƒ¼ã‚’ç”Ÿã¿å‡ºã—ãŸ
 #mprf(jtrans("%s spits out %s more jellies.").c_str(),
 %%%%
 One of the royal jelly's fragments survives.
 
-ƒƒCƒ„ƒ‹ƒWƒFƒŠ[‚Ì’f•Ğ‚Ìˆê‚Â‚ª¶‚«c‚Á‚Ä‚¢‚é
+ãƒ­ã‚¤ãƒ¤ãƒ«ã‚¸ã‚§ãƒªãƒ¼ã®æ–­ç‰‡ã®ä¸€ã¤ãŒç”Ÿãæ®‹ã£ã¦ã„ã‚‹
 #mpr(jtrans("One of the royal jelly's fragments survives."));
 %%%%
 The dying royal jelly spits out %s more jellies.
 
-%s ˆÈã‚ÌƒWƒFƒŠ[’B‚ğ€‚ñ‚¾ƒƒCƒ„ƒ‹ƒWƒFƒŠ[‚ª¶‚İo‚µ‚½
+%s ä»¥ä¸Šã®ã‚¸ã‚§ãƒªãƒ¼é”ã‚’æ­»ã‚“ã ãƒ­ã‚¤ãƒ¤ãƒ«ã‚¸ã‚§ãƒªãƒ¼ãŒç”Ÿã¿å‡ºã—ãŸ
 #mprf(jtrans("The dying royal jelly spits out %s more jellies.").c_str(),
 %%%%
