@@ -14,12 +14,14 @@
 
 #include "cloud.h"
 #include "coordit.h"
+#include "database.h"
 #include "delay.h"
 #include "env.h"
 #include "fineff.h"
 #include "hints.h"
 #include "invent.h"
 #include "itemprop.h"
+#include "libutil.h"
 #include "melee_attack.h"
 #include "mgen_data.h"
 #include "mon-behv.h"
@@ -389,12 +391,15 @@ bool wielded_weapon_check(item_def *weapon, bool no_message)
         if (no_message)
             return false;
 
-        string prompt  = "Really attack while ";
+        string prompt;
+        string tmp = "";
         if (unarmed_warning)
-            prompt += "unarmed?";
+            tmp = "unarmed?";
         else
-            prompt += "wielding " + weapon->name(DESC_YOUR) + "? ";
+            tmp = make_stringf(jtrans("wielding %s? ").c_str(), weapon->name(DESC_YOUR).c_str());
 
+        prompt = make_stringf(jtrans("Really attack while %s").c_str(), tmp.c_str());
+    
         const bool result = yesno(prompt.c_str(), true, 'n');
 
         learned_something_new(HINT_WIELD_WEAPON); // for hints mode Rangers
