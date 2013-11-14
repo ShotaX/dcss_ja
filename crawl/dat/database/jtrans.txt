@@ -19859,34 +19859,6 @@ Char dump unsuccessful! Sorry about that.
 #########################################################
 #fearmonger.cc
 #########################################################
-%s's aura of fear is muted, and has no effect on you.
-
-%sの恐怖のオーラは薄れた、そのためあなたに効果は無かった
-#mprf("%s's aura of fear is muted, and has no effect on you.",
-#                 mon->name(DESC_THE).c_str());
-%%%%
-The fearful aura is strangely muted, and has no effect on you.
-
-恐怖に満ちたオーラは奇妙に薄れた、そのためあなたに効果がなかった
-#mpr("The fearful aura is strangely muted, and has no effect on you.");
-%%%%
-You are terrified of %s!
-
-あなたは %s を恐れている
-#mprf(MSGCH_WARN, "You are terrified of %s!",
-#                         mon->name(DESC_THE).c_str());
-%%%%
-For a moment, your terror fades away!
-
-一瞬にしてあなたの恐怖は消え去った
-#mprf("For a moment, your terror fades away!");
-%%%%
-You are no longer terrified.
-
-あなたはもう恐怖していない
-#mpr("You are no longer terrified.",
-#            MSGCH_DURATION);
-%%%%
 #########################################################
 #evoke.cc
 #########################################################

@@ -15579,11 +15579,6 @@ Autopickup is now %s.
 自動拾いは今%s
 #mprf("Autopickup is now %s.", Options.autopickup_on > 0 ? "on" : "off");
 %%%%
-Char dump unsuccessful! Sorry about that.
-
-残念ながらキャラクターのダンプは失敗しました
-#mpr("Char dump unsuccessful! Sorry about that.");
-%%%%
 Save game and exit?
 
 ゲームを保存して終了しますか？
@@ -19667,75 +19662,13 @@ Eat-food
 #########################################################
 #fineff.cc
 #########################################################
-Electricity arcs through the water!
-
-電弧は水を介して伝わった！
-# mpr("Electricity arcs through the water!");
-%%%%
-Your damage is reflected back at you!
-
-あなたへのダメージは跳ね返された！
-#mpr("Your damage is reflected back at you!");
-%%%%
-alarmingly
-
-大いに
-%%%%
-violently
-
-激しく
-%%%%
-vigorously
-
-力強く
-%%%%
 shudders
 
 身震いした
 %%%%
-spits out another jelly
-
-他のジェリーを生み出した
-%%%%
-%s shudders%s.
-
-%s は %s身震いした
-#mprf("%s shudders%s.", monnam.c_str(),
-#             spawned >= 5 ? " alarmingly" :
-#             spawned >= 3 ? " violently" :
-#             spawned > 1 ? " vigorously" : "");
-%%%%
-%s spits out %s more jellies.
-
-%s は %s 以上のジェリーを生み出した
-#mprf("%s spits out another jelly.", monnam.c_str());
-%%%%
-%s spits out another jelly.
-
-%s は他のジェリーを生み出した
-#mprf("%s spits out %s more jellies.",
-#                 monnam.c_str(),
-#                 number_in_words(spawned).c_str());
-%%%%
-One of the royal jelly's fragments survives.
-
-ロイヤルジェリーの断片の一つが生き残っている
-#mpr("One of the royal jelly's fragments survives.");
-%%%%
-The dying royal jelly spits out %s more jellies.
-
-%s 以上のジェリー達を死んだロイヤルジェリーが生み出した
-#mprf("The dying royal jelly spits out %s more jellies.",
-#             number_in_words(spawned).c_str());
-%%%%
 #########################################################
 #files.cc
 #########################################################
-The ghost fades into the shadows.
-
-その亡霊は影の中に消え去った
-#mpr("The ghost fades into the shadows.");
-%%%%
 Your mindless thrall stay behind.
 
 あなたの心なき奴隷は後ろに滞在している
@@ -19859,34 +19792,6 @@ Char dump unsuccessful! Sorry about that.
 #########################################################
 #fearmonger.cc
 #########################################################
-%s's aura of fear is muted, and has no effect on you.
-
-%sの恐怖のオーラは薄れた、そのためあなたに効果は無かった
-#mprf("%s's aura of fear is muted, and has no effect on you.",
-#                 mon->name(DESC_THE).c_str());
-%%%%
-The fearful aura is strangely muted, and has no effect on you.
-
-恐怖に満ちたオーラは奇妙に薄れた、そのためあなたに効果がなかった
-#mpr("The fearful aura is strangely muted, and has no effect on you.");
-%%%%
-You are terrified of %s!
-
-あなたは %s を恐れている
-#mprf(MSGCH_WARN, "You are terrified of %s!",
-#                         mon->name(DESC_THE).c_str());
-%%%%
-For a moment, your terror fades away!
-
-一瞬にしてあなたの恐怖は消え去った
-#mprf("For a moment, your terror fades away!");
-%%%%
-You are no longer terrified.
-
-あなたはもう恐怖していない
-#mpr("You are no longer terrified.",
-#            MSGCH_DURATION);
-%%%%
 #########################################################
 #evoke.cc
 #########################################################
@@ -22649,14 +22554,6 @@ is struck by the twisting air!
 
 の力はあなたを地獄の混沌の効力から守った！
 %%%%
-mirrors your injury!
-
-はあなたへの損傷を跳ね返した！
-%%%%
-suffers a backlash!
-
-は反発を被った！
-%%%%
 hits something.
 
 は何者かに当たった
@@ -24853,14 +24750,7 @@ restored
 #file.cc
 ################################
 
-%%%%
-Your summoned allies%s are left behind.
 
-あなたの召喚した仲間は取り残された
-%%%%
-Your mindless thrall%s behind.
-
-あなたの精神なき奴隷は取り残された
 %%%%
 
 
