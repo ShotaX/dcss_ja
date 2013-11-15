@@ -590,7 +590,7 @@ bool butchery(int which_corpse, bool bottle_blood)
         {
             mprf(jtrans("There isn't anything suitable to %s here.").c_str(),
                  bottle_blood ? jtrans("bottle").c_str() 
-								: jtrans("butcher").c_str());
+                              : jtrans("butcher").c_str());
             return false;
         }
 
@@ -685,7 +685,7 @@ bool butchery(int which_corpse, bool bottle_blood)
                 mprf(MSGCH_PROMPT, jtrans("%s %s? [(y)es/(c)hop/(n)o/(a)ll/(q)uit/?]").c_str(),
                      corpse_name.c_str(),
                      bottle_blood ? jtrans("Bottle").c_str() 
-									: jtrans("Butcher").c_str());
+                                  : jtrans("Butcher").c_str());
                 repeat_prompt = false;
 
                 keyin = toalower(getchm(KMC_CONFIRM));
@@ -745,8 +745,9 @@ bool butchery(int which_corpse, bool bottle_blood)
 #endif
     if (!butcher_all && corpse_id == -1)
     {
-        mprf(jtrans("There isn't anything %s to %s here.").c_str(),
-             Options.confirm_butcher == CONFIRM_NEVER ? jtrans("suitable").c_str() : jtrans("else").c_str(),
+        mprf(Options.confirm_butcher == CONFIRM_NEVER ? 
+               jtrans("There isn't anything suitable to %s here.").c_str()
+             : jtrans("There isn't anything else to %s here.").c_str(),
              bottle_blood ? jtrans("bottle").c_str() : jtrans("butcher").c_str());
     }
     _terminate_butchery(wpn_switch, removed_gloves, old_weapon, old_gloves);
@@ -1072,12 +1073,9 @@ bool food_change(bool initial)
 
             case HS_VERY_HUNGRY:
             case HS_HUNGRY:
-				msg += jtrans("ha");
-				if (you.hunger_state == HS_VERY_HUNGRY)
-                msg += jtrans("very");
-                msg += _how_hungry();
-                msg += jtrans("are feeling");
-                msg += ".";
+                msg += make_stringf(jtrans("are feeling %s%s.").c_str(),
+                                   you.hunger_state == HS_VERY_HUNGRY ? jtrans("very ").c_str() : "",
+                                   _how_hungry().c_str());
 
                 mprf(MSGCH_FOOD, less_hungry, "%s", msg.c_str());
 
@@ -1097,28 +1095,27 @@ bool food_change(bool initial)
 static void _describe_food_change(int food_increment)
 {
     int magnitude = (food_increment > 0)?food_increment:(-food_increment);
-    string msg;
+    string msg, mag;
 
     if (magnitude == 0)
         return;
 
-    msg = jtrans("youha").c_str();
+    mag = "";
 
     if (magnitude <= 100)
-        msg += jtrans("slightly2").c_str();
+        mag = jtrans("slightly_food1106");
     else if (magnitude <= 350)
-        msg += jtrans("somewhat").c_str();
+        mag = jtrans("somewhat");
     else if (magnitude <= 800)
-        msg += jtrans("quite a bit").c_str();
+        mag = jtrans("quite a bit");
     else
-        msg += jtrans("a lot").c_str();
-
-	    msg += _how_hungry().c_str();
+        mag = jtrans("a lot");
 
     if ((you.hunger_state > HS_SATIATED) ^ (food_increment < 0))
-        msg += jtrans("gamore").c_str();
+        msg = make_stringf(jtrans("You feel %s more %s.").c_str(), mag.c_str(), _how_hungry().c_str());
     else
-        msg += jtrans("galess").c_str();
+        msg = make_stringf(jtrans("You feel %s less %s.").c_str(), mag.c_str(), _how_hungry().c_str());
+
     mpr(msg.c_str());
 }
 
@@ -1349,7 +1346,7 @@ int eat_from_floor(bool skip_chunks)
             mprf(MSGCH_PROMPT, jtrans("%s%s%s? (ye/n/q/i?)").c_str(),
                  ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
                  item_name.c_str(),
-				 (you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat-food").c_str()));
+                 (you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat-food").c_str()));
 
             int keyin = toalower(getchm(KMC_CONFIRM));
             switch (keyin)
@@ -1505,7 +1502,7 @@ bool eat_from_inventory()
             string item_name = get_menu_colour_prefix_tags(*item, DESC_A);
 
             mprf(MSGCH_PROMPT, jtrans("%s %s%s? (ye/n/q)").c_str(),
-				 ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+                ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
                  item_name.c_str());
                  (you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat").c_str());
 
@@ -1667,7 +1664,7 @@ int prompt_eat_chunks(bool only_auto)
             else
             {
                 mprf(MSGCH_PROMPT, jtrans("%s %s%s? (ye/n/q/i?)").c_str(),
-					 ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+                    ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
                      item_name.c_str(),
                      (you.species == SP_VAMPIRE ? jtrans("Drink blood from").c_str() : jtrans("Eat").c_str()));
             }
@@ -1690,7 +1687,7 @@ int prompt_eat_chunks(bool only_auto)
                     if (autoeat)
                     {
                         mprf("%s %s%s.",
-							 ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
+                            ((item->quantity > 1) ? jtrans("one of").c_str() : ""),
                              item_name.c_str(),
                              (you.species == SP_VAMPIRE ? jtrans("Drinking blood from").c_str()
                                                         : jtrans("Eating").c_str()));
