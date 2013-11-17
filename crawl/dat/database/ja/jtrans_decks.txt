@@ -42,226 +42,282 @@ This card doesn't seem to belong here.
 %%%%
 the Portal
 
+テレポートのカード
 #case CARD_PORTAL:          return "the Portal";
 %%%%
 the Warp
 
+瞬間移動のカード
 #case CARD_WARP:            return "the Warp";
 %%%%
 Swap
 
+位置交換のカード
 #case CARD_SWAP:            return "Swap";
 %%%%
 Velocity
 
+加速のカード
 #case CARD_VELOCITY:        return "Velocity";
 %%%%
 Damnation
 
+追放のカード
 #case CARD_DAMNATION:       return "Damnation";
 %%%%
 Solitude
 
+孤独のカード
 #case CARD_SOLITUDE:        return "Solitude";
 %%%%
 the Elixir
 
+癒しの霊薬のカード
 #case CARD_ELIXIR:          return "the Elixir";
 %%%%
 Battlelust
 
+戦闘欲求のカード
 #case CARD_BATTLELUST:      return "Battlelust";
 %%%%
 Metamorphosis
 
+変身のカード
 #case CARD_METAMORPHOSIS:   return "Metamorphosis";
 %%%%
 the Helm
 
+兜のカード
 #case CARD_HELM:            return "the Helm";
 %%%%
 the Blade
 
+刃のカード
 #case CARD_BLADE:           return "the Blade";
 %%%%
 the Shadow
 
+影のカード
 #case CARD_SHADOW:          return "the Shadow";
 %%%%
 the Potion
 
+薬のカード
 #case CARD_POTION:          return "the Potion";
 %%%%
 Focus
 
+一点集中のカード
 #case CARD_FOCUS:           return "Focus";
 %%%%
 Shuffle
 
+シャッフルのカード
 #case CARD_SHUFFLE:         return "Shuffle";
 %%%%
 Experience
 
+経験のカード
 #case CARD_EXPERIENCE:      return "Experience";
 %%%%
 the Helix
 
+遺伝子操作のカード
 #case CARD_HELIX:           return "the Helix";
 %%%%
 the Sage
 
+賢人のカード
 #case CARD_SAGE:            return "the Sage";
 %%%%
 Dowsing
 
+探査のカード
 #case CARD_DOWSING:         return "Dowsing";
 %%%%
 the Trowel
 
+職工のカード
 #case CARD_TROWEL:          return "the Trowel";
 %%%%
 the Minefield
 
+地雷原のカード
 #case CARD_MINEFIELD:       return "the Minefield";
 %%%%
 the Stairs
 
+階段のカード
 #case CARD_STAIRS:          return "the Stairs";
 %%%%
 the Genie
 
+魔神のカード
 #case CARD_GENIE:           return "the Genie";
 %%%%
 the Tomb
 
+玄室のカード
 #case CARD_TOMB:            return "the Tomb";
 %%%%
 Water
 
+湧水のカード
 #case CARD_WATER:           return "Water";
 %%%%
 Vitrification
 
+玻璃のカード
 #case CARD_GLASS:           return "Vitrification";
 %%%%
 the Banshee
 
+バンシーのカード
 #case CARD_BANSHEE:         return "the Banshee";
 %%%%
 Wild Magic
 
+でたらめ魔法のカード
 #case CARD_WILD_MAGIC:      return "Wild Magic";
 %%%%
 the Crusade
 
+聖戦のカード
 #case CARD_CRUSADE:         return "the Crusade";
 %%%%
 the Herd
 
+大群のカード
 #case CARD_SUMMON_ANIMAL:   return "the Herd";
 %%%%
 the Pentagram
 
+悪魔召喚のカード
 #case CARD_SUMMON_DEMON:    return "the Pentagram";
 %%%%
 the Dance
 
+踊る武器のカード
 #case CARD_SUMMON_WEAPON:   return "the Dance";
 %%%%
 Foxfire
 
+狐火のカード
 #case CARD_SUMMON_FLYING:   return "Foxfire";
 %%%%
 the Bones
 
+骸骨のカード
 #case CARD_SUMMON_SKELETON: return "the Bones";
 %%%%
 Repulsiveness
 
+不快なるもののカード
 #case CARD_SUMMON_UGLY:     return "Repulsiveness";
 %%%%
 Xom
 
+ゾムのカード
 #case CARD_XOM:             return "Xom";
 %%%%
 Famine
 
+飢餓のカード
 #case CARD_FAMINE:          return "Famine";
 %%%%
 the Feast
 
+御馳走のカード
 #case CARD_FEAST:           return "the Feast";
 %%%%
 Warpwright
 
+転移の罠設置のカード
 #case CARD_WARPWRIGHT:      return "Warpwright";
 %%%%
 Flight
 
+移動のカード
 #case CARD_FLIGHT:          return "Flight";
 %%%%
 Vitriol
 
+強酸のカード
 #case CARD_VITRIOL:         return "Vitriol";
 %%%%
 Flame
 
+火炎のカード
 #case CARD_FLAME:           return "Flame";
 %%%%
 Frost
 
+霜のカード
 #case CARD_FROST:           return "Frost";
 %%%%
 Venom
 
+毒害のカード
 #case CARD_VENOM:           return "Venom";
 %%%%
 the Spark
 
+稲光のカード
 #case CARD_SPARK:           return "the Spark";
 %%%%
 the Hammer
 
+石槌のカード
 #case CARD_HAMMER:          return "the Hammer";
 %%%%
 Pain
 
+激痛のカード
 #case CARD_PAIN:            return "Pain";
 %%%%
 Torment
 
+苦痛のカード
 #case CARD_TORMENT:         return "Torment";
 %%%%
 the Bargain
 
+特売のカード
 #case CARD_BARGAIN:         return "the Bargain";
 %%%%
 Wrath
 
+神罰のカード
 #case CARD_WRATH:           return "Wrath";
 %%%%
 the Wraith
 
+亡霊のカード
 #case CARD_WRAITH:          return "the Wraith";
 %%%%
 the Curse
 
+呪縛のカード
 #case CARD_CURSE:           return "the Curse";
 %%%%
 the Swine
 
+豚のカード
 #case CARD_SWINE:           return "the Swine";
 %%%%
 the Alchemist
 
+錬金術のカード
 #case CARD_ALCHEMIST:       return "the Alchemist";
 %%%%
 the Orb
 
+オーブのカード
 #case CARD_ORB:             return "the Orb";
 %%%%
 the Mercenary
 
+傭兵のカード
 #case CARD_MERCENARY:       return "the Mercenary";
 %%%%
 a buggy card
@@ -317,6 +373,7 @@ You %s a card... It is %s.
 %%%%
 This isn't a deck at all!
 
+これはデッキではない!
 #strm << "This isn't a deck at all!" << endl;
 %%%%
 #cards

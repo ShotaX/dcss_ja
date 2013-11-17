@@ -10,10 +10,12 @@ its
 %%%%
 something
 
+何者かの
 #return actor_invisible? jtrans("it").c_str() : jtrans("something").c_str();
 %%%%
 it
 
+その
 #case PRONOUN_SUBJECTIVE:    return jtrans("it").c_str();
 %%%%
 #its
