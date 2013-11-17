@@ -9,78 +9,97 @@
 %%%%
 Regen
 
+再生
 #case RING_REGENERATION:      return "Regen";
 %%%%
 SustAb
 
+維持
 #case RING_SUSTAIN_ABILITIES: return "SustAb";
 %%%%
 Hunger-
 
+空腹-
 #case RING_SUSTENANCE:        return "Hunger-";
 %%%%
 Wiz
 
+魔術
 #case RING_WIZARDRY:          return "Wiz";
 %%%%
 Fire
 
+炎
 #case RING_FIRE:              return "Fire";
 %%%%
 Ice
 
+氷
 #case RING_ICE:               return "Ice";
 %%%%
 +/*Tele
 
++/*転移
 #case RING_TELEPORTATION:     return "+/*Tele";
 %%%%
 +cTele
 
++c転移
 #case RING_TELEPORT_CONTROL:  return "+cTele";
 %%%%
 Clar
 
+明晰
 #case AMU_CLARITY:            return "Clar";
 %%%%
 Ward
 
+結界
 #case AMU_WARDING:            return "Ward";
 %%%%
 rCorr
 
+r腐食
 #case AMU_RESIST_CORROSION:   return "rCorr";
 %%%%
 Gourm
 
+悪食
 #case AMU_THE_GOURMAND:       return "Gourm";
 %%%%
 Cons
 
+保全
 #case AMU_CONSERVATION:       return "Cons";
 %%%%
 cFly
 
+c飛行
 #case AMU_CONTROLLED_FLIGHT:  return "cFly";
 %%%%
 rMut
 
+r変異
 #case AMU_RESIST_MUTATION:    return "rMut";
 %%%%
 Spirit
 
+守護霊
 #case AMU_GUARDIAN_SPIRIT:    return "Spirit";
 %%%%
 Faith
 
+信心
 #case AMU_FAITH:              return "Faith";
 %%%%
 Stasis
 
+安定
 #case AMU_STASIS:             return "Stasis";
 %%%%
 Inacc
 
+不正確
 #case AMU_INACCURACY:         return "Inacc";
 %%%%
 #
@@ -89,81 +108,101 @@ Inacc
 %%%%
 -Cast
 
+-詠唱
 #{ "-Cast",  ARTP_PREVENT_SPELLCASTING,  2 },
 %%%%
 -Tele
 
+-転移
 #{ "-Tele",  ARTP_PREVENT_TELEPORTATION, 2 },
 %%%%
 Contam
 
+汚染
 #{ "Contam", ARTP_MUTAGENIC,             2 },
 %%%%
 *Rage
 
+*狂
 #{ "*Rage",  ARTP_ANGRY,                 2 },
 %%%%
 *Tele
 
+*転移
 #{ "*Tele",  ARTP_CAUSE_TELEPORTATION,   2 },
 %%%%
 Hunger
 
+空腹
 #{ "Hunger", ARTP_METABOLISM,            2 }, // handled specially
 %%%%
 Noisy
 
+騒音
 #{ "Noisy",  ARTP_NOISES,                2 },
 %%%%
 +Blink
 
++瞬
 #{ "+Blink", ARTP_BLINK,                 2 },
 %%%%
 +Rage
 
++狂
 #{ "+Rage",  ARTP_BERSERK,               2 },
 %%%%
 +Inv
 
++透
 #{ "+Inv",   ARTP_INVISIBLE,             2 },
 %%%%
 +Fly
 
++飛
 #{ "+Fly",   ARTP_FLY,                   2 },
 %%%%
 +Fog
 
++煙
 #{ "+Fog",   ARTP_FOG,                   2 },
 %%%%
 rElec
 
+r電
 #{ "rElec",  ARTP_ELECTRICITY,           2 },
 %%%%
 rPois
 
+r毒
 #{ "rPois",  ARTP_POISON,                2 },
 %%%%
 rF
 
+r火
 #{ "rF",     ARTP_FIRE,                  1 },
 %%%%
 rC
 
+r冷
 #{ "rC",     ARTP_COLD,                  1 },
 %%%%
 rN
 
+r負
 #{ "rN",     ARTP_NEGATIVE_ENERGY,       1 },
 %%%%
 MR
 
+r魔
 #{ "MR",     ARTP_MAGIC,                 2 }, // handled specially
 %%%%
 HP
 
+
 #{ "HP",     ARTP_HP,                    0 },
 %%%%
 MP
+
 
 #{ "MP",     ARTP_MAGICAL_POWER,         0 },
 %%%%
@@ -175,48 +214,59 @@ EV
 
 #{ "EV",     ARTP_EVASION,               0 },
 %%%%
-Str
+Str_des
 
+腕
 #{ "Str",    ARTP_STRENGTH,              0 },
 %%%%
-Dex
+Dex_des
 
+器
 #{ "Dex",    ARTP_DEXTERITY,             0 },
 %%%%
-Int
+Int_des
 
+知
 #{ "Int",    ARTP_INTELLIGENCE,          0 },
 %%%%
-Acc
+Acc_des
 
+命中
 #{ "Acc",    ARTP_ACCURACY,              0 },
 %%%%
-Dam
+Dam_des
 
+損傷
 #{ "Dam",    ARTP_DAMAGE,                0 },
 %%%%
 SInv
 
+透明視
 #{ "SInv",   ARTP_EYESIGHT,              2 },
 %%%%
 Stlth
 
+隠密
 #{ "Stlth",  ARTP_STEALTH,               2 }, // handled specially
 %%%%
 Curse
 
+呪縛
 #{ "Curse",  ARTP_CURSED,                2 },
 %%%%
 Clar
 
+明晰
 #{ "Clar",   ARTP_CLARITY,               2 },
 %%%%
 RMsl
 
+飛防
 #{ "RMsl",   ARTP_RMSL,                  2 },
 %%%%
 Regen
 
+再生
 #{ "Regen",  ARTP_REGENERATION,          2 },
 %%%%
 #,
@@ -506,52 +556,67 @@ more_des
 %%%%
 dart
 
+投げ矢
 %%%%
 arrow
 
+矢
 %%%%
 spear
 
+槍
 #"dart", "arrow", "spear",
 %%%%
 teleport
 
+テレポート
 %%%%
 alarm
 
+警報
 %%%%
 blade
 
+刃
 #"teleport", "alarm", "blade",
 %%%%
 bolt
 
+クロスボウの矢
 %%%%
 net
 
+投げ網
 %%%%
 Zot
 
+ゾット
 %%%%
 needle
 
+吹き矢
 #"bolt", "net", "Zot", "needle",
 %%%%
 shaft
 
+昇降口
 %%%%
 passage
 
+通路
 %%%%
 pressure plate
 
+落とし戸
 %%%%
 web
 
+蜘蛛の巣
 #"shaft", "passage", "pressure plate", "web",
 %%%%
 gas
 
+ガス
 #"gas",
 %%%%
 #
@@ -3547,28 +3612,36 @@ Lord of the Bugs
 %%%%
 Blasphemer
 
+冒涜者
 %%%%
 Anchorite
 
+陰遁者
 %%%%
 Apologist
 
+弁証者
 %%%%
 Pious
 
+敬虔者
 #{"Blasphemer",         "Anchorite",             "Apologist",                "Pious",
 %%%%
 Devout
 
+導士
 %%%%
 Orthodox
 
+正しき者
 %%%%
 Immaculate
 
+無垢清浄の者
 %%%%
 Bringer of Law
 
+秩序の代行者
 #"Devout",             "Orthodox",              "Immaculate",               "Bringer of Law"},
 %%%%
 Honourless

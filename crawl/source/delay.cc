@@ -1608,7 +1608,7 @@ static inline bool _monster_warning(activity_interrupt_type ai,
         else if (at.context == SC_TELEPORT_IN)
             text += jtrans("appears from thin air!");
         else if (at.context == SC_LEAP_IN)
-            text += jtrans(" leaps into view!");
+            text += jtrans("leaps into view!");
         // The monster surfaced and submerged in the same turn without
         // doing anything else.
         else if (at.context == SC_SURFACES_BRIEFLY)
@@ -1636,7 +1636,7 @@ static inline bool _monster_warning(activity_interrupt_type ai,
         else if (at.context == SC_NONSWIMMER_SURFACES_FROM_DEEP)
             text += jtrans("emerges from the water.");
         else
-            text += (jtrans(" comes into view."));
+            text += (jtrans("comes into view."));
 
         ash_id_monster_equipment(const_cast<monster* >(mon));
         bool ash_id = mon->props.exists("ash_id") && mon->props["ash_id"];
