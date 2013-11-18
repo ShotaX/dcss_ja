@@ -1,11 +1,11 @@
 %%%%
 Dungeon
 
-ƒ_ƒ“ƒWƒ‡ƒ“
+ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³
 %%%%
 the Dungeon
 
-ƒ_ƒ“ƒWƒ‡ƒ“
+ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³
 %%%%
 D
 
@@ -13,237 +13,237 @@ D
 %%%%
 Temple
 
-›‰@
+å¯ºé™¢
 %%%%
 the Ecumenical Temple
 
-”@”h‚Ì›‰@
+è«¸å®—æ´¾ã®å¯ºé™¢
 %%%%
 Temple
 
-@
+å®—
 #"Temple", "the Ecumenical Temple", "Temple",
 %%%%
 the Orcish Mines
 
-ƒI[ƒN‚ÌB“¹
+ã‚ªãƒ¼ã‚¯ã®å‘é“
 %%%%
 Orcish Mines
 
-ƒI[ƒN‚ÌB“¹
+ã‚ªãƒ¼ã‚¯ã®å‘é“
 %%%%
 Orc
 
-ƒI[ƒN
+ã‚ªãƒ¼ã‚¯
 #"Orcish Mines", "the Orcish Mines", "Orc",
 %%%%
 Elven Halls
 
-ƒGƒ‹ƒt‚Ì‘åLŠÔ
+ã‚¨ãƒ«ãƒ•ã®å¤§åºƒé–“
 %%%%
 the Elven Halls
 
-ƒGƒ‹ƒt‚Ì‘åLŠÔ
+ã‚¨ãƒ«ãƒ•ã®å¤§åºƒé–“
 %%%%
 Elf
 
-ƒGƒ‹ƒt
+ã‚¨ãƒ«ãƒ•
 #"Elven Halls", "the Elven Halls", "Elf",
 %%%%
 Dwarven Hall
 
-ƒhƒ[ƒt‚Ì‘åLŠÔ
+ãƒ‰ãƒ¯ãƒ¼ãƒ•ã®å¤§åºƒé–“
 %%%%
 the Dwarven Hall
 
-ƒhƒ[ƒt‚Ì‘åLŠÔ
+ãƒ‰ãƒ¯ãƒ¼ãƒ•ã®å¤§åºƒé–“
 %%%%
 Dwarf
 
-ƒhƒ[ƒt
+ãƒ‰ãƒ¯ãƒ¼ãƒ•
 #"Dwarven Hall", "the Dwarven Hall", "Dwarf",
 %%%%
 the Lair of Beasts
 
-b‚Ì±‚İˆ
+ç£ã®æ£²ã¿å‡¦
 %%%%
 Lair
 
-b
+ç£
 #"Lair", "the Lair of Beasts", "Lair",
 %%%%
 Swamp
 
-À
+æ²¼
 %%%%
 the Swamp
 
-À
+æ²¼
 #"Swamp", "the Swamp", "Swamp",
 %%%%
 Shoals
 
-ó£
+æµ…ç€¬
 %%%%
 the Shoals
 
-ó£
+æµ…ç€¬
 #"Shoals", "the Shoals", "Shoals",
 %%%%
 Snake Pit
 
-ÖŒŠ
+è›‡ç©´
 %%%%
 the Snake Pit
 
-ÖŒŠ
+è›‡ç©´
 %%%%
 Snake
 
-Ö
+è›‡
 #"Snake Pit", "the Snake Pit", "Snake",
 %%%%
 Spider Nest
 
-’wå‚Ì‘ƒ
+èœ˜è››ã®å·£
 %%%%
 the Spider Nest
 
-’wå‚Ì‘ƒ
+èœ˜è››ã®å·£
 %%%%
 Spider
 
-’wå
+èœ˜è››
 #"Spider Nest", "the Spider Nest", "Spider",
 %%%%
 Slime Pits
 
-ƒXƒ‰ƒCƒ€‚ÌŒŠ‚®‚ç
+ã‚¹ãƒ©ã‚¤ãƒ ã®ç©´ãã‚‰
 %%%%
 the Pits of Slime
 
-ƒXƒ‰ƒCƒ€‚ÌŒŠ‚®‚ç
+ã‚¹ãƒ©ã‚¤ãƒ ã®ç©´ãã‚‰
 %%%%
 Slime
 
-ƒXƒ‰ƒCƒ€
+ã‚¹ãƒ©ã‚¤ãƒ 
 #"Slime Pits", "the Pits of Slime", "Slime",
 %%%%
 Vaults
 
-•ó•¨ŒÉ
+å®ç‰©åº«
 %%%%
 the Vaults
 
-•ó•¨ŒÉ
+å®ç‰©åº«
 #"Vaults", "the Vaults", "Vaults",
 %%%%
 Hall of Blades
 
-n‚ÌLŠÔ
+åˆƒã®åºƒé–“
 %%%%
 the Hall of Blades
 
-n‚ÌLŠÔ
+åˆƒã®åºƒé–“
 %%%%
 Blade
 
-n
+åˆƒ
 #"Hall of Blades", "the Hall of Blades", "Blade",
 %%%%
 Crypt
 
-•æ’n
+å¢“åœ°
 %%%%
 the Crypt
 
-’n‰º•æ’n
+åœ°ä¸‹å¢“åœ°
 #"Crypt", "the Crypt", "Crypt",
 %%%%
 Tomb
 
-—ì•_
+éœŠå»Ÿ
 %%%%
 the Tomb of the Ancients
 
-‘¾ŒÃ‚Ì—ì•_
+å¤ªå¤ã®éœŠå»Ÿ
 #"Tomb", "the Tomb of the Ancients", "Tomb",
 %%%%
 Hell
 
-’n–
+åœ°ç„
 %%%%
 the Vestibule of Hell
 
-’n–‚ÌŒºŠÖ
+åœ°ç„ã®ç„é–¢
 #"Hell", "the Vestibule of Hell", "Hell",
 %%%%
 Dis
 
-ƒfƒB[ƒX
+ãƒ‡ã‚£ãƒ¼ã‚¹
 %%%%
 the Iron City of Dis
 
-“S‚Ì“swƒfƒB[ƒXx
+é‰„ã®éƒ½ã€ãƒ‡ã‚£ãƒ¼ã‚¹ã€
 #"Dis", "the Iron City of Dis", "Dis",
 %%%%
 Gehenna
 
-ƒQƒwƒi
+ã‚²ãƒ˜ãƒŠ
 %%%%
 Geh
 
-#ƒQƒwƒi
+#ã‚²ãƒ˜ãƒŠ
 #"Gehenna", "Gehenna", "Geh",
 %%%%
 Cocytus
 
-ƒRƒLƒ…[ƒgƒX
+ã‚³ã‚­ãƒ¥ãƒ¼ãƒˆã‚¹
 %%%%
 Coc
 
-#ƒRƒLƒ…[ƒgƒX
+#ã‚³ã‚­ãƒ¥ãƒ¼ãƒˆã‚¹
 #"Cocytus", "Cocytus", "Coc",
 %%%%
 Tartarus
 
-ƒ^ƒ‹ƒ^ƒƒX
+ã‚¿ãƒ«ã‚¿ãƒ­ã‚¹
 %%%%
 Tar
 
-#ƒ^ƒ‹ƒ^ƒƒX
+#ã‚¿ãƒ«ã‚¿ãƒ­ã‚¹
 #"Tartarus", "Tartarus", "Tar",
 %%%%
 Zot
 
-ƒ]ƒbƒg
+ã‚¾ãƒƒãƒˆ
 %%%%
 the Realm of Zot
 
-ƒ]ƒbƒg‚Ì—Ìˆæ
+ã‚¾ãƒƒãƒˆã®é ˜åŸŸ
 #"Zot", "the Realm of Zot", "Zot",
 %%%%
 Forest
 
-X
+æ£®
 %%%%
 the Enchanted Forest
 
-Œ¶˜f‚ÌX
+å¹»æƒ‘ã®æ£®
 #"Forest", "the Enchanted Forest", "Forest",
 %%%%
 Abyss
 
-ƒAƒrƒX
+ã‚¢ãƒ“ã‚¹
 %%%%
 the Abyss
 
-ƒAƒrƒX
+ã‚¢ãƒ“ã‚¹
 #"Abyss", "the Abyss", "Abyss",
 %%%%
 Pandemonium
 
-ƒpƒ“ƒfƒ‚ƒjƒEƒ€
+ãƒ‘ãƒ³ãƒ‡ãƒ¢ãƒ‹ã‚¦ãƒ 
 %%%%
 Pan
 
@@ -251,11 +251,11 @@ Pan
 %%%%
 Ziggurat
 
-ƒWƒbƒOƒ‰ƒg
+ã‚¸ãƒƒã‚°ãƒ©ãƒˆ
 %%%%
 a ziggurat
 
-ƒWƒbƒOƒ‰ƒg
+ã‚¸ãƒƒã‚°ãƒ©ãƒˆ
 %%%%
 Zig
 
@@ -263,16 +263,16 @@ Zig
 %%%%
 You land on top of a ziggurat so tall you cannot make out the ground.
 
-‚ ‚È‚½‚Í’n–Ê‚ªŠm”F‚Å‚«‚È‚¢‚Ù‚Ç‚Ì‚‚³‚ÌƒWƒbƒOƒ‰ƒg‚Ì’¸ã‚É•‘‚¢~‚è‚½
+ã‚ãªãŸã¯åœ°é¢ãŒç¢ºèªã§ããªã„ã»ã©ã®é«˜ã•ã®ã‚¸ãƒƒã‚°ãƒ©ãƒˆã®é ‚ä¸Šã«èˆã„é™ã‚ŠãŸ
 #"You land on top of a ziggurat so tall you cannot make out the ground.",
 %%%%
 Labyrinth
 
-ƒ‰ƒrƒŠƒ“ƒX
+ãƒ©ãƒ“ãƒªãƒ³ã‚¹
 %%%%
 a labyrinth
 
-ƒ‰ƒrƒŠƒ“ƒX
+ãƒ©ãƒ“ãƒªãƒ³ã‚¹
 %%%%
 Lab
 
@@ -280,95 +280,95 @@ Lab
 %%%%
 Bazaar
 
-ƒoƒU[
+ãƒã‚¶ãƒ¼
 %%%%
 a bazaar
 
-ƒoƒU[
+ãƒã‚¶ãƒ¼
 #"Bazaar", "a bazaar", "Bazaar",
 %%%%
 You enter an inter-dimensional bazaar!
 
-‚ ‚È‚½‚ÍƒoƒU[‚ÌŸŒ³‚Ì’†‚É“ü‚è‚ñ‚¾!
+ã‚ãªãŸã¯ãƒã‚¶ãƒ¼ã®æ¬¡å…ƒã®ä¸­ã«å…¥ã‚Šè¾¼ã‚“ã !
 #"You enter an inter-dimensional bazaar!",
 %%%%
 Trove
 
-”é•ó
+ç§˜å®
 %%%%
 a treasure trove
 
-”é•óŠÙ
+ç§˜å®é¤¨
 #"Trove", "a treasure trove", "Trove",
 %%%%
 Sewer
 
-‰º…“¹
+ä¸‹æ°´é“
 %%%%
 a sewer
 
-‰º…“¹
+ä¸‹æ°´é“
 #"Sewer", "a sewer", "Sewer",
 %%%%
 Ossuary
 
-”[œ“°
+ç´éª¨å ‚
 %%%%
 an ossuary
 
-”[œ“°
+ç´éª¨å ‚
 #"Ossuary", "an ossuary", "Ossuary",
 %%%%
 Bailey
 
-—vÇ
+è¦å¡
 %%%%
 a bailey
 
-—vÇ
+è¦å¡
 #"Bailey", "a bailey", "Bailey",
 %%%%
 Ice Cave
 
-•X‚Ì“´ŒA
+æ°·ã®æ´çªŸ
 %%%%
 an ice cave
 
-•X‚Ì“´ŒA
+æ°·ã®æ´çªŸ
 %%%%
 IceCv
 
-•XŒA
+æ°·çªŸ
 #"Ice Cave", "an ice cave", "IceCv",
 %%%%
 Volcano
 
-‰ÎR
+ç«å±±
 %%%%
 a volcano
 
-‰ÎR
+ç«å±±
 #"Volcano", "a volcano", "Volcano",
 %%%%
 Wizlab
 
-–‚pt‚ÌŒ¤‹†º
+é­”è¡“å¸«ã®ç ”ç©¶å®¤
 %%%%
 a wizard's laboratory
 
-–‚pt‚ÌŒ¤‹†º
+é­”è¡“å¸«ã®ç ”ç©¶å®¤
 %%%%
 WizLab
 
-Œ¤‹†
+ç ”ç©¶
 #"Wizlab", "a wizard's laboratory", "WizLab",
 %%%%
 Void
 
-‹•‹ó
+è™šç©º
 %%%%
 a void
 
-‹•‹ó
+è™šç©º
 #"Void", "a void", "Void",
 %%%%
