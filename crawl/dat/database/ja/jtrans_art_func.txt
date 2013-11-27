@@ -1,72 +1,72 @@
 %%%%
 The Sceptre summons one of its servants.
 
-‰¤â”‚Í‚µ‚à‚×‚Ì‚Ğ‚Æ‚Â‚ğ¢Š·‚µ‚½
+ç‹ç¬ã¯ã—ã‚‚ã¹ã®ã²ã¨ã¤ã‚’å¬æ›ã—ãŸ
 #mpr("The Sceptre summons one of its servants.");
 %%%%
 You don't feel so good about this...
 
-‚±‚Ì‘¶İ‚É‚Í‚ ‚Ü‚èDŠ´‚ª‚Ä‚È‚¢cc
+ã“ã®å­˜åœ¨ã«ã¯ã‚ã¾ã‚Šå¥½æ„ŸãŒæŒã¦ãªã„â€¦â€¦
 #mpr("You don't feel so good about this...");
 %%%%
 The air shimmers briefly.
 
-‘å‹C‚Íˆêu‚©‚·‚©‚É‹P‚¢‚½
+å¤§æ°—ã¯ä¸€ç¬ã‹ã™ã‹ã«è¼ã„ãŸ
 #mpr("The air shimmers briefly.");
 %%%%
 The Sword of Cerebov burns away your fire resistance.
 
-ƒZƒŒƒ{ƒu‚ÌŒ•‚Í‚ ‚È‚½‚Ì‰Î‰Š‘Ï«‚ğÄ‚«•¥‚Á‚½
+ã‚»ãƒ¬ãƒœãƒ–ã®å‰£ã¯ã‚ãªãŸã®ç«ç‚è€æ€§ã‚’ç„¼ãæ‰•ã£ãŸ
 #mpr("The Sword of Cerebov burns away your fire resistance.");
 %%%%
 The Sword of Cerebov burns away %s fire resistance.
 
-ƒZƒŒƒ{ƒu‚ÌŒ•‚Í%s‚Ì‰Î‰Š‘Ï«‚ğÄ‚«•¥‚Á‚½
+ã‚»ãƒ¬ãƒœãƒ–ã®å‰£ã¯%sã®ç«ç‚è€æ€§ã‚’ç„¼ãæ‰•ã£ãŸ
 #mprf("The Sword of Cerebov burns away %s fire resistance.",
 %%%%
 the Scythe of Curses
 
-ô‚¢‚Ì‘åŠ™
+å‘ªã„ã®å¤§éŒ
 #"the Scythe of Curses", NH_NEVER);
 %%%%
 A shiver runs down your spine.
 
-íœÉ‚ªÒ‘‚Ü‚Å‘–‚Á‚½
+æˆ¦æ…„ãŒè„Šé«„ã¾ã§èµ°ã£ãŸ
 #_equip_mpr(show_msgs, "A shiver runs down your spine.");
 %%%%
 You're too close to death to use this item.
 
-‚±‚ÌƒAƒCƒeƒ€‚ğg—p‚·‚é‚±‚Æ‚ªo—ˆ‚È‚¢‚Ù‚Ç€‚É‹ß‚Ã‚¢‚Ä‚¢‚é
+ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ä½¿ç”¨ã™ã‚‹ã“ã¨ãŒå‡ºæ¥ãªã„ã»ã©æ­»ã«è¿‘ã¥ã„ã¦ã„ã‚‹
 #mpr("You're too close to death to use this item.");
 %%%%
 You feel the staff feeding on your energy!
 
-ñ‚ª‚ ‚È‚½‚ÌƒGƒlƒ‹ƒM[‚ğÁ”ï‚µ‚½I
+æ–ãŒã‚ãªãŸã®ã‚¨ãƒãƒ«ã‚®ãƒ¼ã‚’æ¶ˆè²»ã—ãŸï¼
 #mpr("You feel the staff feeding on your energy!");
 %%%%
 You smell chlorine.
 
-‚ ‚È‚½‚Í‰–‘f‚ÌL‚¢‚ğšk‚¢‚¾
+ã‚ãªãŸã¯å¡©ç´ ã®è‡­ã„ã‚’å—…ã„ã 
 #_equip_mpr(show_msgs, "You smell chlorine.");
 %%%%
 The staff glows a sickly green.
 
-ñ‚Íãã‚µ‚¢—ÎF‚É“_–Å‚µ‚½
+æ–ã¯å¼±å¼±ã—ã„ç·‘è‰²ã«ç‚¹æ»…ã—ãŸ
 #_equip_mpr(show_msgs, "The staff glows a sickly green.");
 %%%%
 The smell of chlorine vanishes.
 
-‰–‘f‚Ì“õ‚¢‚ÍÁ‚¦‹‚Á‚½
+å¡©ç´ ã®åŒ‚ã„ã¯æ¶ˆãˆå»ã£ãŸ
 #_equip_mpr(show_msgs, "The smell of chlorine vanishes.");
 %%%%
 The staff's sickly green glow vanishes.
 
-ñ‚Ìãã‚µ‚¢—ÎF‚ÍÁ‚¦‹‚Á‚½
+æ–ã®å¼±å¼±ã—ã„ç·‘è‰²ã¯æ¶ˆãˆå»ã£ãŸ
 #_equip_mpr(show_msgs, "The staff's sickly green glow vanishes.");
 %%%%
 You sense an aura of extreme power.
 
-‚ ‚È‚½‚Í¦‚Ü‚¶‚¢—Í‚Ì—ì‹C‚ğŠ´‚¶‚½
+ã‚ãªãŸã¯å‡„ã¾ã˜ã„åŠ›ã®éœŠæ°—ã‚’æ„Ÿã˜ãŸ
 #_equip_mpr(show_msgs, "You sense an aura of extreme power.");
 %%%%
 ss_welcome
@@ -75,7 +75,7 @@ ss_welcome
 %%%%
 The sword says, \"Hi! I'm the Singing Sword!\"
 
-‚»‚ÌŒ•‚Í’‚Á‚½:w‚Í[‚¢!„‚Íæ‚¤Œ•!x
+ãã®å‰£ã¯å–‹ã£ãŸ:ã€ã¯ãƒ¼ã„!ç§ã¯è¬³ã†å‰£!ã€
 #mprf(MSGCH_TALK, "The sword says, \"Hi! I'm the Singing Sword!\"");
 %%%%
 ss_welcome
@@ -84,32 +84,32 @@ ss_welcome
 %%%%
 The Singing Sword hums in delight!
 
-wæ‚¤Œ•x‚ÍŠ½Šì‚ÌšX‚è‚ğã‚°‚½I
+ã€è¬³ã†å‰£ã€ã¯æ­“å–œã®å”¸ã‚Šã‚’ä¸Šã’ãŸï¼
 #mpr("The Singing Sword hums in delight!", MSGCH_TALK);
 %%%%
 Singing Sword
 
-wæ‚¤Œ•x
+ã€è¬³ã†å‰£ã€
 #set_artefact_name(*item, "Singing Sword");
 %%%%
 The Singing Sword sighs.
 
-wæ‚¤Œ•x‚Í—­‘§‚ğ˜R‚ç‚µ‚½
+ã€è¬³ã†å‰£ã€ã¯æºœæ¯ã‚’æ¼ã‚‰ã—ãŸ
 #_equip_mpr(show_msgs, "The Singing Sword sighs.", MSGCH_TALK);
 %%%%
 Sulking Sword
 
-w—J‚¤Œ•x
+ã€æ†‚ã†å‰£ã€
 #new_name = "Sulking Sword";
 %%%%
 Singing Sword
 
-wæ‚¤Œ•x
+ã€è¬³ã†å‰£ã€
 #new_name = "Singing Sword";
 %%%%
 Screaming Sword
 
-w‹©‚ÔŒ•x
+ã€å«ã¶å‰£ã€
 #new_name = "Screaming Sword";
 %%%%
 silenced
@@ -137,116 +137,116 @@ SCREAM
 #singing sword 
 
 #string msg = getSpeakString("singing sword " + key);
-#‚±‚±‚Í–|–ó‚µ‚È‚­‚Ä‚à‚¢‚¢‚Ì‚Å‚Í?
+#ã“ã“ã¯ç¿»è¨³ã—ãªãã¦ã‚‚ã„ã„ã®ã§ã¯?
 %%%%
 You feel pruney.
 
-‚ ‚È‚½‚Íƒvƒ‹[ƒ“‚Ì‹C•ª‚É‚È‚Á‚½
+ã‚ãªãŸã¯ãƒ—ãƒ«ãƒ¼ãƒ³ã®æ°—åˆ†ã«ãªã£ãŸ
 #_equip_mpr(show_msgs, "You feel pruney.");
 %%%%
 A terribly searing pain shoots up your arm!
 
-‹°‚ë‚µ‚¢Ü‚¯‚é‚æ‚¤‚È’É‚İ‚ª‚ ‚È‚½‚Ì˜r‚ğ‹ì‚¯‚Ì‚Ú‚Á‚½I
+æã‚ã—ã„ç¼ã‘ã‚‹ã‚ˆã†ãªç—›ã¿ãŒã‚ãªãŸã®è…•ã‚’é§†ã‘ã®ã¼ã£ãŸï¼
 #_equip_mpr(show_msgs, "A terribly searing pain shoots up your arm!");
 %%%%
 You feel bloodthirsty!
 
-‚ ‚È‚½‚Íc”E‚ÈÕ“®‚ğŠo‚¦‚½I
+ã‚ãªãŸã¯æ®‹å¿ãªè¡å‹•ã‚’è¦šãˆãŸï¼
 #_equip_mpr(show_msgs, "You feel bloodthirsty!");
 %%%%
 You feel less violent.
 
-‚ ‚È‚½‚Ì‹¥–\‚³‚ÍŠô•ªû‚Ü‚Á‚½
+ã‚ãªãŸã®å‡¶æš´ã•ã¯å¹¾åˆ†åã¾ã£ãŸ
 #_equip_mpr(show_msgs, "You feel less violent.");
 %%%%
 the Staff of Wucad Mu
 
-ƒEƒJƒhEƒ€[‚Ìñ
+ã‚¦ã‚«ãƒ‰ãƒ»ãƒ ãƒ¼ã®æ–
 #"the Staff of Wucad Mu", NH_NEVER);
 %%%%
 The staff is unable to affect your essence.
 
-ñ‚Í‚ ‚È‚½‚É‰e‹¿‚ğ—^‚¦‚é‚±‚Æ‚ªo—ˆ‚È‚¢
+æ–ã¯ã‚ãªãŸã«å½±éŸ¿ã‚’ä¸ãˆã‚‹ã“ã¨ãŒå‡ºæ¥ãªã„
 #mpr("The staff is unable to affect your essence.");
 %%%%
 Your reserves of magic are full.
 
-‚ ‚È‚½‚Ì–‚—Í‚ÍŠù‚Éˆê”t‚¾
+ã‚ãªãŸã®é­”åŠ›ã¯æ—¢ã«ä¸€æ¯ã 
 #mpr("Your reserves of magic are full.");
 %%%%
 Magical energy flows into your mind!
 
-–‚—Í‚ª‚ ‚È‚½‚Ì¸_‚É—¬‚ê‚ñ‚¾!
+é­”åŠ›ãŒã‚ãªãŸã®ç²¾ç¥ã«æµã‚Œè¾¼ã‚“ã !
 #mpr("Magical energy flows into your mind!");
 %%%%
 You feel a strange hunger, and smell blood in the air...
 
-‚ ‚È‚½‚ÍŠï–­‚È‹ó• ‚ğŠ´‚¶A‚»‚µ‚Ä‘å‹C’†‚ÉŒŒ‚Ì“õ‚¢‚ğšk‚¢‚¾cc
+ã‚ãªãŸã¯å¥‡å¦™ãªç©ºè…¹ã‚’æ„Ÿã˜ã€ãã—ã¦å¤§æ°—ä¸­ã«è¡€ã®åŒ‚ã„ã‚’å—…ã„ã â€¦â€¦
 #"You feel a strange hunger, and smell blood in the air...");
 %%%%
 You feel a bloodthirsty glee!
 
-‚ ‚È‚½‚ÍŒŒ‚É‹Q‚¦Šì‚Ñ‚ğŠ´‚¶‚é!
+ã‚ãªãŸã¯è¡€ã«é£¢ãˆå–œã³ã‚’æ„Ÿã˜ã‚‹!
 #_equip_mpr(show_msgs, "You feel a bloodthirsty glee!");
 %%%%
 You feel strangely empty.
 
-‚ ‚È‚½‚Í•sv‹c‚Æ‹ó‚Á‚Û‚É‚È‚Á‚½‚ÆŠ´‚¶‚½
+ã‚ãªãŸã¯ä¸æ€è­°ã¨ç©ºã£ã½ã«ãªã£ãŸã¨æ„Ÿã˜ãŸ
 #_equip_mpr(show_msgs, "You feel strangely empty.");
 %%%%
 You sense an extremely unholy aura.
 
-‚ ‚È‚½‚Í”ñí‚É×ˆ«‚È—ì‹C‚ğŠ´‚¶‚½
+ã‚ãªãŸã¯éå¸¸ã«é‚ªæ‚ªãªéœŠæ°—ã‚’æ„Ÿã˜ãŸ
 #_equip_mpr(show_msgs, "You sense an extremely unholy aura.");
 %%%%
 the Sword of Zonguldrok
 
-ƒ]ƒ“ƒOƒ‹ƒhƒƒbƒN‚ÌŒ•
+ã‚¾ãƒ³ã‚°ãƒ«ãƒ‰ãƒ­ãƒƒã‚¯ã®å‰£
 #"the Sword of Zonguldrok");
 %%%%
 shield of the gong
 
-“ºèt‚Ì‚
+éŠ…é‘¼ã®ç›¾
 #string msg = getSpeakString("shield of the gong");
 %%%%
 You hear a strange loud sound.
 
-‚ ‚È‚½‚ÍŠï–­‚È‘å‚«‚È‰¹‚ğ•·‚¢‚½
+ã‚ãªãŸã¯å¥‡å¦™ãªå¤§ããªéŸ³ã‚’èã„ãŸ
 #msg = "You hear a strange loud sound.";
 %%%%
 A thin mist springs up around you!
 
-”–‚¢‰Œ–‹‚ª‚ ‚È‚½‚ÌüˆÍ‚É—N‚«o‚½!
+è–„ã„ç…™å¹•ãŒã‚ãªãŸã®å‘¨å›²ã«æ¹§ãå‡ºãŸ!
 #_equip_mpr(show_msgs, "A thin mist springs up around you!");
 %%%%
 Visions of slaying %s flood into your mind.
 
-%s‚ğ–•E‚·‚éŒõŒi‚ª‚ ‚È‚½‚Ì¸_‚É•‚‚©‚ñ‚¾
+%sã‚’æŠ¹æ®ºã™ã‚‹å…‰æ™¯ãŒã‚ãªãŸã®ç²¾ç¥ã«æµ®ã‹ã‚“ã 
 #mprf("Visions of slaying %s flood into your mind.",
 %%%%
 Your confusion fades away as the thirst for blood takes over your mind.
 
-ŒŒ‚ÌŠ‰‚«‚ªÁ‚¦‹‚é‚Æ‹¤‚É‚ ‚È‚½‚Ì—S‚Íû‚Ü‚Á‚½
+è¡€ã®æ¸‡ããŒæ¶ˆãˆå»ã‚‹ã¨å…±ã«ã‚ãªãŸã®ä¹±å¿ƒã¯åã¾ã£ãŸ
 #mpr("Your confusion fades away as the thirst for blood takes over your mind.");
 %%%%
 Your thirst for blood fades away.
 
-‚ ‚È‚½‚Ì’n‚ÌŠ‰‚«‚ÍÁ‚¦‹‚Á‚½
+ã‚ãªãŸã®åœ°ã®æ¸‡ãã¯æ¶ˆãˆå»ã£ãŸ
 #mpr("Your thirst for blood fades away.");
 %%%%
 You feel an overwhelming desire to commit suicide.
 
-‚ ‚È‚½‚Í©E‚µ‚½‚¢‚Æ‚¢‚¤ˆ³“|“I‚È—~‹‚ğŠ´‚¶‚½
+ã‚ãªãŸã¯è‡ªæ®ºã—ãŸã„ã¨ã„ã†åœ§å€’çš„ãªæ¬²æ±‚ã‚’æ„Ÿã˜ãŸ
 #? "You feel an overwhelming desire to commit suicide."
 %%%%
 You feel an overwhelming desire to slay dragons!
 
-‚ ‚È‚½‚Í—´‘°‚ğ–•E‚µ‚½‚¢‚Æ‚¢‚¤ˆ³“|“I‚È—~‹‚ğŠ´‚¶‚½
+ã‚ãªãŸã¯é¾æ—ã‚’æŠ¹æ®ºã—ãŸã„ã¨ã„ã†åœ§å€’çš„ãªæ¬²æ±‚ã‚’æ„Ÿã˜ãŸ
 #: "You feel an overwhelming desire to slay dragons!");
 %%%%
 <green>You see the lance glow as it kills you.</green>
 
-<green>‚ ‚È‚½‚ğE‚µ‚½ƒ‰ƒ“ƒX‚ª‹P‚­‚Ì‚ğŒ©‚é</green>
+<green>ã‚ãªãŸã‚’æ®ºã—ãŸãƒ©ãƒ³ã‚¹ãŒè¼ãã®ã‚’è¦‹ã‚‹</green>
 #mpr("<green>You see the lance glow as it kills you.</green>");
 %%%%
 Killed a drac with hd %d.
@@ -255,58 +255,58 @@ Killed a drac with hd %d.
 %%%%
 <green>The lance glows as it skewers %s.</green>
 
-%s‚ğ‹øh‚µ‚É‚µ‚½–‚ÅAƒ‰ƒ“ƒX‚Í‹P‚¢‚½
+%sã‚’ä¸²åˆºã—ã«ã—ãŸäº‹ã§ã€ãƒ©ãƒ³ã‚¹ã¯è¼ã„ãŸ
 <green>The lance glows as it skewers %s.</green>
 #mprf("<green>The lance glows as it skewers %s.</green>",
 %%%%
 %s %s blasted by disruptive energy!
 
-%s %s ƒfƒBƒXƒyƒ‹‚Ì—Í‚ÉŒ‚‚½‚ê‚½!
+%s %s ãƒ‡ã‚£ã‚¹ãƒšãƒ«ã®åŠ›ã«æ’ƒãŸã‚ŒãŸ!
 #mprf("%s %s blasted by disruptive energy!",
 %%%%
 are
 
-‚Í
+ã¯
 #defender->is_player() ? "are" : "is");
 %%%%
 is
 
-‚Í
+ã¯
 #defender->is_player() ? "are" : "is");
 %%%%
 Time to lay down the shillelagh law.
 
-ƒVƒ…ƒŒƒCƒŠ[‚ğ±‚Â‚¾cc
+ã‚·ãƒ¥ãƒ¬ã‚¤ãƒªãƒ¼ã‚’æ“²ã¤æ™‚ã â€¦â€¦
 #_equip_mpr(show_msgs, "Time to lay down the shillelagh law.");
 %%%%
 You feel oddly protected from the elements.
 
-‚ ‚È‚½‚Í–­‚ÉŒ³‘f‚©‚ç•ÛŒì‚³‚ê‚Ä‚¢‚é‚ÆŠ´‚¶‚½
+ã‚ãªãŸã¯å¦™ã«å…ƒç´ ã‹ã‚‰ä¿è­·ã•ã‚Œã¦ã„ã‚‹ã¨æ„Ÿã˜ãŸ
 #_equip_mpr(show_msgs, "You feel oddly protected from the elements.");
 %%%%
 You no longer feel protected from the elements.
 
-‚ ‚È‚½‚ÍŒ³‘f‚©‚ç•ÛŒì‚³‚ê‚Ä‚¢‚é‚ÆŠ´‚¶‚È‚­‚È‚Á‚½
+ã‚ãªãŸã¯å…ƒç´ ã‹ã‚‰ä¿è­·ã•ã‚Œã¦ã„ã‚‹ã¨æ„Ÿã˜ãªããªã£ãŸ
 #_equip_mpr(show_msgs, "You no longer feel protected from the elements.");
 %%%%
 The light fades from your surroundings.
 
-‚ ‚È‚½‚ÌüˆÍ‚©‚çŒõ‚ªÁ‚¦‹‚Á‚½
+ã‚ãªãŸã®å‘¨å›²ã‹ã‚‰å…‰ãŒæ¶ˆãˆå»ã£ãŸ
 #_equip_mpr(show_msgs, "The light fades from your surroundings.");
 %%%%
 The light returns to your surroundings.
 
-Œõ‚ª‚ ‚È‚½‚ÌüˆÍ‚É–ß‚Á‚Ä‚«‚½
+å…‰ãŒã‚ãªãŸã®å‘¨å›²ã«æˆ»ã£ã¦ããŸ
 #_equip_mpr(show_msgs, "The light returns to your surroundings.");
 %%%%
 the plutonium sword
 
-wƒvƒ‹ƒgƒjƒEƒ€‚ÌŒ•x
+ã€ãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ ã®å‰£ã€
 #"the plutonium sword", NH_NEVER);
 %%%%
 Mutagenic energy flows through the plutonium sword!
 
-•ÏˆÙ«‚ÌƒGƒlƒ‹ƒM[‚ªƒvƒ‹ƒgƒjƒEƒ€‚ÌŒ•‚©‚ç•úo‚³‚ê‚½!
+å¤‰ç•°æ€§ã®ã‚¨ãƒãƒ«ã‚®ãƒ¼ãŒãƒ—ãƒ«ãƒˆãƒ‹ã‚¦ãƒ ã®å‰£ã‹ã‚‰æ”¾å‡ºã•ã‚ŒãŸ!
 #mpr("Mutagenic energy flows through the plutonium sword!");
 %%%%
 bugger
@@ -315,77 +315,77 @@ bugger
 %%%%
 cleave
 
-Ø’f‚µ‚½
+åˆ‡æ–­ã—ãŸ
 #case 0: verb = "cleave", adv = " in twain"; break;
 %%%%
  in twain
 
-“ñ‚Â‚É
+äºŒã¤ã«
 #case 0: verb = "cleave", adv = " in twain"; break;
 %%%%
 pulverise
 
-–Å‘½Œ‚‚¿‚É‚µ‚½
+æ»…å¤šæ’ƒã¡ã«ã—ãŸ
 #case 1: verb = "pulverise", adv = " into thin bloody mist"; break;
 %%%%
  into thin bloody mist
 
-”–‚¢ŒŒ‚Ì–¶‚Ì’†‚É‚È‚é‚Ü‚Å
+è–„ã„è¡€ã®éœ§ã®ä¸­ã«ãªã‚‹ã¾ã§
 #case 1: verb = "pulverise", adv = " into thin bloody mist"; break;
 %%%%
 hew
 
-’@‚«Ø‚Á‚½
+å©ãåˆ‡ã£ãŸ
 #case 2: verb = "hew", adv = " savagely"; break;
 %%%%
  savagely
 
-–ì¶“I‚É
+é‡ç”Ÿçš„ã«
 #case 2: verb = "hew", adv = " savagely"; break;
 %%%%
 fatally mangle
 
-’v–½“I‚É’@‚«‰ó‚µ‚½
+è‡´å‘½çš„ã«å©ãå£Šã—ãŸ
 #case 3: verb = "fatally mangle", adv = ""; break;
 %%%%
 dissect
 
-Ø‚è—ô‚¢‚½
+åˆ‡ã‚Šè£‚ã„ãŸ
 #case 4: verb = "dissect", adv = " like a pig carcass"; break;
 %%%%
  like a pig carcass
 
-“Ø‚Ì‚æ‚¤‚É
+è±šã®ã‚ˆã†ã«
 #case 4: verb = "dissect", adv = " like a pig carcass"; break;
 %%%%
 chop
 
-’@‚«Ø‚Á‚½
+å©ãåˆ‡ã£ãŸ
 #case 5: verb = "chop", adv = " into pieces"; break;
 %%%%
  into pieces
 
-×Ø‚ê‚É‚È‚é‚Ü‚Å
+ç´°åˆ‡ã‚Œã«ãªã‚‹ã¾ã§
 #case 5: verb = "chop", adv = " into pieces"; break;
 %%%%
 butcher
 
-‰ğ‘Ì‚µ‚½
+è§£ä½“ã—ãŸ
 #case 6: verb = "butcher", adv = " messily"; break;
 %%%%
  messily
 
-—G‚É
+ä¹±é›‘ã«
 #case 6: verb = "butcher", adv = " messily"; break;
 %%%%
 slaughter
 
-‹sE‚µ‚½
+è™æ®ºã—ãŸ
 #case 7: verb = "slaughter", adv = " joyfully"; break;
 %%%%
  joyfully
 
-Šy‚µ‚°‚É
+æ¥½ã—ã’ã«
 #case 7: verb = "slaughter", adv = " joyfully"; break;
 %%%%
 %s %s%s %s%s.
@@ -395,5 +395,5 @@ slaughter
 s
 
 #attacker->is_player() ? "" : "s", defender->name(DESC_THE).c_str(),
-#Á‚·
+#æ¶ˆã™
 %%%%

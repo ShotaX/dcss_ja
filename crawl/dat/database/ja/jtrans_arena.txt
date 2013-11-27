@@ -1,8 +1,8 @@
-#ƒ‚ƒ“ƒXƒ^[“¬‹Zê‚É‚Â‚¢‚Ä‚Í•ª‚©‚ç‚È‚¢‚Ì‚ÅŒã‰ñ‚µ
+#ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼é—˜æŠ€å ´ã«ã¤ã„ã¦ã¯åˆ†ã‹ã‚‰ãªã„ã®ã§å¾Œå›ã—
 %%%%
 Failed to create monster at (%d,%d) grd: %s
 
-#(%d,%d) grd: %s‚Ìƒ‚ƒ“ƒXƒ^[‚Ìì¬‚É¸”s‚µ‚½
+#(%d,%d) grd: %sã®ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã®ä½œæˆã«å¤±æ•—ã—ãŸ
 #"Failed to create monster at (%d,%d) grd: %s",
 %%%%
 (%d) %s
@@ -19,12 +19,12 @@ arena_
 %%%%
 "No arena maps named \"%s\""
 
-#%s‚Ìƒ}ƒbƒv‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ
+#%sã®ãƒãƒƒãƒ—ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“
 #throw make_stringf("No arena maps named \"%s\"", arena_type.c_str());
 %%%%
 "Failed to create arena named \"%s\""
 
-#%s‚Ìƒ}ƒbƒv‚Ì¶¬‚É¸”s‚µ‚Ü‚µ‚½
+#%sã®ãƒãƒƒãƒ—ã®ç”Ÿæˆã«å¤±æ•—ã—ã¾ã—ãŸ
 #throw make_stringf("Failed to create arena named \"%s\"",
 %%%%
 random v random
