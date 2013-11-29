@@ -2561,8 +2561,8 @@ string mons_type_name(monster_type mc, description_level_type desc)
     {
         switch (desc)
         {
-        case DESC_THE:       result = "the "; break;
-        case DESC_A:         result = "a ";   break;
+        case DESC_THE:       result = ""; break;
+        case DESC_A:         result = "";   break;
         case DESC_PLAIN: default:             break;
         }
     }

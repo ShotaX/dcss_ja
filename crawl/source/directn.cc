@@ -333,13 +333,13 @@ string direction_chooser::build_targetting_hint_string() const
     const monster* p_target = get_current_target();
 
     if (f_target && f_target == p_target)
-        hint_string = ", f/p - " + f_target->name(DESC_PLAIN);
+        hint_string = ", f/p - " + jtrans(f_target->name(DESC_PLAIN));
     else
     {
         if (f_target)
-            hint_string += ", f - " + f_target->name(DESC_PLAIN);
+            hint_string += ", f - " + jtrans(f_target->name(DESC_PLAIN));
         if (p_target)
-            hint_string += ", p - " + p_target->name(DESC_PLAIN);
+            hint_string += ", p - " + jtrans(p_target->name(DESC_PLAIN));
     }
 
     return hint_string;
@@ -2901,13 +2901,13 @@ string thing_do_grammar(description_level_type dtype, bool add_stop,
     switch (dtype)
     {
     case DESC_THE:
-        return "the " + desc;
+        return "the " + jtrans(desc);
     case DESC_A:
-        return article_a(desc, true);
+        return article_a(jtrans(desc), true);
     case DESC_NONE:
         return "";
     default:
-        return desc;
+        return jtrans(desc);
     }
 }
 
@@ -3427,10 +3427,11 @@ static string _mon_enchantments_string(const monster_info& mi)
 
     if (!enchant_descriptors.empty())
     {
-        return make_stringf(jtrans("%s is %s.").c_str(),
-            uppercase_first(mi.pronoun(PRONOUN_SUBJECTIVE)).c_str(),
-            comma_separated_line(enchant_descriptors.begin(),
-                                   enchant_descriptors.end()).c_str());
+        return uppercase_first(mi.pronoun(PRONOUN_SUBJECTIVE))
+            + jtrans("ha")
+            + comma_separated_line(enchant_descriptors.begin(),
+                                   enchant_descriptors.end())
+            + "";
     }
     else
         return "";
@@ -3634,7 +3635,7 @@ string get_monster_equipment_desc(const monster_info& mi,
         if (print_attitude && mons_is_pghost(mi.type))
             desc = get_ghost_description(mi);
         else
-            desc = mi.full_name(mondtype);
+            desc = jtrans(mi.full_name(mondtype));
 
         if (print_attitude)
         {

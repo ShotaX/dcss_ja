@@ -2941,6 +2941,7 @@ resistant to
 %%%%
 ha
 
+は
 #result << uppercase_first(pronoun) << jtrans("ha") <<_get_threat_desc(mi.threat)
 %%%%
 looks
@@ -3014,7 +3015,7 @@ can sense the presence of invisible creatures.
 は周囲の見えざるものを感知することが出来る
 #result << uppercase_first(pronoun) << jtrans("can sense the presence of invisible creatures.") + "\n";
 %%%%
-ha
+#ha
 
 #result << uppercase_first(pronoun) << jtrans("ha");
 %%%%
@@ -3110,7 +3111,7 @@ is as big as
 #
 #<< "\n";
 %%%%
-ha
+#ha
 
 #result << uppercase_first(pronoun) << jtrans("ha") << jtrans(sizes[mi.body_size()]) << ".\n";
 %%%%

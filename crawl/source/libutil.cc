@@ -6,6 +6,7 @@
 #include "AppHdr.h"
 
 #include "defines.h"
+#include "database.h"
 #include "itemname.h" // is_vowel()
 #include "libutil.h"
 #include "externs.h"
@@ -107,15 +108,15 @@ string apply_description(description_level_type desc, const string &name,
     switch (desc)
     {
     case DESC_THE:
-        return ("the " + name);
+        return ("the " + jtrans(name));
     case DESC_A:
-        return (quantity > 1 ? _number_to_string(quantity, in_words) + name
-                             : article_a(name, true));
+        return (quantity > 1 ? _number_to_string(quantity, in_words) + jtrans(name)
+                             : article_a(jtrans(name), true));
     case DESC_YOUR:
-        return ("your " + name);
+        return ("your " + jtrans(name));
     case DESC_PLAIN:
     default:
-        return name;
+        return jtrans(name);
     }
 }
 
@@ -223,7 +224,7 @@ string lowercase_string(string s)
 }
 
 // Warning: this (and uppercase_first()) relies on no libc (glibc, BSD libc,
-// MSVC crt) supporting letters that expand or contract, like German ß (-> SS)
+// MSVC crt) supporting letters that expand or contract, like German s (-> SS)
 // upon capitalization / lowercasing.  This is mostly a fault of the API --
 // there's no way to return two characters in one code point.
 // Also, all characters must have the same length in bytes before and after
@@ -777,10 +778,10 @@ static const string _get_indent(const string &s)
     size_t prefix = 0;
     if (starts_with(s, "\"")    // ASCII quotes
         || starts_with(s, "“")  // English quotes
-        || starts_with(s, "„")  // Polish/German/... quotes
-        || starts_with(s, "«")  // French quotes
-        || starts_with(s, "»")  // Danish/... quotes
-        || starts_with(s, "•")) // bulleted lists
+        || starts_with(s, "?")  // Polish/German/... quotes
+        || starts_with(s, "≪")  // French quotes
+        || starts_with(s, "≫")  // Danish/... quotes
+        || starts_with(s, "?")) // bulleted lists
     {
         prefix = 1;
     }

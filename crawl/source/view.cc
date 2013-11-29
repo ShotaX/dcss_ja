@@ -178,7 +178,7 @@ static string _desc_mons_type_map(map<monster_type, int> types)
         else
             desc = DESC_PLAIN;
 
-        name = mons_type_name(it->first, desc);
+        name = jtrans(mons_type_name(it->first, desc));
         if (it->second > 1)
         {
             name = make_stringf("%d %s", it->second,
@@ -192,7 +192,7 @@ static string _desc_mons_type_map(map<monster_type, int> types)
             message += ",";
         ++count;
     }
-    return make_stringf(jtrans("%s come into view.").c_str(), message.c_str());
+    return make_stringf(jtrans("%s come into view.").c_str(), jtrans(message).c_str());
 }
 
 /*
