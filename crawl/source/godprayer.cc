@@ -64,9 +64,9 @@ string god_prayer_reaction()
 {
     string result = god_name(you.religion);
     if (crawl_state.player_is_dead())
-        result += jtrans("was");
+        result += jtrans("was_gdp");
     else
-        result += jtrans("is");
+        result += jtrans("is_gdp");
     result +=
          (you.piety >= piety_breakpoint(5)) ? jtrans("exalted by your worship") :
          (you.piety >= piety_breakpoint(4)) ? jtrans("extremely pleased with you") :

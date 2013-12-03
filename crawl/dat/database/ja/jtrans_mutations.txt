@@ -1907,7 +1907,7 @@ Your muscles are strong (Str +3).
 
 あなたの筋肉は強い (Str +3)
 %%%%
-Your muscles are strong (Str +2).
+Your muscles are strong. (Str +2)
 
 あなたの筋肉は強い (Str +2)
 %%%%
@@ -1963,7 +1963,7 @@ Your mind is acute (Int +3).
 
 あなたの精神は鋭い (Int +3)
 %%%%
-Your mind is acute (Int +2).
+Your mind is acute. (Int +2)
 
 あなたの精神は鋭い (Int +2)
 %%%%
@@ -2019,7 +2019,7 @@ You are agile (Dex +3).
 
 あなたは敏捷だ (Dex +3)
 %%%%
-You are agile (Dex +2).
+You are agile. (Dex +2)
 
 あなたは敏捷だ (Dex +2)
 %%%%
@@ -2107,7 +2107,7 @@ You are weak (Str -5).
 
 あなたは弱い (Str -5)
 %%%%
-You are weak (Str -4).
+You are very weak. (Str -4)
 
 あなたは弱い (Str -4)
 %%%%
@@ -2115,7 +2115,7 @@ You are weak (Str -3).
 
 あなたは弱い (Str -3)
 %%%%
-You are weak (Str -2).
+You are weak. (Str -2)
 
 あなたは弱い (Str -2)
 %%%%
@@ -2163,7 +2163,7 @@ You are dopey (Int -5).
 
 あなたは愚かだ (Int -5)
 %%%%
-You are dopey (Int -4).
+You are very dopey. (Int -4)
 
 あなたは愚かだ (Int -4)
 %%%%
@@ -2171,7 +2171,7 @@ You are dopey (Int -3).
 
 あなたは愚かだ (Int -3)
 %%%%
-You are dopey (Int -2).
+You are dopey. (Int -2)
 
 あなたは愚かだ (Int -2)
 %%%%
@@ -2219,15 +2219,15 @@ You are clumsy (Dex -5).
 
 あなたは不器用だ (Dex -5)
 %%%%
-You are clumsy (Dex -4).
+You are very clumsy. (Dex -4)
 
-あなたは不器用だ (Dex -4)
+あなたはとても不器用だ (Dex -4)
 %%%%
 You are clumsy (Dex -3).
 
 あなたは不器用だ (Dex -3)
 %%%%
-You are clumsy (Dex -2).
+You are clumsy. (Dex -2)
 
 あなたは不器用だ (Dex -2)
 %%%%

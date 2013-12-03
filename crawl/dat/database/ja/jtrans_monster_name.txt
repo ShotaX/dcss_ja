@@ -747,17 +747,21 @@ moth of suppression
 
 抑圧の蛾
 %%%%
-small zombie
+zombie
 
 のゾンビ
 %%%%
-small skeleton
+skeleton
 
 のスケルトン
 %%%%
-small simulacrum
+simulacrum
 
 の幻影
+%%%%
+spectre
+
+の亡霊
 %%%%
 wight
 
@@ -1491,6 +1495,10 @@ glowing shapeshifter
 
 暴走した変身能力者
 %%%%
+shaped shifter
+
+の変身能力者
+%%%%
 Hellbinder
 
 地獄に繋がれし者
@@ -1531,6 +1539,22 @@ ironheart preserver
 
 不屈の保護者
 #Fixme_ja
+%%%%
+inept
+
+間抜けな
+%%%%
+ravenous
+
+飢えた
+%%%%
+monstrous
+
+巨大な
+%%%%
+mimic
+
+のミミック
 %%%%
 inept item mimic
 
@@ -1772,6 +1796,10 @@ pillar of salt
 
 塩の柱
 %%%%
+shaped pillar of salt
+
+の形をした塩の柱
+%%%%
 diamond obelisk
 
 金剛石の方尖塔
@@ -1868,7 +1896,7 @@ Xtahua
 
 『ザッハ』
 %%%%
-the Lernaean hydra
+Lernaean hydra
 
 『レルネーのヒドラ』
 %%%%
@@ -1912,7 +1940,7 @@ Agnes
 
 『アグネス』
 %%%%
-the royal jelly
+royal jelly
 
 『ロイヤルジェリー』
 %%%%
@@ -2142,59 +2170,62 @@ Sojobo
 %%%%
 
 
-
+#mon-info.cc
 %%%%
+helpless
 
-
-
+無防備な
 %%%%
+spectral_wep
 
-
-
+幽体の
 %%%%
+one
 
-
-
+1
 %%%%
+two
 
-
-
+2
 %%%%
+three
 
-
-
+3
 %%%%
+four
 
-
-
+4
 %%%%
+five
 
-
-
+5
 %%%%
+six
 
-
-
+6
 %%%%
+seven
 
-
-
+7
 %%%%
+eight
 
-
-
+8
 %%%%
+nine
 
-
-
+9
 %%%%
+ten
 
-
-
+10
+#
+#            const char* cardinals[] = {"one", "two", "three", "four", "five",
+#                                       "six", "seven", "eight", "nine", "ten"};
 %%%%
+-headed
 
-
-
+首の
 %%%%
 
 

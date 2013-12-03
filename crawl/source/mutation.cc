@@ -354,11 +354,13 @@ string describe_mutations(bool center_title)
         break;
 
     case SP_NAGA:
-        result += jtrans("You cannot wear boots.\n").c_str();
+        result += jtrans("You cannot wear boots.");
+        result += "\n";
 
         // Breathe poison replaces spit poison.
         if (!player_mutation_level(MUT_BREATHE_POISON))
-            result += "You can spit poison.\n";
+            result += jtrans("You can spit poison.");
+   		    result += "\n";
 
         if (you.experience_level > 12)
         {

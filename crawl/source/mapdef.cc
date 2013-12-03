@@ -19,6 +19,7 @@
 #include "coord.h"
 #include "coordit.h"
 #include "cluautil.h"
+#include "database.h"
 #include "decks.h"
 #include "describe.h"
 #include "directn.h"
@@ -4747,13 +4748,13 @@ bool item_list::monster_corpse_is_valid(monster_type *mons,
 
     if (!mons_class_can_leave_corpse(*mons))
     {
-        error = make_stringf("'%s' cannot leave corpses", name.c_str());
+        error = make_stringf("'%s' cannot leave corpses", jtrans(name).c_str());
         return false;
     }
 
     if (skeleton && !mons_skeleton(*mons))
     {
-        error = make_stringf("'%s' has no skeleton", name.c_str());
+        error = make_stringf("'%s' has no skeleton", jtrans(name).c_str());
         return false;
     }
 

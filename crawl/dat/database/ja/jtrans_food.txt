@@ -254,9 +254,9 @@ are near starving!
 %%%%
 are feeling %s%s.
 
-%s%sを感じている。
+は%s%sを感じている。
 %%%%
-very 
+very
 
 とても
 #msg += make_stringf(jtrans("are feeling %s%s.").c_str(),

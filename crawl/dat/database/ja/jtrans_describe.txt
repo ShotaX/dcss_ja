@@ -352,12 +352,12 @@ It affects your damage-dealing abilities (%d).
 それはあなたのダメージを与える能力に影響する(%d)
 #{ ARTP_DAMAGE, "It affects your damage-dealing abilities (%d).", false},
 %%%%
-fire
+fire_des
 
 火炎
 #{ ARTP_FIRE, "fire", true},
 %%%%
-cold
+cold_des
 
 冷気
 #{ ARTP_COLD, "cold", true},
@@ -372,7 +372,7 @@ It protects you from poison.
 それはあなたを毒から保護する
 #{ ARTP_POISON, "It protects you from poison.", false},
 %%%%
-negative energy
+negative energy_des
 
 負のエネルギー
 #{ ARTP_NEGATIVE_ENERGY, "negative energy", true},

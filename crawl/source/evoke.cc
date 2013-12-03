@@ -1159,8 +1159,8 @@ void wind_blast(actor* agent, int pow, coord_def target)
     for (actor_iterator ai(agent->get_los()); ai; ++ai)
     {
         if (ai->is_stationary()
-            || !cell_see_cell(you.pos(), ai->pos(), LOS_SOLID)
-            || ai->pos().distance_from(you.pos()) > radius
+            || !cell_see_cell(agent->pos(), ai->pos(), LOS_SOLID)
+            || ai->pos().distance_from(agent->pos()) > radius
             || ai->pos() == agent->pos() // so it's never aimed_at_feet
             || !target.origin()
                && _angle_between(agent->pos(), target, ai->pos()) > PI/4.0)
@@ -1211,7 +1211,8 @@ void wind_blast(actor* agent, int pow, coord_def target)
                 {
                     for (distance_iterator di(newpos, false, true, 1 ); di; ++di)
                     {
-                        if (di->distance_from(agent->pos())
+                        if (adjacent(*di, act_list[i]->pos())
+                            && di->distance_from(agent->pos())
                                 == newpos.distance_from(agent->pos())
                             && !actor_at(*di) && !feat_is_solid(grd(*di))
                             && act_list[i]->can_pass_through(*di)

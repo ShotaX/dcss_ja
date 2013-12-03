@@ -1074,7 +1074,7 @@ bool food_change(bool initial)
             case HS_VERY_HUNGRY:
             case HS_HUNGRY:
                 msg += make_stringf(jtrans("are feeling %s%s.").c_str(),
-                                   you.hunger_state == HS_VERY_HUNGRY ? jtrans("very ").c_str() : "",
+                                   you.hunger_state == HS_VERY_HUNGRY ? jtrans("very").c_str() : "",
                                    _how_hungry().c_str());
 
                 mprf(MSGCH_FOOD, less_hungry, "%s", msg.c_str());

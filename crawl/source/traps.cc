@@ -1763,36 +1763,32 @@ void handle_items_on_shaft(const coord_def& pos, bool open_shaft)
     if (o == NON_ITEM)
         return;
 
-    igrd(pos) = NON_ITEM;
-
-    if (env.map_knowledge(pos).seen() && open_shaft)
-    {
-        mpr(jtrans("A shaft opens up in the floor!"));
-        grd(pos) = DNGN_TRAP_NATURAL;
-    }
+    bool need_open_message = env.map_knowledge(pos).seen() && open_shaft;
 
     while (o != NON_ITEM)
     {
         int next = mitm[o].link;
 
-        if (mitm[o].defined())
+        if (mitm[o].defined() && !item_is_stationary(mitm[o]))
         {
-            bool update_stash = false;
-            if (env.map_knowledge(pos).visible())
+            if (need_open_message)
             {
-                mprf(jtrans("%s fall through the shaft.").c_str(),
-                     mitm[o].name(DESC_INVENTORY).c_str());
-
-                update_stash = true;
+                mpr("A shaft opens up in the floor!");
+                grd(pos) = DNGN_TRAP_NATURAL;
+                need_open_message = false;
             }
 
-            if (update_stash)
+            if (env.map_knowledge(pos).visible())
             {
+                mprf("%s fall%s through the shaft.",
+                     mitm[o].name(DESC_INVENTORY).c_str(),
+                     mitm[o].quantity == 1 ? "s" : "");
+
                 env.map_knowledge(pos).clear_item();
                 StashTrack.update_stash(pos);
             }
 
-            // Item will be randomly placed on the destination level.
+              // Item will be randomly placed on the destination level.
             mitm[o].pos = INVALID_COORD;
             add_item_to_transit(dest, mitm[o]);
 

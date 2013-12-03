@@ -1855,9 +1855,9 @@ int player_kiku_res_torment()
 // If temp is set to false, temporary sources or resistance won't be counted.
 int player_res_poison(bool calc_unid, bool temp, bool items)
 {
-    if (you.is_undead == US_SEMI_UNDEAD ? you.hunger_state == HS_STARVING
-            : you.is_undead && (temp || you.form != TRAN_LICH)
-              || you.is_artificial())
+    if ((you.is_undead == US_SEMI_UNDEAD ? you.hunger_state == HS_STARVING
+            : you.is_undead && (temp || you.form != TRAN_LICH))
+        || you.is_artificial())
     {
         return 3;
     }
@@ -7801,8 +7801,6 @@ vector<PlaceInfo> player::get_all_place_info(bool visited_only,
 
 bool player::do_shaft()
 {
-    dungeon_feature_type force_stair = DNGN_UNSEEN;
-
     if (!is_valid_shaft_level())
         return false;
 
@@ -7819,19 +7817,17 @@ bool player::do_shaft()
         case DNGN_TRAP_NATURAL:
         case DNGN_UNDISCOVERED_TRAP:
         case DNGN_ENTER_SHOP:
+            if (!ground_level() || total_weight() == 0)
+                return true;
             break;
 
         default:
             return false;
         }
 
-        if (!ground_level() || total_weight() == 0)
-            return true;
-
-        force_stair = DNGN_TRAP_NATURAL;
     }
 
-    down_stairs(force_stair);
+    down_stairs(DNGN_TRAP_NATURAL);
 
     return true;
 }

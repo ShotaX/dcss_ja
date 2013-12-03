@@ -13,6 +13,7 @@
 #include "artefact.h"
 #include "coord.h"
 #include "coordit.h"
+#include "database.h"
 #include "env.h"
 #include "fight.h"
 #include "ghost.h"
@@ -944,13 +945,13 @@ string monster_info::common_name(description_level_type desc) const
     ostringstream ss;
 
     if (props.exists("helpless"))
-        ss << "helpless ";
+        ss << jtrans("helpless");
 
     if (is(MB_SUBMERGED))
         ss << "submerged ";
 
     if (type == MONS_SPECTRAL_THING && !is(MB_NAME_ZOMBIE) && !nocore)
-        ss << "spectral ";
+        ss << jtrans("spectral_wep");
 
     if (type == MONS_BALLISTOMYCETE)
         ss << (number ? "active " : "");
@@ -962,23 +963,23 @@ string monster_info::common_name(description_level_type desc) const
         {
             const char* cardinals[] = {"one", "two", "three", "four", "five",
                                        "six", "seven", "eight", "nine", "ten"};
-            ss << cardinals[number - 1];
+            ss << jtrans(cardinals[number - 1]);
         }
         else
             ss << make_stringf("%d", number);
 
-        ss << "-headed ";
+        ss << jtrans("-headed");
     }
 
     if (mons_class_is_chimeric(type))
     {
-        ss << "chimera";
+        ss << jtrans("chimera");
         monsterentry *me = NULL;
         if (u.ghost.acting_part != MONS_0
             && (me = get_monster_data(u.ghost.acting_part)))
         {
             // Specify an acting head
-            ss << "'s " << me->name << " head";
+            ss << "'s " << jtrans(me->name) << " head";
         }
         else
             // Suffix parts in brackets
@@ -987,7 +988,7 @@ string monster_info::common_name(description_level_type desc) const
     }
 
     if (!nocore)
-        ss << core;
+        ss << jtrans(core);
 
     // Add suffixes.
     switch (type)
@@ -998,7 +999,7 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_ZOMBIE_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << "zombie";
+            ss << (nocore ? "" : " ") << jtrans("zombie");
         break;
     case MONS_SKELETON:
 #if TAG_MAJOR_VERSION == 34
@@ -1006,7 +1007,7 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_SKELETON_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << "skeleton";
+            ss << (nocore ? "" : " ") << jtrans("skeleton");
         break;
     case MONS_SIMULACRUM:
 #if TAG_MAJOR_VERSION == 34
@@ -1014,14 +1015,14 @@ string monster_info::common_name(description_level_type desc) const
     case MONS_SIMULACRUM_LARGE:
 #endif
         if (!is(MB_NAME_ZOMBIE))
-            ss << (nocore ? "" : " ") << "simulacrum";
+            ss << (nocore ? "" : " ") << jtrans("simulacrum");
         break;
     case MONS_SPECTRAL_THING:
         if (nocore)
-            ss << "spectre";
+            ss << jtrans("spectre");
         break;
     case MONS_PILLAR_OF_SALT:
-        ss << (nocore ? "" : " ") << "shaped pillar of salt";
+        ss << (nocore ? "" : " ") << jtrans("shaped pillar of salt");
         break;
     default:
         break;
@@ -1032,7 +1033,7 @@ string monster_info::common_name(description_level_type desc) const
         // If momentarily in original form, don't display "shaped
         // shifter".
         if (mons_genus(type) != MONS_SHAPESHIFTER)
-            ss << " shaped shifter";
+            ss << jtrans("shaped shifter");
     }
 
     string s;
@@ -1066,12 +1067,12 @@ string monster_info::mimic_name() const
 {
     string s;
     if (type == MONS_INEPT_ITEM_MIMIC || type == MONS_INEPT_FEATURE_MIMIC)
-        s = "inept ";
+        s = jtrans("inept");
     if (type == MONS_RAVENOUS_ITEM_MIMIC || type == MONS_RAVENOUS_FEATURE_MIMIC)
-        s = "ravenous ";
+        s = jtrans("ravenous");
 #if TAG_MAJOR_VERSION == 34
     if (type == MONS_MONSTROUS_ITEM_MIMIC)
-        s = "monstrous ";
+        s = jtrans("monstrous");
 #endif
 
     if (props.exists("feat_type"))
@@ -1088,13 +1089,13 @@ string monster_info::mimic_name() const
         else if (item->base_type == OBJ_ORBS)
             s += "orb";
         else
-            s += item->name(DESC_BASENAME);
+            s += item->name(DESC_DBNAME);
     }
 
     if (!s.empty())
         s += " ";
 
-    return (s + "mimic");
+    return (s + jtrans("mimic"));
 }
 
 bool monster_info::has_proper_name() const

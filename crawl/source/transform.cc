@@ -27,6 +27,7 @@
 #include "misc.h"
 #include "mon-abil.h"
 #include "mutation.h"
+#include "newgame.h"
 #include "output.h"
 #include "player.h"
 #include "player-equip.h"
@@ -788,7 +789,8 @@ bool transform(int pow, transformation_type which_trans, bool involuntary,
     // Catch some conditions which prevent transformation.
     if (you.is_undead
         && (you.species != SP_VAMPIRE
-            || which_trans != TRAN_BAT && you.hunger_state <= HS_SATIATED))
+            || which_trans != TRAN_BAT && you.hunger_state <= HS_SATIATED
+            || which_trans == TRAN_LICH))
     {
         if (!involuntary)
             mpr(jtrans("Your unliving flesh cannot be transformed in this way."));
@@ -1269,8 +1271,11 @@ void untransform(bool skip_wielding, bool skip_move)
         break;
 
     case TRAN_LICH:
-        mpr(jtrans("You feel yourself come back to life."), MSGCH_DURATION);
-        you.is_undead = US_ALIVE;
+        you.is_undead = get_undead_state(you.species);
+        if (you.is_undead == US_ALIVE) //Fixme_ja
+            mpr(jtrans("You feel yourself come back to life."), MSGCH_DURATION);
+        else
+            mpr(jtrans("You feel your undeath return to normal."), MSGCH_DURATION);
         break;
 
     case TRAN_PIG:

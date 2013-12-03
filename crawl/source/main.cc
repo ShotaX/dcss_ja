@@ -681,6 +681,7 @@ static void _do_wizard_command(int wiz_command, bool silent_fail)
     case CONTROL('R'): wizard_recreate_level(); break;
     case CONTROL('S'): wizard_abyss_speed(); break;
     case CONTROL('T'): debug_terp_dlua(); break;
+    case CONTROL('U'): debug_terp_dlua(clua); break;
     case CONTROL('V'): wizard_toggle_xray_vision(); break;
     case CONTROL('X'): debug_xom_effects(); break;
 
@@ -4515,7 +4516,7 @@ static void _move_player(coord_def move)
     string verb;
     if (you.flight_mode())
         verb = jtrans("fly");
-    else if (you.is_wall_clinging())
+    else if (you.form == TRAN_SPIDER)
         verb = jtrans("cling");
     else if (you.species == SP_NAGA && !form_changed_physiology())
         verb = jtrans("slither");

@@ -241,11 +241,11 @@ static vector<string> _randart_propnames(const item_def& item,
         { "MP",     ARTP_MAGICAL_POWER,         0 },
         { "AC",     ARTP_AC,                    0 },
         { "EV",     ARTP_EVASION,               0 },
-        { "Str",    ARTP_STRENGTH,              0 },
-        { "Dex",    ARTP_DEXTERITY,             0 },
-        { "Int",    ARTP_INTELLIGENCE,          0 },
-        { "Acc",    ARTP_ACCURACY,              0 },
-        { "Dam",    ARTP_DAMAGE,                0 },
+        { "Str_des",    ARTP_STRENGTH,              0 },
+        { "Dex_des",    ARTP_DEXTERITY,             0 },
+        { "Int_des",    ARTP_INTELLIGENCE,          0 },
+        { "Acc_des",    ARTP_ACCURACY,              0 },
+        { "Dam_des",    ARTP_DAMAGE,                0 },
 
         // Qualitative attributes
         { "SInv",   ARTP_EYESIGHT,              2 },
@@ -261,7 +261,7 @@ static vector<string> _randart_propnames(const item_def& item,
     if (item.base_type == OBJ_JEWELLERY
         && (item_ident(item, ISFLAG_KNOW_TYPE)))
     {
-        const char* type = _jewellery_base_ability_string(item.sub_type);
+        const char* type = jtrans(_jewellery_base_ability_string(item.sub_type)).c_str();
         if (*type)
             propnames.push_back(type);
     }
@@ -271,13 +271,13 @@ static vector<string> _randart_propnames(const item_def& item,
     {
         string ego;
         if (item.base_type == OBJ_WEAPONS)
-            ego = weapon_brand_name(item, true);
+            ego = jtrans(weapon_brand_name(item, true)).c_str();
         else if (item.base_type == OBJ_ARMOUR)
-            ego = armour_ego_name(item, true);
+            ego = jtrans(armour_ego_name(item, true)).c_str();
         if (!ego.empty())
         {
             // XXX: Ugly hack to remove the brackets...
-            ego = ego.substr(2, ego.length() - 3);
+            ego = jtrans(ego.substr(2, ego.length() - 3)).c_str();
 
             // ... and another one for adding a comma if needed.
             for (unsigned i = 0; i < ARRAYSZ(propanns); ++i)
@@ -320,12 +320,12 @@ static vector<string> _randart_propnames(const item_def& item,
             switch (propanns[i].spell_out)
             {
             case 0: // e.g. AC+4
-                work << showpos << propanns[i].name << val;
+                work << showpos << jtrans(propanns[i].name).c_str() << val;
                 break;
             case 1: // e.g. F++
             {
                 const int sval = min(abs(val), 3);
-                work << propanns[i].name
+                work << jtrans(propanns[i].name).c_str()
                      << string(sval, (val > 0 ? '+' : '-'));
                 break;
             }
@@ -333,7 +333,7 @@ static vector<string> _randart_propnames(const item_def& item,
                 if (propanns[i].prop == ARTP_CURSED && val < 1)
                     continue;
 
-                work << propanns[i].name;
+                work << jtrans(propanns[i].name).c_str();
 
                 // these need special handling, so we don't give anything away
                 if (propanns[i].prop == ARTP_METABOLISM && val > 2)
@@ -411,11 +411,11 @@ static string _randart_descrip(const item_def &item)
         { ARTP_DEXTERITY, "It affects your dexterity (%d).", false},
         { ARTP_ACCURACY, "It affects your accuracy (%d).", false},
         { ARTP_DAMAGE, "It affects your damage-dealing abilities (%d).", false},
-        { ARTP_FIRE, "fire", true},
-        { ARTP_COLD, "cold", true},
+        { ARTP_FIRE, "fire_des", true},
+        { ARTP_COLD, "cold_des", true},
         { ARTP_ELECTRICITY, "It insulates you from electricity.", false},
         { ARTP_POISON, "It protects you from poison.", false},
-        { ARTP_NEGATIVE_ENERGY, "negative energy", true},
+        { ARTP_NEGATIVE_ENERGY, "negative energy_des", true},
         { ARTP_MAGIC, "It affects your resistance to hostile enchantments.", false},
         { ARTP_HP, "It affects your health (%d).", false},
         { ARTP_MAGICAL_POWER, "It affects your magic capacity (%d).", false},
@@ -499,6 +499,7 @@ static string _randart_descrip(const item_def &item)
         snprintf(buf, sizeof buf, jtrans("It makes you %s%s stealthy.").c_str(),
                  (stval < -20 || stval > 20) ? jtrans("much").c_str() : "",
                  (stval < 0) ? jtrans("less_des").c_str() : jtrans("more_des").c_str());
+        description += "\n";
         description += buf;
     }
 
@@ -2519,11 +2520,11 @@ static bool _actions_prompt(item_def &item, bool allow_inscribe)
         eat_food(slot);
         return false;
     case CMD_READ:
-        if (item.base_type != OBJ_BOOKS)
+        if (item.base_type != OBJ_BOOKS || item.sub_type == BOOK_DESTRUCTION)
             redraw_screen();
         read_scroll(slot);
         // In case of a book, stay in the inventory to see the content.
-        return item.base_type == OBJ_BOOKS;
+        return (item.base_type == OBJ_BOOKS && item.sub_type != BOOK_DESTRUCTION);
     case CMD_WEAR_JEWELLERY:
         redraw_screen();
         puton_ring(slot);
@@ -2746,7 +2747,7 @@ static int _get_spell_description(const spell_type spell,
     if (const int limit = summons_limit(spell))
     {
         description += make_stringf(jtrans("You can sustain at most %d creatures summoned by this spell.").c_str(), 
-                                    number_in_words(limit).c_str());
+                                    limit) + "\n";
     }
 //Fixme_ja
     const bool rod = item && item->base_type == OBJ_RODS;
@@ -3803,7 +3804,11 @@ static bool _print_final_god_abil_desc(int god, const string &final_msg,
         // are too long for the screen.
         const int spacesleft =
             get_number_of_cols() - 1 - strwidth(buf) - strwidth(cost);
-        buf += string(spacesleft, ' ');
+        // XXX: should trim by width, not bytes.
+        if (spacesleft < 0)
+            buf = buf.substr(0, buf.length() + spacesleft);
+        else if (spacesleft > 0)
+            buf += string(spacesleft, ' ');
         buf += cost;
     }
 

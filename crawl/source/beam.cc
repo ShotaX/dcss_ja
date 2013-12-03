@@ -1643,7 +1643,7 @@ int mons_adjust_flavoured(monster* mons, bolt &pbolt, int hurted,
                 return hurted;
 
             if (original > hurted)
-                simple_monster_message(mons, jtrans(" resists.").c_str());
+                simple_monster_message(mons, jtrans("resists.").c_str());
 
             if (mons->observable())
                 pbolt.obvious_effect = true;
@@ -1717,7 +1717,7 @@ int mons_adjust_flavoured(monster* mons, bolt &pbolt, int hurted,
           {
               simple_monster_message(mons,
                                    hurted == 0 ? jtrans("appears unharmed.").c_str():
-                                   dam > 30	   ? " is terribly seared!"
+                                   dam > 30	   ? jtrans("is terribly seared!").c_str()
 								   			   : jtrans("is seared!").c_str());
         }
         break;
@@ -1993,10 +1993,10 @@ spret_type mass_enchantment(enchant_type wh_enchant, int pow, bool fail)
             const char* msg;
             switch (wh_enchant)
             {
-            case ENCH_FEAR:      msg = " looks frightened!";      break;
-            case ENCH_CONFUSION: msg = " looks rather confused."; break;
-            case ENCH_CHARM:     msg = " submits to your will.";  break;
-            default:             msg = NULL;                      break;
+            case ENCH_FEAR:      msg = jtrans("looks frightened!").c_str();      break;
+            case ENCH_CONFUSION: msg = jtrans("looks rather confused.").c_str(); break;
+            case ENCH_CHARM:     msg = jtrans("submits to your will.").c_str();  break;
+            default:             msg = NULL;                    				 break;
             }
             if (msg && simple_monster_message(*mi, msg))
                 did_msg = true;
@@ -2386,7 +2386,7 @@ static void _malign_offering_effect(actor* victim, const actor* agent, int damag
     // get_los_no_trans on that monster.
     const los_base * const victim_los = victim->get_los_no_trans();
 
-    mprf("%s life force is offered up.", victim->name(DESC_ITS).c_str());
+    mprf(jtrans("%s life force is offered up.").c_str(), victim->name(DESC_ITS).c_str());
     damage = victim->hurt(agent, damage, BEAM_NEG);
 
     // Actors that had LOS to the victim (blocked by glass, clouds, etc),
@@ -2489,8 +2489,8 @@ void bolt::affect_endpoint()
 {
     if (special_explosion)
     {
-        special_explosion->refine_for_explosion();
         special_explosion->target = pos();
+        special_explosion->refine_for_explosion();
         special_explosion->explode();
 
         // XXX: we're significantly overcounting here.
@@ -2505,8 +2505,8 @@ void bolt::affect_endpoint()
 
     if (is_explosion)
     {
-        refine_for_explosion();
         target = pos();
+        refine_for_explosion();
         explode();
         return;
     }
@@ -3595,7 +3595,7 @@ void bolt::affect_player_enchantment()
 
     case BEAM_DIMENSION_ANCHOR:
         mprf(jtrans("You feel %sfirmly anchored in space.").c_str(),
-             you.duration[DUR_DIMENSION_ANCHOR] ? jtrans("more").c_str() : "");
+             you.duration[DUR_DIMENSION_ANCHOR] ? jtrans("more_beam3598").c_str() : "");
         you.increase_duration(DUR_DIMENSION_ANCHOR, 12 + random2(15), 50);
         if (you.duration[DUR_TELEPORT])
         {
@@ -4359,7 +4359,7 @@ void bolt::monster_post_hit(monster* mon, int dmg)
     if (flavour == BEAM_GHOSTLY_FLAME && mon->holiness() == MH_UNDEAD)
     {
         if (mon->heal(roll_dice(3, 10)))
-            simple_monster_message(mon, " is bolstered by the flame.");
+            simple_monster_message(mon, jtrans("is bolstered by the flame.").c_str());
     }
 
 }
@@ -5292,7 +5292,7 @@ mon_resist_type bolt::apply_enchantment_to_monster(monster* mon)
         if (!mon->has_ench(ENCH_DIMENSION_ANCHOR)
             && mon->add_ench(mon_enchant(ENCH_DIMENSION_ANCHOR, 0, agent())))
         {
-            if (simple_monster_message(mon, " is firmly anchored in space."))
+            if (simple_monster_message(mon, jtrans("is firmly anchored in space.").c_str()))
                 obvious_effect = true;
         }
         return MON_AFFECTED;
@@ -5431,8 +5431,8 @@ void bolt::refine_for_explosion()
     string tmp;
     if (item != NULL)
     {
-        tmp  = "The " + item->name(DESC_PLAIN, false, false, false)
-               + " explodes!";
+        tmp  = jtrans("The") + item->name(DESC_PLAIN, false, false, false)
+               + jtrans("explodes!");
 
         seeMsg  = tmp.c_str();
         hearMsg = "You hear an explosion!";

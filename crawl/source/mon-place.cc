@@ -1082,8 +1082,11 @@ monster* place_monster(mgen_data mg, bool force_pos, bool dont_place)
                     msg = "";
             }
         }
-        else if (player_in_branch(BRANCH_ABYSS) && !(mon->flags & MF_WAS_IN_VIEW))
+        else if (player_in_branch(BRANCH_ABYSS) && !msg.empty()
+                 && !(mon->flags & MF_WAS_IN_VIEW))
+        {
             msg += _abyss_monster_creation_message(mon, is_visible);
+        }
         if (!msg.empty())
             mpr(msg.c_str());
         // Special case: must update the view for monsters created
@@ -1745,7 +1748,7 @@ static monster* _place_monster_aux(const mgen_data &mg, const monster *leader,
     if (mons_class_flag(mon->type, M_UNFINISHED))
     {
         mprf(MSGCH_WARN, "Warning: monster '%s' is not yet fully coded.",
-             mon->name(DESC_PLAIN).c_str());
+             mon->name(DESC_PLAIN, true).c_str());
     }
 #endif
 
@@ -1825,6 +1828,10 @@ bool zombie_picker::veto(monster_type mt)
     // Zombifiability in general.
     if (mons_species(mt) != mt)
         return true;
+    // Monsters that don't really exist
+    if (mons_class_flag(mt, M_UNFINISHED))
+        return true;
+    // Monsters that can have derived undead, but never randomly generated.
     if (mons_class_flag(mt, M_NO_GEN_DERIVED))
         return true;
     if (!mons_zombie_size(mt) || mons_is_unique(mt))
@@ -2612,8 +2619,8 @@ static band_type _choose_band(monster_type mon_type, int &band_size,
         {
             band = BAND_PHANTASMAL_WARRIORS;
             band_size = 2;
-            break;
         }
+        break;
 
     case MONS_ELEMENTAL_WELLSPRING:
         natural_leader = true;

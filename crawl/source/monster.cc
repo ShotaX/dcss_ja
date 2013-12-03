@@ -187,6 +187,7 @@ void monster::init_with(const monster& mon)
     experience        = mon.experience;
     number            = mon.number;
     colour            = mon.colour;
+    summoner          = mon.summoner;
     foe_memory        = mon.foe_memory;
     god               = mon.god;
     props             = mon.props;
@@ -2404,6 +2405,10 @@ bool monster::need_message(int &near) const
 
 void monster::swap_weapons(int near)
 {
+    // Don't let them swap weapons if berserk. ("You are too berserk!")
+    if (berserk())
+        return;
+
     item_def *weap = mslot_item(MSLOT_WEAPON);
     item_def *alt  = mslot_item(MSLOT_ALT_WEAPON);
 
@@ -3016,7 +3021,7 @@ bool monster::go_frenzy(actor *source)
     return true;
 }
 
-void monster::go_berserk(bool /* intentional */, bool /* potion */)
+void monster::go_berserk(bool intentional, bool /* potion */)
 {
     if (!can_go_berserk())
         return;
@@ -3032,6 +3037,11 @@ void monster::go_berserk(bool /* intentional */, bool /* potion */)
                          pronoun(PRONOUN_POSSESSIVE).c_str()).c_str());
     }
     del_ench(ENCH_FATIGUE, true); // Give no additional message.
+
+    // If we're intentionally berserking, use a melee weapon;
+    // we won't be able to swap afterwards.
+    if (intentional)
+        wield_melee_weapon();
 
     add_ench(ENCH_BERSERK);
     if (simple_monster_message(this, jtrans("goes berserk!").c_str()))
@@ -3081,7 +3091,8 @@ void monster::banish(actor *agent, const string &)
     }
     monster_die(this, KILL_BANISHED, NON_MONSTER);
 
-    place_cloud(CLOUD_TLOC_ENERGY, old_pos, 5 + random2(8), 0);
+    if (!cell_is_solid(old_pos))
+        place_cloud(CLOUD_TLOC_ENERGY, old_pos, 5 + random2(8), 0);
     for (adjacent_iterator ai(old_pos); ai; ++ai)
         if (!feat_is_solid(grd(*ai)) && env.cgrid(*ai) == EMPTY_CLOUD
             && coinflip())
@@ -5593,6 +5604,11 @@ bool monster::should_evoke_jewellery(jewellery_type jtype) const
 // Return the ID status gained.
 item_type_id_state_type monster::evoke_jewellery_effect(jewellery_type jtype)
 {
+    // XXX: this is mostly to prevent a funny message order:
+    // "$foo evokes its amulet. $foo wields a great mace. $foo goes berserk!"
+    if (jtype == AMU_RAGE)
+        wield_melee_weapon();
+
     mprf(jtrans("%s evokes %s %s.").c_str(), name(DESC_THE).c_str(),
          pronoun(PRONOUN_POSSESSIVE).c_str(),
          jewellery_is_amulet(jtype) ? jtrans("amulet").c_str() : jtrans("ring").c_str());
@@ -5692,7 +5708,8 @@ void monster::react_to_damage(const actor *oppressor, int damage,
         lose_ench_duration(get_ench(ENCH_OZOCUBUS_ARMOUR),
                            damage * BASELINE_DELAY);
     }
-    else if (mons_species(type) == MONS_BUSH
+
+    if (mons_species(type) == MONS_BUSH
              && res_fire() < 0
              && flavour == BEAM_FIRE
              && damage > 8 && x_chance_in_y(damage, 20))
