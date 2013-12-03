@@ -1427,7 +1427,7 @@ bool elyvilon_divine_vigour()
     if (!you.duration[DUR_DIVINE_VIGOUR])
     {
 
-		mprf(jtrans("%s grants you divine vigour.").c_str(), god_name(GOD_ELYVILON).c_str());
+        mprf(jtrans("%s grants you divine vigour.").c_str(), god_name(GOD_ELYVILON).c_str());
 
         const int vigour_amt = 1 + you.skill_rdiv(SK_INVOCATIONS, 1, 3);
         const int old_hp_max = you.hp_max;
@@ -1612,9 +1612,9 @@ bool beogh_water_walk()
 void jiyva_paralyse_jellies()
 {
     mprf(MSGCH_PRAY, jtrans("You %s prayer to %s.").c_str(),
-		 god_name(you.religion).c_str(),
+         god_name(you.religion).c_str(),
          you.duration[DUR_JELLY_PRAYER] ? jtrans("renew your").c_str() 
-										: jtrans("offer a").c_str());
+                                        : jtrans("offer a").c_str());
 
     you.duration[DUR_JELLY_PRAYER] = 200;
 
@@ -1758,7 +1758,7 @@ void yred_make_enslaved_soul(monster* mon, bool force_hostile)
 
     mprf(jtrans("%s soul %s.").c_str(), whose.c_str(),
          !force_hostile ? jtrans("is now yours").c_str() 
-							: jtrans("fights you").c_str());
+                        : jtrans("fights you").c_str());
 }
 
 bool kiku_receive_corpses(int pow, coord_def where)
@@ -2204,7 +2204,7 @@ bool fedhas_sunlight()
     {
         mprf(jtrans("In the bright light, you notice %s.").c_str(), revealed_count == 1 ?
              jtrans("an invisible shape").c_str() 
-			 : jtrans("some invisible shapes").c_str());
+             : jtrans("some invisible shapes").c_str());
     }
 
     return true;
