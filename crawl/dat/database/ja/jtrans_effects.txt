@@ -471,6 +471,7 @@ You feel yourself shouting your recitation.
 %%%%
 A %s rips itself from your throat!
 
+喉を裂くような %s を感じた!
 #mprf(jtrans("A %s rips itself from your throat!").c_str(), shout_verb.c_str());
 %%%%
 What do you say?
@@ -683,14 +684,17 @@ You smell something rotten.
 %%%%
 You smell rotting flesh.
 
+あなたは肉が腐る臭いを嗅いだ
 #(temp_rand == 5) ? jtrans("You smell rotting flesh.") :
 %%%%
 You smell decay.
 
+あなたは腐敗の臭いを嗅いだ
 #(temp_rand == 6) ? jtrans("You smell decay.")
 %%%%
 There is something rotten in your inventory.
 
+あなたの荷物の中に何か腐ったものがある
 #: jtrans("There is something rotten in your inventory.");
 %%%%
 #You smell something rotten.
@@ -700,30 +704,37 @@ There is something rotten in your inventory.
 %%%%
 The smell of rotting flesh makes you hungry.
 
+腐った肉の臭いがあなたに食欲を沸き起こさせた
 #(temp_rand == 5) ? jtrans("The smell of rotting flesh makes you hungry.") :
 %%%%
 You smell decay. Yum-yum.
 
+あなたは腐敗の臭いを嗅いだ。うまそうだ
 #(temp_rand == 6) ? jtrans("You smell decay. Yum-yum.")
 %%%%
 Wow! There is something tasty in your inventory.
 
+ワォ！あなたの荷物の中に、何かうまそうなものがある
 #: jtrans("Wow! There is something tasty in your inventory.");
 %%%%
 You smell something rotten.
 
+あなたは何かが腐る臭いを嗅いだ
 #msg = (temp_rand  < 5) ? jtrans("You smell something rotten.") :
 %%%%
 The smell of rotting flesh makes you sick.
 
+あなたは肉の腐る臭いで気分が悪くなった
 #(temp_rand == 5) ? jtrans("The smell of rotting flesh makes you sick.") :
 %%%%
 You smell decay. Yuck!
 
+あなたは腐敗の臭いを嗅いだ。うぐ……
 #(temp_rand == 6) ? jtrans("You smell decay. Yuck!")
 %%%%
 Ugh! There is something really disgusting in your inventory.
 
+うぐ！ あなたの荷物の中に何か胸の悪くなるようなものがある
 #: jtrans("Ugh! There is something really disgusting in your inventory.");
 %%%%
 Something in your inventory has become rotten.
@@ -737,7 +748,8 @@ Something in your inventory has become rotten.
 %%%%
 in your inventory have
 
-#		msg += jtrans("in your inventory have");
+あなたの持ち物の
+#msg += jtrans("in your inventory have");
 %%%%
 All of the
 
@@ -788,21 +800,17 @@ completely or partially
 #
 #mprf(MSGCH_ROTTEN_MEAT, "%s", msg.c_str());
 %%%%
-Your body momentarily shudders from a surge of wild 
+Your body momentarily shudders from a surge of wild energies until Zin's power calms it.
 
+あなたの体は奇妙なエネルギーの波によりジンがそれを落ち着かせるまで一瞬身震いした
 #mpr("Your body momentarily shudders from a surge of wild "
+#                "energies until Zin's power calms it.", MSGCH_GOD);
 %%%%
-energies until Zin's power calms it.
+Your body shudders with the violent release of wild energies!
 
-#"energies until Zin's power calms it.", MSGCH_GOD);
-%%%%
-Your body shudders with the violent release 
-
-#mpr("Your body shudders with the violent release "
-%%%%
-of wild energies!
-
-#"of wild energies!", MSGCH_WARN);
+あなたの肉体は激しく放出された強烈なエネルギーに震えた！
+# mpr("Your body shudders with the violent release "
+#                "of wild energies!", MSGCH_WARN);
 %%%%
 magical storm
 

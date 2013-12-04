@@ -3455,6 +3455,7 @@ legendary
 %%%%
 You can provide lesser healing for yourself and others.
 
+あなたはあなた自身と他者に小さき癒しを使う事が出来る
 #jtrans("You can provide lesser healing for yourself and others.").c_str(),
 %%%%
 dekiru
@@ -3463,22 +3464,27 @@ dekiru
 %%%%
 Godly wrath is upon you!
 
+神はあなたに激怒している！
 #return (penance >= 50) ? jtrans("Godly wrath is upon you!").c_str() :
 %%%%
 You've transgressed heavily! Be penitent!
 
+あなたは著しく道を踏み外した。懺悔せよ！
 #(penance >= 20) ? jtrans("You've transgressed heavily! Be penitent!").c_str() :
 %%%%
 You are under penance.
 
+あなたは懺悔の途上にある
 #(penance >=  5) ? jtrans("You are under penance.").c_str()
 %%%%
 You should show more discipline.
 
+あなたは更なる自制を示すべきだ
 #: jtrans("You should show more discipline.").c_str();
 %%%%
 A prized avatar of
 
+ の第一の化身だ
 #return (you.piety >= piety_breakpoint(5)) ? godname + jtrans("A prized avatar of").c_str():
 %%%%
 A favoured servant of
@@ -3487,22 +3493,27 @@ A favoured servant of
 %%%%
 A shining star in the eyes of
 
+ の忠臣だ
 #(you.piety >= piety_breakpoint(3)) ? godname + jtrans("A shining star in the eyes of").c_str():
 %%%%
 A rising star in the eyes of
 
+ の期待の星だ
 #(you.piety >= piety_breakpoint(2)) ? godname + jtrans("A rising star in the eyes of").c_str():
 %%%%
 is most pleased with you.
 
+ はあなたにかなり満足している
 #(you.piety >= piety_breakpoint(1)) ? uppercase_first(godname) + jtrans("is most pleased with you.").c_str() :
 %%%%
 is pleased with you.
 
+ はあなたの存在を気に留めている
 #(you.piety >= piety_breakpoint(0)) ? uppercase_first(godname) + jtrans("is pleased with you.").c_str()
 %%%%
 is noncommittal.
 
+ はあなたに何も明言しない
 #: uppercase_first(godname) + jtrans("is noncommittal.").c_str();
 %%%%
 #
@@ -3511,6 +3522,7 @@ is noncommittal.
 %%%%
 You can pray at an altar to donate your money.
 
+あなたは祭壇で祈ることで金貨を寄付できる。
 #result += jtrans("You can pray at an altar to donate your money.");
 %%%%
 # 
@@ -3519,6 +3531,7 @@ You can pray at an altar to donate your money.
 %%%%
 You can have all your mutations cured.
 
+あなたは全ての突然変異を治療できる。
 #result += jtrans("You can have all your mutations cured.");
 %%%%
 # 
@@ -3527,10 +3540,12 @@ You can have all your mutations cured.
 %%%%
 You radiate a
 
+あなたは
 #result += jtrans("You radiate a");
 %%%%
 large
 
+巨大な
 #result += jtrans("large");
 %%%%
 #
@@ -3539,10 +3554,12 @@ large
 %%%%
 small
 
+小さな
 #result += jtrans("small");
 %%%%
 righteous aura, and all beings within it are easier to hit.
 
+光り輝く霊気を発しており、その内部にいる全ての者に攻撃が当たりやすくなる。
 #result += jtrans("righteous aura, and all beings within it are easier to hit.");
 %%%%
 # 
@@ -3551,30 +3568,37 @@ righteous aura, and all beings within it are easier to hit.
 %%%%
 You can pray at an altar to have your weapon blessed, especially a long blade or demon weapon.
 
+あなたは祭壇であなたの武器を祝福できる(特に長剣類や悪魔の武器に対して)
 #result += jtrans("You can pray at an altar to have your weapon blessed, especially a long blade or demon weapon.");
 %%%%
 You can pray to destroy weapons on the ground in Elyvilon name. Inscribe them with !p, !* or =p to avoid sacrificing them accidentally.
 
+あなたはエリヴィロンの名に於いて地面の武器を祈りにより破壊できる。武器に「!p」「!*」「=p」を刻むことで破壊を阻止することが出来る。
 #result += jtrans("You can pray to destroy weapons on the ground in Elyvilon name. Inscribe them with !p, !* or =p to avoid sacrificing them accidentally.");
 %%%%
 You can pray at an altar to have your weapon corrupted.
 
+あなたは祭壇で祈ることで武器に*崩壊*の力を与えることが出来る。
 #result += jtrans("You can pray at an altar to have your weapon corrupted.");
 %%%%
 You can pray at an altar to have your necromancy enhanced.
 
+あなたは祭壇で祈ることで武器に死霊術の力を宿すことが出来る。
 #result += jtrans("You can pray at an altar to have your necromancy enhanced.");
 %%%%
 You can pray to sacrifice all orcish remains on your square.
 
+あなたはオークの遺体を祈りによって奉げることが出来る
 #result += jtrans("You can pray to sacrifice all orcish remains on your square.");
 %%%%
 You can pray to sacrifice all items on your square. Inscribe items with !p, !* or =p to avoid sacrificing them accidentally. See the detailed description to sacrifice only some kinds of items.
 
+あなたは祈りにより全ての種類のアイテムを奉げることができる。アイテムに「!p」「!*」「=p」を刻むことで奉げることを回避できる。また、'!'キーで表示される次の画面から奉げるアイテムの種類を制限できる。
 #result += jtrans("You can pray to sacrifice all items on your square. Inscribe items with !p, !* or =p to avoid sacrificing them accidentally. See the detailed description to sacrifice only some kinds of items.");
 %%%%
 Evolving plants requires fruit, and evolving fungi requires piety.
 
+果物を消費し植物を進化できる、また信仰値を消費して菌類を進化できる
 #result += jtrans("Evolving plants requires fruit, and evolving fungi requires piety.");
 %%%%
 # 
@@ -3583,6 +3607,7 @@ Evolving plants requires fruit, and evolving fungi requires piety.
 %%%%
 You can pray to sacrifice all fresh corpses on your square.
 
+あなたは祈りにより新鮮な死体を奉げることができる
 #result += jtrans("You can pray to sacrifice all fresh corpses on your square.");
 %%%%
 Buglet
@@ -4321,7 +4346,7 @@ card effects, potentially hazardous. High piety and
 %%%%
 #\n\n
 #
-#					   +  "\n\n";
+#   +  "\n\n";
 %%%%
 #
 #
@@ -4672,7 +4697,7 @@ shields your consumables from destruction.
 %%%%
 #\n
 #
-#				cprintf("\n");
+#cprintf("\n");
 %%%%
 when your fellow slimes consume items.
 
@@ -4696,7 +4721,7 @@ and power
 %%%%
 #\n
 #
-#				cprintf("\n");
+#cprintf("\n");
 %%%%
 You can pray to speed up decomposition.
 

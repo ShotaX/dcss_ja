@@ -289,67 +289,67 @@ string ash_describe_bondage(int flags, bool level)
     {
         if (you.bondage[ET_WEAPON] == you.bondage[ET_SHIELD])
         {
-            desc = make_stringf(jtrans("Your %s are %sbound.").c_str(),
+            desc = make_stringf(jtrans("Your %s %s bound.").c_str(),
                                 you.hand_name(true).c_str(),
-                                you.bondage[ET_WEAPON] ? jtrans("iru").c_str() : jtrans("inai").c_str()) + "\n";
+                                you.bondage[ET_WEAPON] ? jtrans("are").c_str() : jtrans("are not").c_str()) + "\n";
         }
         else
         {
             desc = make_stringf(jtrans("Your %s %s is bound but not your %s %s.").c_str(),
-                                you.bondage[ET_WEAPON] ? jtrans("weaponeq").c_str() 
-														 : jtrans("shieldeq").c_str(),
+                                you.bondage[ET_WEAPON] ? jtrans("weapon").c_str() 
+                                                       : jtrans("shield").c_str(),
                                 you.hand_name(false).c_str(),
-                                you.bondage[ET_WEAPON] ? jtrans("shieldeq").c_str() 
-														 : jtrans("weaponeq").c_str(),
+                                you.bondage[ET_WEAPON] ? jtrans("shield").c_str() 
+                                                       : jtrans("weapon").c_str(),
                                 you.hand_name(false).c_str()) + "\n";
         }
     }
     else if (flags & ETF_WEAPON && you.bondage[ET_WEAPON] != -1)
     {
-        desc = make_stringf(jtrans("Your weapon %s is %sbound.").c_str(),
+        desc = make_stringf(jtrans("Your weapon %s %s bound.").c_str(),
                             you.hand_name(false).c_str(),
-                            you.bondage[ET_WEAPON] ? jtrans("iru").c_str() 
-													 : jtrans("inai").c_str()) + "\n";
+                            you.bondage[ET_WEAPON] ? jtrans("is").c_str() 
+                                                   : jtrans("is not").c_str()) + "\n";
     }
     else if (flags & ETF_SHIELD && you.bondage[ET_SHIELD] != -1)
     {
-        desc = make_stringf(jtrans("Your shield %s is %sbound.").c_str(),
+        desc = make_stringf(jtrans("Your shield %s %s bound.").c_str(),
                             you.hand_name(false).c_str(),
-                            you.bondage[ET_SHIELD] ? jtrans("iru").c_str() : jtrans("inai").c_str()) + "\n";
+                            you.bondage[ET_SHIELD] ? jtrans("is").c_str() : jtrans("is not").c_str()) + "\n";
     }
 
     if (flags & ETF_ARMOUR && flags & ETF_JEWELS
         && you.bondage[ET_ARMOUR] == you.bondage[ET_JEWELS]
         && you.bondage[ET_ARMOUR] != -1)
     {
-        desc += make_stringf(jtrans("You are %s bound in armour and magic.").c_str(),
-                             you.bondage[ET_ARMOUR] == 0 ? jtrans("noteq").c_str() :
-                             you.bondage[ET_ARMOUR] == 1 ? jtrans("partiallyeq").c_str()
-                                                         : jtrans("fullyeq").c_str()) + "\n";
+        desc += make_stringf(jtrans("You are %s in armour and magic.").c_str(),
+                             you.bondage[ET_ARMOUR] == 0 ? jtrans("not bound").c_str() :
+                             you.bondage[ET_ARMOUR] == 1 ? jtrans("partially bound").c_str()
+                                                         : jtrans("fully bound").c_str()) + "\n";
     }
     else
     {
         if (flags & ETF_ARMOUR && you.bondage[ET_ARMOUR] != -1)
-            desc += make_stringf(jtrans("You are %s bound in armour.").c_str(),
-                                 you.bondage[ET_ARMOUR] == 0 ? jtrans("noteq").c_str() :
-                                 you.bondage[ET_ARMOUR] == 1 ? jtrans("partiallyeq").c_str()
-                                                             : jtrans("fullyeq").c_str()) + "\n";
+            desc += make_stringf(jtrans("You are %s in armour.").c_str(),
+                                 you.bondage[ET_ARMOUR] == 0 ? jtrans("not bound").c_str() :
+                                 you.bondage[ET_ARMOUR] == 1 ? jtrans("partially bound").c_str()
+                                                             : jtrans("fully bound").c_str()) + "\n";
 
         if (flags & ETF_JEWELS && you.bondage[ET_JEWELS] != -1)
-            desc += make_stringf(jtrans("You are %s bound in magic.").c_str(),
-                                 you.bondage[ET_JEWELS] == 0 ? jtrans("noteq").c_str() :
-                                 you.bondage[ET_JEWELS] == 1 ? jtrans("partiallyeq").c_str()
-                                                             : jtrans("fullyeq").c_str()) + "\n";
+            desc += make_stringf(jtrans("You are %s in magic.").c_str(),
+                                 you.bondage[ET_JEWELS] == 0 ? jtrans("not bound").c_str() :
+                                 you.bondage[ET_JEWELS] == 1 ? jtrans("partially bound").c_str()
+                                                             : jtrans("fully bound").c_str()) + "\n";
     }
 
     if (level)
     {
-        desc += make_stringf(jtrans("You are %s bound.").c_str(),
-                             you.bondage_level == 0 ? jtrans("noteq").c_str() :
-                             you.bondage_level == 1 ? jtrans("slightlyeq").c_str() :
-                             you.bondage_level == 2 ? jtrans("moderatelyeq").c_str() :
-                             you.bondage_level == 3 ? jtrans("seriouslyeq").c_str() :
-                             you.bondage_level == 4 ? jtrans("fullyeq").c_str()
+        desc += make_stringf(jtrans("You are %s.").c_str(),
+                             you.bondage_level == 0 ? jtrans("not bound").c_str() :
+                             you.bondage_level == 1 ? jtrans("slightly bound").c_str() :
+                             you.bondage_level == 2 ? jtrans("moderately bound").c_str() :
+                             you.bondage_level == 3 ? jtrans("seriously bound").c_str() :
+                             you.bondage_level == 4 ? jtrans("fully bound").c_str()
                                                     : "buggily") + "\n";
     }
 

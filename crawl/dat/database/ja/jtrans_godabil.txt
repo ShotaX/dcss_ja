@@ -825,8 +825,8 @@ is aghast at the heresy of your recitation.
 の不浄な肉体に涙を流す程の傷が噴出した！
 #: jtrans("'s impure flesh erupts into weeping sores!").c_str());
 %%%%
-bad recite bleed
-
+#bad recite bleed
+#
 #die("bad recite bleed");
 %%%%
 is smitten by the wrath of Zin.
@@ -1141,8 +1141,8 @@ can find no cadavers for you!
 はあなたに届けることが出来る死体が無い！
 #simple_god_message(jtrans("can find no cadavers for you!").c_str());
 %%%%
-lightning arc
-
+#lightning arc
+#
 #&& beam.name != "lightning arc"
 %%%%
 's flesh rots away.

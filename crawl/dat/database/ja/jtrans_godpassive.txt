@@ -1,0 +1,204 @@
+%%%%
+#Checking %s
+#
+#dprf("Checking %s", lid.describe().c_str());
+%%%%
+#Eating %s on %s
+#
+#dprf("Eating %s on %s",
+%%%%
+You hear a distant slurping noise.
+
+あなたは遠くに物を食べる音を耳にした。
+#mpr(jtrans("You hear a distant slurping noise."));
+%%%%
+You feel a little less hungry.
+
+あなたは空腹が収まったと感じた。
+#mpr(jtrans("You feel a little less hungry."));
+%%%%
+You feel your power returning.
+
+あなたは魔法の力が戻ってくるのを感じた。
+#mpr(jtrans("You feel your power returning."));
+%%%%
+#You feel a little better.
+#
+#--defined.
+#mpr(jtrans("You feel a little better."));
+%%%%
+Your %s %s bound.
+
+あなたの%sは呪縛されて%s。
+#desc = make_stringf(jtrans("Your %s %s bound.").c_str(),
+%%%%
+are
+
+いる
+%%%%
+are not
+
+いない
+#you.bondage[ET_WEAPON] ? jtrans("are").c_str() : jtrans("are not").c_str()) + "\n";
+%%%%
+Your %s %s is bound but not your %s %s.
+
+あなたの%sを装備する%sは呪縛されているが、あなたの%sを装備する%sは呪縛されていない。
+#desc = make_stringf(jtrans("Your %s %s is bound but not your %s %s.").c_str(),
+%%%%
+#weapon
+#
+#you.bondage[ET_WEAPON] ? jtrans("weapon").c_str() 
+%%%%
+#shield
+#
+# : jtrans("shield").c_str(),
+%%%%
+#shield
+#
+#you.bondage[ET_WEAPON] ? jtrans("shield").c_str() 
+%%%%
+#weapon
+#
+# : jtrans("weapon").c_str(),
+%%%%
+#\n
+#
+#you.hand_name(false).c_str()) + "\n";
+%%%%
+Your weapon %s %s bound.
+
+あなたの武器を装備する%sは呪縛されて%s。
+#desc = make_stringf(jtrans("Your weapon %s %s bound.").c_str(),
+%%%%
+is
+
+いる
+#you.bondage[ET_WEAPON] ? jtrans("is").c_str() 
+%%%%
+is not
+
+いない。
+# : jtrans("is not").c_str()) + "\n";
+%%%%
+Your shield %s is %sbound.
+
+あなたの盾を装備する%sは呪縛されて%s。
+#desc = make_stringf(jtrans("Your shield %s %s bound.").c_str(),
+%%%%
+#\n
+#
+#you.bondage[ET_SHIELD] ? jtrans("is").c_str() : jtrans("is not").c_str()) + "\n";
+%%%%
+You are %s bound in armour and magic.
+
+あなたの鎧と装飾品は%s。
+#desc += make_stringf(jtrans("You are %s in armour and magic.").c_str(),
+%%%%
+not bound
+
+呪縛されていない
+#you.bondage[ET_ARMOUR] == 0 ? jtrans("not bound").c_str() :
+%%%%
+partially bound
+
+部分的に呪縛されている
+#you.bondage[ET_ARMOUR] == 1 ? jtrans("partially bound").c_str()
+%%%%
+fully bound
+
+完全に呪縛されている
+#: jtrans("fully bound").c_str()) + "\n";
+%%%%
+You are %s in armour.
+
+あなたの鎧は%s
+#desc += make_stringf(jtrans("You are %s in armour.").c_str(),
+%%%%
+#not bound
+#
+#you.bondage[ET_ARMOUR] == 0 ? jtrans("not bound").c_str() :
+%%%%
+#partially bound
+#
+#you.bondage[ET_ARMOUR] == 1 ? jtrans("partially bound").c_str()
+%%%%
+#fully bound
+#
+#: jtrans("fully bound").c_str()) + "\n";
+%%%%
+You are %s in magic.
+
+あなたの装飾品は%s
+#desc += make_stringf(jtrans("You are %s in magic.").c_str(),
+%%%%
+#not bound
+#
+#you.bondage[ET_JEWELS] == 0 ? jtrans("not bound").c_str() :
+%%%%
+#partially bound
+#
+#you.bondage[ET_JEWELS] == 1 ? jtrans("partially bound").c_str()
+%%%%
+#fully bound
+#
+#: jtrans("fully bound").c_str()) + "\n";
+%%%%
+You are %s.
+
+あなたは%s。
+#desc += make_stringf(jtrans("You are %s.").c_str(),
+%%%%
+#not bound
+#
+#--defined.
+#you.bondage_level == 0 ? jtrans("not bound").c_str() :
+%%%%
+slightly bound
+
+少し呪縛されている
+#you.bondage_level == 1 ? jtrans("slightly bound").c_str() :
+%%%%
+moderately bound
+
+幾らか呪縛されている
+#you.bondage_level == 2 ? jtrans("moderately bound").c_str() :
+%%%%
+seriously bound
+
+著しく呪縛されている
+#you.bondage_level == 3 ? jtrans("seriously bound").c_str() :
+%%%%
+#fully bound
+#
+#--defined.
+#you.bondage_level == 4 ? jtrans("fully bound").c_str()
+%%%%
+#\n
+#
+#: "buggily") + "\n";
+%%%%
+#needs_autopickup
+#
+#item.props["needs_autopickup"] = true;
+%%%%
+#needs_autopickup
+#
+#if (item.props.exists("needs_autopickup") && is_useless_item(item))
+%%%%
+#needs_autopickup
+#
+#item.props.erase("needs_autopickup");
+%%%%
+#wand_known
+#
+#mon->props["wand_known"] = true;
+%%%%
+#ash_id
+#
+#mon->props["ash_id"] = true;
+%%%%
+#Unknown equipment type.
+#
+#die("Unknown equipment type.");
+%%%%
