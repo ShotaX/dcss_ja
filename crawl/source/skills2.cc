@@ -17,6 +17,7 @@
 #include <ctype.h>
 
 #include "artefact.h"
+#include "database.h"
 #include "describe.h"
 #include "evoke.h"
 #include "externs.h"
@@ -82,7 +83,7 @@ static const char *skills[NUM_SKILLS][6] =
     {"Polearms",       "Poker",         "Spear-Bearer",    "Impaler",         "Phalangite",     "@Adj@ Porcupine"},
     {"Staves",         "Twirler",       "Cruncher",        "Stickfighter",    "Pulveriser",     "Chief of Staff"},
     {"Slings",         "Vandal",        "Slinger",         "Whirler",         "Slingshot",      "@Adj@ Catapult"},
-    {"Bows",           "Shooter",       "Archer",          "Marks@genus@",    "Crack Shot",     "Merry @Genus@"},
+    {"Bows",           "Shooter",       "Archer",          "@genus@Marks",    "Crack Shot",     "Merry @Genus@"},
     {"Crossbows",      "Bolt Thrower",  "Quickloader",     "Sharpshooter",    "Sniper",         "@Adj@ Arbalest"},
     {"Throwing",       "Chucker",       "Thrower",         "Deadly Accurate", "Hawkeye",        "@Adj@ Ballista"},
     {"Armour",         "Covered",       "Protected",       "Tortoise",        "Impregnable",    "Invulnerable"},
@@ -96,7 +97,7 @@ static const char *skills[NUM_SKILLS][6] =
     {"Traps",          "Scout",         "Disarmer",        "Vigilant",        "Perceptive",     "Dungeon Master"},
 #endif
     // STR based fighters, for DEX/martial arts titles see below.  Felids get their own category, too.
-    {"Unarmed Combat", "Ruffian",       "Grappler",        "Brawler",         "Wrestler",       "@Weight@weight Champion"},
+    {"Unarmed Combat", "Ruffian",       "Grappler",        "Brawler",         "Wrestler",       "@Weight@ weight Champion"},
 
     {"Spellcasting",   "Magician",      "Thaumaturge",     "Eclecticist",     "Sorcerer",       "Archmage"},
     {"Conjurations",   "Ruinous",       "Conjurer",        "Destroyer",       "Devastator",     "Annihilator"},
@@ -104,8 +105,8 @@ static const char *skills[NUM_SKILLS][6] =
     {"Charms",         "Charmwright",   "Infuser",         "Anointer",        "Gracecrafter",   "Miracle Worker"},
     {"Summonings",     "Caller",        "Summoner",        "Convoker",        "Demonologist",   "Hellbinder"},
     {"Necromancy",     "Grave Robber",  "Reanimator",      "Necromancer",     "Thanatomancer",  "@Genus_Short@ of Death"},
-    {"Translocations", "Grasshopper",   "Placeless @Genus@", "Blinker",       "Portalist",      "Plane @Walker@"},
-    {"Transmutations", "Changer",       "Transmogrifier",  "Alchemist",       "Malleable",      "Shapeless @Genus@"},
+    {"Translocations", "Grasshopper",   "@Genus@ Placeless", "Blinker",       "Portalist",      "@Walker@ Plane"},
+    {"Transmutations", "Changer",       "Transmogrifier",  "Alchemist",       "Malleable",      "@Genus@ Shapeless"},
 
     {"Fire Magic",     "Firebug",       "Arsonist",        "Scorcher",        "Pyromancer",     "Infernalist"},
     {"Ice Magic",      "Chiller",       "Frost Mage",      "Gelid",           "Cryomancer",     "Englaciator"},
@@ -282,14 +283,14 @@ static string _replace_skill_keys(const string &text)
 
         ASSERT(!value.empty());
 
-        res << value;
+        res << jtrans(value);
 
         last = end + 1;
     }
     if (!last)
         return text;
 
-    res << text.substr(last);
+    res << jtrans(text);
     return res.str();
 }
 
@@ -383,7 +384,7 @@ string skill_title_by_rank(skill_type best_skill, uint8_t skill_rank,
     }
 
     return (result.empty() ? string("Invalid Title")
-                           : result);
+                           : jtrans(result));
 }
 
 string skill_title(skill_type best_skill, uint8_t skill_lev,

@@ -179,6 +179,7 @@ static TextDB AllDBs[] =
            "jtrans_magicspell.txt",
            "jtrans_monster_name.txt",
            "jtrans_mutations.txt",
+           "jtrans_skill_title.txt",
            NULL),
 };
 

@@ -2850,8 +2850,7 @@ void describe_floor()
         break;
     }
 
-    feat = feature_description_at(you.pos(), true,
-                               DESC_A, false);
+    feat = jtrans(feature_description_at(you.pos(), true, DESC_PLAIN, false));
     if (feat.empty())
         return;
 
@@ -2901,13 +2900,13 @@ string thing_do_grammar(description_level_type dtype, bool add_stop,
     switch (dtype)
     {
     case DESC_THE:
-        return "the " + jtrans(desc);
+        return "the " + desc;
     case DESC_A:
-        return article_a(jtrans(desc), true);
+        return article_a(desc, true);
     case DESC_NONE:
         return "";
     default:
-        return jtrans(desc);
+        return desc;
     }
 }
 

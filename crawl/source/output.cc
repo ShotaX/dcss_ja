@@ -1130,7 +1130,7 @@ static bool _need_stats_printed()
 static void _redraw_title(const string &your_name, const string &job_name)
 {
     const unsigned int WIDTH = crawl_view.hudsz.x;
-    string title = your_name + " the " + job_name;
+    string title = your_name + " : " + job_name;
 
 #ifdef USE_TILE_LOCAL
     if (tiles.is_using_small_layout())

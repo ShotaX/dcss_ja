@@ -630,21 +630,21 @@ bool fill_status_info(int status, status_info* inf)
         if (you.attribute[ATTR_XP_DRAIN] > 250)
         {
             inf->light_colour = RED;
-            inf->light_text   = jtrans("Drain").c_str();
+            inf->light_text   = jtrans("Drain_stat").c_str();
             inf->short_text   = jtrans("very heavily drained").c_str();
             inf->long_text    = jtrans("Your life force is very heavily drained.").c_str();
         }
         else if (you.attribute[ATTR_XP_DRAIN] > 100)
         {
             inf->light_colour = LIGHTRED;
-            inf->light_text   = jtrans("Drain").c_str();
+            inf->light_text   = jtrans("Drain_stat").c_str();
             inf->short_text   = jtrans("heavily drained").c_str();
             inf->long_text    = jtrans("Your life force is heavily drained.").c_str();
         }
         else if (you.attribute[ATTR_XP_DRAIN])
         {
             inf->light_colour = YELLOW;
-            inf->light_text   = jtrans("Drain").c_str();
+            inf->light_text   = jtrans("Drain_stat").c_str();
             inf->short_text   = jtrans("drained_sta").c_str();
             inf->long_text    = jtrans("Your life force is drained.").c_str();
         }
