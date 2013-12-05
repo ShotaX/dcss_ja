@@ -536,7 +536,7 @@ Beogh whispers, "You will suffer for this misdeed."
 
 Beogh rages, "An eye for an eye..."
 %%%%
-# an unbelieving hill orc has destroyed an idol
+# an unbelieving orc has destroyed an idol
 Beogh idol orc
 
 Beogh's voice booms out: "Heretic, die!"

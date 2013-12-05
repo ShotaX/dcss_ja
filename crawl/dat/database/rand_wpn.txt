@@ -12,979 +12,979 @@
 %%%%
 _power_or_anger_
 
-%@_power_name_@%
+@_power_name_@
 
-%w:7%
-%@_conflict_name_@%
+w:7
+@_conflict_name_@
 
-%w:7%
-%@_anger_name_@%
+w:7
+@_anger_name_@
 %%%%
 _power_name_
 
-%Power%
+Power
 
-%Might%
+Might
 
-%Wondrous Power%
+Wondrous Power
 
-%Invincibility%
+Invincibility
 
-%Glory%
+Glory
 
-%Success%
+Success
 
-%Triumph%
+Triumph
 
-%Domination%
+Domination
 
-%Dominance%
+Dominance
 
-%Victory%
+Victory
 
-%Intimidation%
+Intimidation
 
-%Grandeur%
+Grandeur
 
-%Mastery%
+Mastery
 
-%Superiority%
+Superiority
 
-%Magnificence%
+Magnificence
 %%%%
 _conflict_name_
 
-%Conflict%
+Conflict
 
-%Tension%
+Tension
 
-%Dischord%
+Dischord
 
-%Division%
+Division
 
-%Doubt%
+Doubt
 
-%Internal Strife%
+Internal Strife
 
-%Contention%
+Contention
 
-%Dissent%
+Dissent
 
-%Quarrel%
+Quarrel
 %%%%
 _anger_name_
 
-%Anger%
+Anger
 
-%Fury%
+Fury
 
-%Righteous Anger%
+Righteous Anger
 
-%Righteous Fury%
+Righteous Fury
 
-%Wrath%
+Wrath
 
-%Brutal Revenge%
+Brutal Revenge
 
-%Vengeance%
+Vengeance
 
-%Hatred%
+Hatred
 
-%Indignation%
+Indignation
 
-%Outrage%
+Outrage
 
-%Scorn%
+Scorn
 %%%%
 _battle_or_war_
 
-%Battle%
+Battle
 
-%Crusades%
+Crusades
 
-%War%
+War
 
-%Eternal War%
+Eternal War
 
-%the Eternal Warrior%
+the Eternal Warrior
 
-%the Onslaught%
+the Onslaught
 
-%Skirmishing%
+Skirmishing
 
-%the Endless March%
+the Endless March
 
-%Plunder%
+Plunder
 
-%Ravage%
+Ravage
 
 # Lemuel's Suggestions
-%the Warrior%
+the Warrior
 
-%the Doomed Warrior%
+the Doomed Warrior
 
 # akrasiac patch
-%the Pyrrhic Victory%
+the Pyrrhic Victory
 
 #killing
-%Blood-Lust%
+Blood-Lust
 
-%Joyful Slaughter%
+Joyful Slaughter
 
-%Wounding%
+Wounding
 
-%Blood%
+Blood
 
-%Fear%
+Fear
 
-%Massacring%
+Massacring
 
 # was Pain, clashing with the brand
-%Insufficient Pleasure%
+Insufficient Pleasure
 
-%Agony%
+Agony
 
-%Trauma%
+Trauma
 
 # Lemuel's suggestion
-%Hacking and Slashing%
+Hacking and Slashing
 
 # related to cutting
-%Truncation%
+Truncation
 
-%Severance%
+Severance
 
-%Dullness%
+Dullness
 
-%Precise Incision%
+Precise Incision
 
-%Laceration%
+Laceration
 
 #collateral effects
-%Mourning%
+Mourning
 
-%Death's Door%
+Death's Door
 
-%the Grave%
+the Grave
 %%%%
 # used from C++'s side
 death_or_doom
 
 # death
-%Death%
+Death
 
-%Bloody Death%
+Bloody Death
 
-%Painful Death%
+Painful Death
 
-%Quick Death%
+Quick Death
 
-%Instant Death%
+Instant Death
 
-%Imminent Death%
+Imminent Death
 
-%Sudden Death%
+Sudden Death
 
-%Slow Death%
+Slow Death
 
-%Certain Death%
+Certain Death
 
-%Uncertain Death%
+Uncertain Death
 
-%Exquisite Death%
+Exquisite Death
 
-%Pain and Death%
+Pain and Death
 
-%Untimely Demise%
+Untimely Demise
 
 # doom
-%Doom%
+Doom
 
-%Premature Burial%
+Premature Burial
 
-%Peril%
+Peril
 
-%Execution%
+Execution
 
-%Destruction%
+Destruction
 
-%Disembowelment%
+Disembowelment
 
-%Evisceration%
+Evisceration
 
-%Extermination%
+Extermination
 
-%Extinguishment%
+Extinguishment
 
 # pain and misery
-%Infinite Pain%
+Infinite Pain
 
-%Eternal Torment%
+Eternal Torment
 
-%Dismemberment%
+Dismemberment
 
-%Terror%
+Terror
 
-%Misery%
+Misery
 
-%Woe%
+Woe
 
-%Excruciating Pain%
+Excruciating Pain
 
-%Exquisite Torment%
+Exquisite Torment
 
-%Anguish%
+Anguish
 %%%%
 _strategy_or_justice_
 
-%w:2%
+w:2
 @_strategy_name_@
 
-%w:4%
+w:4
 @_valour_name_@
 
-%w:3%
+w:3
 @_justice_name_@
 %%%%
 _strategy_name_
 
 #strategy
-%Defence%
+Defence
 
-%Defence by Offence%
+Defence by Offence
 
-%Offence%
+Offence
 
-%Reinforcement%
+Reinforcement
 
-%Expedience%
+Expedience
 
-%Optimality%
+Optimality
 
-%Overwhelming Force%
+Overwhelming Force
 
-%Subterfuge%
+Subterfuge
 
-%Strategic Superiority%
+Strategic Superiority
 
-%Guile%
+Guile
 %%%%
 _valour_name_
 
-%Honour%
+Honour
 
-%Integrity%
+Integrity
 
-%Responsibility%
+Responsibility
 
-%Watchfulness%
+Watchfulness
 
-%Duty%
+Duty
 
-%Prudence%
+Prudence
 
-%Valour%
+Valour
 
-%Resourcefulness%
+Resourcefulness
 
-%Action%
+Action
 
-%Purpose%
+Purpose
 
-%Fortitude%
+Fortitude
 
-%Defiance%
+Defiance
 
-%Valiance%
+Valiance
 
-%Courage%
+Courage
 
-%Eternal Vigilance%
+Eternal Vigilance
 
-%Gallantry%
+Gallantry
 
-%Tenacity%
+Tenacity
 
-%True Grit%
+True Grit
 
-%Indomitability%
+Indomitability
 
-%Conscience%
+Conscience
 %%%%
 _justice_name_
 
-%Tender Mercy%
+Tender Mercy
 
-%Cruel Justice%
+Cruel Justice
 
-%Punishment%
+Punishment
 
-%Innocence%
+Innocence
 
-%Guilt%
+Guilt
 
-%Tortfeasance%
+Tortfeasance
 
-%Extenuating Circumstances%
+Extenuating Circumstances
 
-%Absolution%
+Absolution
 
-%Exoneration%
+Exoneration
 
-%False Accusations%
+False Accusations
 
-%Wrongful Imprisonment%
+Wrongful Imprisonment
 
-%Corporal Punishment%
+Corporal Punishment
 
-%Capital Punishment%
+Capital Punishment
 
-%Forgiveness%
+Forgiveness
 
-%Trial by Ordeal%
+Trial by Ordeal
 
-%Blind Justice%
+Blind Justice
 %%%%
 _diviner_name_
 
-%Augurer%
+Augurer
 
-%Water Diviner%
+Water Diviner
 
-%Soothsayer%
+Soothsayer
 
-%Seeker%
+Seeker
 
-%Visionary%
+Visionary
 
-%Oracle%
+Oracle
 
-%Fortune-Teller%
+Fortune-Teller
 
-%Sybil%
+Sybil
 
-%Seer%
+Seer
 %%%%
 _people_name_
 
-%King%
+King
 
-%Queen%
+Queen
 
-%Jester%
+Jester
 
-%Fool%
+Fool
 
-%Ancients%
+Ancients
 
-%Saviour%
+Saviour
 
-%Messenger%
+Messenger
 
-%Genius%
+Genius
 
-%Coward%
+Coward
 
-%Philosopher%
+Philosopher
 
-%Hero%
+Hero
 
-%Traitor%
+Traitor
 
-%Enemy%
+Enemy
 
-%Priest%
+Priest
 
-%Madman%
+Madman
 
-%Scavenger%
+Scavenger
 
-%w:15%
+w:15
 @_diviner_name_@
 %%%%
 _weapon_animal_
 
 # insects
-%Pill Bug%
+Pill Bug
 
-%Butterfly%
+Butterfly
 
-%Wasp%
+Wasp
 
-%Moth%
+Moth
 
-%Mosquito%
+Mosquito
 
-%Gnat%
+Gnat
 
-%Blowfly%
+Blowfly
 
-%Dragonfly%
+Dragonfly
 
-%Firefly%
+Firefly
 
 # arachnids
-%Spider%
+Spider
 
-%Scorpion%
+Scorpion
 
 # amphibians and reptiles
-%Rattle-Snake%
+Rattle-Snake
 
-%Viper%
+Viper
 
-%Asp%
+Asp
 
 # fish
-%Shark%
+Shark
 
-%Lamprey%
+Lamprey
 
-%Eel%
+Eel
 
-%Salmon%
+Salmon
 
 # birds
-%Penguin%
+Penguin
 
-%Puffin%
+Puffin
 
-%Fulmar%
+Fulmar
 
-%Dove%
+Dove
 
-%Hawk%
+Hawk
 
-%Hummingbird%
+Hummingbird
 
-%Owl%
+Owl
 
-%Stork%
+Stork
 
-%Vulture%
+Vulture
 
 # mammals
-%w:5%
-%Weasel%
+w:5
+Weasel
 
-%Goat%
+Goat
 
-%Whale%
+Whale
 
-%Ass%
+Ass
 
-%Badger%
+Badger
 
-%Bear%
+Bear
 
-%Boar%
+Boar
 
-%Fox%
+Fox
 
-%Rat%
+Rat
 
-%w:5%
-%Stoat%
+w:5
+Stoat
 
-%Tiger%
+Tiger
 
-%Wolf%
+Wolf
 %%%%
 # plants and fungi
 _plant_name_
 
 #plants
-%Eggplant%
+Eggplant
 
-%Turnip%
+Turnip
 
-%Chickpea%
+Chickpea
 
-%Lettuce%
+Lettuce
 
-%Radish%
+Radish
 
-%Sugar Beet%
+Sugar Beet
 
-%Shallot%
+Shallot
 
-%Tomato%
+Tomato
 
 # er...aren't whelks gastropods?
-%Whelk%
+Whelk
 
 #fungus and similar
-%Mushroom%
+Mushroom
 
-%Toadstool%
+Toadstool
 
-%Puffball%
+Puffball
 
-%Slime-mold%
+Slime-mold
 %%%%
 # undead and evil beings
 _evil_stuff_
 
-%Curses%
+Curses
 
-%Hell's Wrath%
+Hell's Wrath
 
-%the Undead%
+the Undead
 
-%Ancient Evil%
+Ancient Evil
 
-%Evil%
+Evil
 
-%the Beast%
+the Beast
 
-%Shrieking Terror%
+Shrieking Terror
 
-%the Lurker%
+the Lurker
 
-%the Crawling Thing%
+the Crawling Thing
 
-%the Thing%
+the Thing
 
-%Abomination%
+Abomination
 
-%Mutilation%
+Mutilation
 
-%Deformation%
+Deformation
 
-%Infection%
+Infection
 
-%Corruption%
+Corruption
 
-%Demonkind%
+Demonkind
 
-%Abuse%
+Abuse
 
-%the Dead%
+the Dead
 
-%Defilement%
+Defilement
 
-%the Evil Eye%
+the Evil Eye
 
-%the Ghost%
+the Ghost
 
-%the Living Dead%
+the Living Dead
 
-%Nightmares%
+Nightmares
 
-%Perversion%
+Perversion
 
-%Putrescence%
+Putrescence
 
-%the Reaper%
+the Reaper
 
-%the Spectre%
+the Spectre
 
-%the Unliving%
+the Unliving
 
-%the Unspeakable One%
+the Unspeakable One
 
-%the Wraith%
+the Wraith
 %%%%
 # catastrophes etc.
 _catastrophe_name_
 
-%the Inferno%
+the Inferno
 
-%Earthquakes%
+Earthquakes
 
-%Cataclysm%
+Cataclysm
 
-%Drought%
+Drought
 
-%Floods%
+Floods
 
-%Ruination%
+Ruination
 
 # the Apocalypse
-%the Apocalypse%
+the Apocalypse
 
-%Armageddon%
+Armageddon
 
-%World's End%
+World's End
 
-%Ragnarok%
+Ragnarok
 
-%Annihilation%
+Annihilation
 
-%the End of Times%
+the End of Times
 
-%World Downfall%
+World Downfall
 
 # the Apocalyptic Riders (except Death)
-%Pestilence%
+Pestilence
 
-%Plague%
+Plague
 
-%Famine%
+Famine
 %%%%
 _chaos_name_
 
-%Chaos%
+Chaos
 
-%Chance%
+Chance
 
-%Mayhem%
+Mayhem
 
-%Havoc%
+Havoc
 
-%Turmoil%
+Turmoil
 
-%Calamity%
+Calamity
 
-%Arbitration%
+Arbitration
 
-%the Extremes%
+the Extremes
 
-%Disorder%
+Disorder
 
-%Disaster%
+Disaster
 
-%Imbalance%
+Imbalance
 
-%Disharmony%
+Disharmony
 
-%Ambiguity%
+Ambiguity
 
-%Change%
+Change
 
-%Extremism%
+Extremism
 
-%Impermanence%
+Impermanence
 
-%Constant Reorganisation%
+Constant Reorganisation
 
-%Contradiction%
+Contradiction
 
-%Disarray%
+Disarray
 
-%Disintegration%
+Disintegration
 
-%Dissolution%
+Dissolution
 
-%Distraction%
+Distraction
 
-%Forced Transition%
+Forced Transition
 
-%the Fray%
+the Fray
 
-%Revolt%
+Revolt
 
-%Tumult%
+Tumult
 
-%Upheaval%
+Upheaval
 %%%%
 _balance_or_order_
 
-%the Middle%
+the Middle
 
-%the Median%
+the Median
 
-%Departure%
+Departure
 
-%Arrival%
+Arrival
 
-%Ascent%
+Ascent
 
-%Descent%
+Descent
 
-%Symmetry%
+Symmetry
 
-%Bodily Harmony%
+Bodily Harmony
 
-%Moderation%
+Moderation
 
-%Eternal Harmony%
+Eternal Harmony
 
-%Peace%
+Peace
 
-%Equivalence%
+Equivalence
 
-%Balance%
+Balance
 
-%Harmony%
+Harmony
 
-%Fragile Peace%
+Fragile Peace
 
-%Circularity%
+Circularity
 
-%Linearity%
+Linearity
 
-%Law%
+Law
 
-%Order%
+Order
 
-%Accord%
+Accord
 
-%Conformity%
+Conformity
 
-%Due Proportion%
+Due Proportion
 
-%Equilibrium%
+Equilibrium
 
-%the Establishment%
+the Establishment
 
-%the Final Decision%
+the Final Decision
 
-%Propriety%
+Propriety
 %%%%
 _economics_or_politics_
 
 # economics
-%Inflation%
+Inflation
 
-%Deflation%
+Deflation
 
-%Supply%
+Supply
 
-%Demand%
+Demand
 
-%Amortisation%
+Amortisation
 
-%Animal Spirits%
+Animal Spirits
 
-%Bankruptcy%
+Bankruptcy
 
-%Collusion%
+Collusion
 
-%Compound Interest%
+Compound Interest
 
-%Currency%
+Currency
 
-%Debt%
+Debt
 
-%Dividends%
+Dividends
 
-%Exchange%
+Exchange
 
-%Growth%
+Growth
 
-%Income%
+Income
 
-%Luxury%
+Luxury
 
-%Profit%
+Profit
 
-%Risk Management%
+Risk Management
 
-%Taxation%
+Taxation
 
-%Valuable Assets%
+Valuable Assets
 
-%Welfare%
+Welfare
 
 # politics
-%the Imperium%
+the Imperium
 
-%Greatest Utility%
+Greatest Utility
 
-%the Revolution%
+the Revolution
 
-%Defenestration%
+Defenestration
 
-%the People%
+the People
 
-%the Little People%
+the Little People
 
-%Wealth%
+Wealth
 
-%Poverty%
+Poverty
 
-%Reapportionment%
+Reapportionment
 
-%Checks and Balances%
+Checks and Balances
 
-%the Common Good%
+the Common Good
 
-%Conservatism%
+Conservatism
 
-%the Dark Horse%
+the Dark Horse
 
-%the Demagogue%
+the Demagogue
 
-%Governance%
+Governance
 
-%the Lame Duck%
+the Lame Duck
 
-%the Lesser Evil%
+the Lesser Evil
 
-%Popular Demand%
+Popular Demand
 
-%Radicalism%
+Radicalism
 
-%Royalism%
+Royalism
 
-%the Silent Majority%
+the Silent Majority
 
 # akrasiac patch
-%Impeachment%
+Impeachment
 
 # umm, quoi?
-%Freehold%
+Freehold
 
-%Attainder%
+Attainder
 
-%Fee Simple%
+Fee Simple
 
-%Mandamus%
+Mandamus
 
-%Breach%
+Breach
 
-%Fundamental Breach%
+Fundamental Breach
 
-%Termination%
+Termination
 
-%Sequestration%
+Sequestration
 %%%%
 _place_name_
 
-%the World%
+the World
 
-%the Sea%
+the Sea
 
-%the Forest%
+the Forest
 
-%the Trees%
+the Trees
 
-%the Volcano%
+the Volcano
 
-%the Equator%
+the Equator
 
-%the Poles%
+the Poles
 
-%the Old World%
+the Old World
 
-%the New World%
+the New World
 
-%Distant Worlds%
+Distant Worlds
 
-%the Unseen Realm%
+the Unseen Realm
 
-%the Spheres%
+the Spheres
 
-%Proximity%
+Proximity
 
-%the Wilderness%
+the Wilderness
 
-%the Maze%
+the Maze
 
-%the Pit%
+the Pit
 
-%the Eternal Void%
+the Eternal Void
 
-%Beyond%
+Beyond
 
-%the Blessed Realm%
+the Blessed Realm
 
-%the Desert%
+the Desert
 
-%Distant Shores%
+Distant Shores
 
-%the Hidden Vale%
+the Hidden Vale
 
-%the Hills%
+the Hills
 
-%the Known World%
+the Known World
 
-%the Land of Plenty%
+the Land of Plenty
 
-%the Other Side%
+the Other Side
 
-%Parts Unknown%
+Parts Unknown
 
-%Somewhere Else%
+Somewhere Else
 
-%the Shore%
+the Shore
 
-%the Tundras%
+the Tundras
 
-%the Valley%
+the Valley
 
-%the Valley of Death%
+the Valley of Death
 
-%the Wasteland%
+the Wasteland
 %%%%
 _discomfort_weapon_
 
-%Unpleasantness%
+Unpleasantness
 
-%Discomfort%
+Discomfort
 
-%Disgust%
+Disgust
 
-%Frustration%
+Frustration
 
-%Chagrin%
+Chagrin
 
-%Dismay%
+Dismay
 
-%Desperation%
+Desperation
 
-%Shame%
+Shame
 
-%Embarrassment%
+Embarrassment
 
-%Annoyance%
+Annoyance
 
-%Anxiety%
+Anxiety
 
-%Urgency%
+Urgency
 
-%Awkwardness%
+Awkwardness
 
-%Dissatisfaction%
+Dissatisfaction
 
-%Foul Odors%
+Foul Odors
 
-%Flawed Execution%
+Flawed Execution
 
-%Gloom%
+Gloom
 
-%Inconvenience%
+Inconvenience
 
-%Irritation%
+Irritation
 
-%Malaise%
+Malaise
 
-%Stickiness%
+Stickiness
 
-%Uncomfortable Rashes%
+Uncomfortable Rashes
 %%%%
 _mental_illness_weapon_
 
-%Psychosis%
+Psychosis
 
-%Neurosis%
+Neurosis
 
-%Fixation%
+Fixation
 
-%Megalomania%
+Megalomania
 
-%Egomania%
+Egomania
 
-%Obsession%
+Obsession
 
-%Compulsion%
+Compulsion
 
-%Fatigue%
+Fatigue
 
-%Exhibitionism%
+Exhibitionism
 
-%Insomnia%
+Insomnia
 
-%Oenomania%
+Oenomania
 
-%Perfectionism%
+Perfectionism
 
-%Pyromania%
+Pyromania
 
-%Satyriasis%
+Satyriasis
 
-%Suicidal Tendencies%
+Suicidal Tendencies
 %%%%
 _philosophy_or_science_
 
@@ -994,360 +994,360 @@ _philosophy_or_science_
 %%%%
 _philosophy_name_
 
-%Monotheism%
+Monotheism
 
-%Henotheism%
+Henotheism
 
-%Polytheism%
+Polytheism
 
-%Atheism%
+Atheism
 
-%Autotheism%
+Autotheism
 
-%Pantheism%
+Pantheism
 
-%Panentheism%
+Panentheism
 
-%Agnosticism%
+Agnosticism
 
-%Existentialism%
+Existentialism
 
-%Relativism%
+Relativism
 
-%Absolutism%
+Absolutism
 
-%Abstinence%
+Abstinence
 
-%Hedonism%
+Hedonism
 
-%Orthodoxy%
+Orthodoxy
 
-%Heresy%
+Heresy
 
-%Free Expression%
+Free Expression
 
-%the Ego%
+the Ego
 
-%Optimism%
+Optimism
 
-%Pessimism%
+Pessimism
 
-%Serendipity%
+Serendipity
 
-%Limitation%
+Limitation
 
-%Levity%
+Levity
 
-%Nihilism%
+Nihilism
 
-%Pragmatism%
+Pragmatism
 
-%Idealism%
+Idealism
 
-%Activism%
+Activism
 
-%Altruism%
+Altruism
 
-%Anarchy%
+Anarchy
 
-%Dogma%
+Dogma
 
-%Egalitarianism%
+Egalitarianism
 
-%Elitism%
+Elitism
 
-%Ethics%
+Ethics
 
-%Fallacy%
+Fallacy
 
-%Fanaticism%
+Fanaticism
 
-%Free Will%
+Free Will
 
-%Liberalism%
+Liberalism
 
-%Morality%
+Morality
 
-%Mysticism%
+Mysticism
 
-%Rationality%
+Rationality
 %%%%
 _science_name_
 
-%Reason%
+Reason
 
-%Unreason%
+Unreason
 
-%Calculation%
+Calculation
 
-%Instinct%
+Instinct
 
-%Intuition%
+Intuition
 
-%Circular Logic%
+Circular Logic
 
-%Context%
+Context
 
-%Articulation%
+Articulation
 
-%the Mind%
+the Mind
 
-%the Nexus%
+the Nexus
 
-%the Beginning%
+the Beginning
 
-%the End%
+the End
 
-%Analysis%
+Analysis
 
-%Infinity%
+Infinity
 
-%Quantum Leap%
+Quantum Leap
 
-%Gravity%
+Gravity
 
-%Rotation%
+Rotation
 
-%the Big Bang%
+the Big Bang
 
-%the Boiling Point%
+the Boiling Point
 
-%Classification%
+Classification
 
-%Evolution%
+Evolution
 
-%Experimentation%
+Experimentation
 
-%Focus%
+Focus
 
-%Inference%
+Inference
 
-%Inquiry%
+Inquiry
 
-%Objectivity%
+Objectivity
 
-%Subjectivity%
+Subjectivity
 
-%Variability%
+Variability
 
-%Patterns%
+Patterns
 
-%Theory%
+Theory
 %%%%
 _item_name_
 
 # items
-%Orb%
+Orb
 
-%Egg%
+Egg
 
-%Globe%
+Globe
 
-%Candle%
+Candle
 
-%Candelabrum%
+Candelabrum
 
-%Key%
+Key
 
-%Ring%
+Ring
 
-%Chain%
+Chain
 
-%Coin%
+Coin
 
-%Cup%
+Cup
 
-%Feather%
+Feather
 
-%Girdle%
+Girdle
 
-%Horn%
+Horn
 
-%Pillar%
+Pillar
 
-%Purse%
+Purse
 
-%Scroll%
+Scroll
 
-%Ship%
+Ship
 
-%Tent%
+Tent
 
-%Vase%
+Vase
 
-%Vine%
+Vine
 
-%Walnut%
+Walnut
 
-%Wheel%
+Wheel
 
-%Yoke%
+Yoke
 
 # body parts
-%Heart%
+Heart
 
-%Brain%
+Brain
 
-%Tooth%
+Tooth
 
-%Foot%
+Foot
 
-%Hand%
+Hand
 
-%Head%
+Head
 
-%Mouth%
+Mouth
 
-%Throat%
+Throat
 
-%Kidney%
+Kidney
 %%%%
 _magic_name_
 
-%the Magi%
+the Magi
 
-%the Warrior-Mage%
+the Warrior-Mage
 
-%the Hierophant%
+the Hierophant
 
-%the Sage%
+the Sage
 %%%%
 # substances
 _substance_name_
 
-%Bread%
+Bread
 
-%Sulphur%
+Sulphur
 
-%Crystal%
+Crystal
 
-%Bloodstone%
+Bloodstone
 
-%Oozing Pus%
+Oozing Pus
 
-%Ash%
+Ash
 
-%Slime%
+Slime
 
-%Bile%
+Bile
 
-%Bodily Humours%
+Bodily Humours
 
-%Cobwebs%
+Cobwebs
 
-%Cheese%
+Cheese
 
-%Dried Tears%
+Dried Tears
 
-%Dung%
+Dung
 
-%Ointment%
+Ointment
 
-%Paper%
+Paper
 
-%Rubbish%
+Rubbish
 
-%Salt%
+Salt
 
-%Saltpetre%
+Saltpetre
 
-%Sharkskin%
+Sharkskin
 
-%Terra Cotta%
+Terra Cotta
 
 # these don't really fit
-%Mana%
+Mana
 
-%Yeast%
+Yeast
 
-%Spores%
+Spores
 
-%Dust%
+Dust
 %%%%
 # non-groupables
 other_weapon_name
 
-%the Omega Point%
+the Omega Point
 
-%Crawling%
+Crawling
 
-%Conversion%
+Conversion
 
-%Prescription%
+Prescription
 
-%the Open Hand%
+the Open Hand
 
-%Spontaneous Combustion%
+Spontaneous Combustion
 
-%Res Nullius%
+Res Nullius
 
-%Terra Nullius%
+Terra Nullius
 
-%Desertification%
+Desertification
 
-%the Spinneret%
+the Spinneret
 
-%Grontol%
+Grontol
 
-%the Two Names%
+the Two Names
 
-%No Interval%
+No Interval
 
-%Interdependent Arising%
+Interdependent Arising
 
-%the Blind Eye%
+the Blind Eye
 
-%the Briny Deep%
+the Briny Deep
 
-%Broken Luck%
+Broken Luck
 
-%Entrepreneurial Spirit%
+Entrepreneurial Spirit
 
-%the Vendetta%
+the Vendetta
 
-%the Empty Page%
+the Empty Page
 
-%the Final Chapter%
+the Final Chapter
 
-%Hard Scrabble%
+Hard Scrabble
 
-%Red Wine%
+Red Wine
 
-%Undoing%
+Undoing
 
 # akrasiac patch
-%Irrepressible Laughter%
+Irrepressible Laughter
 %%%%
 # single word monster names, to allow for combinations like <Monster>slayer
 short_monster_name_
 
-%Dragon%
+Dragon
 
-%Hydra%
+Hydra
 
-%Ogre%
+Ogre
 
-%Spider%
+Spider
 
-%Newt%
+Newt
 
-%Giant%
+Giant
 
-%Beetle%
+Beetle
 
-%Jelly%
+Jelly
 
-%w:1%
-%Testudine%
+w:1
+Testudine
 
-%w:1%
-%Pirate%
+w:1
+Pirate
 
-%Beast%
+Beast
 
-%Demon%
+Demon
 
-%Goblin%
+Goblin
 %%%%
 _monster_name_
 
@@ -1355,198 +1355,198 @@ _monster_name_
 
 @player_species@
 
-%Killer Bee%
+Killer Bee
 
-%Killer Klown%
+Killer Klown
 
-%Orb Guardian%
+Orb Guardian
 %%%%
 _short_killer_name_
 
-%bane%
+bane
 
-%slayer%
+slayer
 %%%%
 # used from the C++ side
 killer_name
 
-%'s Bane%
+'s Bane
 
-%'s Death%
+'s Death
 
-%'s Doom%
+'s Doom
 
-%'s Foe%
+'s Foe
 
-%'s Regret%
+'s Regret
 
-%'s Curse%
+'s Curse
 
-%'s Peril%
+'s Peril
 %%%%
 _long_killer_name_
 
-%'s Death Toll%
+'s Death Toll
 
-%'s Funeral%
+'s Funeral
 
-%'s Nightmare%
+'s Nightmare
 
-%'s Undoing%
+'s Undoing
 
-%'s Demise%
+'s Demise
 
-%w:1%
-%'s Looming Annihilation%
+w:1
+'s Looming Annihilation
 %%%%
 _real_weapon_name_
 
-%Grim Tooth%
+Grim Tooth
 
-%w:5%
-%Widowmaker%
+w:5
+Widowmaker
 
-%w:5%
-%Widowermaker%
+w:5
+Widowermaker
 
-%Lifebane%
+Lifebane
 
-%Conservator%
+Conservator
 
-%Banisher%
+Banisher
 
-%Tormentor%
+Tormentor
 
-%Pendulum%
+Pendulum
 
-%Murmur%
+Murmur
 
-%Sarcophage%
+Sarcophage
 
-%Concordance%
+Concordance
 
-%Dragon's Tongue%
+Dragon's Tongue
 
-%Arbiter%
+Arbiter
 
-%Death Rattle%
+Death Rattle
 
-%Arcanum%
+Arcanum
 
-%Transmigrator%
+Transmigrator
 
-%Ultimatum%
+Ultimatum
 
-%Earthworm%
+Earthworm
 
-%Worm%
+Worm
 
-%Worm's Wrath%
+Worm's Wrath
 
-%Leviticus%
+Leviticus
 
-%Grim%
+Grim
 
 # Lemuel's suggestions
-%Eviscerator%
+Eviscerator
 
-%Undertaker%
+Undertaker
 
-%Embalmer%
+Embalmer
 
-%Trog's @_anger_name_@%
+Trog's @_anger_name_@
 
-%Hellblazer%
+Hellblazer
 
-%Hell-Harrower%
+Hell-Harrower
 
 # Sigmund's sword
-%Gram%
+Gram
 %%%%
 _joke_weapon_name_
 
-%Secret Weapon%
+Secret Weapon
 
-%With Two Names%
+With Two Names
 
-%Thing%
+Thing
 
-%Mud Pie of Death%
+Mud Pie of Death
 
-%Xom's @_xom_esteem_@%
+Xom's @_xom_esteem_@
 
-%String%
+String
 
-%Stringbean%
+Stringbean
 
-%Blob%
+Blob
 
-%Globulus%
+Globulus
 
-%Hulk%
+Hulk
 
-%Raisin%
+Raisin
 
-%Starlight%
+Starlight
 
-%Giant's Toothpick%
+Giant's Toothpick
 
-%Backscratcher%
+Backscratcher
 
-%Brush%
+Brush
 
-%Grom%
+Grom
 
-%Grum%
+Grum
 
-%Rummage%
+Rummage
 
-%Omelette%
+Omelette
 
-%Egg%
+Egg
 
-%Aubergine%
+Aubergine
 
-%Z%
+Z
 
-%X%
+X
 
-%Q%
+Q
 
-%Ox%
+Ox
 
-%Tattletale%
+Tattletale
 
-%Fish%
+Fish
 
-%Bung%
+Bung
 
-%Bingo%
+Bingo
 
 # from the crawl.akrasiac.org patch
-%Cookie Cutter%
+Cookie Cutter
 
-%ETAOIN SHRDLU%
+ETAOIN SHRDLU
 
-%Lorem Ipsum%
+Lorem Ipsum
 %%%%
 _plain_weapon_name_
 
-%w:15%
+w:15
 @short_monster_name_@@_short_killer_name_@
 
-%w:8%
+w:8
 @_monster_name_@@killer_name@
 
-%w:2%
+w:2
 @short_monster_name_@@_long_killer_name_@
 
-%w:1%
+w:1
 @player_death@
 
-%w:15%
+w:15
 @_real_weapon_name_@
 
-%w:5%
+w:5
 @_joke_weapon_name_@
 %%%%

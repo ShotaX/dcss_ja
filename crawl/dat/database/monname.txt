@@ -31,191 +31,191 @@
 %%%%
 orc name
 
-%w:14%
-%@beogh_name@%
+w:14
+@beogh_name@
 
-%w:12%
-%@orcish_name@%
+w:12
+@orcish_name@
 
-%w:45%
-%@other_orcish_name@%
+w:45
+@other_orcish_name@
 %%%%
 # some specials for orcish priests
 orc high priest name
 
-%@orc priest name@%
+@orc priest name@
 %%%%
 orc priest name
 
 # Watch out! :p
-%w:1%
-%Judas%
+w:1
+Judas
 
-%w:50%
+w:50
 @orc name@
 %%%%
 # Obvious references to Beogh
 # (14 at last count)
 beogh_name
 
-%Arbeogh%
+Arbeogh
 
-%Bogbarth%
+Bogbarth
 
 # slavic name, meaning "god's gift" :)
-%Bogdan%
+Bogdan
 
-%Bogdar%
+Bogdar
 
-%Boghold%
+Boghold
 
-%Bogmar%
+Bogmar
 
-%Bogric%
+Bogric
 
-%Bogrim%
+Bogrim
 
-%Bogwald%
+Bogwald
 
-%Bogward%
+Bogward
 
-%Bogwik%
+Bogwik
 
-%Morbeogh%
+Morbeogh
 
-%Orbeogh%
+Orbeogh
 
-%Warbeogh%
+Warbeogh
 %%%%
 # Obvious references to orcs in general
 # (extremely subjective, and 13 at last count)
 orcish_name
 
-%Alork%
+Alork
 
-%Borgk%
+Borgk
 
-%Boruk%
+Boruk
 
-%Marbork%
+Marbork
 
-%Milork%
+Milork
 
-%Ogrik%
+Ogrik
 
-%Okrist%
+Okrist
 
-%Oreg%
+Oreg
 
-%Orgrim%
+Orgrim
 
-%Orik%
+Orik
 
-%Orkrul%
+Orkrul
 
-%Orkwin%
+Orkwin
 
-%Oruk%
+Oruk
 %%%%
 # Other
 # (49 at last count)
 other_orcish_name
 
-%Agrik%
+Agrik
 
-%Arbolt%
+Arbolt
 
-%Argrim%
+Argrim
 
-%Arkwar%
+Arkwar
 
-%Berold%
+Berold
 
-%Bladwarg%
+Bladwarg
 
-%Blodwig%
+Blodwig
 
-%Boderik%
+Boderik
 
-%Boldo%
+Boldo
 
-%Bolgrim%
+Bolgrim
 
-%Borgoth%
+Borgoth
 
-%Borgun%
+Borgun
 
-%Brandogh%
+Brandogh
 
-%Brunolf%
+Brunolf
 
-%Dorog%
+Dorog
 
-%Garbold%
+Garbold
 
-%Gorbash%
+Gorbash
 
-%Gorg%
+Gorg
 
-%Gorm%
+Gorm
 
-%Grimold%
+Grimold
 
-%Harm%
+Harm
 
-%Hawl%
+Hawl
 
-%Herok%
+Herok
 
-%Hilgar%
+Hilgar
 
-%Jorge%
+Jorge
 
-%Koronagh%
+Koronagh
 
-%Learuk%
+Learuk
 
-%Margrim%
+Margrim
 
-%Morguth%
+Morguth
 
-%Morun%
+Morun
 
-%Murdo%
+Murdo
 
-%Norbak%
+Norbak
 
-%Nordag%
+Nordag
 
-%Ognian%
+Ognian
 
-%Olfik%
+Olfik
 
-%Olfrun%
+Olfrun
 
-%Ortolf%
+Ortolf
 
-%Rocco%
+Rocco
 
-%Syrus%
+Syrus
 
-%Thorok%
+Thorok
 
-%Ugbert%
+Ugbert
 
-%Ugrim%
+Ugrim
 
-%Wardok%
+Wardok
 
-%Wargath%
+Wargath
 
-%Wargrak%
+Wargrak
 
-%Warrok%
+Warrok
 
-%Worak%
+Worak
 
-%Wulfoc%
+Wulfoc
 
-%Zorug%
+Zorug
 %%%%

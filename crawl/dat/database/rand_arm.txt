@@ -15,751 +15,751 @@
 _armour_animal_
 
 # microorganisms
-%Amoeba%
+Amoeba
 
 # insects
-%Butterfly%
+Butterfly
 
-%Cicada%
+Cicada
 
-%Cricket%
+Cricket
 
-%Ladybird%
+Ladybird
 
-%Ant%
+Ant
 
-%Cockroach%
+Cockroach
 
-%Locust%
+Locust
 
-%Louse%
+Louse
 
 # invertebrates
-%Slug%
+Slug
 
-%Snail%
+Snail
 
-%Gastropod%
+Gastropod
 
-%Trilobite%
+Trilobite
 
-%Centipede%
+Centipede
 
-%Cuttlefish%
+Cuttlefish
 
-%Worm%
+Worm
 
 # arachnids and clams
-%Tarantula%
+Tarantula
 
-%Clam%
+Clam
 
-%Barnacle%
+Barnacle
 
-%Lobster%
+Lobster
 
 # amphibians and reptiles
-%Tortoise%
+Tortoise
 
-%Turtle%
+Turtle
 
-%Frog%
+Frog
 
-%Komodo Dragon%
+Komodo Dragon
 
-%Lizard%
+Lizard
 
-%Salamander%
+Salamander
 
-%Serpent%
+Serpent
 
 # birds
-%Turtledove%
+Turtledove
 
-%Nightingale%
+Nightingale
 
-%Meadowlark%
+Meadowlark
 
-%Eagle%
+Eagle
 
-%Falcon%
+Falcon
 
-%Heron%
+Heron
 
-%Raven%
+Raven
 
-%Sparrow%
+Sparrow
 
-%Swan%
+Swan
 
 # mammals
-%Hare%
+Hare
 
-%Kangaroo%
+Kangaroo
 
-%Elephant%
+Elephant
 
-%Zebra%
+Zebra
 
-%Hippo%
+Hippo
 
-%Monkey%
+Monkey
 
-%Bull%
+Bull
 
-%Camelopard%
+Camelopard
 
-%Dolphin%
+Dolphin
 
-%Echidna%
+Echidna
 
-%Hart%
+Hart
 
-%Lion%
+Lion
 
-%Stallion%
+Stallion
 
 # not strictly an animal... :)
-%Monkey's Uncle%
+Monkey's Uncle
 
 #classical mythical animals
-%Cockatrice%
+Cockatrice
 
-%Dragon%
+Dragon
 
-%Griffon%
+Griffon
 
-%Kraken%
+Kraken
 
 # modern mythical animals
-%Dropbear%
+Dropbear
 
-%Jackalope%
+Jackalope
 
-%Wild Haggis%
+Wild Haggis
 
-%Chupacabra%
+Chupacabra
 %%%%
 _flower_name_
 
-%Lilacs%
+Lilacs
 
-%Daffodils%
+Daffodils
 
-%the Rose%
+the Rose
 
-%the Garden%
+the Garden
 
-%Daisies%
+Daisies
 
-%the Thistle%
+the Thistle
 
-%Tulips%
+Tulips
 
-%the Lily%
+the Lily
 
-%the Lotus Blossom%
+the Lotus Blossom
 %%%%
 # non-Crawl critters
 _critter_name_
 
-%Slorg%
+Slorg
 
-%Alphagorgon%
+Alphagorgon
 
 # from the crawl.akrasiac.org patch.
-%Hot Ocelot%
+Hot Ocelot
 
-%Eight Boll Weevils%
+Eight Boll Weevils
 
-%Grue%
+Grue
 
-%Jabberwock%
+Jabberwock
 
-%w:1%
-%Were-rabbit%
+w:1
+Were-rabbit
 
-%Wumpus%
+Wumpus
 %%%%
 _discomfort_and_inaction_
 
 # discomfort
-%Minor Irritation%
+Minor Irritation
 
-%Bitterness%
+Bitterness
 
-%Negation%
+Negation
 
-%Failure%
+Failure
 
-%Servitude%
+Servitude
 
-%Submission%
+Submission
 
-%Insecurity%
+Insecurity
 
-%Vexation%
+Vexation
 
 # inaction
-%Lifelessness%
+Lifelessness
 
-%Boredom%
+Boredom
 
-%Ennui%
+Ennui
 
-%Restlessness%
+Restlessness
 
-%Omission%
+Omission
 
-%Negligence%
+Negligence
 
-%Inaction%
+Inaction
 
-%Oblivion%
+Oblivion
 
-%the Doldrums%
+the Doldrums
 
-%Listlessness%
+Listlessness
 %%%%
 _mental_illness_armour_
 
-%Paranoia%
+Paranoia
 
-%Claustrophobia%
+Claustrophobia
 
-%Agoraphobia%
+Agoraphobia
 
-%Dyspraxia%
+Dyspraxia
 
-%Mental Paralysis%
+Mental Paralysis
 
-%Catatonia%
+Catatonia
 
-%Depression%
+Depression
 
-%Hysteria%
+Hysteria
 
-%Kleptomania%
+Kleptomania
 
-%Melancholy%
+Melancholy
 
-%Masochism%
+Masochism
 
-%Narcissism%
+Narcissism
 %%%%
 _good_or_divine_
 
 # good things
-%the Good%
+the Good
 
-%the Leaf%
+the Leaf
 
-%Leaves%
+Leaves
 
-%Music%
+Music
 
-%Birdsong%
+Birdsong
 
-%Brilliance%
+Brilliance
 
-%Satisfaction%
+Satisfaction
 
-%Fun%
+Fun
 
-%Joy%
+Joy
 
-%Happiness%
+Happiness
 
-%Wonder%
+Wonder
 
-%Surprise%
+Surprise
 
-%Curiosity%
+Curiosity
 
-%Creativity%
+Creativity
 
-%Beauty%
+Beauty
 
-%Life%
+Life
 
-%Liberty%
+Liberty
 
-%Freedom%
+Freedom
 
-%Amelioration%
+Amelioration
 
-%Awe%
+Awe
 
-%Contentment%
+Contentment
 
-%Mirth%
+Mirth
 
 # divine events
-%Divine Compulsion%
+Divine Compulsion
 
-%the Invisible Hand%
+the Invisible Hand
 
-%Divine Intervention%
+Divine Intervention
 
-%Intercession%
+Intercession
 
-%Miracles%
+Miracles
 
-%Salvation%
+Salvation
 
-%the Will of the Gods%
+the Will of the Gods
 %%%%
 # in contrast to "_wacky_armour_name_" these do have some
 # connection to armour and protection
 _armour_name_shielding_
 
-%Shielding%
+Shielding
 
-%Impermeability%
+Impermeability
 
-%Defence%
+Defence
 
-%Death's Door%
+Death's Door
 
-%the Gate%
+the Gate
 
-%the Saviour%
+the Saviour
 
-%the Untouchables%
+the Untouchables
 
-%the Armoured One%
+the Armoured One
 
-%Exclusion%
+Exclusion
 
-%Repulsion%
+Repulsion
 
-%Inviolability%
+Inviolability
 
-%Refuge%
+Refuge
 
-%the Bulwark%
+the Bulwark
 
-%the Ward%
+the Ward
 
-%Fortification%
+Fortification
 %%%%
 # other armour properties (beside protection)
 _armour_property_name_
 
-%Supple Strength%
+Supple Strength
 
-%Death Resistance%
+Death Resistance
 
-%Grace%
+Grace
 
-%Weightlessness%
+Weightlessness
 
-%Shadows and Fog%
+Shadows and Fog
 
-%Disguise%
+Disguise
 
-%Least Resistance%
+Least Resistance
 
-%Protective Custody%
+Protective Custody
 
-%Resilience%
+Resilience
 
-%Fashionability%
+Fashionability
 
-%Impressiveness%
+Impressiveness
 %%%%
 _wacky_armour_name_
 
-%the Onion%
+the Onion
 
-%Vlad%
+Vlad
 
-%the Eternal Fruit%
+the Eternal Fruit
 
-%Plasticity%
+Plasticity
 
-%Baldness%
+Baldness
 
-%Terror%
+Terror
 
-%Good Intentions%
+Good Intentions
 
-%the Arcane%
+the Arcane
 
-%Anaesthesia%
+Anaesthesia
 
-%the Armadillo%
+the Armadillo
 
-%Weirdness%
+Weirdness
 
-%Pathos%
+Pathos
 
-%Loss%
+Loss
 
-%Hedging%
+Hedging
 
-%Indemnity%
+Indemnity
 
-%Untold Secrets%
+Untold Secrets
 
-%the Earth%
+the Earth
 
-%Limited Liability%
+Limited Liability
 
-%Hadjma%
+Hadjma
 
-%Hairiness%
+Hairiness
 
-%Space%
+Space
 
-%the Vacuum%
+the Vacuum
 
-%Compression%
+Compression
 
-%Decompression%
+Decompression
 
-%the Loofah%
+the Loofah
 
-%Love and Death%
+Love and Death
 
-%Indecent Exposure%
+Indecent Exposure
 
-%the Road Less Travelled%
+the Road Less Travelled
 
-%the Blind Marksman%
+the Blind Marksman
 
-%Too Many Cooks%
+Too Many Cooks
 
-%Thrice Damned Blessings%
+Thrice Damned Blessings
 
-%Duck's Teeth%
+Duck's Teeth
 %%%%
 # Lemuel's suggestions
 _celestial_bodies_
 
-%Sun%
+Sun
 
-%Moon%
+Moon
 
-%Stars%
+Stars
 
-%Planets%
+Planets
 
-%Pleiades%
+Pleiades
 
-%Morning Star%
+Morning Star
 
-%Evening Star%
+Evening Star
 
-%Comet%
+Comet
 
-%w:5%
-%Midnight Sun%
+w:5
+Midnight Sun
 
-%w:5%
-%Blue Moon%
+w:5
+Blue Moon
 
-%w:5%
-%Harvest Moon%
+w:5
+Harvest Moon
 
 # astrological
-%Black Moon%
+Black Moon
 %%%%
 _instrument_name_
 
-%Trumpets%
+Trumpets
 
-%the Kettle-Drum%
+the Kettle-Drum
 
-%the Accordion%
+the Accordion
 
-%the Bagpipe%
+the Bagpipe
 
-%the Lute%
+the Lute
 
-%the Bells%
+the Bells
 
-%Chimes%
+Chimes
 
-%the Flute%
+the Flute
 
-%the Harp%
+the Harp
 
-%the Gusle%
+the Gusle
 %%%%
 _evil_being_
 
-%the Devil%
+the Devil
 
-%Demons%
+Demons
 
-%Lesser Demons%
+Lesser Demons
 
-%Greater Demons%
+Greater Demons
 
-%the Iron Devil%
+the Iron Devil
 
-%the Devil's Advocate%
+the Devil's Advocate
 
-%the Demon Prince%
+the Demon Prince
 
-%the Evil One%
+the Evil One
 
-%the Furies%
+the Furies
 
-%the Prince of Darkness%
+the Prince of Darkness
 
-%the Fiend%
+the Fiend
 
-%w:5%
-%the Archfiend%
+w:5
+the Archfiend
 
-%the Little Devil%
+the Little Devil
 
-%the Imp%
+the Imp
 
-%the Villain%
+the Villain
 %%%%
 _weather_name_
 
-%the First Snow%
+the First Snow
 
-%Boiling Hail%
+Boiling Hail
 
-%Perpetual Drought%
+Perpetual Drought
 
-%the Thunderstorm%
+the Thunderstorm
 
-%the Hurricane%
+the Hurricane
 
-%Blue Skies%
+Blue Skies
 
-%Pleasant Breezes%
+Pleasant Breezes
 
-%the Blizzard%
+the Blizzard
 
-%Chill Winds%
+Chill Winds
 %%%%
 _profession_name_
 
-%Guilds%
+Guilds
 
-%Guild-Master%
+Guild-Master
 
-%Apprentice%
+Apprentice
 
-%Blacksmith%
+Blacksmith
 
-%Carpenter%
+Carpenter
 
-%Wheelwright%
+Wheelwright
 
-%Cooper%
+Cooper
 
-%Fisher%
+Fisher
 
-%Hunter%
+Hunter
 
-%Ditch-Digger%
+Ditch-Digger
 
-%Guardian%
+Guardian
 
-%Beekeeper%
+Beekeeper
 
-%Gardener%
+Gardener
 
-%Soldier%
+Soldier
 
-%Farrier%
+Farrier
 
-%Engineer%
+Engineer
 
-%Barber Surgeon%
+Barber Surgeon
 
-%Journeyman%
+Journeyman
 
-%Scribe%
+Scribe
 
-%Bard%
+Bard
 
-%Undertaker%
+Undertaker
 
-%Beggar%
+Beggar
 
-%Merchant%
+Merchant
 
-%Sailor%
+Sailor
 
-%Gravedigger%
+Gravedigger
 
-%Pirate%
+Pirate
 
-%Buccaneer%
+Buccaneer
 %%%%
 # something for Xom
 _game_name_
 
 # general games
-%Fun and Games%
+Fun and Games
 
-%the Great Game%
+the Great Game
 
-%the Game Afoot%
+the Game Afoot
 
-%Parlour Games%
+Parlour Games
 
-%the Game of Kings%
+the Game of Kings
 
 # children's games
-%Peek-a-Boo%
+Peek-a-Boo
 
-%Hide-and-Seek%
+Hide-and-Seek
 
-%Leapfrog%
+Leapfrog
 
-%Hopscotch%
+Hopscotch
 
-%Follow the Leader%
+Follow the Leader
 
-%the King of the Hill%
+the King of the Hill
 
-%Mumblety Peg%
+Mumblety Peg
 
 # board games etc.
-%the Game of Life%
+the Game of Life
 
-%Card Tricks%
+Card Tricks
 
-%Hangman%
+Hangman
 
-%the Dice%
+the Dice
 
-%Jigsaw%
+Jigsaw
 
-%Whack-A-Mole%
+Whack-A-Mole
 
-%Ladders and Snakes%
+Ladders and Snakes
 
-%Marbles%
+Marbles
 
-%Noughts and Crosses%
+Noughts and Crosses
 %%%%
 _politics_name_armour_
 
-%the King%
+the King
 
-%the Queen%
+the Queen
 
-%Royalty%
+Royalty
 
-%Nobility%
+Nobility
 
-%the Republic%
+the Republic
 
-%the Empire%
+the Empire
 
-%Coronation%
+Coronation
 
-%the Commoners%
+the Commoners
 
-%the Peasants%
+the Peasants
 
-%the Townfolk%
+the Townfolk
 
-%the City%
+the City
 
-%the Country%
+the Country
 
-%the Suburbs%
+the Suburbs
 
-%the Mutiny%
+the Mutiny
 
-%the Crown%
+the Crown
 
-%the Duke%
+the Duke
 
-%the Duchess%
+the Duchess
 
-%the Rabble%
+the Rabble
 
-%the Prince%
+the Prince
 
-%the Princeling%
+the Princeling
 
-%the Princess%
+the Princess
 
-%the Oligarchy%
+the Oligarchy
 
-%the Cast Vote%
+the Cast Vote
 
-%the Burgomaster%
+the Burgomaster
 
-%the Failed Coup%
+the Failed Coup
 %%%%
 _other_armour_name_
 
 #unpleasantness
-%w:5%
-%Grot%
+w:5
+Grot
 
-%w:5%
-%Grottiness%
+w:5
+Grottiness
 
-%Filth%
+Filth
 
-%Slovenliness%
+Slovenliness
 
 # magic
-%Magic%
+Magic
 
-%Sorcery%
+Sorcery
 
-%Broken Taboos%
+Broken Taboos
 
-%Bedevilment%
+Bedevilment
 
 # other
-%Crawling%
+Crawling
 
-%the Orb%
+the Orb
 
-%the Orb Guardian%
+the Orb Guardian
 
-%the Storm King%
+the Storm King
 
-%the Hanged Man%
+the Hanged Man
 
-%Hedge Wizardry%
+Hedge Wizardry
 
-%Feasting%
+Feasting
 
-%Insatiable Hunger%
+Insatiable Hunger
 
-%Imperfection%
+Imperfection
 
-%Trial and Error%
+Trial and Error
 
-%Disaster%
+Disaster
 
-%Wrong Decisions%
+Wrong Decisions
 
-%Unambiguity%
+Unambiguity
 
-%the Lost Path%
+the Lost Path
 
-%Misanthropy%
+Misanthropy
 
-%Wasted Space%
+Wasted Space
 
-%the Other World%
+the Other World
 
-%Inevitability%
+Inevitability
 %%%%
 _plain_armour_name_
 
-%Forget-Me-Not%
+Forget-Me-Not
 
-%Hero's Friend%
+Hero's Friend
 
-%Trusted Companion%
+Trusted Companion
 %%%%
