@@ -22,6 +22,7 @@
 #include "cio.h"
 #include "colour.h"
 #include "coord.h"
+#include "database.h"
 #include "describe.h"
 #include "env.h"
 #include "files.h"
@@ -1822,39 +1823,39 @@ static void _print_overview_screen_equip(column_composer& cols,
         else if (e_order[i] == EQ_WEAPON
                  && you.skill(SK_UNARMED_COMBAT))
         {
-            snprintf(buf, sizeof buf, "%s  - Unarmed", slot);
+            snprintf(buf, sizeof buf, jtrans("%s  - Unarmed").c_str(), slot);
         }
         else if (e_order[i] == EQ_WEAPON
                  && you.form == TRAN_BLADE_HANDS)
         {
-            snprintf(buf, sizeof buf, "%s  - Blade Hands", slot);
+            snprintf(buf, sizeof buf, jtrans("%s  - Blade Hands").c_str(), slot);
         }
         else if (e_order[i] == EQ_BOOTS
                  && (you.species == SP_NAGA || you.species == SP_CENTAUR))
         {
             snprintf(buf, sizeof buf,
-                     "<darkgrey>(no %s)</darkgrey>", slot_name_lwr.c_str());
+                     jtrans("<darkgrey>(no %s)</darkgrey>").c_str(), slot_name_lwr.c_str());
         }
         else if (!you_can_wear(e_order[i], true))
         {
             snprintf(buf, sizeof buf,
-                     "<darkgrey>(%s unavailable)</darkgrey>", slot_name_lwr.c_str());
+                     jtrans("<darkgrey>(%s unavailable)</darkgrey>").c_str(), slot_name_lwr.c_str());
         }
         else if (!you_tran_can_wear(e_order[i], true))
         {
             snprintf(buf, sizeof buf,
-                     "<darkgrey>(%s currently unavailable)</darkgrey>",
+                     jtrans("<darkgrey>(%s currently unavailable)</darkgrey>").c_str(),
                      slot_name_lwr.c_str());
         }
         else if (!you_can_wear(e_order[i]))
         {
             snprintf(buf, sizeof buf,
-                     "<darkgrey>(%s restricted)</darkgrey>", slot_name_lwr.c_str());
+                     jtrans("<darkgrey>(%s restricted)</darkgrey>").c_str(), slot_name_lwr.c_str());
         }
         else
         {
             snprintf(buf, sizeof buf,
-                     "<darkgrey>(no %s)</darkgrey>", slot_name_lwr.c_str());
+                     jtrans("<darkgrey>(no %s)</darkgrey>").c_str(), slot_name_lwr.c_str());
         }
         cols.add_formatted(2, buf, false);
     }
@@ -1863,7 +1864,7 @@ static void _print_overview_screen_equip(column_composer& cols,
 static string _overview_screen_title(int sw)
 {
     char title[50];
-    snprintf(title, sizeof title, " the %s ", player_title().c_str());
+    snprintf(title, sizeof title, " the %s ", player_title().c_str()); //fixme_ja(タイトルが表示されない)
 
     char species_job[50];
     snprintf(species_job, sizeof species_job,
@@ -2175,24 +2176,71 @@ static vector<formatted_string> _get_overview_resistances(
                        || player_mutation_level(MUT_MUTATION_RESISTANCE) == 3);
     const int rrott = you.res_rotting();
 
+    const char* jpResFire;
+	jpResFire = jtrans("Res.Fire  :").c_str();
+
     snprintf(buf, sizeof buf,
-             "%sRes.Fire  : %s\n"
-             "%sRes.Cold  : %s\n"
-             "%sLife Prot.: %s\n"
-             "%sRes.Poison: %s\n"
-             "%sRes.Elec. : %s\n"
-             "%sSust.Abil.: %s\n"
-             "%sRes.Mut.  : %s\n"
-             "%sRes.Rott. : %s\n",
-             _determine_colour_string(rfire, 3), _itosym3(rfire),
-             _determine_colour_string(rcold, 3), _itosym3(rcold),
-             _determine_colour_string(rlife, 3), _itosym3(rlife),
-             _determine_colour_string(rpois, 1), _itosym1(rpois),
-             _determine_colour_string(relec, 1), _itosym1(relec),
-             _determine_colour_string(rsust, 2), _itosym2(rsust),
-             _determine_colour_string(rmuta, 1), _itosym1(rmuta),
-             _determine_colour_string(rrott, 1), _itosym1(rrott));
+             "%s%s%s\n",
+             _determine_colour_string(rfire, 3), jpResFire, _itosym3(rfire));
     cols.add_formatted(0, buf, false);
+
+
+    const char* jpResCold;
+	jpResCold = jtrans("Res.Cold  :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rcold, 3), jpResCold, _itosym3(rcold));
+    cols.add_formatted(0, buf, false);
+
+    const char* jpResLife;
+	jpResLife = jtrans("Life Prot.:").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rlife, 3), jpResLife, _itosym3(rlife));
+    cols.add_formatted(0, buf, false);
+
+    const char* jpRespois;
+	jpRespois = jtrans("Res.Poison:").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rpois, 3), jpRespois, _itosym3(rpois));
+    cols.add_formatted(0, buf, false);
+
+    const char* jpReselec;
+	jpReselec = jtrans("Res.Elec. :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(relec, 3), jpReselec, _itosym3(relec));
+    cols.add_formatted(0, buf, false);
+
+    const char* jpRessust;
+	jpRessust = jtrans("Sust.Abil.:").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rsust, 3), jpRessust, _itosym3(rsust));
+    cols.add_formatted(0, buf, false);
+
+    const char* jpResmuta;
+	jpResmuta = jtrans("Res.Mut.  :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rmuta, 3), jpResmuta, _itosym3(rmuta));
+    cols.add_formatted(0, buf, false);
+
+    const char* jpResRott;
+	jpResRott = jtrans("Res.Rott. :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rrott, 3), jpResRott, _itosym3(rrott));
+    cols.add_formatted(0, buf, false);
+
 
     int saplevel = player_mutation_level(MUT_SAPROVOROUS);
     const char* pregourmand;
@@ -2203,13 +2251,13 @@ static vector<formatted_string> _get_overview_resistances(
         && player_mutation_level(MUT_HERBIVOROUS) < 3
         && you.gourmand())
     {
-        pregourmand = "Gourmand  : ";
+        pregourmand = jtrans("Gourmand  :").c_str();
         postgourmand = _itosym1(1);
         saplevel = 1;
     }
     else
     {
-        pregourmand = "Saprovore : ";
+        pregourmand = jtrans("Saprovore :").c_str();
         postgourmand = _itosym3(saplevel);
     }
     snprintf(buf, sizeof buf, "%s%s%s",
@@ -2223,20 +2271,53 @@ static vector<formatted_string> _get_overview_resistances(
     const int rcorr = you.res_corr(calc_unid);
     const int rclar = you.clarity(calc_unid);
     const int rspir = you.spirit_shield(calc_unid);
+
+    const char* jpSeeI;
+	jpSeeI = jtrans("See Invis. :").c_str();
+
     snprintf(buf, sizeof buf,
-             "%sSee Invis. : %s\n"
-             "%sWarding    : %s\n"
-             "%sConserve   : %s\n"
-             "%sRes.Corr.  : %s\n"
-             "%sClarity    : %s\n"
-             "%sSpirit.Shd : %s\n"
-             ,
-             _determine_colour_string(rinvi, 1), _itosym1(rinvi),
-             _determine_colour_string(rward, 1), _itosym1(rward),
-             _determine_colour_string(rcons, 1), _itosym1(rcons),
-             _determine_colour_string(rcorr, 1), _itosym1(rcorr),
-             _determine_colour_string(rclar, 1), _itosym1(rclar),
-             _determine_colour_string(rspir, 1), _itosym1(rspir));
+             "%s%s%s\n",
+             _determine_colour_string(rinvi, 1), jpSeeI, _itosym1(rinvi));
+    cols.add_formatted(1, buf, false);
+
+    const char* jpWard;
+	jpWard = jtrans("Warding    :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rward, 1), jpWard, _itosym1(rward));
+    cols.add_formatted(1, buf, false);
+
+    const char* jpCons;
+	jpCons = jtrans("Conserve   :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rcons, 1), jpCons, _itosym1(rcons));
+    cols.add_formatted(1, buf, false);
+
+    const char* jpCorr;
+	jpCorr = jtrans("Res.Corr.  :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rcorr, 1), jpCorr, _itosym1(rcorr));
+    cols.add_formatted(1, buf, false);
+
+    const char* jpClar;
+	jpClar = jtrans("Clarity    :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rclar, 1), jpClar, _itosym1(rclar));
+    cols.add_formatted(1, buf, false);
+
+    const char* jpSpir;
+	jpSpir = jtrans("Spirit.Shd :").c_str();
+
+    snprintf(buf, sizeof buf,
+             "%s%s%s\n",
+             _determine_colour_string(rspir, 1), jpSpir, _itosym1(rspir));
     cols.add_formatted(1, buf, false);
 
     const int stasis = you.stasis(calc_unid);
@@ -2244,25 +2325,25 @@ static vector<formatted_string> _get_overview_resistances(
     const int rrtel = !!player_teleport(calc_unid);
     if (notele && !stasis)
     {
-        snprintf(buf, sizeof buf, "%sPrev.Telep.: %s",
+        snprintf(buf, sizeof buf, jtrans("%sPrev.Telep.: %s").c_str(),
                  _determine_colour_string(-1, 1), _itosym1(1));
     }
     else if (rrtel && !stasis)
     {
-        snprintf(buf, sizeof buf, "%sRnd.Telep. : %s",
+        snprintf(buf, sizeof buf, jtrans("%sRnd.Telep. : %s").c_str(),
                  _determine_colour_string(-1, 1), _itosym1(1));
     }
     else
     {
-        snprintf(buf, sizeof buf, "%sStasis     : %s",
+        snprintf(buf, sizeof buf, jtrans("%sStasis     : %s").c_str(),
                  _determine_colour_string(stasis, 1), _itosym1(stasis));
     }
     cols.add_formatted(1, buf, false);
 
     const int rflyi = you.airborne();
     snprintf(buf, sizeof buf,
-             "%sFlight     : %s\n",
-             _determine_colour_string(rflyi, 1), _itosym1(rflyi));
+             jtrans("%sFlight     : %s%s").c_str(),
+             _determine_colour_string(rflyi, 1), _itosym1(rflyi), "\n");
     cols.add_formatted(1, buf, false);
 
     _print_overview_screen_equip(cols, equip_chars, sw);

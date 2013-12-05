@@ -1,0 +1,121 @@
+%%%%
+Res.Fire  :
+
+r火耐性   :　
+%%%%
+Res.Cold  :
+
+r冷耐性   :　
+%%%%
+Life Prot.:
+
+r負耐性   :　
+%%%%
+Res.Poison:
+
+r毒耐性   :　
+%%%%
+Res.Elec. :
+
+r電耐性   :　
+%%%%
+Sust.Abil.:
+
+能力維持  :　
+%%%%
+Res.Mut.  :
+
+r変異耐性 :　
+%%%%
+Res.Rott. :
+
+r腐敗耐性 :　
+%%%%
+Gourmand  :
+
+悪食      :　
+%%%%
+Saprovore :
+
+腐肉食    :　
+%%%%
+See Invis. :
+
+透明視     :　
+%%%%
+Warding    :
+
+結界       :　
+%%%%
+Conserve   :
+
+保全       :　
+%%%%
+Res.Corr.  :
+
+r腐食耐性  :　
+%%%%
+Clarity    :
+
+明晰       :　
+%%%%
+Spirit.Shd :
+
+守護霊     :　
+%%%%
+%sPrev.Telep.: %s
+
+%s転移制御   :　
+%%%%
+%sRnd.Telep. : %s
+
+%s+転移      :　
+%%%%
+%sStasis     : %s
+
+%s停滞       :　%s
+%%%%
+%sFlight     : %s%s
+
+%s飛行       :　%s%s
+%%%%
+%s  - Unarmed
+
+%s  - (素手)
+%%%%
+%s  - Blade Hands
+
+%s  - (刃の手)
+%%%%
+<darkgrey>(no %s)</darkgrey>
+
+<darkgrey>(普通の%sを装備出来ない)</darkgrey>
+%%%%
+<darkgrey>(%s unavailable)</darkgrey>
+
+<darkgrey>(%s を装備できない)</darkgrey>
+%%%%
+<darkgrey>(%s currently unavailable)</darkgrey>
+
+<darkgrey>(現在 %s を装備できない)</darkgrey>
+%%%%
+<darkgrey>(%s restricted)</darkgrey>
+
+<darkgrey>(%s は制限されている)</darkgrey>
+%%%%
+<darkgrey>(no %s)</darkgrey>
+
+<darkgrey>(%s を装備していない)</darkgrey>
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
