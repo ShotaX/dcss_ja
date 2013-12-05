@@ -18,238 +18,238 @@
 ######################################################
 _jewellery_animal_
 
-%Magpie%
+Magpie
 
-%Firefly%
+Firefly
 
-%Scarab%
+Scarab
 %%%%
 _jewellery_special_name_
 
-%Disaster%
+Disaster
 
-%Ephemeral Luck%
+Ephemeral Luck
 
-%Wishful Thinking%
+Wishful Thinking
 
-%Moodiness%
+Moodiness
 
-%Reimbursement%
+Reimbursement
 
-%the Tempest%
+the Tempest
 
-%Finality%
+Finality
 
-%Attitude%
+Attitude
 
-%Lady Luck%
+Lady Luck
 
-%Temptation%
+Temptation
 
-%False Pretenses%
+False Pretenses
 
 # FIXME: should appear on amulets only
-%Yendor%
+Yendor
 %%%%
 _suspicion_name_
 
-%Secrets%
+Secrets
 
-%Suspicion%
+Suspicion
 
-%Mistrust%
+Mistrust
 
-%Jealousy%
+Jealousy
 
-%Incredulity%
+Incredulity
 
-%Doubts%
+Doubts
 
-%Suspected Treachery%
+Suspected Treachery
 
-%Scepticism%
+Scepticism
 
-%Trepidation%
+Trepidation
 
-%w:20%
+w:20
 @_conflict_name_@
 %%%%
 ######################################################
 # Library of keywords used for all randart types.
 ######################################################
-# used for god gifts
+# Used for god gifts from C++ side, as "of $GOD's @divine_esteem@".
 divine_esteem
 
 # good
-%Esteem%
+Esteem
 
-%Favour%
+Favour
 
-%Hope%
+Hope
 
-%Regard%
+Regard
 
-%Approval%
+Approval
 
-%Delight%
+Delight
 
-%Pride%
+Pride
 
-%Generosity%
+Generosity
 
-%Supremacy%
+Supremacy
 
-%Benevolence%
+Benevolence
 
-%Whim%
+Whim
 
 # bad
-%Displeasure%
+Displeasure
 
-%Envy%
+Envy
 
-%Castigation%
+Castigation
 
-%Condemnation%
+Condemnation
 
-%Reproof%
+Reproof
 
-%w:70%
+w:70
 @_anger_name_@
 %%%%
 _xom_esteem_
 
 # chosen 20% of the time
-%w:40%
+w:40
 @divine_esteem@
 
-%Entertainment%
+Entertainment
 
-%Best Wishes%
+Best Wishes
 
-%Amusement%
+Amusement
 
-%Ringing Laughter%
+Ringing Laughter
 
-%Bemusement%
+Bemusement
 
-%Passing Interest%
+Passing Interest
 
-%Full Attention%
+Full Attention
 
-%Whimsicality%
+Whimsicality
 
-%Capriciousness%
+Capriciousness
 
-%Sleight of Hands%
+Sleight of Hands
 
-%Flight of Fancy%
+Flight of Fancy
 
-%Absentmindedness%
+Absentmindedness
 
-%Malicious Joy%
+Malicious Joy
 
-%Fair Game%
+Fair Game
 
-%Wantonness%
+Wantonness
 
-%Recklessness%
+Recklessness
 %%%%
 _time_name_
 
-%Day%
+Day
 
-%Night%
+Night
 
-%Midnight%
+Midnight
 
-%Twilight%
+Twilight
 
-%Dawn%
+Dawn
 
-%w:5%
-%Spring%
+w:5
+Spring
 
-%w:5%
-%Springtime%
+w:5
+Springtime
 
-%w:5%
-%Summer%
+w:5
+Summer
 
-%w:5%
-%Summertime%
+w:5
+Summertime
 
-%Autumn%
+Autumn
 
-%Winter%
+Winter
 
-%Midsummer%
+Midsummer
 
-%Midwinter%
+Midwinter
 
-%the Solstice%
+the Solstice
 
-%the Harvest%
+the Harvest
 
-%Eternal Night%
+Eternal Night
 
-%Eternity%
+Eternity
 
-%Noon%
+Noon
 
-%the Present%
+the Present
 
-%the Morning%
+the Morning
 
-%the Evening%
+the Evening
 %%%%
 _sky_colour_name_
 
-%Black%
+Black
 
-%Blue%
+Blue
 
-%Grey%
+Grey
 
-%Orange%
+Orange
 
-%Purple%
+Purple
 
-%Red%
+Red
 %%%%
 _sky_or_light_
 
-%the Sun%
+the Sun
 
-%the Moon%
+the Moon
 
-%Light%
+Light
 
-%Darkness%
+Darkness
 
-%Dim Light%
+Dim Light
 
-%the Shining Light%
+the Shining Light
 
-%Sunlight%
+Sunlight
 
-%Starshine%
+Starshine
 
-%the Clouds%
+the Clouds
 
-%the Sky%
+the Sky
 
-%the Gloaming%
+the Gloaming
 
-%the Heavens%
+the Heavens
 
-%the Skies Above%
+the Skies Above
 
-%the @_sky_colour_name_@ Skies%
+the @_sky_colour_name_@ Skies
 %%%%
 _virtue_or_vice_
 
-%w:5%
+w:5
 @_virtue_name_@
 
 @_valour_name_@
@@ -258,222 +258,222 @@ _virtue_or_vice_
 %%%%
 _virtue_name_
 
-%Virtue%
+Virtue
 
-%Truth%
+Truth
 
-%Honesty%
+Honesty
 
-%Benevolence%
+Benevolence
 
-%Devotion%
+Devotion
 
-%Generosity%
+Generosity
 
-%Grace%
+Grace
 
-%Temperance%
+Temperance
 
-%Hospitality%
+Hospitality
 
-%Charity%
+Charity
 
-%Patience%
+Patience
 
-%Modesty%
+Modesty
 %%%%
 _vice_name_
 
 # some of the deadly sins
-%Sloth%
+Sloth
 
-%Vanity%
+Vanity
 
-%Gluttony%
+Gluttony
 
-%Pride%
+Pride
 
-%Greed%
+Greed
 
 # general immorality
-%Sin%
+Sin
 
-%the Original Sin%
+the Original Sin
 
-%Lies%
+Lies
 
-%Dishonesty%
+Dishonesty
 
-%Cowardice%
+Cowardice
 
-%Dishonour%
+Dishonour
 
-%Impatience%
+Impatience
 
-%Immorality%
+Immorality
 
-%Amorality%
+Amorality
 
-%Untruth%
+Untruth
 %%%%
 _destiny_name_
 
-%Causality%
+Causality
 
-%Destiny%
+Destiny
 
-%Fate%
+Fate
 
-%Karma%
+Karma
 
-%Kismet%
+Kismet
 
-%Wyrd%
+Wyrd
 
-%Doom%
+Doom
 %%%%
 _number_or_qualifier_
 
 # exact numbers
-%the Three%
+the Three
 
-%the Four%
+the Four
 
-%the Five%
+the Five
 
-%the Six%
+the Six
 
-%the Seven%
+the Seven
 
-%the Eight%
+the Eight
 
-%the Nine%
+the Nine
 
-%the Ten%
+the Ten
 
-%the Eleven%
+the Eleven
 
-%w:5%
-%the Twelve%
+w:5
+the Twelve
 
-%w:5%
-%the Dozen%
+w:5
+the Dozen
 
-%the Thirteen%
+the Thirteen
 
-%the Fifty%
+the Fifty
 
-%w:5%
-%a Hundred%
+w:5
+a Hundred
 
-%w:5%
-%the Hundredfold%
+w:5
+the Hundredfold
 
-%a Thousand%
+a Thousand
 
 # vague numbers
-%the%
+the
 
-%the Many%
+the Many
 
-%the Countless%
+the Countless
 
-%the Assorted%
+the Assorted
 
-%the Manifold%
+the Manifold
 
 # other qualifiers
-%the Lost%
+the Lost
 
-%the Forgotten%
+the Forgotten
 
-%the Forsaken%
+the Forsaken
 
-%the Hidden%
+the Hidden
 
-%the Last%
+the Last
 
-%the Lonely%
+the Lonely
 
-%the Jolly%
+the Jolly
 
-%the Ancient%
+the Ancient
 
-%the Exiled%
+the Exiled
 
-%the Illusory%
+the Illusory
 
-%the Pure%
+the Pure
 
-%the Peculiar%
+the Peculiar
 
-%the Special%
+the Special
 %%%%
 _thing_names_
 
-%Suns%
+Suns
 
-%Moons%
+Moons
 
-%Stars%
+Stars
 
-%Planets%
+Planets
 
-%Hells%
+Hells
 
-%Lives%
+Lives
 
-%Deaths%
+Deaths
 
-%Curses%
+Curses
 
-%Blessings%
+Blessings
 
-%Gods%
+Gods
 
-%Spirits%
+Spirits
 
-%Ghosts%
+Ghosts
 
-%Demons%
+Demons
 
-%Wars%
+Wars
 
-%Mice%
+Mice
 
-%Eyes%
+Eyes
 
-%Nights%
+Nights
 
-%Orbs%
+Orbs
 
-%Runes%
+Runes
 
-%Seas%
+Seas
 
-%Places%
+Places
 
-%Realms%
+Realms
 
-%Wishes%
+Wishes
 
-%Wonders%
+Wonders
 
-%Beds%
+Beds
 
-%Beggars%
+Beggars
 
-%Cities%
+Cities
 
-%Dances%
+Dances
 
-%Lies%
+Lies
 
-%Ships%
+Ships
 
-%Songs%
+Songs
 
-%Souls%
+Souls
 
-%Tales%
+Tales
 %%%%

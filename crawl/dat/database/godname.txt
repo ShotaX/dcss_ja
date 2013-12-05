@@ -52,10 +52,8 @@ Xom lastname
 w:280
 Xom of Chaos
 
-
 w:5
 Xom the Random
-
 
 w:5
 Xom the Random Number God

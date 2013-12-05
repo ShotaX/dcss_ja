@@ -7,16 +7,16 @@
 %%%%
 sheep flee
 
-%w:30%
-%@The_monster@ bleats in terror.%
+w:30
+@The_monster@ bleats in terror.
 
-%VISUAL:@The_monster@ is struck with panic!%
+VISUAL:@The_monster@ is struck with panic!
 
-%VISUAL:@The_monster@ panics and turns to flee.%
+VISUAL:@The_monster@ panics and turns to flee.
 
-%VISUAL:A frightened @monster@ leaps away.%
+VISUAL:A frightened @monster@ leaps away.
 
-%VISUAL:@The_monster@ turns to a blind rush.%
+VISUAL:@The_monster@ turns to a blind rush.
 
-%VISUAL:@The_monster@ stampedes away.%
+VISUAL:@The_monster@ stampedes away.
 %%%%
