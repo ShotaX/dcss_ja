@@ -2450,7 +2450,7 @@ string stealth_desc(int stealth)
          (stealth < 400) ? "extraordinarily " :
          (stealth < 520) ? "incredibly "
                          : "uncannily ";
-    return (prefix + "stealthy");
+    return jtrans(prefix + "stealthy");
 }
 
 string magic_res_adjective(int mr)
@@ -2469,7 +2469,7 @@ string magic_res_adjective(int mr)
             (mr < 240) ? "incredibly" :
             (mr < 300) ? "uncannily"
                        : "almost entirely";
-    return prefix + " resistant";
+    return jtrans(prefix + " resistant");
 }
 
 static string _annotate_form_based(string desc, bool suppressed)
@@ -2589,11 +2589,10 @@ static string _status_mut_abilities(int sw)
                       (move_cost <  13) ? "slow"
                                         : "very slow";
 
-        status.push_back(help);
+        status.push_back(jtrans(help));
     }
 
-    status.push_back(magic_res_adjective(player_res_magic(false))
-                     + " to hostile enchantments");
+    status.push_back(jtrans("to hostile enchantments") + magic_res_adjective(player_res_magic(false)));
 
     // character evaluates their ability to sneak around:
     status.push_back(stealth_desc(check_stealth()));
@@ -2794,7 +2793,7 @@ static string _status_mut_abilities(int sw)
 
         if (mdef.short_desc)
         {
-            current += mdef.short_desc;
+            current += jtrans(mdef.short_desc);
 
             if (mdef.levels > 1)
             {

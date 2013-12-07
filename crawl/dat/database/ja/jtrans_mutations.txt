@@ -1855,9 +1855,105 @@ You begin to radiate miasma.
 
 あなたは瘴気を発し始めた
 %%%%
+Thin tendrils of slime have grown from your body.
 
+細い粘着状の蔦があなたの身体に生えている
+%%%%
+Thin, slimy tendrils emerge from your body.
 
+細い粘着状の蔦があなたの身体から出てきた
+%%%%
+Your tendrils retract into your body.
+
+細い粘着状の蔦はあなたの身体の中に引っ込んだ
+%%%%
+You have a small jelly attached to you that senses nearby items.
+
+アイテムを感知するジェリーがあなたの身体に付いている
+%%%%
+Your body partially splits into a small jelly.
+
+あなたの身体の一部は分割され、小さなジェリーになった
+%%%%
+The jelly growth is reabsorbed into your body.
+
+ジェリーはあなたの身体に再吸収された
+%%%%
+You have a small jelly attached to you that may absorb incoming projectiles.
+
+飛来物を吸収するジェリーがあなたの身体に付いている
+%%%%
+Your body partially splits into a small jelly.
+
+あなたの身体の一部は分割され、小さなジェリーになった
+%%%%
+The jelly growth is reabsorbed into your body.
+
+ジェリーはあなたの身体に再吸収された
+%%%%
+You are immune to petrification.
+
+あなたは石化に対して免疫を持っている
+%%%%
+Your body vibrates.
+
+あなたの身体が振動した
+%%%%
+You briefly stop moving.
+
+あなたの身体の振動が止まった
+%%%%
+You are resistant to trampling.
+
+あなたは踏圧に対して抵抗する
+%%%%
+You feel steady.
+
+あなたはぐらつかなくなった
+%%%%
+You feel unsteady.
+
+あなたはぐらつくようになった
+%%%%
+You can cling to walls.
+
+あなたは壁を登ることが出来る
+%%%%
+You feel sticky.
+
+あなたは粘着性を感じた
+%%%%
+You feel slippery.
+
+あなたは滑りやすくなった
+%%%%
+You emit clouds of smoke.
+
+あなたは煙幕を発する
+%%%%
+You frequently emit clouds of smoke.
+
+あなたは頻繁に煙幕を発する
+%%%%
+You fume.
+
+あなたは煙たくなった
+%%%%
+You fume more.
+
+あなたはさらに煙たくなった
+%%%%
+You stop fuming.
+
+あなたは煙たく無くなった
+%%%%
+You fume less.
+
+あなたは少し煙たくなくなった
+%%%%
 BUG!BUG!
+
+
 %%%%
 Your muscles are strong (Str +14).
 
@@ -2234,4 +2330,328 @@ You are clumsy. (Dex -2)
 You are clumsy (Dex -1).
 
 あなたは不器用だ (Dex -1)
+%%%%
+tough skin
+
+強肌
+%%%%
+poison resistance_m
+
+r毒
+%%%%
+carnivore
+
+肉食
+%%%%
+herbivore
+
+草食
+%%%%
+fire resistance_m
+
+r火
+%%%%
+cold resistance_m
+
+r冷
+%%%%
+demonic guardian
+
+悪魔の従者
+%%%%
+electricity resistance_m
+
+r電
+%%%%
+#regeneration
+
+
+%%%%
+slow healing
+
+遅再生
+%%%%
+fast metabolism
+
+速消化
+%%%%
+slow metabolism
+
+遅消化
+%%%%
+teleport control
+
+r転移
+%%%%
+teleportitis
+
++転移
+%%%%
+magic resistance_m
+
+魔耐
+%%%%
+speed_m
+
+俊足
+%%%%
+slowness_m
+
+鈍足
+%%%%
+see invisible_m
+
+透明視
+%%%%
+deformed body
+
+奇形の体
+%%%%
+#spit poison
+
+
+%%%%
+breathe flames
+
+炎のブレス
+%%%%
+#blink
+
+
+%%%%
+screaming
+
+悲鳴の発作
+%%%%
+clarity_m
+
+明晰
+%%%%
+berserk_m
+
+狂戦士化
+%%%%
+deterioration
+
+身体の腐敗
+%%%%
+blurry vision
+
+霞んだ視界
+%%%%
+mutation resistance_m
+
+r変異
+%%%%
+evolution
+
+進化
+%%%%
+unbreathing
+
+呼吸していない
+%%%%
+torment resistance_m
+
+r苦痛
+%%%%
+life protection_m
+
+r負
+%%%%
+hurl hellfire
+
+地獄の業火の投射
+%%%%
+horns
+
+角
+%%%%
+beak
+
+嘴
+%%%%
+claws
+
+爪
+%%%%
+fangs
+
+牙
+%%%%
+hooves
+
+蹄
+%%%%
+antennae
+
+触角
+%%%%
+talons
+
+鷲爪
+%%%%
+spike
+
+棘の触手
+%%%%
+breathe poison
+
+毒のブレス
+%%%%
+stinger
+
+毒の棘
+%%%%
+large and strong wings
+
+巨大な翼
+%%%%
+saprovore
+
+腐肉喰い
+%%%%
+gourmand
+
+悪食
+%%%%
+wild magic_m
+
+暴走する魔力
+%%%%
+50% torment resistance
+
+r苦痛(50%)
+%%%%
+sense surroundings
+
+周辺感知
+%%%%
+conserve scrolls
+
+巻物保護
+%%%%
+conserve potions
+
+薬保護
+%%%%
+passive freeze
+
+冷気の体
+%%%%
+nightstalker
+
+闇夜に忍び寄る者
+%%%%
+spiny
+
+棘の体
+%%%%
+powered by death
+
+死よりの力
+%%%%
+powered by pain
+
+苦痛よりの力
+%%%%
+augmentation
+
+攻撃力の増大
+%%%%
+magic shield
+
+魔力の盾
+%%%%
+magic regeneration
+
+魔力の高速回復
+%%%%
+magic link
+
+魔力との絆
+%%%%
+translucent skin
+
+半透明の肌
+%%%%
+pseudopods
+
+偽足
+%%%%
+spawn jellies when eating
+
+食事によるジェリーの生成
+%%%%
+acidic bite
+
+酸の牙
+%%%%
+camouflage
+
+迷彩
+%%%%
+ignite blood
+
+血の炎上
+%%%%
+foul stench
+
+腐敗の制御
+%%%%
+tendrils
+
+粘着状の蔦
+%%%%
+a jelly is attached to you
+
+ジェリーの器官
+%%%%
+absorbing missiles
+
+飛来物の吸収
+%%%%
+petrification resistance
+
+r石化
+%%%%
+trample resistance
+
+r押出し
+%%%%
+cling
+
+昇壁
+%%%%
+fuming
+
+煙幕
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
+%%%%
+
+
+
 %%%%

@@ -107,9 +107,9 @@ Spirit.Shd :
 
 <darkgrey>(%s を装備していない)</darkgrey>
 %%%%
+to hostile enchantments
 
-
-
+敵対的な魔法に対して
 %%%%
 
 
